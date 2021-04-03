@@ -1,0 +1,1847 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(ammonia_plant_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(80, 10)
+            }
+            spriteset(ammonia_plant_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(ammonia_plant_spriteset_0_1, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(80, 10)
+            }
+            spriteset(ammonia_plant_spriteset_0_1_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(ammonia_plant_spriteset_1_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(ammonia_plant_spriteset_1_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(ammonia_plant_spriteset_1_1, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(ammonia_plant_spriteset_1_1_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(ammonia_plant_spriteset_2_0) {
+                        [80, 10, 64, 114, -31, -88, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_2_0_snow) {
+                            [80, 10, 64, 114, -31, -88, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_2_1) {
+                        [80, 10, 64, 114, -31, -88, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_2_1_snow) {
+                            [80, 10, 64, 114, -31, -88, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_3_0) {
+                        [150, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_3_0_snow) {
+                            [150, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_3_1) {
+                        [150, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_3_1_snow) {
+                            [150, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_4_0) {
+                        [220, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_4_0_snow) {
+                            [220, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_4_1) {
+                        [220, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_4_1_snow) {
+                            [220, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_5_0) {
+                        [290, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_5_0_snow) {
+                            [290, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_5_1) {
+                        [290, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_5_1_snow) {
+                            [290, 10, 64, 114, -31, -83, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_6_0) {
+                        [360, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_6_0_snow) {
+                            [360, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_6_1) {
+                        [360, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_6_1_snow) {
+                            [360, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_7_0) {
+                        [430, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_7_0_snow) {
+                            [430, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_7_1) {
+                        [430, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_7_1_snow) {
+                            [430, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_8_0) {
+                        [500, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_8_0_snow) {
+                            [500, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_8_1) {
+                        [500, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_8_1_snow) {
+                            [500, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_9_0) {
+                        [570, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_9_0_snow) {
+                            [570, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_9_1) {
+                        [570, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_9_1_snow) {
+                            [570, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_10_0) {
+                        [640, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_10_0_snow) {
+                            [640, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_10_1) {
+                        [640, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_10_1_snow) {
+                            [640, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_11_0) {
+                        [710, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1.png"]
+            }
+            spriteset(ammonia_plant_spriteset_11_0_snow) {
+                            [710, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_1_snow.png"]
+            }
+            spriteset(ammonia_plant_spriteset_11_1) {
+                        [710, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2.png"]
+            }
+            spriteset(ammonia_plant_spriteset_11_1_snow) {
+                            [710, 10, 64, 66, -31, -35, ANIM | NOCROP, "src/graphics/industries/ammonia_plant_2_snow.png"]
+            }
+        spritelayout ammonia_plant_spritelayout_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_2_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_2_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 3701 + ((animation_frame + 1)%8);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 5;
+                    yoffset: 0;
+                    zoffset: 69;
+                    xextent: 15;
+                    yextent: 7;
+                    zextent: 7;
+                    hide_sprite: 0;
+                }
+                // smoke sprites
+                building {
+                    sprite: 3701 + ((animation_frame + 0)%8);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 9;
+                    yoffset: 0;
+                    zoffset: 69;
+                    xextent: 15;
+                    yextent: 7;
+                    zextent: 7;
+                    hide_sprite: 0;
+                }
+        }
+        spritelayout ammonia_plant_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_3_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_3_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_3 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_4_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_4_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_4 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_5_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_5_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_5 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_6_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_6_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_6 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_7_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_7_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_7_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_7_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_7 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_8_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_8_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_8_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_8_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_8 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_9_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_9_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_9_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_9_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_9 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_10_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_10_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_10_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_10_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_10 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_11_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_11_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: ammonia_plant_spriteset_11_1(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(254));
+                    }
+                    building {
+                        sprite: ammonia_plant_spriteset_11_1_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(244));
+                    }
+        }
+        spritelayout ammonia_plant_spritelayout_concrete {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: ammonia_plant_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: ammonia_plant_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): ammonia_plant_spritelayout_1;
+                relative_coord(0, 1): ammonia_plant_spritelayout_4;
+                relative_coord(0, 2): ammonia_plant_spritelayout_8;
+                relative_coord(1, 0): ammonia_plant_spritelayout_6;
+                relative_coord(1, 1): ammonia_plant_spritelayout_3;
+                relative_coord(1, 2): ammonia_plant_spritelayout_9;
+                relative_coord(2, 0): ammonia_plant_spritelayout_5;
+                relative_coord(2, 1): ammonia_plant_spritelayout_2;
+                relative_coord(2, 2): ammonia_plant_spritelayout_7;
+                relative_coord(3, 0): ammonia_plant_spritelayout_10;
+                relative_coord(3, 1): ammonia_plant_spritelayout_concrete;
+                relative_coord(3, 2): ammonia_plant_spritelayout_7;
+            ammonia_plant_spritelayout_1; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): ammonia_plant_spritelayout_1;
+                relative_coord(0, 1): ammonia_plant_spritelayout_6;
+                relative_coord(1, 0): ammonia_plant_spritelayout_4;
+                relative_coord(1, 1): ammonia_plant_spritelayout_5;
+                relative_coord(2, 0): ammonia_plant_spritelayout_3;
+                relative_coord(2, 1): ammonia_plant_spritelayout_10;
+                relative_coord(3, 0): ammonia_plant_spritelayout_2;
+                relative_coord(3, 1): ammonia_plant_spritelayout_7;
+                relative_coord(4, 0): ammonia_plant_spritelayout_8;
+                relative_coord(4, 1): ammonia_plant_spritelayout_9;
+            ammonia_plant_spritelayout_1; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_3_graphics_switch, relative_pos) {
+                relative_coord(0, 1): ammonia_plant_spritelayout_4;
+                relative_coord(1, 0): ammonia_plant_spritelayout_8;
+                relative_coord(1, 1): ammonia_plant_spritelayout_3;
+                relative_coord(1, 2): ammonia_plant_spritelayout_7;
+                relative_coord(1, 3): ammonia_plant_spritelayout_6;
+                relative_coord(2, 0): ammonia_plant_spritelayout_9;
+                relative_coord(2, 1): ammonia_plant_spritelayout_2;
+                relative_coord(2, 2): ammonia_plant_spritelayout_1;
+                relative_coord(2, 3): ammonia_plant_spritelayout_5;
+            ammonia_plant_spritelayout_4; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_4_graphics_switch, relative_pos) {
+                relative_coord(0, 1): ammonia_plant_spritelayout_4;
+                relative_coord(1, 0): ammonia_plant_spritelayout_1;
+                relative_coord(1, 1): ammonia_plant_spritelayout_3;
+                relative_coord(1, 2): ammonia_plant_spritelayout_6;
+                relative_coord(1, 3): ammonia_plant_spritelayout_8;
+                relative_coord(2, 0): ammonia_plant_spritelayout_7;
+                relative_coord(2, 1): ammonia_plant_spritelayout_2;
+                relative_coord(2, 2): ammonia_plant_spritelayout_5;
+                relative_coord(2, 3): ammonia_plant_spritelayout_9;
+            ammonia_plant_spritelayout_4; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_5_graphics_switch, relative_pos) {
+                relative_coord(0, 0): ammonia_plant_spritelayout_4;
+                relative_coord(0, 1): ammonia_plant_spritelayout_7;
+                relative_coord(1, 0): ammonia_plant_spritelayout_3;
+                relative_coord(1, 1): ammonia_plant_spritelayout_7;
+                relative_coord(2, 0): ammonia_plant_spritelayout_2;
+                relative_coord(2, 1): ammonia_plant_spritelayout_6;
+                relative_coord(3, 0): ammonia_plant_spritelayout_1;
+                relative_coord(3, 1): ammonia_plant_spritelayout_5;
+                relative_coord(4, 0): ammonia_plant_spritelayout_8;
+                relative_coord(4, 1): ammonia_plant_spritelayout_6;
+                relative_coord(5, 0): ammonia_plant_spritelayout_8;
+                relative_coord(5, 1): ammonia_plant_spritelayout_5;
+                relative_coord(6, 0): ammonia_plant_spritelayout_9;
+                relative_coord(6, 1): ammonia_plant_spritelayout_10;
+            ammonia_plant_spritelayout_4; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_6_graphics_switch, relative_pos) {
+                relative_coord(0, 0): ammonia_plant_spritelayout_4;
+                relative_coord(0, 1): ammonia_plant_spritelayout_8;
+                relative_coord(0, 2): ammonia_plant_spritelayout_8;
+                relative_coord(1, 0): ammonia_plant_spritelayout_3;
+                relative_coord(1, 1): ammonia_plant_spritelayout_6;
+                relative_coord(1, 2): ammonia_plant_spritelayout_6;
+                relative_coord(2, 0): ammonia_plant_spritelayout_2;
+                relative_coord(2, 1): ammonia_plant_spritelayout_5;
+                relative_coord(2, 2): ammonia_plant_spritelayout_5;
+                relative_coord(3, 0): ammonia_plant_spritelayout_1;
+                relative_coord(3, 1): ammonia_plant_spritelayout_10;
+                relative_coord(3, 2): ammonia_plant_spritelayout_concrete;
+                relative_coord(4, 0): ammonia_plant_spritelayout_7;
+                relative_coord(4, 1): ammonia_plant_spritelayout_7;
+                relative_coord(4, 2): ammonia_plant_spritelayout_9;
+            ammonia_plant_spritelayout_4; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_layout_7_graphics_switch, relative_pos) {
+                relative_coord(0, 0): ammonia_plant_spritelayout_4;
+                relative_coord(0, 1): ammonia_plant_spritelayout_1;
+                relative_coord(0, 2): ammonia_plant_spritelayout_8;
+                relative_coord(0, 3): ammonia_plant_spritelayout_10;
+                relative_coord(1, 0): ammonia_plant_spritelayout_3;
+                relative_coord(1, 1): ammonia_plant_spritelayout_6;
+                relative_coord(1, 2): ammonia_plant_spritelayout_8;
+                relative_coord(1, 3): ammonia_plant_spritelayout_6;
+                relative_coord(2, 0): ammonia_plant_spritelayout_2;
+                relative_coord(2, 1): ammonia_plant_spritelayout_5;
+                relative_coord(2, 2): ammonia_plant_spritelayout_9;
+                relative_coord(2, 3): ammonia_plant_spritelayout_5;
+                relative_coord(3, 0): ammonia_plant_spritelayout_7;
+                relative_coord(3, 1): ammonia_plant_spritelayout_7;
+                relative_coord(3, 2): ammonia_plant_spritelayout_9;
+                relative_coord(3, 3): ammonia_plant_spritelayout_10;
+            ammonia_plant_spritelayout_4; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, ammonia_plant_industry_graphics_switch_layouts, layout_num) {
+            1: ammonia_plant_industry_layout_1_graphics_switch;
+            2: ammonia_plant_industry_layout_2_graphics_switch;
+            3: ammonia_plant_industry_layout_3_graphics_switch;
+            4: ammonia_plant_industry_layout_4_graphics_switch;
+            5: ammonia_plant_industry_layout_5_graphics_switch;
+            6: ammonia_plant_industry_layout_6_graphics_switch;
+            7: ammonia_plant_industry_layout_7_graphics_switch;
+        ammonia_plant_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        ammonia_plant_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1952,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+                    , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1952,
+                                 254) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(254),
+                                 254)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(254), 
+                                 244) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(254), 
+                                 254)
+            ]) {
+        ammonia_plant_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, ammonia_plant_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        ammonia_plant_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, ammonia_plant_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        ammonia_plant_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, ammonia_plant_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        ammonia_plant_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, ammonia_plant_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        ammonia_plant_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, ammonia_plant_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, ammonia_plant_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        ammonia_plant_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, ammonia_plant_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: ammonia_plant_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    item(FEAT_INDUSTRYTILES, ammonia_plant_tile_1, 163) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 7];
+                animation_speed: 3;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: ammonia_plant_tile_1_lc_0;
+            ammonia_plant_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, ammonia_plant_tile_1, 163) {
+                    property {
+                        accepted_cargos:  [[cargotype("NITR"), 8],[cargotype("RFPR"), 8],[cargotype("PEAT"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout ammonia_plant_industry_layout_1_tilelayout {
+            0, 0: ammonia_plant_tile_1;
+            0, 1: ammonia_plant_tile_1;
+            0, 2: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            1, 2: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            2, 2: ammonia_plant_tile_1;
+            3, 0: ammonia_plant_tile_1;
+            3, 1: ammonia_plant_tile_1;
+            3, 2: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_2_tilelayout {
+            0, 0: ammonia_plant_tile_1;
+            0, 1: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            3, 0: ammonia_plant_tile_1;
+            3, 1: ammonia_plant_tile_1;
+            4, 0: ammonia_plant_tile_1;
+            4, 1: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_3_tilelayout {
+            0, 1: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            1, 2: ammonia_plant_tile_1;
+            1, 3: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            2, 2: ammonia_plant_tile_1;
+            2, 3: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_4_tilelayout {
+            0, 1: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            1, 2: ammonia_plant_tile_1;
+            1, 3: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            2, 2: ammonia_plant_tile_1;
+            2, 3: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_5_tilelayout {
+            0, 0: ammonia_plant_tile_1;
+            0, 1: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            3, 0: ammonia_plant_tile_1;
+            3, 1: ammonia_plant_tile_1;
+            4, 0: ammonia_plant_tile_1;
+            4, 1: ammonia_plant_tile_1;
+            5, 0: ammonia_plant_tile_1;
+            5, 1: ammonia_plant_tile_1;
+            6, 0: ammonia_plant_tile_1;
+            6, 1: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_6_tilelayout {
+            0, 0: ammonia_plant_tile_1;
+            0, 1: ammonia_plant_tile_1;
+            0, 2: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            1, 2: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            2, 2: ammonia_plant_tile_1;
+            3, 0: ammonia_plant_tile_1;
+            3, 1: ammonia_plant_tile_1;
+            3, 2: ammonia_plant_tile_1;
+            4, 0: ammonia_plant_tile_1;
+            4, 1: ammonia_plant_tile_1;
+            4, 2: ammonia_plant_tile_1;
+    }
+    tilelayout ammonia_plant_industry_layout_7_tilelayout {
+            0, 0: ammonia_plant_tile_1;
+            0, 1: ammonia_plant_tile_1;
+            0, 2: ammonia_plant_tile_1;
+            0, 3: ammonia_plant_tile_1;
+            1, 0: ammonia_plant_tile_1;
+            1, 1: ammonia_plant_tile_1;
+            1, 2: ammonia_plant_tile_1;
+            1, 3: ammonia_plant_tile_1;
+            2, 0: ammonia_plant_tile_1;
+            2, 1: ammonia_plant_tile_1;
+            2, 2: ammonia_plant_tile_1;
+            2, 3: ammonia_plant_tile_1;
+            3, 0: ammonia_plant_tile_1;
+            3, 1: ammonia_plant_tile_1;
+            3, 2: ammonia_plant_tile_1;
+            3, 3: ammonia_plant_tile_1;
+    }
+    produce (ammonia_plant_simple_produce,
+                waiting_cargo_1,
+                waiting_cargo_2,
+                waiting_cargo_3,
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(4) / (64),
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(5) / (64),
+                [
+                STORE_PERM(LOAD_PERM(4) % (8 / LOAD_TEMP(3)), 4),
+                STORE_PERM(LOAD_PERM(5) % (8 / LOAD_TEMP(3)), 5),
+                STORE_PERM(LOAD_PERM(6) % (8 / LOAD_TEMP(3)), 6),
+                0
+                ]
+    );
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_2,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_0,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_1,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_4,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_5,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce_economy_3,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 4,
+                    2
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            ammonia_plant_simple_produce;
+        }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_produce, economy) {
+            2: ammonia_plant_produce_economy_2;
+            0: ammonia_plant_produce_economy_0;
+            1: ammonia_plant_produce_economy_1;
+            4: ammonia_plant_produce_economy_4;
+            5: ammonia_plant_produce_economy_5;
+            3: ammonia_plant_produce_economy_3;
+    }
+    switch(FEAT_INDUSTRIES, SELF, ammonia_plant_secondary_increase_closure_counter,
+           STORE_PERM((1 + LOAD_PERM(15)), 15)) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, ammonia_plant_secondary_reset_closure_counter, [STORE_PERM(0, 15), 1]) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, ammonia_plant_check_secondary_production_level, [
+                transported_last_month_1 > 0 ||
+                transported_last_month_2 > 0 ||
+                (current_date - LOAD_PERM(10)) < 30 ||
+                (current_date - LOAD_PERM(11)) < 30 ||
+                (current_date - LOAD_PERM(12)) < 30
+                ]
+            ) {
+        0: ammonia_plant_secondary_increase_closure_counter;
+        ammonia_plant_secondary_reset_closure_counter;
+    }
+switch(FEAT_INDUSTRIES, SELF, ammonia_plant_secondary_close_random, (extra_callback_info2 & 32)) {
+	0: return CB_RESULT_IND_PROD_CLOSE;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch(FEAT_INDUSTRIES, SELF, ammonia_plant_secondary_had_produced_check, LOAD_PERM(15)) {
+	0..60: return CB_RESULT_IND_PROD_NO_CHANGE;
+	ammonia_plant_secondary_close_random;
+}
+switch(FEAT_INDUSTRIES, SELF, ammonia_plant_check_secondary_closure, allow_close_secondary) {
+	1..255: ammonia_plant_secondary_had_produced_check;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_extra_text, economy) {
+            2: return string(STR_EXTRA_TEXT_SECONDARY_COMBINATORY);
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_cargo_subtype_display_cargo_1, [current_date - LOAD_PERM(10) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_cargo_subtype_display_cargo_2, [current_date - LOAD_PERM(11) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_cargo_subtype_display_cargo_3, [current_date - LOAD_PERM(12) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_cargo_subtype_display_switch_cargo, getbits(extra_callback_info2, 0, 8)) {
+    0: ammonia_plant_cargo_subtype_display_cargo_1;
+    1: ammonia_plant_cargo_subtype_display_cargo_2;
+    2: ammonia_plant_cargo_subtype_display_cargo_3;
+    return CB_RESULT_NO_TEXT;
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_cargo_subtype_display, getbits(extra_callback_info2, 8, 8)) {
+    1: ammonia_plant_cargo_subtype_display_switch_cargo;
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	ammonia_plant_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: ammonia_plant_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_2, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_0, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_1, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_4, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_5, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1890 */
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability_3, current_date) {
+        date(1890,1,1) .. date(5000000,12,31): ammonia_plant_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_availability, economy) {
+        2: ammonia_plant_check_availability_2;
+        0: ammonia_plant_check_availability_0;
+        1: ammonia_plant_check_availability_1;
+        4: ammonia_plant_check_availability_4;
+        5: ammonia_plant_check_availability_5;
+        3: ammonia_plant_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_17, industry_distance(17)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_63, industry_distance(63)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_17;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_5, industry_distance(5)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_63;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_5;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_69, industry_distance(69)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_69;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_74, industry_distance(74)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_19, industry_distance(19)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_74;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_65, industry_distance(65)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_19;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_min_distance_40, industry_distance(40)) {
+        0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
+        ammonia_plant_min_distance_65;
+    }
+    switch (FEAT_INDUSTRIES, SELF, ammonia_plant_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        ammonia_plant_min_distance_40;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, ammonia_plant, 40) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 173;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [ammonia_plant_industry_layout_1_tilelayout,ammonia_plant_industry_layout_2_tilelayout,ammonia_plant_industry_layout_3_tilelayout,ammonia_plant_industry_layout_4_tilelayout,ammonia_plant_industry_layout_5_tilelayout,ammonia_plant_industry_layout_6_tilelayout,ammonia_plant_industry_layout_7_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_AMMONIA_PLANT);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 170;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("NITR"),cargotype("RFPR"),cargotype("PEAT")];
+                    prod_cargo_types: [cargotype("BOOM"),cargotype("FERT")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_HEAVY_INDUSTRY_2));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, ammonia_plant, 40) {
+                graphics {
+                    construction_probability: ammonia_plant_check_availability;
+                    produce_cargo_arrival:    ammonia_plant_produce;
+                    monthly_prod_change:      ammonia_plant_check_secondary_production_level;
+                    random_prod_change:       ammonia_plant_check_secondary_closure;
+                    location_check:           ammonia_plant_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1890);
+                    extra_text_industry:      ammonia_plant_extra_text;
+                    cargo_subtype_display:    ammonia_plant_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

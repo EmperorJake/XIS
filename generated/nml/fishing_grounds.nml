@@ -1,0 +1,1067 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(fishing_grounds_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(fishing_grounds_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(fishing_grounds_spriteset_1_0) {
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1.png"]
+            }
+            spriteset(fishing_grounds_spriteset_1_0_snow) {
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1_snow.png"]
+            }
+            spriteset(fishing_grounds_spriteset_2_0) {
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1.png"]
+            }
+            spriteset(fishing_grounds_spriteset_2_0_snow) {
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1_snow.png"]
+            }
+            spriteset(fishing_grounds_spriteset_3_0) {
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1.png"]
+            }
+            spriteset(fishing_grounds_spriteset_3_0_snow) {
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1_snow.png"]
+            }
+            spriteset(fishing_grounds_spriteset_4_0) {
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1.png"]
+            }
+            spriteset(fishing_grounds_spriteset_4_0_snow) {
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1_snow.png"]
+            }
+            spriteset(fishing_grounds_spriteset_5_0) {
+                        [290, 10, 64, 31, -31, -32, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1.png"]
+            }
+            spriteset(fishing_grounds_spriteset_5_0_snow) {
+                            [290, 10, 64, 31, -31, -32, ANIM | NOCROP, "src/graphics/industries/fishing_grounds_1_snow.png"]
+            }
+        spritelayout fishing_grounds_spritelayout_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: fishing_grounds_spriteset_1_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: fishing_grounds_spriteset_1_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout fishing_grounds_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: fishing_grounds_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: fishing_grounds_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout fishing_grounds_spritelayout_3 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: fishing_grounds_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: fishing_grounds_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout fishing_grounds_spritelayout_4 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_5_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: fishing_grounds_spriteset_5_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: fishing_grounds_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: fishing_grounds_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout fishing_grounds_spritelayout_null {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: GROUNDSPRITE_WATER;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): fishing_grounds_spritelayout_null;
+                relative_coord(0, 1): fishing_grounds_spritelayout_null;
+                relative_coord(0, 2): fishing_grounds_spritelayout_null;
+                relative_coord(0, 3): fishing_grounds_spritelayout_null;
+                relative_coord(0, 4): fishing_grounds_spritelayout_null;
+                relative_coord(0, 5): fishing_grounds_spritelayout_null;
+                relative_coord(0, 6): fishing_grounds_spritelayout_null;
+                relative_coord(1, 0): fishing_grounds_spritelayout_null;
+                relative_coord(1, 1): fishing_grounds_spritelayout_null;
+                relative_coord(1, 2): fishing_grounds_spritelayout_null;
+                relative_coord(1, 3): fishing_grounds_spritelayout_null;
+                relative_coord(1, 4): fishing_grounds_spritelayout_null;
+                relative_coord(1, 5): fishing_grounds_spritelayout_null;
+                relative_coord(1, 6): fishing_grounds_spritelayout_null;
+                relative_coord(2, 0): fishing_grounds_spritelayout_null;
+                relative_coord(2, 1): fishing_grounds_spritelayout_null;
+                relative_coord(2, 2): fishing_grounds_spritelayout_null;
+                relative_coord(2, 3): fishing_grounds_spritelayout_null;
+                relative_coord(2, 4): fishing_grounds_spritelayout_null;
+                relative_coord(2, 5): fishing_grounds_spritelayout_null;
+                relative_coord(2, 6): fishing_grounds_spritelayout_null;
+                relative_coord(3, 0): fishing_grounds_spritelayout_null;
+                relative_coord(3, 1): fishing_grounds_spritelayout_null;
+                relative_coord(3, 2): fishing_grounds_spritelayout_1;
+                relative_coord(3, 3): fishing_grounds_spritelayout_4;
+                relative_coord(3, 4): fishing_grounds_spritelayout_2;
+                relative_coord(3, 5): fishing_grounds_spritelayout_null;
+                relative_coord(3, 6): fishing_grounds_spritelayout_null;
+                relative_coord(4, 0): fishing_grounds_spritelayout_null;
+                relative_coord(4, 1): fishing_grounds_spritelayout_null;
+                relative_coord(4, 2): fishing_grounds_spritelayout_null;
+                relative_coord(4, 3): fishing_grounds_spritelayout_3;
+                relative_coord(4, 4): fishing_grounds_spritelayout_null;
+                relative_coord(4, 5): fishing_grounds_spritelayout_null;
+                relative_coord(4, 6): fishing_grounds_spritelayout_null;
+                relative_coord(5, 0): fishing_grounds_spritelayout_null;
+                relative_coord(5, 1): fishing_grounds_spritelayout_null;
+                relative_coord(5, 2): fishing_grounds_spritelayout_null;
+                relative_coord(5, 3): fishing_grounds_spritelayout_null;
+                relative_coord(5, 4): fishing_grounds_spritelayout_null;
+                relative_coord(5, 5): fishing_grounds_spritelayout_null;
+                relative_coord(5, 6): fishing_grounds_spritelayout_null;
+                relative_coord(6, 0): fishing_grounds_spritelayout_null;
+                relative_coord(6, 1): fishing_grounds_spritelayout_null;
+                relative_coord(6, 2): fishing_grounds_spritelayout_null;
+                relative_coord(6, 3): fishing_grounds_spritelayout_null;
+                relative_coord(6, 4): fishing_grounds_spritelayout_null;
+                relative_coord(6, 5): fishing_grounds_spritelayout_null;
+                relative_coord(6, 6): fishing_grounds_spritelayout_null;
+            fishing_grounds_spritelayout_null; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): fishing_grounds_spritelayout_null;
+                relative_coord(0, 1): fishing_grounds_spritelayout_null;
+                relative_coord(0, 2): fishing_grounds_spritelayout_null;
+                relative_coord(0, 3): fishing_grounds_spritelayout_null;
+                relative_coord(0, 4): fishing_grounds_spritelayout_null;
+                relative_coord(0, 5): fishing_grounds_spritelayout_null;
+                relative_coord(0, 6): fishing_grounds_spritelayout_null;
+                relative_coord(1, 0): fishing_grounds_spritelayout_null;
+                relative_coord(1, 1): fishing_grounds_spritelayout_null;
+                relative_coord(1, 2): fishing_grounds_spritelayout_null;
+                relative_coord(1, 3): fishing_grounds_spritelayout_null;
+                relative_coord(1, 4): fishing_grounds_spritelayout_null;
+                relative_coord(1, 5): fishing_grounds_spritelayout_null;
+                relative_coord(1, 6): fishing_grounds_spritelayout_null;
+                relative_coord(2, 0): fishing_grounds_spritelayout_null;
+                relative_coord(2, 1): fishing_grounds_spritelayout_null;
+                relative_coord(2, 2): fishing_grounds_spritelayout_null;
+                relative_coord(2, 3): fishing_grounds_spritelayout_null;
+                relative_coord(2, 4): fishing_grounds_spritelayout_null;
+                relative_coord(2, 5): fishing_grounds_spritelayout_null;
+                relative_coord(2, 6): fishing_grounds_spritelayout_null;
+                relative_coord(3, 0): fishing_grounds_spritelayout_null;
+                relative_coord(3, 1): fishing_grounds_spritelayout_null;
+                relative_coord(3, 2): fishing_grounds_spritelayout_1;
+                relative_coord(3, 3): fishing_grounds_spritelayout_2;
+                relative_coord(3, 4): fishing_grounds_spritelayout_4;
+                relative_coord(3, 5): fishing_grounds_spritelayout_null;
+                relative_coord(3, 6): fishing_grounds_spritelayout_null;
+                relative_coord(4, 0): fishing_grounds_spritelayout_null;
+                relative_coord(4, 1): fishing_grounds_spritelayout_null;
+                relative_coord(4, 2): fishing_grounds_spritelayout_null;
+                relative_coord(4, 3): fishing_grounds_spritelayout_null;
+                relative_coord(4, 4): fishing_grounds_spritelayout_3;
+                relative_coord(4, 5): fishing_grounds_spritelayout_null;
+                relative_coord(4, 6): fishing_grounds_spritelayout_null;
+                relative_coord(5, 0): fishing_grounds_spritelayout_null;
+                relative_coord(5, 1): fishing_grounds_spritelayout_null;
+                relative_coord(5, 2): fishing_grounds_spritelayout_null;
+                relative_coord(5, 3): fishing_grounds_spritelayout_null;
+                relative_coord(5, 4): fishing_grounds_spritelayout_3;
+                relative_coord(5, 5): fishing_grounds_spritelayout_null;
+                relative_coord(5, 6): fishing_grounds_spritelayout_null;
+                relative_coord(6, 0): fishing_grounds_spritelayout_null;
+                relative_coord(6, 1): fishing_grounds_spritelayout_null;
+                relative_coord(6, 2): fishing_grounds_spritelayout_null;
+                relative_coord(6, 3): fishing_grounds_spritelayout_null;
+                relative_coord(6, 4): fishing_grounds_spritelayout_null;
+                relative_coord(6, 5): fishing_grounds_spritelayout_null;
+                relative_coord(6, 6): fishing_grounds_spritelayout_null;
+                relative_coord(7, 0): fishing_grounds_spritelayout_null;
+                relative_coord(7, 1): fishing_grounds_spritelayout_null;
+                relative_coord(7, 2): fishing_grounds_spritelayout_null;
+                relative_coord(7, 3): fishing_grounds_spritelayout_null;
+                relative_coord(7, 4): fishing_grounds_spritelayout_null;
+                relative_coord(7, 5): fishing_grounds_spritelayout_null;
+                relative_coord(7, 6): fishing_grounds_spritelayout_null;
+            fishing_grounds_spritelayout_null; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_industry_layout_3_graphics_switch, relative_pos) {
+                relative_coord(0, 0): fishing_grounds_spritelayout_null;
+                relative_coord(0, 1): fishing_grounds_spritelayout_null;
+                relative_coord(0, 2): fishing_grounds_spritelayout_null;
+                relative_coord(0, 3): fishing_grounds_spritelayout_null;
+                relative_coord(0, 4): fishing_grounds_spritelayout_null;
+                relative_coord(0, 5): fishing_grounds_spritelayout_null;
+                relative_coord(0, 6): fishing_grounds_spritelayout_null;
+                relative_coord(1, 0): fishing_grounds_spritelayout_null;
+                relative_coord(1, 1): fishing_grounds_spritelayout_null;
+                relative_coord(1, 2): fishing_grounds_spritelayout_null;
+                relative_coord(1, 3): fishing_grounds_spritelayout_null;
+                relative_coord(1, 4): fishing_grounds_spritelayout_null;
+                relative_coord(1, 5): fishing_grounds_spritelayout_null;
+                relative_coord(1, 6): fishing_grounds_spritelayout_null;
+                relative_coord(2, 0): fishing_grounds_spritelayout_null;
+                relative_coord(2, 1): fishing_grounds_spritelayout_null;
+                relative_coord(2, 2): fishing_grounds_spritelayout_null;
+                relative_coord(2, 3): fishing_grounds_spritelayout_3;
+                relative_coord(2, 4): fishing_grounds_spritelayout_null;
+                relative_coord(2, 5): fishing_grounds_spritelayout_null;
+                relative_coord(2, 6): fishing_grounds_spritelayout_null;
+                relative_coord(3, 0): fishing_grounds_spritelayout_null;
+                relative_coord(3, 1): fishing_grounds_spritelayout_null;
+                relative_coord(3, 2): fishing_grounds_spritelayout_null;
+                relative_coord(3, 3): fishing_grounds_spritelayout_null;
+                relative_coord(3, 4): fishing_grounds_spritelayout_null;
+                relative_coord(3, 5): fishing_grounds_spritelayout_null;
+                relative_coord(3, 6): fishing_grounds_spritelayout_null;
+                relative_coord(4, 0): fishing_grounds_spritelayout_null;
+                relative_coord(4, 1): fishing_grounds_spritelayout_null;
+                relative_coord(4, 2): fishing_grounds_spritelayout_null;
+                relative_coord(4, 3): fishing_grounds_spritelayout_null;
+                relative_coord(4, 4): fishing_grounds_spritelayout_null;
+                relative_coord(4, 5): fishing_grounds_spritelayout_null;
+                relative_coord(4, 6): fishing_grounds_spritelayout_null;
+                relative_coord(5, 0): fishing_grounds_spritelayout_null;
+                relative_coord(5, 1): fishing_grounds_spritelayout_null;
+                relative_coord(5, 2): fishing_grounds_spritelayout_2;
+                relative_coord(5, 3): fishing_grounds_spritelayout_4;
+                relative_coord(5, 4): fishing_grounds_spritelayout_2;
+                relative_coord(5, 5): fishing_grounds_spritelayout_null;
+                relative_coord(5, 6): fishing_grounds_spritelayout_null;
+                relative_coord(6, 0): fishing_grounds_spritelayout_null;
+                relative_coord(6, 1): fishing_grounds_spritelayout_null;
+                relative_coord(6, 2): fishing_grounds_spritelayout_null;
+                relative_coord(6, 3): fishing_grounds_spritelayout_null;
+                relative_coord(6, 4): fishing_grounds_spritelayout_null;
+                relative_coord(6, 5): fishing_grounds_spritelayout_null;
+                relative_coord(6, 6): fishing_grounds_spritelayout_null;
+                relative_coord(7, 0): fishing_grounds_spritelayout_null;
+                relative_coord(7, 1): fishing_grounds_spritelayout_null;
+                relative_coord(7, 2): fishing_grounds_spritelayout_null;
+                relative_coord(7, 3): fishing_grounds_spritelayout_null;
+                relative_coord(7, 4): fishing_grounds_spritelayout_null;
+                relative_coord(7, 5): fishing_grounds_spritelayout_null;
+                relative_coord(7, 6): fishing_grounds_spritelayout_null;
+            fishing_grounds_spritelayout_null; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_industry_layout_4_graphics_switch, relative_pos) {
+                relative_coord(0, 0): fishing_grounds_spritelayout_null;
+                relative_coord(0, 1): fishing_grounds_spritelayout_null;
+                relative_coord(0, 2): fishing_grounds_spritelayout_null;
+                relative_coord(0, 3): fishing_grounds_spritelayout_null;
+                relative_coord(0, 4): fishing_grounds_spritelayout_null;
+                relative_coord(0, 5): fishing_grounds_spritelayout_null;
+                relative_coord(0, 6): fishing_grounds_spritelayout_null;
+                relative_coord(1, 0): fishing_grounds_spritelayout_null;
+                relative_coord(1, 1): fishing_grounds_spritelayout_null;
+                relative_coord(1, 2): fishing_grounds_spritelayout_null;
+                relative_coord(1, 3): fishing_grounds_spritelayout_null;
+                relative_coord(1, 4): fishing_grounds_spritelayout_null;
+                relative_coord(1, 5): fishing_grounds_spritelayout_null;
+                relative_coord(1, 6): fishing_grounds_spritelayout_null;
+                relative_coord(2, 0): fishing_grounds_spritelayout_null;
+                relative_coord(2, 1): fishing_grounds_spritelayout_null;
+                relative_coord(2, 2): fishing_grounds_spritelayout_null;
+                relative_coord(2, 3): fishing_grounds_spritelayout_null;
+                relative_coord(2, 4): fishing_grounds_spritelayout_null;
+                relative_coord(2, 5): fishing_grounds_spritelayout_3;
+                relative_coord(2, 6): fishing_grounds_spritelayout_null;
+                relative_coord(3, 0): fishing_grounds_spritelayout_null;
+                relative_coord(3, 1): fishing_grounds_spritelayout_null;
+                relative_coord(3, 2): fishing_grounds_spritelayout_2;
+                relative_coord(3, 3): fishing_grounds_spritelayout_4;
+                relative_coord(3, 4): fishing_grounds_spritelayout_3;
+                relative_coord(3, 5): fishing_grounds_spritelayout_1;
+                relative_coord(3, 6): fishing_grounds_spritelayout_null;
+                relative_coord(4, 0): fishing_grounds_spritelayout_null;
+                relative_coord(4, 1): fishing_grounds_spritelayout_null;
+                relative_coord(4, 2): fishing_grounds_spritelayout_null;
+                relative_coord(4, 3): fishing_grounds_spritelayout_null;
+                relative_coord(4, 4): fishing_grounds_spritelayout_null;
+                relative_coord(4, 5): fishing_grounds_spritelayout_null;
+                relative_coord(4, 6): fishing_grounds_spritelayout_null;
+                relative_coord(5, 0): fishing_grounds_spritelayout_null;
+                relative_coord(5, 1): fishing_grounds_spritelayout_null;
+                relative_coord(5, 2): fishing_grounds_spritelayout_null;
+                relative_coord(5, 3): fishing_grounds_spritelayout_null;
+                relative_coord(5, 4): fishing_grounds_spritelayout_null;
+                relative_coord(5, 5): fishing_grounds_spritelayout_null;
+                relative_coord(5, 6): fishing_grounds_spritelayout_null;
+            fishing_grounds_spritelayout_null; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, fishing_grounds_industry_graphics_switch_layouts, layout_num) {
+            1: fishing_grounds_industry_layout_1_graphics_switch;
+            2: fishing_grounds_industry_layout_2_graphics_switch;
+            3: fishing_grounds_industry_layout_3_graphics_switch;
+            4: fishing_grounds_industry_layout_4_graphics_switch;
+        fishing_grounds_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        fishing_grounds_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        fishing_grounds_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, fishing_grounds_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        fishing_grounds_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, fishing_grounds_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        fishing_grounds_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, fishing_grounds_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        fishing_grounds_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, fishing_grounds_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        fishing_grounds_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, fishing_grounds_tile_1_lc_1,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, fishing_grounds_tile_1_lc_0, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        fishing_grounds_tile_1_lc_1;
+    }
+    item(FEAT_INDUSTRYTILES, fishing_grounds_tile_1, 204) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: fishing_grounds_tile_1_lc_0;
+            fishing_grounds_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, fishing_grounds_tile_1, 204) {
+                    property {
+                        accepted_cargos:  [];
+                    }
+                }
+        }
+        if (economy==0) {
+                item(FEAT_INDUSTRYTILES, fishing_grounds_tile_1, 204) {
+                    property {
+                        accepted_cargos:  [];
+                    }
+                }
+        }
+        if (economy==1) {
+                item(FEAT_INDUSTRYTILES, fishing_grounds_tile_1, 204) {
+                    property {
+                        accepted_cargos:  [];
+                    }
+                }
+        }
+        if (economy==4) {
+                item(FEAT_INDUSTRYTILES, fishing_grounds_tile_1, 204) {
+                    property {
+                        accepted_cargos:  [];
+                    }
+                }
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout fishing_grounds_industry_layout_1_tilelayout {
+            0, 0: 255;
+            0, 1: 255;
+            0, 2: 255;
+            0, 3: 255;
+            0, 4: 255;
+            0, 5: 255;
+            0, 6: 255;
+            1, 0: 255;
+            1, 1: 255;
+            1, 2: 255;
+            1, 3: 255;
+            1, 4: 255;
+            1, 5: 255;
+            1, 6: 255;
+            2, 0: 255;
+            2, 1: 255;
+            2, 2: 24;
+            2, 3: 24;
+            2, 4: 255;
+            2, 5: 255;
+            2, 6: 255;
+            3, 0: 255;
+            3, 1: 255;
+            3, 2: fishing_grounds_tile_1;
+            3, 3: fishing_grounds_tile_1;
+            3, 4: fishing_grounds_tile_1;
+            3, 5: 255;
+            3, 6: 255;
+            4, 0: 255;
+            4, 1: 255;
+            4, 2: 255;
+            4, 3: fishing_grounds_tile_1;
+            4, 4: 255;
+            4, 5: 255;
+            4, 6: 255;
+            5, 0: 255;
+            5, 1: 255;
+            5, 2: 255;
+            5, 3: 255;
+            5, 4: 255;
+            5, 5: 255;
+            5, 6: 255;
+            6, 0: 255;
+            6, 1: 255;
+            6, 2: 255;
+            6, 3: 255;
+            6, 4: 255;
+            6, 5: 255;
+            6, 6: 255;
+    }
+    tilelayout fishing_grounds_industry_layout_2_tilelayout {
+            0, 0: 255;
+            0, 1: 255;
+            0, 2: 255;
+            0, 3: 255;
+            0, 4: 255;
+            0, 5: 255;
+            0, 6: 255;
+            1, 0: 255;
+            1, 1: 255;
+            1, 2: 255;
+            1, 3: 255;
+            1, 4: 255;
+            1, 5: 255;
+            1, 6: 255;
+            2, 0: 255;
+            2, 1: 255;
+            2, 2: 255;
+            2, 3: 24;
+            2, 4: 24;
+            2, 5: 255;
+            2, 6: 255;
+            3, 0: 255;
+            3, 1: 255;
+            3, 2: fishing_grounds_tile_1;
+            3, 3: fishing_grounds_tile_1;
+            3, 4: fishing_grounds_tile_1;
+            3, 5: 255;
+            3, 6: 255;
+            4, 0: 255;
+            4, 1: 255;
+            4, 2: 255;
+            4, 3: 255;
+            4, 4: fishing_grounds_tile_1;
+            4, 5: 255;
+            4, 6: 255;
+            5, 0: 255;
+            5, 1: 255;
+            5, 2: 255;
+            5, 3: 255;
+            5, 4: fishing_grounds_tile_1;
+            5, 5: 255;
+            5, 6: 255;
+            6, 0: 255;
+            6, 1: 255;
+            6, 2: 255;
+            6, 3: 255;
+            6, 4: 255;
+            6, 5: 255;
+            6, 6: 255;
+            7, 0: 255;
+            7, 1: 255;
+            7, 2: 255;
+            7, 3: 255;
+            7, 4: 255;
+            7, 5: 255;
+            7, 6: 255;
+    }
+    tilelayout fishing_grounds_industry_layout_3_tilelayout {
+            0, 0: 255;
+            0, 1: 255;
+            0, 2: 255;
+            0, 3: 255;
+            0, 4: 255;
+            0, 5: 255;
+            0, 6: 255;
+            1, 0: 255;
+            1, 1: 255;
+            1, 2: 255;
+            1, 3: 255;
+            1, 4: 255;
+            1, 5: 255;
+            1, 6: 255;
+            2, 0: 255;
+            2, 1: 255;
+            2, 2: 255;
+            2, 3: fishing_grounds_tile_1;
+            2, 4: 255;
+            2, 5: 255;
+            2, 6: 255;
+            3, 0: 255;
+            3, 1: 255;
+            3, 2: 255;
+            3, 3: 255;
+            3, 4: 255;
+            3, 5: 255;
+            3, 6: 255;
+            4, 0: 255;
+            4, 1: 255;
+            4, 2: 24;
+            4, 3: 24;
+            4, 4: 255;
+            4, 5: 255;
+            4, 6: 255;
+            5, 0: 255;
+            5, 1: 255;
+            5, 2: fishing_grounds_tile_1;
+            5, 3: fishing_grounds_tile_1;
+            5, 4: fishing_grounds_tile_1;
+            5, 5: 255;
+            5, 6: 255;
+            6, 0: 255;
+            6, 1: 255;
+            6, 2: 255;
+            6, 3: 255;
+            6, 4: 255;
+            6, 5: 255;
+            6, 6: 255;
+            7, 0: 255;
+            7, 1: 255;
+            7, 2: 255;
+            7, 3: 255;
+            7, 4: 255;
+            7, 5: 255;
+            7, 6: 255;
+    }
+    tilelayout fishing_grounds_industry_layout_4_tilelayout {
+            0, 0: 255;
+            0, 1: 255;
+            0, 2: 255;
+            0, 3: 255;
+            0, 4: 255;
+            0, 5: 255;
+            0, 6: 255;
+            1, 0: 255;
+            1, 1: 255;
+            1, 2: 255;
+            1, 3: 255;
+            1, 4: 255;
+            1, 5: 255;
+            1, 6: 255;
+            2, 0: 255;
+            2, 1: 255;
+            2, 2: 24;
+            2, 3: 24;
+            2, 4: 255;
+            2, 5: fishing_grounds_tile_1;
+            2, 6: 255;
+            3, 0: 255;
+            3, 1: 255;
+            3, 2: fishing_grounds_tile_1;
+            3, 3: fishing_grounds_tile_1;
+            3, 4: fishing_grounds_tile_1;
+            3, 5: fishing_grounds_tile_1;
+            3, 6: 255;
+            4, 0: 255;
+            4, 1: 255;
+            4, 2: 255;
+            4, 3: 255;
+            4, 4: 255;
+            4, 5: 255;
+            4, 6: 255;
+            5, 0: 255;
+            5, 1: 255;
+            5, 2: 255;
+            5, 3: 255;
+            5, 4: 255;
+            5, 5: 255;
+            5, 6: 255;
+    }
+switch(FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	fishing_grounds_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, fishing_grounds_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: fishing_grounds_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): fishing_grounds_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_availability, economy) {
+        2: fishing_grounds_check_availability_2;
+        0: fishing_grounds_check_availability_0;
+        1: fishing_grounds_check_availability_1;
+        4: fishing_grounds_check_availability_4;
+        5: fishing_grounds_check_availability_5;
+        3: fishing_grounds_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_coast_distance, water_distance) {
+        0 .. param_max_coastal_distance: fishing_grounds_min_distance_31;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_min_distance_32, industry_distance(32)) {
+        0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_grounds_coast_distance;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_cluster_fishing_grounds,
+                industry_count(fishing_grounds) >= (5 * industry_clusters) &&
+                industry_distance(fishing_grounds) > 60
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_grounds_min_distance_32;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_grounds_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        fishing_grounds_cluster_fishing_grounds;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, fishing_grounds, 32) {
+                property {
+                    substitute: 5;
+                    override: 0;
+                    map_colour: 160;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_BUILT_ON_WATER, IND_FLAG_NO_PRODUCTION_INCREASE, IND_FLAG_AI_CREATES_AIR_AND_SHIP_ROUTES);
+                    layouts: [fishing_grounds_industry_layout_1_tilelayout,fishing_grounds_industry_layout_2_tilelayout,fishing_grounds_industry_layout_3_tilelayout,fishing_grounds_industry_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FISHING_GROUND);
+                    prod_multiplier: [7, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 14;
+                    prob_in_game: 14;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 88;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [];
+                    prod_cargo_types: [cargotype("FISH")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_SHOALS));
+                }
+            }
+        }
+        if (economy==0) {
+            item(FEAT_INDUSTRIES, fishing_grounds, 32) {
+                property {
+                    substitute: 5;
+                    override: 0;
+                    map_colour: 160;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_BUILT_ON_WATER, IND_FLAG_NO_PRODUCTION_INCREASE, IND_FLAG_AI_CREATES_AIR_AND_SHIP_ROUTES);
+                    layouts: [fishing_grounds_industry_layout_1_tilelayout,fishing_grounds_industry_layout_2_tilelayout,fishing_grounds_industry_layout_3_tilelayout,fishing_grounds_industry_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FISHING_GROUND);
+                    prod_multiplier: [7, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 14;
+                    prob_in_game: 14;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 88;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [];
+                    prod_cargo_types: [cargotype("FISH")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_SHOALS));
+                }
+            }
+        }
+        if (economy==1) {
+            item(FEAT_INDUSTRIES, fishing_grounds, 32) {
+                property {
+                    substitute: 5;
+                    override: 0;
+                    map_colour: 160;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_BUILT_ON_WATER, IND_FLAG_NO_PRODUCTION_INCREASE, IND_FLAG_AI_CREATES_AIR_AND_SHIP_ROUTES);
+                    layouts: [fishing_grounds_industry_layout_1_tilelayout,fishing_grounds_industry_layout_2_tilelayout,fishing_grounds_industry_layout_3_tilelayout,fishing_grounds_industry_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FISHING_GROUND);
+                    prod_multiplier: [7, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 14;
+                    prob_in_game: 14;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 88;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [];
+                    prod_cargo_types: [cargotype("FISH")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_SHOALS));
+                }
+            }
+        }
+        if (economy==4) {
+            item(FEAT_INDUSTRIES, fishing_grounds, 32) {
+                property {
+                    substitute: 5;
+                    override: 0;
+                    map_colour: 160;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_BUILT_ON_WATER, IND_FLAG_NO_PRODUCTION_INCREASE, IND_FLAG_AI_CREATES_AIR_AND_SHIP_ROUTES);
+                    layouts: [fishing_grounds_industry_layout_1_tilelayout,fishing_grounds_industry_layout_2_tilelayout,fishing_grounds_industry_layout_3_tilelayout,fishing_grounds_industry_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FISHING_GROUND);
+                    prod_multiplier: [7, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 14;
+                    prob_in_game: 14;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 88;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [];
+                    prod_cargo_types: [cargotype("FISH")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_SHOALS));
+                }
+            }
+        }
+item(FEAT_INDUSTRIES, fishing_grounds, 32) {
+	graphics {
+		construction_probability:fishing_grounds_check_availability;
+        build_prod_change:       randomise_primary_production_on_build;
+		location_check:          fishing_grounds_check_location;
+		monthly_prod_change:     return CB_RESULT_IND_PROD_NO_CHANGE;
+		random_prod_change:      return CB_RESULT_IND_PROD_NO_CHANGE;
+//		extra_text_industry:     // no extra text. No production increase by means of FMSP
+		colour:                  switch_colour;
+	}
+}

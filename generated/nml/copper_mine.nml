@@ -1,0 +1,1014 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(copper_mine_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(copper_mine_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(copper_mine_spriteset_1_0) {
+                        [10, 10, 64, 110, -31, -70, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_1_0_snow) {
+                            [10, 10, 64, 110, -31, -70, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_2_0) {
+                        [80, 10, 64, 64, -31, -32, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_2_0_snow) {
+                            [80, 10, 64, 64, -31, -32, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_3_0) {
+                        [150, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_3_0_snow) {
+                            [150, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_4_0) {
+                        [220, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_4_0_snow) {
+                            [220, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_5_0) {
+                        [290, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_5_0_snow) {
+                            [290, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_6_0) {
+                        [360, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_6_0_snow) {
+                            [360, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_7_0) {
+                        [430, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_7_0_snow) {
+                            [430, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_8_0) {
+                        [500, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_8_0_snow) {
+                            [500, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+            spriteset(copper_mine_spriteset_9_0) {
+                        [570, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1.png"]
+            }
+            spriteset(copper_mine_spriteset_9_0_snow) {
+                            [570, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/copper_mine_1_snow.png"]
+            }
+        spritelayout copper_mine_spritelayout_chimney {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_1_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_1_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 3701 + ((animation_frame + 0)%8);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 8;
+                    yoffset: 2;
+                    zoffset: 70;
+                    xextent: 15;
+                    yextent: 7;
+                    zextent: 7;
+                    hide_sprite: 0;
+                }
+        }
+        spritelayout copper_mine_spritelayout_large_shed {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_conveyors {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_processor {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_raised_tanks {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_raised_shed {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_machinery {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_7_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_7_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_hut {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_8_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_8_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout copper_mine_spritelayout_empty {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: copper_mine_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: copper_mine_spriteset_9_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: copper_mine_spriteset_9_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, copper_mine_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): copper_mine_spritelayout_chimney;
+                relative_coord(0, 1): copper_mine_spritelayout_raised_shed;
+                relative_coord(0, 2): copper_mine_spritelayout_hut;
+                relative_coord(1, 0): copper_mine_spritelayout_raised_tanks;
+                relative_coord(1, 1): copper_mine_spritelayout_raised_tanks;
+                relative_coord(1, 2): copper_mine_spritelayout_empty;
+                relative_coord(2, 0): copper_mine_spritelayout_processor;
+                relative_coord(2, 1): copper_mine_spritelayout_processor;
+                relative_coord(2, 2): copper_mine_spritelayout_empty;
+                relative_coord(3, 0): copper_mine_spritelayout_conveyors;
+                relative_coord(3, 1): copper_mine_spritelayout_conveyors;
+                relative_coord(3, 2): copper_mine_spritelayout_empty;
+                relative_coord(4, 0): copper_mine_spritelayout_large_shed;
+                relative_coord(4, 1): copper_mine_spritelayout_large_shed;
+                relative_coord(4, 2): copper_mine_spritelayout_machinery;
+            copper_mine_spritelayout_chimney; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, copper_mine_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): copper_mine_spritelayout_raised_tanks;
+                relative_coord(0, 1): copper_mine_spritelayout_processor;
+                relative_coord(0, 2): copper_mine_spritelayout_processor;
+                relative_coord(0, 3): copper_mine_spritelayout_raised_shed;
+                relative_coord(1, 0): copper_mine_spritelayout_chimney;
+                relative_coord(1, 1): copper_mine_spritelayout_conveyors;
+                relative_coord(1, 2): copper_mine_spritelayout_conveyors;
+                relative_coord(1, 3): copper_mine_spritelayout_empty;
+                relative_coord(2, 0): copper_mine_spritelayout_machinery;
+                relative_coord(2, 1): copper_mine_spritelayout_large_shed;
+                relative_coord(2, 2): copper_mine_spritelayout_large_shed;
+                relative_coord(2, 3): copper_mine_spritelayout_hut;
+            copper_mine_spritelayout_raised_tanks; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, copper_mine_industry_graphics_switch_layouts, layout_num) {
+            1: copper_mine_industry_layout_1_graphics_switch;
+            2: copper_mine_industry_layout_2_graphics_switch;
+        copper_mine_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, copper_mine_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        copper_mine_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, copper_mine_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        copper_mine_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, copper_mine_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        copper_mine_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, copper_mine_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        copper_mine_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, copper_mine_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        copper_mine_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, copper_mine_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        copper_mine_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, copper_mine_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, copper_mine_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        copper_mine_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, copper_mine_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: copper_mine_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    item(FEAT_INDUSTRYTILES, copper_mine_tile_1, 174) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 7];
+                animation_speed: 3;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: copper_mine_tile_1_lc_0;
+            copper_mine_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, copper_mine_tile_1, 174) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+                item(FEAT_INDUSTRYTILES, copper_mine_tile_1, 174) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout copper_mine_industry_layout_1_tilelayout {
+            0, 0: copper_mine_tile_1;
+            0, 1: copper_mine_tile_1;
+            0, 2: copper_mine_tile_1;
+            1, 0: copper_mine_tile_1;
+            1, 1: copper_mine_tile_1;
+            1, 2: copper_mine_tile_1;
+            2, 0: copper_mine_tile_1;
+            2, 1: copper_mine_tile_1;
+            2, 2: copper_mine_tile_1;
+            3, 0: copper_mine_tile_1;
+            3, 1: copper_mine_tile_1;
+            3, 2: copper_mine_tile_1;
+            4, 0: copper_mine_tile_1;
+            4, 1: copper_mine_tile_1;
+            4, 2: copper_mine_tile_1;
+    }
+    tilelayout copper_mine_industry_layout_2_tilelayout {
+            0, 0: copper_mine_tile_1;
+            0, 1: copper_mine_tile_1;
+            0, 2: copper_mine_tile_1;
+            0, 3: copper_mine_tile_1;
+            1, 0: copper_mine_tile_1;
+            1, 1: copper_mine_tile_1;
+            1, 2: copper_mine_tile_1;
+            1, 3: copper_mine_tile_1;
+            2, 0: copper_mine_tile_1;
+            2, 1: copper_mine_tile_1;
+            2, 2: copper_mine_tile_1;
+            2, 3: copper_mine_tile_1;
+    }
+switch(FEAT_INDUSTRIES, SELF, copper_mine_extra_text, [
+	STORE_TEMP((primary_level1_requirement * 1) |
+	(primary_level2_requirement * 1) << 16, 0x100),
+	LOAD_PERM(3)
+]) {
+	primary_level2_bonus: return string(STR_PRIMARY_PRODUCTION_4X);
+	primary_level1_bonus: return string(STR_PRIMARY_PRODUCTION_2X);
+	return string(STR_PRIMARY_PRODUCTION_1X);
+}
+switch (FEAT_INDUSTRIES, SELF, copper_mine_cargo_subtype_display, 1) {
+    return 0x3800 + string(STR_EMPTY);
+}
+/* Primary production which is boosted by supplies */
+    produce(copper_mine_production, 9999, 9999, 9999, 0, 0, 0);
+    switch(FEAT_INDUSTRIES, SELF, copper_mine_produce, STORE_PERM(waiting_cargo_1 + waiting_cargo_2 + waiting_cargo_3 + LOAD_PERM(0), 0)) {
+        copper_mine_production;
+    }
+    produce(copper_mine_production_256, 0, 0, 0, LOAD_TEMP(9) * production_rate_1 / 100, LOAD_TEMP(9) * production_rate_2 / 100, 0);
+    switch(FEAT_INDUSTRIES, SELF, copper_mine_produce_256_ticks,
+            [STORE_TEMP(
+                LOAD_PERM(0) +
+                LOAD_PERM(1) +
+                LOAD_PERM(2),
+            8),
+            STORE_TEMP((LOAD_TEMP(8) >= (1 * primary_level2_requirement)) ? primary_level2_bonus :
+                       (LOAD_TEMP(8) >= (1 * primary_level1_requirement)) ? primary_level1_bonus : 0, 9),
+            STORE_PERM(LOAD_TEMP(9), 3)
+            ]) {
+        copper_mine_production_256;
+    }
+/* =================================== */
+/* Production change evaluated monthly */
+/* =================================== */
+    switch(FEAT_INDUSTRIES, SELF, copper_mine_monthly_update, [
+        STORE_PERM(LOAD_PERM(1), 2),
+        STORE_PERM(LOAD_PERM(0), 1),
+        STORE_PERM(0, 0)
+    ]) {
+        return CB_RESULT_IND_PROD_NO_CHANGE;
+    }
+switch(FEAT_INDUSTRIES, SELF, copper_mine_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, copper_mine_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	copper_mine_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, copper_mine_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: copper_mine_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_2, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_0, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_1, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_4, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_5, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1800 */
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability_3, current_date) {
+        date(1800,1,1) .. date(5000000,12,31): copper_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, copper_mine_check_availability, economy) {
+        2: copper_mine_check_availability_2;
+        0: copper_mine_check_availability_0;
+        1: copper_mine_check_availability_1;
+        4: copper_mine_check_availability_4;
+        5: copper_mine_check_availability_5;
+        3: copper_mine_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_min_distance_67, industry_distance(67)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_min_distance_64, industry_distance(64)) {
+        0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
+        copper_mine_min_distance_67;
+    }
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_cluster_copper_mine,
+                industry_count(copper_mine) >= (3 * industry_clusters) &&
+                industry_distance(copper_mine) > 60
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        copper_mine_min_distance_64;
+    }
+    switch (FEAT_INDUSTRIES, SELF, copper_mine_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        copper_mine_cluster_copper_mine;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, copper_mine, 64) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 10;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [copper_mine_industry_layout_1_tilelayout,copper_mine_industry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: TTD_STR_INDUSTRY_NAME_COPPER_ORE_MINE;
+                    prod_multiplier: [20, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 4;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 238;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("CORE")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_COPPER_LODE));
+                }
+            }
+        }
+        if (economy==4) {
+            item(FEAT_INDUSTRIES, copper_mine, 64) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 10;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [copper_mine_industry_layout_1_tilelayout,copper_mine_industry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: TTD_STR_INDUSTRY_NAME_COPPER_ORE_MINE;
+                    prod_multiplier: [20, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 4;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 238;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("CORE")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_COPPER_LODE));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, copper_mine, 64) {
+                graphics {
+                    construction_probability: copper_mine_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    copper_mine_produce;
+                    produce_256_ticks:        copper_mine_produce_256_ticks;
+                    monthly_prod_change:      copper_mine_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           copper_mine_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1800);
+                    extra_text_industry:      copper_mine_extra_text;
+                    cargo_subtype_display:    copper_mine_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==4) {
+            item(FEAT_INDUSTRIES, copper_mine, 64) {
+                graphics {
+                    construction_probability: copper_mine_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    copper_mine_produce;
+                    produce_256_ticks:        copper_mine_produce_256_ticks;
+                    monthly_prod_change:      copper_mine_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           copper_mine_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1800);
+                    extra_text_industry:      copper_mine_extra_text;
+                    cargo_subtype_display:    copper_mine_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

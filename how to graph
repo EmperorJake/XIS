@@ -1,0 +1,17 @@
+﻿1. open cargoflow.dotall (in docs)
+
+2. isolate HIS economy, delete incomplete ones
+
+2.5. remove quotes in 'the_lot'
+
+3. save as .dot file
+
+4. use command 
+
+dot -Tps his2.dot -o his2.ps
+
+to convert to .ps file
+
+5. copy file to windows pc with nas or something
+
+6. use EPS viewer to save .ps as .jpg (gif may crash). May necessitate cropping and fiddling. multiply width and height by 10. 7500 width works

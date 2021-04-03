@@ -1,0 +1,496 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(petrol_pump_spriteset_0_0) {
+                        [10, 60, 64, 59, -31, -28, ANIM | NOCROP, "src/graphics/industries/petrol_pump_1.png"]
+            }
+            spriteset(petrol_pump_spriteset_0_0_snow) {
+                            [10, 60, 64, 59, -31, -28, ANIM | NOCROP, "src/graphics/industries/petrol_pump_1_snow.png"]
+            }
+            spriteset(petrol_pump_spriteset_1_0) {
+                        [80, 60, 64, 59, -31, -28, ANIM | NOCROP, "src/graphics/industries/petrol_pump_1.png"]
+            }
+            spriteset(petrol_pump_spriteset_1_0_snow) {
+                            [80, 60, 64, 59, -31, -28, ANIM | NOCROP, "src/graphics/industries/petrol_pump_1_snow.png"]
+            }
+        spritelayout petrol_pump_spritelayout_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: petrol_pump_spriteset_0_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: petrol_pump_spriteset_0_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout petrol_pump_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 1420;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: petrol_pump_spriteset_1_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: petrol_pump_spriteset_1_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, petrol_pump_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): petrol_pump_spritelayout_1;
+                relative_coord(0, 1): petrol_pump_spritelayout_2;
+            petrol_pump_spritelayout_1; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, petrol_pump_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): petrol_pump_spritelayout_1;
+                relative_coord(1, 0): petrol_pump_spritelayout_2;
+            petrol_pump_spritelayout_1; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, petrol_pump_industry_graphics_switch_layouts, layout_num) {
+            1: petrol_pump_industry_layout_1_graphics_switch;
+            2: petrol_pump_industry_layout_2_graphics_switch;
+        petrol_pump_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, petrol_pump_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        petrol_pump_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, petrol_pump_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        petrol_pump_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, petrol_pump_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        petrol_pump_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, petrol_pump_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        petrol_pump_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, petrol_pump_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        petrol_pump_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, petrol_pump_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        petrol_pump_tile_fence_industry;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, petrol_pump_tile_1_lc_2,
+                                                      (
+                                                      nearby_tile_class(0, -1) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(0, 1) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(-1, 0) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(1, 0) == TILE_CLASS_ROAD ? 1 : 0
+                                                      ))))) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, petrol_pump_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        petrol_pump_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, petrol_pump_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: petrol_pump_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    item(FEAT_INDUSTRYTILES, petrol_pump_tile_1, 203) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: petrol_pump_tile_1_lc_0;
+            petrol_pump_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, petrol_pump_tile_1, 203) {
+                    property {
+                        accepted_cargos:  [[cargotype("FOOD"), 8],[cargotype("GOOD"), 8],[cargotype("PETR"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, petrol_pump_tile_1, 203) {
+                    property {
+                        accepted_cargos:  [[cargotype("FOOD"), 8],[cargotype("GOOD"), 8],[cargotype("PETR"), 8]];
+                    }
+                }
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout petrol_pump_industry_layout_1_tilelayout {
+            0, 0: petrol_pump_tile_1;
+            0, 1: petrol_pump_tile_1;
+    }
+    tilelayout petrol_pump_industry_layout_2_tilelayout {
+            0, 0: petrol_pump_tile_1;
+            1, 0: petrol_pump_tile_1;
+    }
+switch(FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	petrol_pump_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, petrol_pump_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: petrol_pump_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_2, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_0, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_1, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_4, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_5, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1900 */
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability_3, current_date) {
+        date(1900,1,1) .. date(5000000,12,31): petrol_pump_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_availability, economy) {
+        2: petrol_pump_check_availability_2;
+        0: petrol_pump_check_availability_0;
+        1: petrol_pump_check_availability_1;
+        4: petrol_pump_check_availability_4;
+        5: petrol_pump_check_availability_5;
+        3: petrol_pump_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_36, industry_distance(36)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_36;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_50, industry_distance(50)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_56, industry_distance(56)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_50;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_34, industry_distance(34)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_56;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_42, industry_distance(42)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_34;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_9, industry_distance(9)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_42;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_70, industry_distance(70)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_9;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_21, industry_distance(21)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_70;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_19, industry_distance(19)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_21;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_19;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_17, industry_distance(17)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_17;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_68, industry_distance(68)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_68;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_37, industry_distance(37)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_81;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_37;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_13, industry_distance(13)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_6, industry_distance(6)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_13;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        petrol_pump_min_distance_6;
+    }
+    switch (FEAT_INDUSTRIES, SELF, petrol_pump_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        petrol_pump_min_distance_60;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, petrol_pump, 60) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 169;
+                    life_type: IND_LIFE_TYPE_BLACK_HOLE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [petrol_pump_industry_layout_1_tilelayout,petrol_pump_industry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_PETROLPUMP);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 14;
+                    prob_in_game: 14;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 8;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FOOD"),cargotype("GOOD"),cargotype("PETR")];
+                    prod_cargo_types: [];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_PUMPS));
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, petrol_pump, 60) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 169;
+                    life_type: IND_LIFE_TYPE_BLACK_HOLE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [petrol_pump_industry_layout_1_tilelayout,petrol_pump_industry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_PETROLPUMP);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 8;
+                    prob_in_game: 8;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 8;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FOOD"),cargotype("GOOD"),cargotype("PETR")];
+                    prod_cargo_types: [];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_PUMPS));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, petrol_pump, 60) {
+                graphics {
+                    construction_probability: petrol_pump_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    location_check:           petrol_pump_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1900);
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, petrol_pump, 60) {
+                graphics {
+                    construction_probability: petrol_pump_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    location_check:           petrol_pump_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1900);
+                    colour:                   switch_colour;
+                }
+            }
+        }

@@ -1,0 +1,418 @@
+##grflangid 0x01
+##plural 0
+
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 cargos and 83 industries! A fork of FIRS 3.0.10. Economy designed by Emperor Jake, additional graphics by Emperor Jake, GarryG and Toni Babelony; all other code and graphics thanks to andythenorth and the rest of the FIRS team. License: GPL v2.
+STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
+
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum distance of fishing grounds, oil rigs and dredging sites from the coast in tiles.
+STR_PARAM_DESC_ECONOMIES                                                        :Each economy provides a different combination of cargos and industries.{}{}Only one economy is complete at the moment.
+STR_PARAM_DESC_NO_OPENINGS                                                      :By default, new industries will open during the game.{}{}If {SILVER}prevent opening {BLACK}is turned on industries will not open during game, and players will not be able to fund or prospect for industries.
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :By default, secondary industries will never close.{}{}If secondary closing is turned on, secondary industries may close if no cargo is transported for a long time.  Primary industries will never close in XIS and are not affected by this setting.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum coastal distance of marine industries in tiles
+STR_PARAM_NAME_ECONOMIES                                                        :Economy
+STR_PARAM_NAME_NO_OPENINGS                                                      :Prevent industries opening during gameplay
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Allow secondary industries to close
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :No limit
+
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Supply crates required for Enhanced primary production (default 16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Supply crates required for Crankin' It primary production (default 80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Farms, mines and similar industries will increase production when supply crates are delivered, first to {SILVER}Enhanced{BLACK}, and then to {SILVER}Crankin' It{BLACK}, if enough crates are delivered.  {}{}The default values are good, but if you need to, you can change them here.  {}{}Cargo requirements for port-type industries will be 8x the values set here.
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :Enhanced primary production level (%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Crankin' It primary production level (%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Production at farms, mines and similar industries when supply requirements are met (as percentage of {SILVER}Normal {BLACK}production level).
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_FIRS                                                  :The Lot
+STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :INCOMPLETE
+
+STR_CARGO_NAME_ACID                                                             :Acid
+STR_CARGO_NAME_ALCOHOL                                                          :Alcohol
+STR_CARGO_NAME_BAUXITE                                                          :Bauxite
+STR_CARGO_NAME_BEANS                                                            :Soy
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :Building Materials
+STR_CARGO_NAME_CASSAVA                                                          :Cassava
+STR_CARGO_NAME_CEMENT                                                           :Cement
+STR_CARGO_NAME_CHEMICALS                                                        :Petrochemicals
+STR_CARGO_NAME_CHLORINE                                                         :Chlorine
+STR_CARGO_NAME_CLAY                                                             :Clay
+STR_CARGO_NAME_COFFEE                                                           :Coffee
+STR_CARGO_NAME_COKE                                                             :Coke
+STR_CARGO_NAME_COPPER                                                           :Copper
+STR_CARGO_NAME_EDIBLE_OIL                                                       :Edible Oil
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Electrical Machines
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Engineering Supplies
+STR_CARGO_NAME_EXPLOSIVES                                                       :Explosives
+STR_CARGO_NAME_FIBRES                                                           :Fibres
+STR_CARGO_NAME_FISH                                                             :Fish
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farm Supplies
+STR_CARGO_NAME_FERTILISER                                                       :Fertiliser
+STR_CARGO_NAME_FRUITS                                                           :Fruit
+STR_CARGO_NAME_KAOLIN                                                           :Lithium
+STR_CARGO_NAME_LIMESTONE                                                        :Limestone
+STR_CARGO_NAME_LUMBER                                                           :Timber
+STR_CARGO_NAME_METAL                                                            :Aluminium
+STR_CARGO_NAME_MILK                                                             :Milk
+STR_CARGO_NAME_MANGANESE                                                        :Manganese
+STR_CARGO_NAME_NITRATES                                                         :Nitrates
+STR_CARGO_NAME_NUTS                                                             :Nuts
+STR_CARGO_NAME_PACKAGING                                                        :Packaging
+STR_CARGO_NAME_PEAT                                                             :Biomass
+STR_CARGO_NAME_PETROL                                                           :Petroleum Fuels
+STR_CARGO_NAME_PHOSPHATE                                                        :Oil Sands
+STR_CARGO_NAME_PIG_IRON                                                         :Pig Iron
+STR_CARGO_NAME_PIPE                                                             :Pipe
+STR_CARGO_NAME_POTASH                                                           :Potash
+STR_CARGO_NAME_PYRITE_ORE                                                       :Zinc Ore
+STR_CARGO_NAME_QUICKLIME                                                        :Quicklime
+STR_CARGO_NAME_RECYCLABLES                                                      :Recyclables
+STR_CARGO_NAME_SALT                                                             :Salt
+STR_CARGO_NAME_SAND                                                             :Sand
+STR_CARGO_NAME_SCRAP_METAL                                                      :Scrap Metal
+STR_CARGO_NAME_SLAG                                                             :Slag
+STR_CARGO_NAME_SODA_ASH                                                         :Soda Ash
+STR_CARGO_NAME_STEEL                                                            :Steel
+STR_CARGO_NAME_STONE                                                            :Aggregate
+STR_CARGO_NAME_SUGAR_BEET                                                       :Sugar Beet
+STR_CARGO_NAME_SULPHUR                                                          :Sulphur
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :Vehicle Bodies
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :Parts
+STR_CARGO_NAME_VEHICLES                                                         :Vehicles
+STR_CARGO_NAME_WOOL                                                             :Wool
+STR_CARGO_NAME_ZINC                                                             :Zinc
+
+STR_CARGO_UNIT_ACID                                                             :{VOLUME} of acid
+STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} of alcohol
+STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} of bauxite
+STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} of soy
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} of building materials
+STR_CARGO_UNIT_CASSAVA                                                          :{WEIGHT} of cassava
+STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} of cement
+STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} of petrochemicals
+STR_CARGO_UNIT_CHLORINE                                                         :{VOLUME} of chlorine
+STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} of clay
+STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} sack{P 0 "" s} of coffee
+STR_CARGO_UNIT_COKE                                                             :{WEIGHT} of coke
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} of copper
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} of edible oil
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} crate{P 0 "" s} of electrical machines
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} crate{P 0 "" s} of engineering supplies
+STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} crate{P 0 "" s} of explosives
+STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} of fertiliser
+STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} bale{P 0 "" s} of fibres
+STR_CARGO_UNIT_FISH                                                             :{WEIGHT} of fish
+STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} crate{P 0 "" s} of farm supplies
+STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} of fruit
+STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} of lithium
+STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} of limestone
+STR_CARGO_UNIT_LUMBER                                                           :{WEIGHT} of timber
+STR_CARGO_UNIT_LYE                                                              :{VOLUME} of lye
+STR_CARGO_UNIT_MANGANESE                                                        :{WEIGHT} of manganese
+STR_CARGO_UNIT_METAL                                                            :{WEIGHT} of aluminium
+STR_CARGO_UNIT_MILK                                                             :{VOLUME} of milk
+STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} of nickel
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} of nitrates
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} sack{P 0 "" s}  of nuts
+STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} of packaging
+STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} of biomass
+STR_CARGO_UNIT_PETROL                                                           :{VOLUME} of petroleum fuels
+STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} of oil sands
+STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} of pig iron
+STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} of pipe
+STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} of potash
+STR_CARGO_UNIT_PYRITE_ORE                                                       :{WEIGHT} of zinc ore
+STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} of quicklime
+STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} of recyclables
+STR_CARGO_UNIT_SALT                                                             :{WEIGHT} of salt
+STR_CARGO_UNIT_SAND                                                             :{WEIGHT} of sand
+STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} of scrap metal
+STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} of slag
+STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} of soda ash
+STR_CARGO_UNIT_STEEL                                                            :{WEIGHT} of steel
+STR_CARGO_UNIT_STONE                                                            :{WEIGHT} of aggregate
+STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} of sugar beet
+STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} of sulphur
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} of vehicle bodies
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} of parts
+STR_CARGO_UNIT_VEHICLES                                                         :{WEIGHT} of vehicles
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} bale{P 0 "" s} of wool
+STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} of zinc
+
+STR_CID_ACID                                                                    :{TINYFONT}AC
+STR_CID_ALCOHOL                                                                 :{TINYFONT}AL
+STR_CID_BAUXITE                                                                 :{TINYFONT}BX
+STR_CID_BEANS                                                                   :{TINYFONT}SY
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}BM
+STR_CID_CASSAVA                                                                 :{TINYFONT}CA
+STR_CID_CEMENT                                                                  :{TINYFONT}CE
+STR_CID_CHEMICALS                                                               :{TINYFONT}PC
+STR_CID_CHLORINE                                                                :{TINYFONT}CL
+STR_CID_CLAY                                                                    :{TINYFONT}CY
+STR_CID_COFFEE                                                                  :{TINYFONT}CF
+STR_CID_COKE                                                                    :{TINYFONT}CK
+STR_CID_COPPER                                                                  :{TINYFONT}CR
+STR_CID_EDIBLE_OIL                                                              :{TINYFONT}EO
+STR_CID_ELECTRICAL_MACHINES                                                     :{TINYFONT}EM
+STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}ES
+STR_CID_EXPLOSIVES                                                              :{TINYFONT}EX
+STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}FS
+STR_CID_FERTILISER                                                              :{TINYFONT}FL
+STR_CID_FIBRES                                                                  :{TINYFONT}FC
+STR_CID_FISH                                                                    :{TINYFONT}FI
+STR_CID_KAOLIN                                                                  :{TINYFONT}LI
+STR_CID_LIMESTONE                                                               :{TINYFONT}LS
+STR_CID_LUMBER                                                                  :{TINYFONT}LU
+STR_CID_LYE                                                                     :{TINYFONT}LY
+STR_CID_MANGANESE                                                               :{TINYFONT}MN
+STR_CID_METAL                                                                   :{TINYFONT}MT
+STR_CID_MILK                                                                    :{TINYFONT}MK
+STR_CID_NICKEL                                                                  :{TINYFONT}NK
+STR_CID_NITRATES                                                                :{TINYFONT}NI
+STR_CID_NUTS                                                                    :{TINYFONT}NT
+STR_CID_PACKAGING                                                               :{TINYFONT}PK
+STR_CID_PEAT                                                                    :{TINYFONT}BM
+STR_CID_PETROL                                                                  :{TINYFONT}PT
+STR_CID_PIG_IRON                                                                :{TINYFONT}PI
+STR_CID_PIPE                                                                    :{TINYFONT}PP
+STR_CID_PHOSPHATE                                                               :{TINYFONT}OS
+STR_CID_POTASH                                                                  :{TINYFONT}PA
+STR_CID_PYRITE_ORE                                                              :{TINYFONT}SO
+STR_CID_QUICKLIME                                                               :{TINYFONT}QL
+STR_CID_RECYCLABLES                                                             :{TINYFONT}RC
+STR_CID_SALT                                                                    :{TINYFONT}NA
+STR_CID_SAND                                                                    :{TINYFONT}SA
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}SM
+STR_CID_SLAG                                                                    :{TINYFONT}SG
+STR_CID_SODA_ASH                                                                :{TINYFONT}SO
+STR_CID_STEEL                                                                   :{TINYFONT}SL
+STR_CID_STONE                                                                   :{TINYFONT}AG
+STR_CID_SUGAR_BEET                                                              :{TINYFONT}SB
+STR_CID_SULPHUR                                                                 :{TINYFONT}SU
+STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}VB
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}PA
+STR_CID_VEHICLES                                                                :{TINYFONT}VH
+STR_CID_WOOL                                                                    :{TINYFONT}WL
+STR_CID_ZINC                                                                    :{TINYFONT}ZN
+
+
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS is not designed to be used with Toyland climate
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS requires OpenTTD 1.9.0 or JGRPP 0.32.x or higher.
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Incompatible version: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :must be placed below the snow line.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :must be placed above the snow line.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :must be placed on dry land.
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :That can't grow there you dingus!
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Too steep ya numpty!
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :only one industry of this type allowed per town.
+
+STR_IND_ALUMINIUM_PLANT                                                         :Aluminium Plant
+STR_IND_AMMONIA_PLANT                                                           :Ammonia Plant
+STR_IND_ARABLE_FARM                                                             :Arable Farm
+STR_IND_ASSEMBLY_PLANT                                                          :Assembly Plant
+STR_IND_BATTERY_PLANT                                                           :Battery Plant
+STR_IND_BASICFARM                                                               :Farm
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :Basic Oxygen Furnace
+STR_IND_BAUXITE_MINE		                                                    :Bauxite Mine
+STR_IND_BIOREFINERY                                                             :Biorefinery
+STR_IND_BLAST_FURNACE                                                           :Blast Furnace
+STR_IND_BREWERY                                                                 :Brewery
+STR_IND_CIDER_MILL                                                              :Cider Mill
+STR_IND_BRICK_WORKS                                                             :Brick Works
+STR_IND_BUILDERS_YARD                                                           :Builders Yard
+STR_IND_BULK_TERMINAL                                                           :Bulk Terminal
+STR_IND_CEMENT_PLANT                                                            :Cement Plant
+STR_IND_CHEMICAL_PLANT                                                          :Chemical Plant
+STR_IND_CRACKING_PLANT                                                          :Cracking Plant
+STR_IND_CLAY_PIT                                                                :Clay Pit
+STR_IND_COFFEE_ESTATE                                                           :Coffee Estate
+STR_IND_COKE_OVEN                                                               :Coke Oven
+STR_IND_COPPER_REFINERY                                                         :Copper Refinery
+STR_IND_DAIRY                                                                   :Dairy
+STR_IND_DAIRY_FARM                                                              :Dairy Farm
+STR_IND_DREDGING_SITE                                                           :Dredging Site
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :Electric Arc Furnace
+STR_IND_FACTORY                                                                 :Manufacturing Plant
+STR_IND_FISHING_GROUND                                                          :Fishing Grounds
+STR_IND_FISHING_HARBOUR                                                         :Fishing Harbour
+STR_IND_FISHING_VILLAGE                                                         :Fishing Village
+STR_IND_FLOUR_MILL                                                              :Flour Mill
+STR_IND_FOOD_MARKET                                                             :Grocer's Shop
+STR_IND_FOOD_PROCESSOR                                                          :Food Processing Plant
+STR_IND_FOUNDRY                                                                 :Foundry
+STR_IND_FURNITURE_FACTORY                                                       :Furniture Factory
+STR_IND_GENERAL_STORE                                                           :General Store
+STR_IND_GLASS_WORKS                                                             :Glass Works
+STR_IND_HARDWARE_STORE                                                          :Hardware Store
+STR_IND_HOTEL                                                                   :Hotel
+STR_IND_HERDING_COOP                                                            :Herding Co-op
+STR_IND_IRON_WORKS                                                              :Iron Works
+STR_IND_JUNKYARD                                                                :Scrap Yard
+STR_IND_LIME_KILN                                                               :Lime Kiln
+STR_IND_LIMESTONE_MINE                                                          :Limestone Mine
+STR_IND_LITHIUM_MINE                                                            :Lithium Mine
+STR_IND_LIQUIDS_TERMINAL                                                        :Liquids Terminal
+STR_IND_LUMBER_YARD                                                             :Timber Yard
+STR_IND_MACHINE_SHOP                                                            :Machine Shop
+STR_IND_MANGANESE_MINE                                                          :Manganese Mine
+STR_IND_METAL_FABRICATION_PLANT                                                 :Metal Fabrication Plant
+STR_IND_METAL_WORKSHOP                                                          :Electrical Workshop
+STR_IND_MIXEDFARM                                                               :Mixed Farm
+STR_IND_NITRATE_MINE                                                            :Nitrate Mine
+STR_IND_ORCHARD_PIGGERY                                                         :Orchard and Piggery
+STR_IND_OIL_SANDS_MINE                                                          :Oil Sands Mine
+STR_IND_PEATLANDS                                                               :Peatlands
+STR_IND_PETROLPUMP                                                              :Petrol Station
+STR_IND_PHOSPHATE_MINE                                                          :Phosphate Mine
+STR_IND_PLASTICS_PLANT                                                          :Plastics Plant
+STR_IND_PRINTING_PLANT                                                          :Printing Plant
+STR_IND_POLYMER_PLANT                                                           :Polymer Plant
+STR_IND_PORT                                                                    :Port
+STR_IND_POTASH_MINE                                                             :Potash Mine
+STR_IND_PYRITE_MINE                                                             :Zinc Ore Mine
+STR_IND_PYRITE_SMELTER                                                          :Zinc Smelter
+STR_IND_POWER_PLANT                                                             :Power Plant
+STR_IND_QUARRY                                                                  :Quarry
+STR_IND_RANCH                                                                   :Ranch
+STR_IND_RECYCLING_DEPOT                                                         :Recycling Depot
+STR_IND_RECYCLING_PLANT                                                         :Recycling Plant
+STR_IND_REINDEER_FARM                                                           :Reindeer Farm
+STR_IND_SHEEPFARM                                                               :Sheep Farm
+STR_IND_SLAG_GRINDING_PLANT                                                     :Slag Grinding Plant
+STR_IND_SMITHY_FORGE                                                            :Smithy Forge
+STR_IND_SODA_ASH_MINE                                                           :Soda Ash Mine
+STR_IND_STEEL_FINISHING_PLANT                                                   :Galvanising Plant
+STR_IND_STOCKYARD                                                               :Abattoir
+STR_IND_SUGAR_REFINERY                                                          :Sugar Refinery
+STR_IND_SULPHIDE_MINE                                                           :Zinc Ore Mine
+STR_IND_SUPPLY_YARD                                                             :Supply Yard
+STR_IND_ENSP_YARD                                                               :Engineering Supplies Depot
+STR_IND_FMSP_YARD                                                               :Farm Supplies Depot
+STR_IND_TEXTILE_MILL                                                            :Textile Mill
+STR_IND_TRADING_POST                                                            :Trading Post
+STR_IND_TYRE_PLANT                                                              :Tyre Plant
+STR_IND_UPGRADER                                                                :Oil Extractor
+STR_IND_VINEYARD                                                                :Vineyard
+STR_IND_VEHICLE_DEALER                                                          :Vehicle Dealer
+STR_IND_WHARF                                                                   :Wharf
+STR_IND_ZINC_SMELTER                                                            :Zinc Smelter
+
+
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}For maximum production rate, supply {WHITE}all {BLACK}required cargos at least once every three months.
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Production is proportional to town population.
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Current production: {YELLOW}Normal {}{}{BLACK}For {WHITE}Enhanced {BLACK}production deliver {SIGNED_WORD} crates of supplies within three months.{}To {WHITE}crank it, {BLACK}deliver {SIGNED_WORD} crates.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Current production: {YELLOW}Enhanced {}{}{BLACK}To keep this level, deliver {SIGNED_WORD} crates of supplies within three months.{}For {WHITE}Crankin' It {BLACK}production deliver {SIGNED_WORD} crates.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Current production: {YELLOW}Crankin' it {}{}{BLACK}To keep this level, deliver {SKIP}{SIGNED_WORD} crates of supplies within three months.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Current production: {YELLOW}Normal {}{}{BLACK}For {WHITE}Enhanced {BLACK}production deliver {SIGNED_WORD} units of cargo within three months.{}For {WHITE}Crankin' It {BLACK}production deliver {SIGNED_WORD} units.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Current production: {YELLOW}Enhanced {}{}{BLACK}To keep this level, deliver {SIGNED_WORD} units of cargo within three months.{}For {WHITE}Crankin' It {BLACK}production deliver {SIGNED_WORD} units.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Current production: {YELLOW}Crankin' it {}{}{BLACK}To keep this level, deliver {SKIP}{SIGNED_WORD} units of cargo within three months.
+STR_GENERIC_NEWLINE                                                             :{}
+
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_FOREST                                                                 :{}{BLACK}Location: {YELLOW}Cannot be funded in deserts.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Location: {YELLOW}Cannot be funded on snow.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Location: {YELLOW}Can only be funded on snow.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_VINEYARD                                                               :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Available from: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Not available after: {YELLOW}{COMMA}
+
+STR_TOWN                                                                        :{STRING}
+STR_STATION                                                                     :{STRING} {STRING}
+
+STR_STATION_ANIMALS                                                             :Abattoir
+STR_STATION_AUTOMOTIVE                                                          :Automotive
+STR_STATION_BAR_GRILL_AND_ROOMS                                                 :Spa
+STR_STATION_BARNS                                                               :Barns
+STR_STATION_BARREL_AND_KEG                                                      :Barrel and Keg
+STR_STATION_BASE                                                                :Base
+STR_STATION_BATTERY_PLANT                                                       :Battery Works
+STR_STATION_BAUXITE_MINE                                                        :Bauxite Deposits
+STR_STATION_BONEYARD                                                            :Boneyard
+STR_STATION_BANK_TOP                                                            :Bank Top
+STR_STATION_CASTINGS                                                            :Castings
+STR_STATION_COLLIERY                                                            :Colliery
+STR_STATION_COPPER_LODE                                                         :Copper Lode
+STR_STATION_CREOSOTING                                                          :Creosoting
+STR_STATION_CRACKING                                                            :Petrochem
+STR_STATION_DAIRY_LANE                                                          :Dairy Lane
+STR_STATION_ESTATE                                                              :Estate
+STR_STATION_EXCHANGE                                                            :Exchange
+STR_STATION_FARM_1                                                              :Manor
+STR_STATION_FARM_2                                                              :Meadows
+STR_STATION_FARM_3                                                              :Ranch
+STR_STATION_FISHMARKET                                                          :Fish Market
+STR_STATION_FEED_SEED                                                           :Feed & Seed
+STR_STATION_FOOD_CORPORATION                                                    :Food Corporation
+STR_STATION_FOREST                                                              :Log Landing
+STR_STATION_FORGE                                                               :Forge
+STR_STATION_FURNACE                                                             :Furnace
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Heavy Equipment Yard
+STR_STATION_HEAVY_INDUSTRY_2                                                    :Works
+STR_STATION_HERDING_COOP                                                        :Lodge
+STR_STATION_INDUSTRY_ESTATE_1                                                   :Industrial Park
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :Tidal Yard
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :Waterside
+STR_STATION_INDUSTRY_HARBOUR_3                                                  :Landing Stage
+STR_STATION_IRONSTONE                                                           :Ironstone
+STR_STATION_JOINERS_SHOP                                                        :Joiner's Shop
+STR_STATION_KILNS                                                               :Kilns
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :Bauxite Deposits
+STR_STATION_LIMESTONE_MINES                                                     :Limestone Mines
+STR_STATION_LITHIUM_MINES                                                       :Lithium Mines
+STR_STATION_MANGANESE_MINES                                                     :Manganese Mines
+STR_STATION_MARKET                                                              :Market
+STR_STATION_MERCHANTS_LANE                                                      :Shop Avenue
+STR_STATION_MILL                                                                :Mill
+STR_STATION_MINE                                                                :Biff Tanner Road
+STR_STATION_MOULDINGS                                                           :Mouldings
+STR_STATION_OIL_RIG                                                             :Field
+STR_STATION_ORCHARDS                                                            :Orchards
+STR_STATION_PIT                                                                 :Pit
+STR_STATION_PLANTATION                                                          :Plantation
+STR_STATION_PRINTERS                                                            :Printers
+STR_STATION_POWERHUNGRY                                                         :Generation Station
+STR_STATION_POLYMERS                                                            :Polymers
+STR_STATION_PUMPS                                                               :Pumps
+STR_STATION_PYRITES                                                             :Sphalerite Deposits
+STR_STATION_REFINERY                                                            :Refineries
+STR_STATION_RUBBER_COMPANY                                                      :Rubber Company
+STR_STATION_SALTPETER_WORKS                                                     :Saltpeter Works
+STR_STATION_SHARP_STREET                                                        :Sharp Street
+STR_STATION_SHEEP_FOLD                                                          :Sheep Fold
+STR_STATION_SHOALS                                                              :Shoals
+STR_STATION_SILO                                                                :Silo
+STR_STATION_SMELTER                                                             :Smelter
+STR_STATION_STACKS                                                              :Stacks
+STR_STATION_STAMP_AND_PLATE                                                     :Stamp and Plate
+STR_STATION_WATT_STREET                                                         :James Watt Street
+STR_STATION_SUGAR_COMPANY                                                       :Sugar Company
+STR_STATION_TANK_FARM                                                           :Tank Farm
+STR_STATION_TAPPERS_SHED                                                        :Tappers Shed
+STR_STATION_TOWN_1                                                              :High Street
+STR_STATION_TOWN_2                                                              :Business Park
+STR_STATION_TOWN_3                                                              :Market Square
+STR_STATION_TRONA_BEDS                                                          :Trona Beds
+STR_STATION_WATER                                                               :Sandbank
+STR_STATION_WEAVE_AND_DYE                                                       :Nonwovens
+STR_STATION_WELLS                                                               :Wells
+STR_STATION_WINERY                                                              :Winery
+STR_STATION_WORKS_YARD                                                          :Works Yard
+STR_STATION_UPGRADER                                                            :Syncrude Facility
+STR_STATION_VEHICLE_DEALER                                                      :Truck Lot
+
+STR_GRF_NAME                                                    :XIS Extreme Industry Set 0.6.1
+
+STR_EMPTY                                                       :

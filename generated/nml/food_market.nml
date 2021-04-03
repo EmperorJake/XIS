@@ -1,0 +1,381 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(food_market_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(290, 10)
+            }
+            spriteset(food_market_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(food_market_spriteset_1_0) {
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/food_market_1.png"]
+            }
+            spriteset(food_market_spriteset_1_0_snow) {
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/food_market_1_snow.png"]
+            }
+            spriteset(food_market_spriteset_2_0) {
+                        [10, 60, 64, 36, -31, -4, ANIM | NOCROP, "src/graphics/industries/food_market_1.png"]
+            }
+            spriteset(food_market_spriteset_2_0_snow) {
+                            [10, 60, 64, 36, -31, -4, ANIM | NOCROP, "src/graphics/industries/food_market_1_snow.png"]
+            }
+        spritelayout food_market_spritelayout {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: food_market_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: food_market_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: food_market_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: food_market_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: food_market_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: food_market_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: nearby_tile_terrain_type(0, 0) != TILETYPE_SNOW ? market_tree : market_tree_snow;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 11;
+                        yoffset: 1;
+                        zoffset: 0;
+                        xextent: 6;
+                        yextent: 6;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: nearby_tile_terrain_type(0, 0) != TILETYPE_SNOW ? market_tree : market_tree_snow;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 11;
+                        yoffset: 1;
+                        zoffset: 0;
+                        xextent: 6;
+                        yextent: 6;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: nearby_tile_terrain_type(0, 0) != TILETYPE_SNOW ? market_tree : market_tree_snow;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 11;
+                        yoffset: 6;
+                        zoffset: 0;
+                        xextent: 6;
+                        yextent: 6;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: nearby_tile_terrain_type(0, 0) != TILETYPE_SNOW ? market_tree : market_tree_snow;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 11;
+                        yoffset: 6;
+                        zoffset: 0;
+                        xextent: 6;
+                        yextent: 6;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, food_market_industry_layout_graphics_switch, relative_pos) {
+                relative_coord(0, 0): food_market_spritelayout;
+            food_market_spritelayout; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, food_market_industry_graphics_switch_layouts, layout_num) {
+            1: food_market_industry_layout_graphics_switch;
+        food_market_industry_layout_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, food_market_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        food_market_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, food_market_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        food_market_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, food_market_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        food_market_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, food_market_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        food_market_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, food_market_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        food_market_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, food_market_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        food_market_tile_fence_industry;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, food_market_tile_1_lc_1,
+                                                      (
+                                                      nearby_tile_class(0, -1) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(0, 1) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(-1, 0) == TILE_CLASS_ROAD ? 1 :
+                                                      (nearby_tile_class(1, 0) == TILE_CLASS_ROAD ? 1 : 0
+                                                      ))))) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, food_market_tile_1_lc_0, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        food_market_tile_1_lc_1;
+    }
+    item(FEAT_INDUSTRYTILES, food_market_tile_1, 194) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: food_market_tile_1_lc_0;
+            food_market_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, food_market_tile_1, 194) {
+                    property {
+                        accepted_cargos:  [[cargotype("FOOD"), 8],[cargotype("FRUT"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout food_market_industry_layout_tilelayout {
+            0, 0: food_market_tile_1;
+    }
+switch(FEAT_INDUSTRIES, SELF, food_market_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, food_market_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	food_market_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, food_market_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: food_market_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): food_market_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, food_market_check_availability, economy) {
+        2: food_market_check_availability_2;
+        0: food_market_check_availability_0;
+        1: food_market_check_availability_1;
+        4: food_market_check_availability_4;
+        5: food_market_check_availability_5;
+        3: food_market_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_30, industry_distance(30)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_36, industry_distance(36)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_30;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_36;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_56, industry_distance(56)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_34, industry_distance(34)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_56;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_37, industry_distance(37)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_34;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_19, industry_distance(19)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_37;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_19;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_59, industry_distance(59)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        food_market_min_distance_59;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, food_market, 59) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 191;
+                    life_type: IND_LIFE_TYPE_BLACK_HOLE;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_ONLY_IN_TOWNS);
+                    layouts: [food_market_industry_layout_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FOOD_MARKET);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 24;
+                    prob_in_game: 12;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 15;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FOOD"),cargotype("FRUT")];
+                    prod_cargo_types: [];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_TOWN_3));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, food_market, 59) {
+                graphics {
+                    construction_probability: food_market_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    location_check:           food_market_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    colour:                   switch_colour;
+                }
+            }
+        }

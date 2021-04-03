@@ -1,0 +1,1552 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(stockyard_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(80, 10)
+            }
+            spriteset(stockyard_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(stockyard_spriteset_1_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(stockyard_spriteset_1_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(stockyard_spriteset_2_0) {
+                        [10, 10, 64, 44, -31, -13, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_2_0_snow) {
+                            [10, 10, 64, 44, -31, -13, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_3_0) {
+                        [80, 10, 64, 74, -31, -43, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_3_0_snow) {
+                            [80, 10, 64, 74, -31, -43, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_4_0) {
+                        [150, 10, 64, 88, -31, -57, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_4_0_snow) {
+                            [150, 10, 64, 88, -31, -57, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_5_0) {
+                        [220, 10, 64, 85, -31, -54, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_5_0_snow) {
+                            [220, 10, 64, 85, -31, -54, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_6_0) {
+                        [290, 10, 64, 104, -31, -73, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_6_0_snow) {
+                            [290, 10, 64, 104, -31, -73, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_7_0) {
+                        [360, 10, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_7_0_snow) {
+                            [360, 10, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_8_0) {
+                        [430, 10, 64, 98, -31, -67, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_8_0_snow) {
+                            [430, 10, 64, 98, -31, -67, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_9_0) {
+                        [500, 10, 64, 54, -31, -23, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_9_0_snow) {
+                            [500, 10, 64, 54, -31, -23, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_10_0) {
+                        [570, 10, 64, 76, -31, -45, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_10_0_snow) {
+                            [570, 10, 64, 76, -31, -45, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_11_0) {
+                        [640, 10, 64, 32, -31, -1, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_11_0_snow) {
+                            [640, 10, 64, 32, -31, -1, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+            spriteset(stockyard_spriteset_12_0) {
+                        [710, 10, 64, 49, -31, -18, ANIM | NOCROP, "src/graphics/industries/stockyard_1.png"]
+            }
+            spriteset(stockyard_spriteset_12_0_snow) {
+                            [710, 10, 64, 49, -31, -18, ANIM | NOCROP, "src/graphics/industries/stockyard_1_snow.png"]
+            }
+        spritelayout stockyard_spritelayout_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_3 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_4 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_5 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 3701 + ((animation_frame + 0)%8);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 17;
+                    yoffset: 9;
+                    zoffset: 99;
+                    xextent: 15;
+                    yextent: 7;
+                    zextent: 7;
+                    hide_sprite: 0;
+                }
+                // smoke sprites
+                building {
+                    sprite: 3701 + ((animation_frame + 1)%8);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 20;
+                    yoffset: 9;
+                    zoffset: 100;
+                    xextent: 15;
+                    yextent: 7;
+                    zextent: 7;
+                    hide_sprite: 0;
+                }
+        }
+        spritelayout stockyard_spritelayout_6 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_7_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_7_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_7 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_8_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_8_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_8 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_9_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_9_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_9 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_10_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_10_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_10 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_11_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_11_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_11 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: stockyard_spriteset_12_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: stockyard_spriteset_12_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout stockyard_spritelayout_12 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: stockyard_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: stockyard_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, stockyard_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): stockyard_spritelayout_12;
+                relative_coord(0, 1): stockyard_spritelayout_12;
+                relative_coord(0, 2): stockyard_spritelayout_11;
+                relative_coord(0, 3): stockyard_spritelayout_12;
+                relative_coord(1, 0): stockyard_spritelayout_12;
+                relative_coord(1, 1): stockyard_spritelayout_8;
+                relative_coord(1, 2): stockyard_spritelayout_9;
+                relative_coord(1, 3): stockyard_spritelayout_10;
+                relative_coord(3, 0): stockyard_spritelayout_12;
+                relative_coord(3, 1): stockyard_spritelayout_5;
+                relative_coord(3, 2): stockyard_spritelayout_6;
+                relative_coord(3, 3): stockyard_spritelayout_7;
+                relative_coord(4, 0): stockyard_spritelayout_1;
+                relative_coord(4, 1): stockyard_spritelayout_2;
+                relative_coord(4, 2): stockyard_spritelayout_3;
+                relative_coord(4, 3): stockyard_spritelayout_4;
+            stockyard_spritelayout_12; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, stockyard_industry_graphics_switch_layouts, layout_num) {
+            1: stockyard_industry_layout_1_graphics_switch;
+        stockyard_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, stockyard_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        stockyard_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, stockyard_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        stockyard_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, stockyard_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        stockyard_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, stockyard_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        stockyard_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, stockyard_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        stockyard_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, stockyard_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        stockyard_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, stockyard_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, stockyard_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        stockyard_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, stockyard_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: stockyard_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    item(FEAT_INDUSTRYTILES, stockyard_tile_1, 179) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 7];
+                animation_speed: 3;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: stockyard_tile_1_lc_0;
+            stockyard_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, stockyard_tile_1, 179) {
+                    property {
+                        accepted_cargos:  [[cargotype("MNSP"), 8],[cargotype("LVST"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+                item(FEAT_INDUSTRYTILES, stockyard_tile_1, 179) {
+                    property {
+                        accepted_cargos:  [[cargotype("LVST"), 8]];
+                    }
+                }
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+                item(FEAT_INDUSTRYTILES, stockyard_tile_1, 179) {
+                    property {
+                        accepted_cargos:  [[cargotype("LVST"), 8]];
+                    }
+                }
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, stockyard_tile_1, 179) {
+                    property {
+                        accepted_cargos:  [[cargotype("LVST"), 8]];
+                    }
+                }
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout stockyard_industry_layout_1_tilelayout {
+            0, 0: stockyard_tile_1;
+            0, 1: stockyard_tile_1;
+            0, 2: stockyard_tile_1;
+            0, 3: stockyard_tile_1;
+            1, 0: stockyard_tile_1;
+            1, 1: stockyard_tile_1;
+            1, 2: stockyard_tile_1;
+            1, 3: stockyard_tile_1;
+            3, 0: stockyard_tile_1;
+            3, 1: stockyard_tile_1;
+            3, 2: stockyard_tile_1;
+            3, 3: stockyard_tile_1;
+            4, 0: stockyard_tile_1;
+            4, 1: stockyard_tile_1;
+            4, 2: stockyard_tile_1;
+            4, 3: stockyard_tile_1;
+    }
+    produce (stockyard_simple_produce,
+                waiting_cargo_1,
+                waiting_cargo_2,
+                waiting_cargo_3,
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(4) / (64),
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(5) / (64),
+                [
+                STORE_PERM(LOAD_PERM(4) % (8 / LOAD_TEMP(3)), 4),
+                STORE_PERM(LOAD_PERM(5) % (8 / LOAD_TEMP(3)), 5),
+                STORE_PERM(LOAD_PERM(6) % (8 / LOAD_TEMP(3)), 6),
+                0
+                ]
+    );
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_2,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(1) * 5 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 5 +
+                            LOAD_TEMP(0) * 3 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_0,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_1,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(1) * 5 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 5 +
+                            LOAD_TEMP(0) * 3 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_4,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_5,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(1) * 5 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 5 +
+                            LOAD_TEMP(0) * 3 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, stockyard_produce_economy_3,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            stockyard_simple_produce;
+        }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_produce, economy) {
+            2: stockyard_produce_economy_2;
+            0: stockyard_produce_economy_0;
+            1: stockyard_produce_economy_1;
+            4: stockyard_produce_economy_4;
+            5: stockyard_produce_economy_5;
+            3: stockyard_produce_economy_3;
+    }
+    switch(FEAT_INDUSTRIES, SELF, stockyard_secondary_increase_closure_counter,
+           STORE_PERM((1 + LOAD_PERM(15)), 15)) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, stockyard_secondary_reset_closure_counter, [STORE_PERM(0, 15), 1]) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, stockyard_check_secondary_production_level, [
+                transported_last_month_1 > 0 ||
+                transported_last_month_2 > 0 ||
+                (current_date - LOAD_PERM(10)) < 30 ||
+                (current_date - LOAD_PERM(11)) < 30 ||
+                (current_date - LOAD_PERM(12)) < 30
+                ]
+            ) {
+        0: stockyard_secondary_increase_closure_counter;
+        stockyard_secondary_reset_closure_counter;
+    }
+switch(FEAT_INDUSTRIES, SELF, stockyard_secondary_close_random, (extra_callback_info2 & 32)) {
+	0: return CB_RESULT_IND_PROD_CLOSE;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch(FEAT_INDUSTRIES, SELF, stockyard_secondary_had_produced_check, LOAD_PERM(15)) {
+	0..60: return CB_RESULT_IND_PROD_NO_CHANGE;
+	stockyard_secondary_close_random;
+}
+switch(FEAT_INDUSTRIES, SELF, stockyard_check_secondary_closure, allow_close_secondary) {
+	1..255: stockyard_secondary_had_produced_check;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_extra_text, economy) {
+            2: return string(STR_EXTRA_TEXT_SECONDARY_COMBINATORY);
+            0: return string(STR_EMPTY);
+            4: return string(STR_EMPTY);
+            3: return string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_cargo_subtype_display_cargo_1, [current_date - LOAD_PERM(10) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_cargo_subtype_display_cargo_2, [current_date - LOAD_PERM(11) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_cargo_subtype_display_cargo_3, [current_date - LOAD_PERM(12) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_cargo_subtype_display_switch_cargo, getbits(extra_callback_info2, 0, 8)) {
+    0: stockyard_cargo_subtype_display_cargo_1;
+    1: stockyard_cargo_subtype_display_cargo_2;
+    2: stockyard_cargo_subtype_display_cargo_3;
+    return CB_RESULT_NO_TEXT;
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_cargo_subtype_display, getbits(extra_callback_info2, 8, 8)) {
+    1: stockyard_cargo_subtype_display_switch_cargo;
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_INDUSTRIES, SELF, stockyard_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	stockyard_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, stockyard_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: stockyard_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): stockyard_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, stockyard_check_availability, economy) {
+        2: stockyard_check_availability_2;
+        0: stockyard_check_availability_0;
+        1: stockyard_check_availability_1;
+        4: stockyard_check_availability_4;
+        5: stockyard_check_availability_5;
+        3: stockyard_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_28, industry_distance(28)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_28;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_59, industry_distance(59)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_59;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_27, industry_distance(27)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_27;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_2, industry_distance(2)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_2;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_58;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_min_distance_37, industry_distance(37)) {
+        0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
+        stockyard_min_distance_23;
+    }
+    switch (FEAT_INDUSTRIES, SELF, stockyard_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        stockyard_min_distance_37;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 177;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE);
+                    layouts: [stockyard_industry_layout_1_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_STOCKYARD);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 115;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("MNSP"),cargotype("LVST")];
+                    prod_cargo_types: [cargotype("FOOD")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_ANIMALS));
+                }
+            }
+        }
+        if (economy==0) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 177;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE);
+                    layouts: [stockyard_industry_layout_1_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_STOCKYARD);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 115;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("LVST")];
+                    prod_cargo_types: [cargotype("FOOD")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_ANIMALS));
+                }
+            }
+        }
+        if (economy==4) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 177;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE);
+                    layouts: [stockyard_industry_layout_1_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_STOCKYARD);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 115;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("LVST")];
+                    prod_cargo_types: [cargotype("FOOD")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_ANIMALS));
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 177;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: bitmask(IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE);
+                    layouts: [stockyard_industry_layout_1_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_STOCKYARD);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 115;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("LVST")];
+                    prod_cargo_types: [cargotype("FOOD")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_ANIMALS));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                graphics {
+                    construction_probability: stockyard_check_availability;
+                    produce_cargo_arrival:    stockyard_produce;
+                    monthly_prod_change:      stockyard_check_secondary_production_level;
+                    random_prod_change:       stockyard_check_secondary_closure;
+                    location_check:           stockyard_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      stockyard_extra_text;
+                    cargo_subtype_display:    stockyard_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==0) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                graphics {
+                    construction_probability: stockyard_check_availability;
+                    produce_cargo_arrival:    stockyard_produce;
+                    monthly_prod_change:      stockyard_check_secondary_production_level;
+                    random_prod_change:       stockyard_check_secondary_closure;
+                    location_check:           stockyard_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      stockyard_extra_text;
+                    cargo_subtype_display:    stockyard_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==4) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                graphics {
+                    construction_probability: stockyard_check_availability;
+                    produce_cargo_arrival:    stockyard_produce;
+                    monthly_prod_change:      stockyard_check_secondary_production_level;
+                    random_prod_change:       stockyard_check_secondary_closure;
+                    location_check:           stockyard_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      stockyard_extra_text;
+                    cargo_subtype_display:    stockyard_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, stockyard, 37) {
+                graphics {
+                    construction_probability: stockyard_check_availability;
+                    produce_cargo_arrival:    stockyard_produce;
+                    monthly_prod_change:      stockyard_check_secondary_production_level;
+                    random_prod_change:       stockyard_check_secondary_closure;
+                    location_check:           stockyard_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      stockyard_extra_text;
+                    cargo_subtype_display:    stockyard_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

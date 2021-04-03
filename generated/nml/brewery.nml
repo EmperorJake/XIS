@@ -1,0 +1,1973 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(brewery_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(150, 10)
+            }
+            spriteset(brewery_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(brewery_spriteset_1_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(brewery_spriteset_1_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(brewery_spriteset_2_0) {
+                        [10, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+            }
+            spriteset(brewery_spriteset_2_0_snow) {
+                            [10, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+            }
+            spriteset(brewery_spriteset_3_0) {
+                        [80, 390, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+                        [80, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+                        [80, 170, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+                        [80, 280, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+                        [80, 170, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+                        [80, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+            }
+            spriteset(brewery_spriteset_3_0_snow) {
+                            [80, 390, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+                            [80, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+                            [80, 170, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+                            [80, 280, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+                            [80, 170, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+                            [80, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+            }
+            spriteset(brewery_spriteset_4_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(150, 10)
+                    tmpl_ground_tile(150, 10)
+                    tmpl_ground_tile(150, 10)
+                    tmpl_ground_tile(150, 10)
+                    tmpl_ground_tile(150, 10)
+                    tmpl_ground_tile(150, 10)
+            }
+            spriteset(brewery_spriteset_4_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(brewery_spriteset_5_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(brewery_spriteset_5_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(brewery_spriteset_6_0) {
+                        [150, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1.png"]
+            }
+            spriteset(brewery_spriteset_6_0_snow) {
+                            [150, 60, 64, 91, -31, -60, ANIM | NOCROP, "src/graphics/industries/brewery_1_snow.png"]
+            }
+        spritelayout brewery_spritelayout_1_anim {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: brewery_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: brewery_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: brewery_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: brewery_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 3079 + (animation_frame / 4);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 8;
+                    yoffset: 0;
+                    zoffset: 55+ animation_frame;
+                    xextent: 11;
+                    yextent: 16;
+                    zextent: 7;
+                    hide_sprite: animation_frame > 19;
+                }
+        }
+        spritelayout brewery_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: brewery_spriteset_4_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_5_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: brewery_spriteset_4_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_5_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: brewery_spriteset_3_0(1* (animation_frame));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: brewery_spriteset_3_0_snow(1* (animation_frame));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout brewery_spritelayout_3 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: brewery_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: brewery_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: brewery_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: brewery_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: brewery_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 2): brewery_spritelayout_3;
+                relative_coord(1, 0): brewery_spritelayout_1_anim;
+                relative_coord(1, 2): brewery_spritelayout_2;
+            brewery_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): brewery_spritelayout_3;
+                relative_coord(1, 0): brewery_spritelayout_2;
+                relative_coord(2, 0): brewery_spritelayout_1_anim;
+            brewery_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_layout_3_graphics_switch, relative_pos) {
+                relative_coord(0, 1): brewery_spritelayout_3;
+                relative_coord(1, 0): brewery_spritelayout_1_anim;
+                relative_coord(1, 1): brewery_spritelayout_2;
+            brewery_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_layout_4_graphics_switch, relative_pos) {
+                relative_coord(0, 0): brewery_spritelayout_1_anim;
+                relative_coord(1, 0): brewery_spritelayout_3;
+                relative_coord(2, 0): brewery_spritelayout_2;
+            brewery_spritelayout_1_anim; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_layout_5_graphics_switch, relative_pos) {
+                relative_coord(0, 0): brewery_spritelayout_3;
+                relative_coord(0, 1): brewery_spritelayout_3;
+                relative_coord(1, 0): brewery_spritelayout_2;
+                relative_coord(1, 1): brewery_spritelayout_2;
+                relative_coord(2, 0): brewery_spritelayout_1_anim;
+            brewery_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, brewery_industry_graphics_switch_layouts, layout_num) {
+            1: brewery_industry_layout_1_graphics_switch;
+            2: brewery_industry_layout_2_graphics_switch;
+            3: brewery_industry_layout_3_graphics_switch;
+            4: brewery_industry_layout_4_graphics_switch;
+            5: brewery_industry_layout_5_graphics_switch;
+        brewery_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, brewery_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        brewery_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, brewery_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        brewery_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, brewery_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        brewery_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        brewery_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        brewery_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        brewery_tile_fence_industry;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_227, nearby_tile_class(7, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_226, nearby_tile_class(7, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_227;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_225, nearby_tile_class(7, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_226;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_224, nearby_tile_class(7, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_225;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_223, nearby_tile_class(7, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_224;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_222, nearby_tile_class(7, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_223;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_221, nearby_tile_class(7, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_222;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_220, nearby_tile_class(7, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_221;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_219, nearby_tile_class(7, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_220;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_218, nearby_tile_class(7, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_219;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_217, nearby_tile_class(7, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_218;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_216, nearby_tile_class(7, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_217;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_215, nearby_tile_class(7, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_216;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_214, nearby_tile_class(7, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_215;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_213, nearby_tile_class(7, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_214;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_212, nearby_tile_class(6, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_213;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_211, nearby_tile_class(6, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_212;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_210, nearby_tile_class(6, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_211;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_209, nearby_tile_class(6, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_210;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_208, nearby_tile_class(6, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_209;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_207, nearby_tile_class(6, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_208;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_206, nearby_tile_class(6, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_207;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_205, nearby_tile_class(6, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_206;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_204, nearby_tile_class(6, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_205;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_203, nearby_tile_class(6, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_204;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_202, nearby_tile_class(6, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_203;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_201, nearby_tile_class(6, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_202;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_200, nearby_tile_class(6, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_201;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_199, nearby_tile_class(6, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_200;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_198, nearby_tile_class(6, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_199;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_197, nearby_tile_class(5, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_198;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_196, nearby_tile_class(5, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_197;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_195, nearby_tile_class(5, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_196;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_194, nearby_tile_class(5, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_195;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_193, nearby_tile_class(5, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_194;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_192, nearby_tile_class(5, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_193;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_191, nearby_tile_class(5, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_192;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_190, nearby_tile_class(5, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_191;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_189, nearby_tile_class(5, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_190;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_188, nearby_tile_class(5, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_189;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_187, nearby_tile_class(5, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_188;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_186, nearby_tile_class(5, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_187;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_185, nearby_tile_class(5, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_186;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_184, nearby_tile_class(5, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_185;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_183, nearby_tile_class(5, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_184;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_182, nearby_tile_class(4, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_183;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_181, nearby_tile_class(4, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_182;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_180, nearby_tile_class(4, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_181;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_179, nearby_tile_class(4, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_180;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_178, nearby_tile_class(4, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_179;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_177, nearby_tile_class(4, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_178;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_176, nearby_tile_class(4, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_177;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_175, nearby_tile_class(4, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_176;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_174, nearby_tile_class(4, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_175;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_173, nearby_tile_class(4, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_174;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_172, nearby_tile_class(4, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_173;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_171, nearby_tile_class(4, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_172;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_170, nearby_tile_class(4, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_171;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_169, nearby_tile_class(4, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_170;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_168, nearby_tile_class(4, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_169;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_167, nearby_tile_class(3, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_168;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_166, nearby_tile_class(3, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_167;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_165, nearby_tile_class(3, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_166;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_164, nearby_tile_class(3, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_165;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_163, nearby_tile_class(3, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_164;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_162, nearby_tile_class(3, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_163;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_161, nearby_tile_class(3, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_162;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_160, nearby_tile_class(3, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_161;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_159, nearby_tile_class(3, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_160;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_158, nearby_tile_class(3, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_159;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_157, nearby_tile_class(3, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_158;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_156, nearby_tile_class(3, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_157;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_155, nearby_tile_class(3, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_156;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_154, nearby_tile_class(3, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_155;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_153, nearby_tile_class(3, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_154;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_152, nearby_tile_class(2, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_153;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_151, nearby_tile_class(2, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_152;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_150, nearby_tile_class(2, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_151;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_149, nearby_tile_class(2, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_150;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_148, nearby_tile_class(2, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_149;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_147, nearby_tile_class(2, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_148;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_146, nearby_tile_class(2, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_147;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_145, nearby_tile_class(2, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_146;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_144, nearby_tile_class(2, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_145;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_143, nearby_tile_class(2, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_144;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_142, nearby_tile_class(2, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_143;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_141, nearby_tile_class(2, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_142;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_140, nearby_tile_class(2, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_141;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_139, nearby_tile_class(2, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_140;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_138, nearby_tile_class(2, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_139;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_137, nearby_tile_class(1, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_138;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_136, nearby_tile_class(1, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_137;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_135, nearby_tile_class(1, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_136;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_134, nearby_tile_class(1, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_135;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_133, nearby_tile_class(1, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_134;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_132, nearby_tile_class(1, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_133;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_131, nearby_tile_class(1, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_132;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_130, nearby_tile_class(1, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_131;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_129, nearby_tile_class(1, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_130;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_128, nearby_tile_class(1, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_129;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_127, nearby_tile_class(1, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_128;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_126, nearby_tile_class(1, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_127;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_125, nearby_tile_class(1, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_126;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_124, nearby_tile_class(1, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_125;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_123, nearby_tile_class(1, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_124;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_122, nearby_tile_class(0, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_123;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_121, nearby_tile_class(0, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_122;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_120, nearby_tile_class(0, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_121;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_119, nearby_tile_class(0, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_120;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_118, nearby_tile_class(0, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_119;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_117, nearby_tile_class(0, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_118;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_116, nearby_tile_class(0, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_117;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_115, nearby_tile_class(0, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_116;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_114, nearby_tile_class(0, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_115;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_113, nearby_tile_class(0, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_114;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_112, nearby_tile_class(0, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_113;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_111, nearby_tile_class(0, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_112;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_110, nearby_tile_class(0, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_111;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_109, nearby_tile_class(0, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_110;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_108, nearby_tile_class(0, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_109;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_107, nearby_tile_class(-1, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_108;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_106, nearby_tile_class(-1, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_107;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_105, nearby_tile_class(-1, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_106;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_104, nearby_tile_class(-1, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_105;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_103, nearby_tile_class(-1, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_104;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_102, nearby_tile_class(-1, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_103;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_101, nearby_tile_class(-1, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_102;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_100, nearby_tile_class(-1, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_101;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_99, nearby_tile_class(-1, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_100;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_98, nearby_tile_class(-1, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_99;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_97, nearby_tile_class(-1, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_98;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_96, nearby_tile_class(-1, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_97;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_95, nearby_tile_class(-1, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_96;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_94, nearby_tile_class(-1, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_95;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_93, nearby_tile_class(-1, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_94;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_92, nearby_tile_class(-2, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_93;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_91, nearby_tile_class(-2, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_92;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_90, nearby_tile_class(-2, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_91;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_89, nearby_tile_class(-2, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_90;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_88, nearby_tile_class(-2, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_89;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_87, nearby_tile_class(-2, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_88;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_86, nearby_tile_class(-2, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_87;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_85, nearby_tile_class(-2, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_86;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_84, nearby_tile_class(-2, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_85;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_83, nearby_tile_class(-2, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_84;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_82, nearby_tile_class(-2, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_83;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_81, nearby_tile_class(-2, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_82;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_80, nearby_tile_class(-2, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_81;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_79, nearby_tile_class(-2, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_80;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_78, nearby_tile_class(-2, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_79;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_77, nearby_tile_class(-3, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_78;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_76, nearby_tile_class(-3, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_77;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_75, nearby_tile_class(-3, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_76;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_74, nearby_tile_class(-3, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_75;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_73, nearby_tile_class(-3, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_74;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_72, nearby_tile_class(-3, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_73;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_71, nearby_tile_class(-3, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_72;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_70, nearby_tile_class(-3, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_71;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_69, nearby_tile_class(-3, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_70;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_68, nearby_tile_class(-3, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_69;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_67, nearby_tile_class(-3, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_68;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_66, nearby_tile_class(-3, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_67;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_65, nearby_tile_class(-3, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_66;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_64, nearby_tile_class(-3, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_65;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_63, nearby_tile_class(-3, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_64;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_62, nearby_tile_class(-4, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_63;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_61, nearby_tile_class(-4, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_62;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_60, nearby_tile_class(-4, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_61;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_59, nearby_tile_class(-4, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_60;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_58, nearby_tile_class(-4, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_59;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_57, nearby_tile_class(-4, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_58;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_56, nearby_tile_class(-4, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_57;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_55, nearby_tile_class(-4, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_56;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_54, nearby_tile_class(-4, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_55;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_53, nearby_tile_class(-4, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_54;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_52, nearby_tile_class(-4, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_53;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_51, nearby_tile_class(-4, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_52;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_50, nearby_tile_class(-4, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_51;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_49, nearby_tile_class(-4, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_50;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_48, nearby_tile_class(-4, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_49;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_47, nearby_tile_class(-5, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_48;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_46, nearby_tile_class(-5, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_47;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_45, nearby_tile_class(-5, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_46;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_44, nearby_tile_class(-5, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_45;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_43, nearby_tile_class(-5, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_44;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_42, nearby_tile_class(-5, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_43;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_41, nearby_tile_class(-5, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_42;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_40, nearby_tile_class(-5, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_41;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_39, nearby_tile_class(-5, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_40;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_38, nearby_tile_class(-5, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_39;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_37, nearby_tile_class(-5, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_38;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_36, nearby_tile_class(-5, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_37;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_35, nearby_tile_class(-5, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_36;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_34, nearby_tile_class(-5, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_35;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_33, nearby_tile_class(-5, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_34;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_32, nearby_tile_class(-6, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_33;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_31, nearby_tile_class(-6, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_32;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_30, nearby_tile_class(-6, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_31;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_29, nearby_tile_class(-6, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_30;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_28, nearby_tile_class(-6, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_29;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_27, nearby_tile_class(-6, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_28;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_26, nearby_tile_class(-6, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_27;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_25, nearby_tile_class(-6, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_26;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_24, nearby_tile_class(-6, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_25;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_23, nearby_tile_class(-6, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_24;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_22, nearby_tile_class(-6, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_23;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_21, nearby_tile_class(-6, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_22;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_20, nearby_tile_class(-6, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_21;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_19, nearby_tile_class(-6, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_20;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_18, nearby_tile_class(-6, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_19;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_17, nearby_tile_class(-7, 7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_18;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_16, nearby_tile_class(-7, 6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_17;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_15, nearby_tile_class(-7, 5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_16;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_14, nearby_tile_class(-7, 4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_15;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_13, nearby_tile_class(-7, 3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_14;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_12, nearby_tile_class(-7, 2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_13;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_11, nearby_tile_class(-7, 1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_12;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_10, nearby_tile_class(-7, 0)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_11;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_9, nearby_tile_class(-7, -1)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_10;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_8, nearby_tile_class(-7, -2)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_9;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_7, nearby_tile_class(-7, -3)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_8;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_6, nearby_tile_class(-7, -4)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_7;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_5, nearby_tile_class(-7, -5)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_6;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_4, nearby_tile_class(-7, -6)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_5;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_3, nearby_tile_class(-7, -7)) {
+        TILE_CLASS_HOUSE: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_4;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_tile_1_lc_3;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, brewery_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: brewery_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, brewery_tile_2_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, brewery_tile_2_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        brewery_tile_2_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, brewery_tile_2_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: brewery_tile_2_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, brewery_tile_1_anim_control, (extra_callback_info1 % 6)) {
+            0: return 0;
+            1: return 1;
+            2: return 2;
+            3: return 3;
+            4: return 4;
+            5: return 5;
+        return CB_RESULT_NEXT_FRAME;
+    }
+    item(FEAT_INDUSTRYTILES, brewery_tile_1, 161) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 6];
+                animation_speed: 3;
+            animation_triggers: bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE);
+        }
+        graphics {
+    		    tile_check: brewery_tile_1_lc_0;
+    		    anim_control: brewery_tile_1_anim_control;
+            brewery_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_1, 161) {
+                    property {
+                        accepted_cargos:  [[cargotype("MNSP"), 8],[cargotype("FRUT"), 8],[cargotype("GRAI"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_1, 161) {
+                    property {
+                        accepted_cargos:  [[cargotype("FRUT"), 8]];
+                    }
+                }
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_1, 161) {
+                    property {
+                        accepted_cargos:  [[cargotype("FRUT"), 8],[cargotype("MAIZ"), 8]];
+                    }
+                }
+        }
+    item(FEAT_INDUSTRYTILES, brewery_tile_2, 162) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 71];
+                animation_speed: 2;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: brewery_tile_2_lc_0;
+            brewery_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_2, 162) {
+                    property {
+                        accepted_cargos:  [[cargotype("MNSP"), 8],[cargotype("FRUT"), 8],[cargotype("GRAI"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_2, 162) {
+                    property {
+                        accepted_cargos:  [[cargotype("FRUT"), 8]];
+                    }
+                }
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, brewery_tile_2, 162) {
+                    property {
+                        accepted_cargos:  [[cargotype("FRUT"), 8],[cargotype("MAIZ"), 8]];
+                    }
+                }
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout brewery_industry_layout_1_tilelayout {
+            0, 2: brewery_tile_1;
+            1, 0: brewery_tile_2;
+            1, 2: brewery_tile_1;
+    }
+    tilelayout brewery_industry_layout_2_tilelayout {
+            0, 0: brewery_tile_1;
+            1, 0: brewery_tile_1;
+            2, 0: brewery_tile_2;
+    }
+    tilelayout brewery_industry_layout_3_tilelayout {
+            0, 1: brewery_tile_1;
+            1, 0: brewery_tile_2;
+            1, 1: brewery_tile_1;
+    }
+    tilelayout brewery_industry_layout_4_tilelayout {
+            0, 0: brewery_tile_2;
+            1, 0: brewery_tile_1;
+            2, 0: brewery_tile_1;
+    }
+    tilelayout brewery_industry_layout_5_tilelayout {
+            0, 0: brewery_tile_1;
+            0, 1: brewery_tile_1;
+            1, 0: brewery_tile_1;
+            1, 1: brewery_tile_1;
+            2, 0: brewery_tile_2;
+    }
+    produce (brewery_simple_produce,
+                waiting_cargo_1,
+                waiting_cargo_2,
+                waiting_cargo_3,
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(4) / (64),
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(5) / (64),
+                [
+                STORE_PERM(LOAD_PERM(4) % (8 / LOAD_TEMP(3)), 4),
+                STORE_PERM(LOAD_PERM(5) % (8 / LOAD_TEMP(3)), 5),
+                STORE_PERM(LOAD_PERM(6) % (8 / LOAD_TEMP(3)), 6),
+                0
+                ]
+    );
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_2,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(1) * 3 +
+                            LOAD_TEMP(2) * 3,
+                    1
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(2) * 3,
+                    2
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(1) * 3,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_0,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_1,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(1) * 3 +
+                            LOAD_TEMP(2) * 3,
+                    1
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(2) * 3,
+                    2
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(1) * 3,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_4,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(1) * 3 +
+                            LOAD_TEMP(2) * 3,
+                    1
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(2) * 3,
+                    2
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(1) * 3,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_5,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(1) * 3 +
+                            LOAD_TEMP(2) * 3,
+                    1
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(2) * 3,
+                    2
+                ),
+                STORE_PERM( 3 +
+                            LOAD_TEMP(0) * 2 +
+                            LOAD_TEMP(1) * 3,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, brewery_produce_economy_3,
+                [
+                STORE_TEMP(1, 3),
+                STORE_TEMP(8, 4),
+                STORE_TEMP(8, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(1) * 4 +
+                            LOAD_TEMP(2) * 0,
+                    1
+                ),
+                STORE_PERM( 4 +
+                            LOAD_TEMP(0) * 4 +
+                            LOAD_TEMP(2) * 0,
+                    2
+                ),
+                STORE_PERM( 0 +
+                            LOAD_TEMP(0) * 0 +
+                            LOAD_TEMP(1) * 0,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            brewery_simple_produce;
+        }
+    switch (FEAT_INDUSTRIES, SELF, brewery_produce, economy) {
+            2: brewery_produce_economy_2;
+            0: brewery_produce_economy_0;
+            1: brewery_produce_economy_1;
+            4: brewery_produce_economy_4;
+            5: brewery_produce_economy_5;
+            3: brewery_produce_economy_3;
+    }
+    switch(FEAT_INDUSTRIES, SELF, brewery_secondary_increase_closure_counter,
+           STORE_PERM((1 + LOAD_PERM(15)), 15)) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, brewery_secondary_reset_closure_counter, [STORE_PERM(0, 15), 1]) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, brewery_check_secondary_production_level, [
+                transported_last_month_1 > 0 ||
+                transported_last_month_2 > 0 ||
+                (current_date - LOAD_PERM(10)) < 30 ||
+                (current_date - LOAD_PERM(11)) < 30 ||
+                (current_date - LOAD_PERM(12)) < 30
+                ]
+            ) {
+        0: brewery_secondary_increase_closure_counter;
+        brewery_secondary_reset_closure_counter;
+    }
+switch(FEAT_INDUSTRIES, SELF, brewery_secondary_close_random, (extra_callback_info2 & 32)) {
+	0: return CB_RESULT_IND_PROD_CLOSE;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch(FEAT_INDUSTRIES, SELF, brewery_secondary_had_produced_check, LOAD_PERM(15)) {
+	0..60: return CB_RESULT_IND_PROD_NO_CHANGE;
+	brewery_secondary_close_random;
+}
+switch(FEAT_INDUSTRIES, SELF, brewery_check_secondary_closure, allow_close_secondary) {
+	1..255: brewery_secondary_had_produced_check;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_extra_text, economy) {
+            2: return string(STR_EXTRA_TEXT_SECONDARY_COMBINATORY);
+            0: return string(STR_EMPTY);
+            3: return string(STR_EXTRA_TEXT_SECONDARY_COMBINATORY);
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_cargo_subtype_display_cargo_1, [current_date - LOAD_PERM(10) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_cargo_subtype_display_cargo_2, [current_date - LOAD_PERM(11) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_cargo_subtype_display_cargo_3, [current_date - LOAD_PERM(12) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_cargo_subtype_display_switch_cargo, getbits(extra_callback_info2, 0, 8)) {
+    0: brewery_cargo_subtype_display_cargo_1;
+    1: brewery_cargo_subtype_display_cargo_2;
+    2: brewery_cargo_subtype_display_cargo_3;
+    return CB_RESULT_NO_TEXT;
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_cargo_subtype_display, getbits(extra_callback_info2, 8, 8)) {
+    1: brewery_cargo_subtype_display_switch_cargo;
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_INDUSTRIES, SELF, brewery_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	brewery_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, brewery_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: brewery_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): brewery_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, brewery_check_availability, economy) {
+        2: brewery_check_availability_2;
+        0: brewery_check_availability_0;
+        1: brewery_check_availability_1;
+        4: brewery_check_availability_4;
+        5: brewery_check_availability_5;
+        3: brewery_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_30, industry_distance(30)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_82, industry_distance(82)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_30;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_82;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_26, industry_distance(26)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_26;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_2, industry_distance(2)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_2;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_58;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_min_distance_35, industry_distance(35)) {
+        0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
+        brewery_min_distance_23;
+    }
+    switch (FEAT_INDUSTRIES, SELF, brewery_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        brewery_min_distance_35;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 191;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [brewery_industry_layout_1_tilelayout,brewery_industry_layout_2_tilelayout,brewery_industry_layout_3_tilelayout,brewery_industry_layout_4_tilelayout,brewery_industry_layout_5_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_BREWERY);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 50;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("MNSP"),cargotype("FRUT"),cargotype("GRAI")];
+                    prod_cargo_types: [cargotype("BEER")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_BARREL_AND_KEG));
+                }
+            }
+        }
+        if (economy==0) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 191;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [brewery_industry_layout_1_tilelayout,brewery_industry_layout_2_tilelayout,brewery_industry_layout_3_tilelayout,brewery_industry_layout_4_tilelayout,brewery_industry_layout_5_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_CIDER_MILL);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 50;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FRUT")];
+                    prod_cargo_types: [cargotype("BEER")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_BARREL_AND_KEG));
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 191;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [brewery_industry_layout_1_tilelayout,brewery_industry_layout_2_tilelayout,brewery_industry_layout_3_tilelayout,brewery_industry_layout_4_tilelayout,brewery_industry_layout_5_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_BREWERY);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 50;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FRUT"),cargotype("MAIZ")];
+                    prod_cargo_types: [cargotype("BEER")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_BARREL_AND_KEG));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                graphics {
+                    construction_probability: brewery_check_availability;
+                    produce_cargo_arrival:    brewery_produce;
+                    monthly_prod_change:      brewery_check_secondary_production_level;
+                    random_prod_change:       brewery_check_secondary_closure;
+                    location_check:           brewery_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      brewery_extra_text;
+                    cargo_subtype_display:    brewery_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==0) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                graphics {
+                    construction_probability: brewery_check_availability;
+                    produce_cargo_arrival:    brewery_produce;
+                    monthly_prod_change:      brewery_check_secondary_production_level;
+                    random_prod_change:       brewery_check_secondary_closure;
+                    location_check:           brewery_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      brewery_extra_text;
+                    cargo_subtype_display:    brewery_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, brewery, 35) {
+                graphics {
+                    construction_probability: brewery_check_availability;
+                    produce_cargo_arrival:    brewery_produce;
+                    monthly_prod_change:      brewery_check_secondary_production_level;
+                    random_prod_change:       brewery_check_secondary_closure;
+                    location_check:           brewery_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      brewery_extra_text;
+                    cargo_subtype_display:    brewery_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

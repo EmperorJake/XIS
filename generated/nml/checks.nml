@@ -1,0 +1,138 @@
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 27769)) {
+	error(FATAL, REQUIRES_OPENTTD, string(STR_ERR_OPENTTD_VERSION));
+	exit;
+}
+    if (grf_future_status("\F1\25\00\05")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "FIRS v1"));
+    }
+    if (grf_future_status("\F1\25\00\06")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "FIRS v2"));
+    }
+    if (grf_future_status("\F1\25\00\07")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "FIRS v3"));
+    }
+    if (grf_future_status("\F1\25\00\08")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "FIRS v4"));
+    }
+    if (grf_future_status("mb\07\00")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Alpine Climate"));
+    }
+    if (grf_future_status("Meo\97")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Agricultural Vector"));
+    }
+    if (grf_future_status("Meo\98")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Basic for Arctic"));
+    }
+    if (grf_future_status("Meo\99")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Basic for Tropic"));
+    }
+    if (grf_future_status("Meo\92")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Basic Vector"));
+    }
+    if (grf_future_status("Meo\93")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Chemical Vector"));
+    }
+    if (grf_future_status("Meo\9B")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Construction Vector by Pikkabird"));
+    }
+    if (grf_future_status("Meo\9C")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Chemical Vector II"));
+    }
+    if (grf_future_status("Meo\96")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Construction Vector"));
+    }
+    if (grf_future_status("Meo\94")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Machinery Vector"));
+    }
+    if (grf_future_status("Meo\9A")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Machinery for Tropic"));
+    }
+    if (grf_future_status("Meo\91")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Town Vector"));
+    }
+    if (grf_future_status("Meo\95")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Wood Vector"));
+    }
+    if (grf_future_status("EX\01\02")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Ex Citybuilder"));
+    }
+    if (grf_future_status("EX\01\03")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Ex Citybuilder"));
+    }
+    if (grf_future_status("EH\01\01")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Experts hard industries"));
+    }
+    if (grf_future_status("SK\05\01")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Luukland Citybuilder"));
+    }
+    if (grf_future_status("JS\0A\02")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Luukland Citybuilder"));
+    }
+    if (grf_future_status("JS\0A\03")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Luukland Citybuilder"));
+    }
+    if (grf_future_status("JS\0A\04")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Luukland Citybuilder"));
+    }
+    if (grf_future_status("JS\0A\05")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Luukland Citybuilder"));
+    }
+    if (grf_future_status("DD\06\01")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "UKRS Industries"));
+    }
+    if (grf_future_status("frMI")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Manual Industries"));
+    }
+    if (grf_future_status("AL\01\01")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Nearby Station Names"));
+    }
+    if (grf_future_status("Meo\81")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "New Cargos"));
+    }
+    if (grf_future_status("Meo\82")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "New Cargos Petrol + Tourists"));
+    }
+    if (grf_future_status("mb\08\00")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "NewCargos by Michael Blunck"));
+    }
+    if (grf_future_status("SZ\13D")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Oil well decrease neutralizer"));
+    }
+    if (grf_future_status("OG+3")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "OpenGFX+ Industries"));
+    }
+    if (grf_future_status("DD\06\02")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Pikka Basic Industries"));
+    }
+    if (grf_future_status("\52\53\01\01")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Improved Oil Rig Layout"));
+    }
+    if (grf_future_status("SLTU")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Tourist Set"));
+    }
+    if (grf_future_status("DD\06\03")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "UKRS Brick Chain"));
+    }
+/* this one might not survive as artic-only
+if (climate == CLIMATE_ARCTIC) {
+	INCOMPATIBLE_GRF("mb\07\00", "Alpine Climate");
+}
+*/
+if (grf_future_status("MG\08\00", "\FF\FF\FF\00")) {
+	error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Lumber Mill"));
+}
+if (grf_future_status("CACa")) {
+	if (param["CACa", 1] != 0) {
+		error(FATAL, string(STR_ERR_INCOMPATIBLE_PARAM_CITYSET));
+	}
+}
+if (grf_future_status("CASa")) {
+	if (param["CASa", 1] != 0) {
+		error(FATAL, string(STR_ERR_INCOMPATIBLE_PARAM_CANSET));
+	}
+}
+if (grf_future_status("VC\00\01")) {
+	if (param["VC\00\01", 254] <= 17) {
+		error(FATAL, string(STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION));
+	}
+}

@@ -1,0 +1,2257 @@
+
+    #aluminium_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #aluminium_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #ammonia_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #ammonia_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #arable_farm polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #arable_farm text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #assembly_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #assembly_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #basic_oxygen_furnace polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #basic_oxygen_furnace text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #biorefinery polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #biorefinery text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #blast_furnace polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #blast_furnace text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #brewery polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #brewery text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #brick_works polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #brick_works text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #builders_yard polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #builders_yard text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #bulk_terminal polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #bulk_terminal text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #cement_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #cement_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #chemical_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #chemical_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #clay_pit polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #clay_pit text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #coal_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #coal_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #coffee_estate polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #coffee_estate text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #coke_oven polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #coke_oven text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #copper_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #copper_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #copper_refinery polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #copper_refinery text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #dairy polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #dairy text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #dairy_farm polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #dairy_farm text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #diamond_mine polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #diamond_mine text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #dredging_site polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #dredging_site text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #electric_arc_furnace polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #electric_arc_furnace text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #fishing_grounds polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #fishing_grounds text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #fishing_harbour polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #fishing_harbour text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #flour_mill polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #flour_mill text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #food_market polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #food_market text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #food_processor polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #food_processor text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #forest polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #forest text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #foundry polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #foundry text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #fruit_plantation polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #fruit_plantation text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #furniture_factory polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #furniture_factory text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #general_store polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #general_store text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #glass_works polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #glass_works text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #hardware_store polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #hardware_store text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #herding_coop polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #herding_coop text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #hotel polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #hotel text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #iron_ore_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #iron_ore_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #iron_works polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #iron_works text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #junk_yard polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #junk_yard text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #lime_kiln polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #lime_kiln text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #limestone_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #limestone_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #liquids_terminal polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #liquids_terminal text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #lumber_yard polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #lumber_yard text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #machine_shop polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #machine_shop text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #manganese_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #manganese_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #metal_fabrication_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #metal_fabrication_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #metal_workshop polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #metal_workshop text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #mixed_farm polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #mixed_farm text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #nitrate_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #nitrate_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #oil_refinery polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #oil_refinery text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #oil_rig polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #oil_rig text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #oil_wells polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #oil_wells text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #orchard_piggery polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #orchard_piggery text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #paper_mill polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #paper_mill text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #peatlands polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #peatlands text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #petrol_pump polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #petrol_pump text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #phosphate_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #phosphate_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #plastics_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #plastics_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #port polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #port text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #power_plant polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #power_plant text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #pyrite_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #pyrite_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #pyrite_smelter polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #pyrite_smelter text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #quarry polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #quarry text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #ranch polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #ranch text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #recycling_depot polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #recycling_depot text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #recycling_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #recycling_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #rubber_plantation polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #rubber_plantation text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #sawmill polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #sawmill text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #sheep_farm polygon {
+        
+            
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+        
+    }
+    #sheep_farm text {
+        
+            
+            
+                fill: white;
+            
+            
+            
+        
+    }
+
+    #slag_grinding_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #slag_grinding_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #smithy_forge polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #smithy_forge text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #soda_ash_mine polygon {
+        
+            
+                fill: #2A7234;
+                stroke: #2A7234;
+            
+            
+            
+            
+        
+    }
+    #soda_ash_mine text {
+        
+            
+                fill: white;
+            
+            
+            
+            
+        
+    }
+
+    #stockyard polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #stockyard text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #sugar_refinery polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #sugar_refinery text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #supply_yard polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #supply_yard text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #textile_mill polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #textile_mill text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #trading_post polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #trading_post text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #tyre_plant polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #tyre_plant text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #vehicle_dealer polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #vehicle_dealer text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+    #vineyard polygon {
+        
+            
+            
+            
+                fill: #a04000;
+                stroke: #a04000;
+            
+            
+        
+    }
+    #vineyard text {
+        
+            
+            
+            
+                fill: white;
+            
+            
+        
+    }
+
+    #wharf polygon {
+        
+            
+            
+            
+            
+                fill: #4A5F6D;
+                stroke: #4A5F6D;
+            
+        
+    }
+    #wharf text {
+        
+            
+            
+            
+            
+                fill: #fff;
+            
+        
+    }
+
+
+
+    #acid ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #alcohol ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #bauxite ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #beans ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #building_materials ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #cassava ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #cement ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #chemicals ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #chlorine ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #clay ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #coal ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #coffee ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #coke ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #copper ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #copper_ore ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #diamonds ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #edible_oil ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #electrical_machines ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #engineering_supplies ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+            fill: #C5E5F4;
+            stroke: #C5E5F4;
+        
+    }
+
+    #explosives ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #farm_supplies ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+            fill: #C5E5F4;
+            stroke: #C5E5F4;
+        
+    }
+
+    #fertiliser ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #fish ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #food ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #fruits ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #goods ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #grain ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #iron_ore ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #kaolin ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #limestone ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #livestock ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #lumber ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #mail ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #maize ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #manganese ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #metal ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #milk ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #nitrates ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #nuts ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #oil ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #packaging ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #paper ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #passengers ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #peat ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #petrol ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #phosphate ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #pig_iron ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #pipe ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #plant_fibres ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #pyrite_ore ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #quicklime ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #recyclables ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #rubber ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #salt ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #sand ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #scrap_metal ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #slag ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #soda_ash ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #steel ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #stone ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #sugar_beet ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #sulphur ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #vehicle_bodies ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #vehicle_parts ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #vehicles ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #wood ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #wool ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+    #zinc ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
+
+g.edge path {
+    stroke: black;
+    stroke-width: 3;
+}
+g.edge:hover path {
+    stroke: #105799;
+    stroke-width: 6;
+}
+g.edge:hover polygon {
+    fill: #105799;
+    stroke: #105799;
+    stroke-width: 6;
+}

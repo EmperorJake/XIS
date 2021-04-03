@@ -1,0 +1,12 @@
+template tmpl_ground_tile(x, y) {
+	[x, y, 64, 31, -31, 0, ANIM]
+}
+template tmpl_ground_tile_filename(x, y, filename) {
+	[x, y, 64, 31, -31, 0, ANIM, filename]
+}
+template tmpl_building_sprite(x, y, h, dy) {
+    [x, y, 64, h, -31, dy, ANIM]
+}
+template tmpl_building_sprite_filename(x, y, h, dy, filename) {
+    [x, y, 64, h, -31, dy, ANIM | NOCROP, filename]
+}

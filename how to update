@@ -1,0 +1,7 @@
+grfid and version is in makefile
+
+min compat is in src/temlates/header
+
+grf name is in src/lang_templates
+
+Desc is in lang file

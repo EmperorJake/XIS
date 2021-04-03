@@ -1,0 +1,3069 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(quarry_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(quarry_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(quarry_spriteset_1_0) {
+                        [440, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [510, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [580, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [650, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [720, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [790, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [790, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [720, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [650, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [580, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [510, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [440, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_1_0_snow) {
+                            [440, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [510, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [580, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [650, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [720, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [790, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [790, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [720, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [650, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [580, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [510, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [440, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_2_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(quarry_spriteset_2_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(quarry_spriteset_3_0) {
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_3_0_snow) {
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_4_0) {
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_4_0_snow) {
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_5_0) {
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_5_0_snow) {
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_6_0) {
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_6_0_snow) {
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_7_0) {
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_7_0_snow) {
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 90, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_8_0) {
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_8_0_snow) {
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_9_0) {
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_9_0_snow) {
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_10_0) {
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_10_0_snow) {
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_11_0) {
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_11_0_snow) {
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_12_0) {
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_12_0_snow) {
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 50, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_13_0) {
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_13_0_snow) {
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_14_0) {
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_14_0_snow) {
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_15_0) {
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_15_0_snow) {
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_16_0) {
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_16_0_snow) {
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_17_0) {
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_17_0_snow) {
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_18_0) {
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_18_0_snow) {
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [360, 50, 64, 31, -63, -16, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_19_0) {
+                        [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [510, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [580, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [580, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [510, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_19_0_snow) {
+                            [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [510, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [580, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [650, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [580, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [510, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [440, 10, 64, 71, -48, -55, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_20_0) {
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_20_0_snow) {
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [10, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_21_0) {
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_21_0_snow) {
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [80, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_22_0) {
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_22_0_snow) {
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [150, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_23_0) {
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_23_0_snow) {
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [220, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_24_0) {
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+                        [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_24_0_snow) {
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+                            [290, 130, 64, 64, -31, -22, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_25_0) {
+                        [870, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_25_0_snow) {
+                            [870, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_26_0) {
+                        [940, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_26_0_snow) {
+                            [940, 10, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_27_0) {
+                        [1010, 10, 64, 34, -31, -3, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_27_0_snow) {
+                            [1010, 10, 64, 34, -31, -3, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_28_0) {
+                        [870, 50, 64, 64, -31, -35, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_28_0_snow) {
+                            [870, 50, 64, 64, -31, -35, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_29_0) {
+                        [940, 50, 64, 64, -31, -35, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_29_0_snow) {
+                            [940, 50, 64, 64, -31, -35, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+            spriteset(quarry_spriteset_30_0) {
+                        [1010, 50, 64, 64, -31, -33, ANIM | NOCROP, "src/graphics/industries/quarry_1.png"]
+            }
+            spriteset(quarry_spriteset_30_0_snow) {
+                            [1010, 50, 64, 64, -31, -33, ANIM | NOCROP, "src/graphics/industries/quarry_1_snow.png"]
+            }
+        spritelayout quarry_spritelayout_1 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_3_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_3_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_2 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_4_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_4_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_20_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_20_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_4 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_5_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_5_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_5 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_6_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_6_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_19_0(1*(animation_frame > 32) ? (animation_frame % 12) : 0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_19_0_snow(1*(animation_frame > 32) ? (animation_frame % 12) : 0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_18_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_18_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_6 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_7_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_7_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_7 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_8_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_8_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_8 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_9_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_9_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_1_0(1*(animation_frame < 36) ? (animation_frame % 12) : 0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_1_0_snow(1*(animation_frame < 36) ? (animation_frame % 12) : 0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_10 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_10_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_10_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_11 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_11_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_11_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_12 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_12_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_12_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_19 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_13_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_13_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout quarry_spritelayout_20 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_14_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_14_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_21_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_21_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_22 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_15_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_15_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_22_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_22_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_23 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_16_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_16_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_23_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_23_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_24 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_2_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_17_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_2_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_17_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_24_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_24_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_39 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_25_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_25_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_28_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_28_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_40 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_26_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_26_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_29_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_29_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout quarry_spritelayout_41 {
+                ground {
+                    sprite: GROUNDSPRITE_NORMAL ;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || (climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) != TILETYPE_DESERT);
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_DESERT_1_2;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_TROPIC) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_DESERT)) || ((climate == CLIMATE_TROPIC) && (nearby_tile_terrain_type(0, 0) == TILETYPE_NORMAL) && ((nearby_tile_terrain_type( 1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type(-1, 0) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0, 1) != TILETYPE_DESERT) && (nearby_tile_terrain_type( 0,-1) != TILETYPE_DESERT) ) );
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_4_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && (nearby_tile_height(0, 0) < (snowline_height + 2));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_3_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 2)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_2_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height + 0)) || (nearby_tile_height(0, 0) >= (snowline_height + 1)));
+                }
+                childsprite {
+                    sprite: GROUNDSPRITE_SNOW_1_4;
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    always_draw: 1;
+                    hide_sprite: (climate != CLIMATE_ARCTIC) || (climate == CLIMATE_ARCTIC) && ((nearby_tile_height(0, 0) < (snowline_height - 1)) || (nearby_tile_height(0, 0) >= (snowline_height + 0)));
+                }
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: quarry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_27_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: quarry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: quarry_spriteset_27_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: quarry_spriteset_30_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: quarry_spriteset_30_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, quarry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 1): quarry_spritelayout_24;
+                relative_coord(0, 2): quarry_spritelayout_12;
+                relative_coord(0, 3): quarry_spritelayout_6;
+                relative_coord(1, 0): quarry_spritelayout_41;
+                relative_coord(1, 1): quarry_spritelayout_23;
+                relative_coord(1, 2): quarry_spritelayout_11;
+                relative_coord(1, 3): quarry_spritelayout_5;
+                relative_coord(2, 0): quarry_spritelayout_40;
+                relative_coord(2, 1): quarry_spritelayout_22;
+                relative_coord(2, 2): quarry_spritelayout_10;
+                relative_coord(2, 3): quarry_spritelayout_4;
+                relative_coord(3, 0): quarry_spritelayout_39;
+                relative_coord(3, 1): quarry_spritelayout_20;
+                relative_coord(3, 2): quarry_spritelayout_8;
+                relative_coord(3, 3): quarry_spritelayout_2;
+                relative_coord(4, 1): quarry_spritelayout_19;
+                relative_coord(4, 2): quarry_spritelayout_7;
+                relative_coord(4, 3): quarry_spritelayout_1;
+            quarry_spritelayout_24; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, quarry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): quarry_spritelayout_24;
+                relative_coord(0, 1): quarry_spritelayout_12;
+                relative_coord(0, 2): quarry_spritelayout_6;
+                relative_coord(1, 0): quarry_spritelayout_23;
+                relative_coord(1, 1): quarry_spritelayout_11;
+                relative_coord(1, 2): quarry_spritelayout_5;
+                relative_coord(1, 3): quarry_spritelayout_41;
+                relative_coord(2, 0): quarry_spritelayout_22;
+                relative_coord(2, 1): quarry_spritelayout_10;
+                relative_coord(2, 2): quarry_spritelayout_4;
+                relative_coord(2, 3): quarry_spritelayout_40;
+                relative_coord(3, 0): quarry_spritelayout_20;
+                relative_coord(3, 1): quarry_spritelayout_8;
+                relative_coord(3, 2): quarry_spritelayout_2;
+                relative_coord(3, 3): quarry_spritelayout_39;
+                relative_coord(4, 0): quarry_spritelayout_19;
+                relative_coord(4, 1): quarry_spritelayout_7;
+                relative_coord(4, 2): quarry_spritelayout_1;
+            quarry_spritelayout_24; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, quarry_industry_graphics_switch_layouts, layout_num) {
+            1: quarry_layout_1_graphics_switch;
+            2: quarry_layout_2_graphics_switch;
+        quarry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        quarry_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        quarry_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, quarry_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        quarry_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, quarry_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        quarry_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, quarry_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        quarry_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, quarry_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        quarry_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, quarry_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        quarry_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, quarry_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: quarry_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_tile_2_lc_3,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, quarry_tile_2_lc_2, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        quarry_tile_2_lc_3;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, quarry_tile_2_lc_1, nearby_tile_slope(0,0) == SLOPE_FLAT) {
+        1: quarry_tile_2_lc_2;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_tile_2_lc_0, nearby_tile_is_water(0, 0)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_tile_2_lc_1;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, quarry_tile_2_anim_control, (extra_callback_info1 % 56)) {
+            0: return 0;
+            1: return 1;
+            2: return 2;
+            3: return 3;
+            4: return 4;
+            5: return 5;
+            6: return 6;
+            7: return 7;
+            8: return 8;
+            9: return 9;
+            10: return 10;
+            11: return 11;
+            12: return 12;
+            13: return 13;
+            14: return 14;
+            15: return 15;
+            16: return 16;
+            17: return 17;
+            18: return 18;
+            19: return 19;
+            20: return 20;
+            21: return 21;
+            22: return 22;
+            23: return 23;
+            24: return 24;
+            25: return 25;
+            26: return 26;
+            27: return 27;
+            28: return 28;
+            29: return 29;
+            30: return 30;
+            31: return 31;
+            32: return 32;
+            33: return 33;
+            34: return 34;
+            35: return 35;
+            36: return 36;
+            37: return 37;
+            38: return 38;
+            39: return 39;
+            40: return 40;
+            41: return 41;
+            42: return 42;
+            43: return 43;
+            44: return 44;
+            45: return 45;
+            46: return 46;
+            47: return 47;
+            48: return 48;
+            49: return 49;
+            50: return 50;
+            51: return 51;
+            52: return 52;
+            53: return 53;
+            54: return 54;
+            55: return 55;
+        return CB_RESULT_NEXT_FRAME;
+    }
+    item(FEAT_INDUSTRYTILES, quarry_tile_1, 241) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: quarry_tile_1_lc_0;
+            quarry_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_1, 241) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_1, 241) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_1, 241) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+    item(FEAT_INDUSTRYTILES, quarry_tile_2, 242) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 56];
+                animation_speed: 4;
+            animation_triggers: bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE);
+        }
+        graphics {
+    		    tile_check: quarry_tile_2_lc_0;
+    		    anim_control: quarry_tile_2_anim_control;
+                foundations: return CB_RESULT_NO_FOUNDATIONS;
+                autoslope: return CB_RESULT_NO_AUTOSLOPE;
+            quarry_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_2, 242) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_2, 242) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==3) {
+                item(FEAT_INDUSTRYTILES, quarry_tile_2, 242) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout quarry_layout_1_tilelayout {
+            0, 1: quarry_tile_2;
+            0, 2: quarry_tile_2;
+            0, 3: quarry_tile_2;
+            1, 0: quarry_tile_1;
+            1, 1: quarry_tile_2;
+            1, 2: quarry_tile_1;
+            1, 3: quarry_tile_2;
+            2, 0: quarry_tile_1;
+            2, 1: quarry_tile_2;
+            2, 2: quarry_tile_1;
+            2, 3: quarry_tile_2;
+            3, 0: quarry_tile_1;
+            3, 1: quarry_tile_2;
+            3, 2: quarry_tile_2;
+            3, 3: quarry_tile_2;
+            4, 1: quarry_tile_2;
+            4, 2: quarry_tile_2;
+            4, 3: quarry_tile_2;
+    }
+    tilelayout quarry_layout_2_tilelayout {
+            0, 0: quarry_tile_2;
+            0, 1: quarry_tile_2;
+            0, 2: quarry_tile_2;
+            1, 0: quarry_tile_2;
+            1, 1: quarry_tile_1;
+            1, 2: quarry_tile_2;
+            1, 3: quarry_tile_1;
+            2, 0: quarry_tile_2;
+            2, 1: quarry_tile_1;
+            2, 2: quarry_tile_2;
+            2, 3: quarry_tile_1;
+            3, 0: quarry_tile_2;
+            3, 1: quarry_tile_2;
+            3, 2: quarry_tile_2;
+            3, 3: quarry_tile_1;
+            4, 0: quarry_tile_2;
+            4, 1: quarry_tile_2;
+            4, 2: quarry_tile_2;
+    }
+switch(FEAT_INDUSTRIES, SELF, quarry_extra_text, [
+	STORE_TEMP((primary_level1_requirement * 1) |
+	(primary_level2_requirement * 1) << 16, 0x100),
+	LOAD_PERM(3)
+]) {
+	primary_level2_bonus: return string(STR_PRIMARY_PRODUCTION_4X);
+	primary_level1_bonus: return string(STR_PRIMARY_PRODUCTION_2X);
+	return string(STR_PRIMARY_PRODUCTION_1X);
+}
+switch (FEAT_INDUSTRIES, SELF, quarry_cargo_subtype_display, 1) {
+    return 0x3800 + string(STR_EMPTY);
+}
+/* Primary production which is boosted by supplies */
+    produce(quarry_production, 9999, 9999, 9999, 0, 0, 0);
+    switch(FEAT_INDUSTRIES, SELF, quarry_produce, STORE_PERM(waiting_cargo_1 + waiting_cargo_2 + waiting_cargo_3 + LOAD_PERM(0), 0)) {
+        quarry_production;
+    }
+    produce(quarry_production_256, 0, 0, 0, LOAD_TEMP(9) * production_rate_1 / 100, LOAD_TEMP(9) * production_rate_2 / 100, 0);
+    switch(FEAT_INDUSTRIES, SELF, quarry_produce_256_ticks,
+            [STORE_TEMP(
+                LOAD_PERM(0) +
+                LOAD_PERM(1) +
+                LOAD_PERM(2),
+            8),
+            STORE_TEMP((LOAD_TEMP(8) >= (1 * primary_level2_requirement)) ? primary_level2_bonus :
+                       (LOAD_TEMP(8) >= (1 * primary_level1_requirement)) ? primary_level1_bonus : 0, 9),
+            STORE_PERM(LOAD_TEMP(9), 3)
+            ]) {
+        quarry_production_256;
+    }
+/* =================================== */
+/* Production change evaluated monthly */
+/* =================================== */
+    switch(FEAT_INDUSTRIES, SELF, quarry_monthly_update, [
+        STORE_PERM(LOAD_PERM(1), 2),
+        STORE_PERM(LOAD_PERM(0), 1),
+        STORE_PERM(0, 0)
+    ]) {
+        return CB_RESULT_IND_PROD_NO_CHANGE;
+    }
+switch(FEAT_INDUSTRIES, SELF, quarry_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, quarry_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	quarry_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, quarry_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: quarry_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): quarry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, quarry_check_availability, economy) {
+        2: quarry_check_availability_2;
+        0: quarry_check_availability_0;
+        1: quarry_check_availability_1;
+        4: quarry_check_availability_4;
+        5: quarry_check_availability_5;
+        3: quarry_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_43;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_45, industry_distance(45)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_7, industry_distance(7)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_45;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_1, industry_distance(1)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_7;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_1;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_10, industry_distance(10)) {
+        0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_81;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_cluster_quarry,
+                industry_count(quarry) >= (4 * industry_clusters) &&
+                industry_distance(quarry) > 90
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_10;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        quarry_cluster_quarry;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 194;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [quarry_layout_1_tilelayout,quarry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_QUARRY);
+                    prod_multiplier: [14, 14];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 6;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 210;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("SAND"),cargotype("LIME")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_IND_QUARRY));
+                }
+            }
+        }
+        if (economy==5) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 194;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [quarry_layout_1_tilelayout,quarry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_QUARRY);
+                    prod_multiplier: [14, 14];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 6;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 210;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("SAND"),cargotype("LIME")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_IND_QUARRY));
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 194;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [quarry_layout_1_tilelayout,quarry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_QUARRY);
+                    prod_multiplier: [14, 14];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 6;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 210;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("SAND"),cargotype("LIME")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_IND_QUARRY));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                graphics {
+                    construction_probability: quarry_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    quarry_produce;
+                    produce_256_ticks:        quarry_produce_256_ticks;
+                    monthly_prod_change:      quarry_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           quarry_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      quarry_extra_text;
+                    cargo_subtype_display:    quarry_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==5) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                graphics {
+                    construction_probability: quarry_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    quarry_produce;
+                    produce_256_ticks:        quarry_produce_256_ticks;
+                    monthly_prod_change:      quarry_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           quarry_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      quarry_extra_text;
+                    cargo_subtype_display:    quarry_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
+        if (economy==3) {
+            item(FEAT_INDUSTRIES, quarry, 10) {
+                graphics {
+                    construction_probability: quarry_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    quarry_produce;
+                    produce_256_ticks:        quarry_produce_256_ticks;
+                    monthly_prod_change:      quarry_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           quarry_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      quarry_extra_text;
+                    cargo_subtype_display:    quarry_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

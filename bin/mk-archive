@@ -1,0 +1,191 @@
+#!/usr/bin/env python3
+"""
+Construct an archive from a set of files.
+"""
+import sys, getopt, tarfile, zipfile, os
+
+def make_tar_archive(dest_file, file_format, tuplets, verbose):
+    """
+    Construct a (possibly compressed) tar archive file containing the
+    L{input_files}. If L{base_dir} is non-empty, an additional root directory
+    level is inserted in the archive with that name. If L{flatten} is
+    specified, directory paths of the input files are discarded.
+    """
+    modes = {'tar' : 'w', 'tar-gz': 'w:gz', 'tar-bz2': 'w:bz2', 'tar-xz': 'w:xz'}
+    mode = modes[file_format]
+
+    tar_file = tarfile.open(dest_file, mode)
+    for src_path, dst_path in tuplets:
+        if verbose:
+            print("Adding {} as {}".format(src_path, dst_path))
+
+        tar_file.add(src_path, dst_path, recursive=False)
+
+    tar_file.close()
+
+def make_zip_archive(dest_file, file_format, tuplets, verbose):
+    """
+    Construct a compressed zip archive file containing the
+    L{input_files}. If L{base_dir} is non-empty, an additional root directory
+    level is inserted in the archive with that name. If L{flatten} is
+    specified, directory paths of the input files are discarded.
+    """
+    assert file_format == 'zip'
+
+    zip_file = zipfile.ZipFile(dest_file, 'w', compression = zipfile.ZIP_DEFLATED)
+    for src_path, dst_path in tuplets:
+        if verbose:
+            print("Adding {} as {}".format(src_path, dst_path))
+
+        zip_file.write(src_path, dst_path)
+
+    zip_file.close()
+
+def collect_files(arguments, base_dir, flatten):
+    """
+    Build a list of (source-path, dest-path) tuplets.
+    """
+    def make_triplet(base_dir, path, flatten):
+        filename = os.path.basename(path)
+        if flatten:
+            dst_path = filename
+        else:
+            dst_path = path
+
+        if base_dir != '':
+            dst_path = os.path.join(base_dir, dst_path)
+
+        return path, dst_path
+
+
+    tuplets = []
+    for path in arguments:
+        if os.path.isfile(path):
+            tuplets.append(make_triplet(base_dir, path, flatten))
+        elif os.path.isdir(path):
+            for dirpath, dirnames, filenames in os.walk(path):
+                for fname in filenames:
+                    filepath = os.path.join(dirpath, fname)
+                    tuplets.append(make_triplet(base_dir, filepath, flatten))
+        else:
+            print("mk-archive INFO: '{}' is neither a file nor a directory, ignoring".format(path))
+
+    return tuplets
+
+
+def check_uniq_filenames(tuplets, flatten):
+    """
+    Do some sanity checking on files to archive. Return an error, or C{None}
+    """
+    file_set = {}
+    for src_path, dst_path in tuplets:
+        exist_src = file_set.get(dst_path)
+        if exist_src is None:
+            file_set[dst_path] = src_path
+            continue
+
+        msg = "Duplicate files {} and {} (possibly after flattening the hierarchy)"
+        if flatten:
+            msg = msg + " after flattening the hierarchy"
+        return msg.format(exist_src, src_path)
+
+    return None
+
+def usage():
+    print("Usage: mk-archive [options] file ...")
+    print("Construct an archive file from the given input files")
+    print("Options:")
+    print("  -h, --help                    This online help")
+    print("  --verbose                     Be verbose about what is added to the archive")
+    print("  -b BASE, --base-dir=BASE      Additional root directory inserted in the archive")
+    print("  --tar                         Construct an uncompressed tar archive")
+    print("  --tar-gz                      Construct a gzip compressed tar archive")
+    print("  --tar-bz2                     Construct a bzip2 compressed tar archive")
+    print("  --tar-xz                      Construct a lzma compressed tar archive")
+    print("  --zip                         Construct a deflated zip archive, is default archive format")
+    print("  -o ARCHIVE, --output ARCHIVE  Name of the created archive, obligatory")
+    print("  -f, --flatten                 Remove the path prefixes of the input files")
+
+def run():
+    short_opts = 'hb:o:f'
+    long_opts = ['help', 'tar', 'zip', 'tar-gz', 'tar-bz2', 'tar-xz',
+                 'base-dir=', 'output=', 'flatten', 'verbose']
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], short_opts, long_opts)
+    except getopt.GetoptError as ex:
+        print("mk-archive ERROR: {}".format(ex))
+        sys.exit(1)
+
+    file_format = None
+    dest_file = None
+    flatten = False
+    verbose = False
+    base_dir = ''
+    for opt, opt_val in opts:
+        if opt in ('-h', '--help'):
+            usage()
+            sys.exit(0)
+
+        if opt == '--tar':
+            file_format = 'tar'
+            continue
+
+        if opt == '--zip':
+            file_format = 'zip'
+            continue
+
+        if opt == '--tar-gz':
+            file_format = 'tar-gz'
+            continue
+
+        if opt == '--tar-bz2':
+            file_format = 'tar-bz2'
+            continue
+
+        if opt == '--tar-xz':
+            file_format = 'tar-zx'
+            continue
+
+        if opt in ('-b', '--base-dir'):
+            base_dir = opt_val
+            continue
+
+        if opt in ('-o', '--output'):
+            dest_file = opt_val
+            continue
+
+        if opt == '--verbose':
+            verbose = True
+            continue
+
+        if opt in ('-f', '--flatten'):
+            flatten = True
+            continue
+
+        assert False, "Unexpected option {} found".format((opt, opt_val))
+
+    if file_format is None:
+        file_format = 'zip'
+
+    if dest_file is None:
+        print("mk-archive ERROR: No destination archive filename given, use --output or -o")
+        sys.exit(1)
+
+    if len(args) == 0:
+        print("mk-archive ERROR: Cowardly refusing to make an empty archive")
+        sys.exit(1)
+
+    tuplets = collect_files(args, base_dir, flatten)
+    err = check_uniq_filenames(tuplets, flatten)
+    if err is not None:
+        print("mk-archive ERROR: {}".format(err))
+        sys.exit(1)
+
+    if file_format == 'zip':
+        make_zip_archive(dest_file, file_format, tuplets, verbose)
+    else:
+        make_tar_archive(dest_file, file_format, tuplets, verbose)
+    sys.exit(0)
+
+if __name__ == '__main__':
+    run()

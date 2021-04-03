@@ -1,0 +1,92 @@
+# strings required for docs that are not in base lang file
+# for example, industry names which reuse openttd strings (not in the lang file)
+
+TTD_STR_INDUSTRY_NAME_COAL_MINE                     :Coal Mine
+TTD_STR_INDUSTRY_NAME_COPPER_ORE_MINE               :Copper Mine
+TTD_STR_INDUSTRY_NAME_DIAMOND_MINE                  :Diamond Mine
+TTD_STR_INDUSTRY_NAME_FOOD_PROCESSING_PLANT         :Food Processing Plant
+TTD_STR_INDUSTRY_NAME_FOREST                        :Forest
+TTD_STR_INDUSTRY_NAME_FRUIT_PLANTATION              :Fruit Plantation
+TTD_STR_INDUSTRY_NAME_IRON_ORE_MINE                 :Iron Ore Mine
+TTD_STR_INDUSTRY_NAME_OIL_REFINERY                  :Oil Refinery
+TTD_STR_INDUSTRY_NAME_OIL_RIG                       :Oil Rig
+TTD_STR_INDUSTRY_NAME_OIL_WELLS                     :Oil Wells
+TTD_STR_INDUSTRY_NAME_PAPER_MILL                    :Paper Mill
+TTD_STR_INDUSTRY_NAME_RUBBER_PLANTATION             :Rubber Plantation
+TTD_STR_INDUSTRY_NAME_SAWMILL                       :Sawmill
+TTD_STR_INDUSTRY_NAME_STEEL_MILL                    :Steel Mill
+
+TTD_STR_CARGO_PLURAL_COAL                           :Coal
+TTD_STR_CARGO_PLURAL_COPPER_ORE                     :Copper Ore
+TTD_STR_CARGO_PLURAL_DIAMONDS                       :Diamonds
+TTD_STR_CARGO_PLURAL_FOOD                           :Food
+TTD_STR_CARGO_PLURAL_GOODS                          :Goods
+TTD_STR_CARGO_PLURAL_GRAIN                          :Grain
+TTD_STR_CARGO_PLURAL_IRON_ORE                       :Iron Ore
+TTD_STR_CARGO_PLURAL_LIVESTOCK                      :Livestock
+TTD_STR_CARGO_PLURAL_MAIL                           :Mail
+TTD_STR_CARGO_PLURAL_MAIZE                          :Maize
+TTD_STR_CARGO_PLURAL_OIL                            :Oil
+TTD_STR_CARGO_PLURAL_PAPER                          :Paper
+TTD_STR_CARGO_PLURAL_PASSENGERS                     :Passengers
+TTD_STR_CARGO_PLURAL_RUBBER                         :Rubber
+TTD_STR_CARGO_PLURAL_SUGAR                          :Sugar
+TTD_STR_CARGO_PLURAL_WOOD                           :Wood
+
+ECONOMY_INFO_FIRS                                   :Complex economy with many industries and cargos.
+# went back and forth a while on exact inspiration for Arctic Basic, but stick with it now eh?
+ECONOMY_INFO_BASIC_ARCTIC                           :Simple economy. Inspired by Finland, Northern Canada and Northern Siberia. Best used with Sub-Arctic climate.
+ECONOMY_INFO_BASIC_TEMPERATE                        :Simple economy. Inspired by south-western UK. Best used with Temperate climate.
+ECONOMY_INFO_BASIC_TROPIC                           :Simple economy. Inspired by Argentina, Peru and Chile. Best used with Sub-Tropic climate.
+ECONOMY_INFO_MISTAH_KURTZ                           :Complex economy with many industries and cargos. Inspired by central-western Africa. Best used with Sub-Tropic climate.
+ECONOMY_INFO_STEELTOWN                              :Complex economy featuring iron, steel and heavy manufacturing industries.
+
+# not all cargos need info, some are obvious (coal for example)
+CARGO_INFO_PASSENGERS                               :Available in all economies.  Produced and accepted by town buildings, and also a few industries.
+CARGO_INFO_MAIL                                     :Available in all economies.  Produced and accepted by town buildings.
+CARGO_INFO_ALCOHOL                                  :Wine, beer, cider, spirits.
+CARGO_INFO_ACID                                     :Industrial acids, such as hydrochloric, nitric and sulphuric acid.
+CARGO_INFO_BASE_METALS                              :Non-ferrous metals, such as copper, nickel, zinc and lead.
+CARGO_INFO_BAUXITE                                  :Bauxite ore / alumina.
+CARGO_INFO_BEANS                                    :Common beans, fava beans, soybeans and similar edible legumes.
+CARGO_INFO_BUILDING_MATERIALS                       :Cement, glass, metal components, wood products, pipes and similar construction materials.
+CARGO_INFO_CASSAVA                                  :Edible root crop, also known as manioc and yuca.
+CARGO_INFO_CEMENT                                   :Dry cement in powder or clinker form.
+CARGO_INFO_CHEMICALS                                :Generic chemicals, usually in liquid form.
+CARGO_INFO_CHLORINE                                 :Industrial chemical, usually transported as liquified compressed gas.
+CARGO_INFO_CLAY                                     :Generic clays, for producing building materials and other industrial uses.
+CARGO_INFO_COFFEE                                   :Raw or roasted coffee beans.
+CARGO_INFO_COKE                                     :Coal that has been heated in a coke oven, producing a fuel that is nearly pure carbon.
+CARGO_INFO_COPPER                                   :Refined Copper metal, in coils, ingots etc.
+CARGO_INFO_DIAMONDS                                 :Are forever, etc.
+CARGO_INFO_EDIBLE_OIL                               :Oil for cooking and consumption.
+CARGO_INFO_ELECTRICAL_MACHINES                      :Motors, generators, transformers and similar electrical equipment.
+CARGO_INFO_ENGINEERING_SUPPLIES                     :Machinery, fuel, parts, wood products, pipes, explosives and other supplies for mines and similar industries.
+CARGO_INFO_FARM_SUPPLIES                            :Machinery, fuel, parts, fertiliser and other supplies for farms, forests and similar industries.
+CARGO_INFO_GRAIN                                    :Wheat, barley etc.
+CARGO_INFO_EXPLOSIVES                               :Civil explosives for mining, construction etc.
+CARGO_INFO_LIVESTOCK                                :Mostly cows, pigs and sheep for meat production.  Other animals may also be eaten.
+CARGO_INFO_LUMBER                                   :Processed wood products from a sawmill.
+CARGO_INFO_KAOLIN                                   :Industrial mineral, also known as China Clay, used primarily in paper and plastics production.
+CARGO_INFO_MANGANESE                                :Manganese ore, used primarily in steel production.
+CARGO_INFO_PACKAGING                   :Boxes, bottles, jars, cans, etc.
+CARGO_INFO_MARINE_SUPPLIES                          :Machinery, parts, fuel, construction materials and other supplies for harbours, docks and similar industries.
+CARGO_INFO_METAL                                    :Generic metal, such as steel, aluminium or other common metals.
+CARGO_INFO_PEAT                                     :Biomass from peat bogs, extracted for fuel and horticulture.
+CARGO_INFO_PIG_IRON                                 :Basic iron from a blast furnace, as molten liquid or solid ingots.
+CARGO_INFO_PIPE                                     :Industrial pipes for pipelines etc.
+CARGO_INFO_PLANT_FIBRES                             :Cotton, flax, jute and similar materials, for producing textiles and composite materials.
+CARGO_INFO_PETROL                                   :Petrol, diesel and similar fuels.
+CARGO_INFO_PYRITE_ORE                               :Sulfide minerals, smelted to produce a variety of industrial products.
+CARGO_INFO_RUBBER                                   :Mostly natural latex.
+CARGO_INFO_SLAG                                     :Waste product from iron and steel production.
+CARGO_INFO_SODA_ASH                                 :Industrial chemical. White powder form.
+CARGO_INFO_STONE                                    :Crushed stone / gravel.
+CARGO_INFO_SULPHUR                                  :Widely used industrial chemical. Bright yellow, in powder or liquid form.
+CARGO_INFO_VEHICLE_BODIES                           :Cabs, bonnets, doors and similar body structures for vehicle production.
+CARGO_INFO_VEHICLE_PARTS                            :Tyres, engines, gearboxes, windscreens, interior parts, external trim and similar components for vehicle production.
+CARGO_INFO_VEHICLES                                 :Mostly trucks.
+CARGO_INFO_WOOD                                     :Logs from a forest.
+CARGO_INFO_ZINC                                     :Ingots.
+
+INDUSTRY_INFO_GRAIN_MILL                            :Two types. Windmill variant available until 1900.

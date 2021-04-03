@@ -1,0 +1,1332 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(manganese_mine_spriteset_0_0) {
+                        [10, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [80, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [150, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_0_0_snow) {
+                            [10, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [80, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [150, 310, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_1_0) {
+                        [10, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [80, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [150, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [220, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [290, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [360, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [430, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [500, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [500, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [570, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [570, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [640, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [640, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [710, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [780, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [850, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [920, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [990, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+                        [1060, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_1_0_snow) {
+                            [10, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [80, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [150, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [220, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [290, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [360, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [430, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [500, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [500, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [570, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [570, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [640, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [640, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [710, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [780, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [850, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [920, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [990, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+                            [1060, 160, 64, 122, -31, -88, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_2_0) {
+                        [10, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_2_0_snow) {
+                            [10, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_3_0) {
+                        [80, 10, 64, 122, -31, -74, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_3_0_snow) {
+                            [80, 10, 64, 122, -31, -74, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_4_0) {
+                        [150, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_4_0_snow) {
+                            [150, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_5_0) {
+                        [220, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_5_0_snow) {
+                            [220, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_6_0) {
+                        [290, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_6_0_snow) {
+                            [290, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_7_0) {
+                        [360, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_7_0_snow) {
+                            [360, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+            spriteset(manganese_mine_spriteset_8_0) {
+                        [430, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1.png"]
+            }
+            spriteset(manganese_mine_spriteset_8_0_snow) {
+                            [430, 10, 64, 122, -31, -90, ANIM | NOCROP, "src/graphics/industries/manganese_mine_1_snow.png"]
+            }
+        spritelayout manganese_mine_spritelayout_tile_empty {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout manganese_mine_spritelayout_headgear_animated {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_0_0(1*(animation_frame % 3));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_0_0_snow(1*(animation_frame % 3));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_exit_trestle_animated {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_1_0(1* (animation_frame));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_1_0_snow(1* (animation_frame));
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_crusher_front_part {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_crusher_rear_part {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_hut_vents {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_ore_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_ore_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout manganese_mine_spritelayout_winding_house {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_7_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_7_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 2040 + (animation_frame / 4);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: -1;
+                    yoffset: 2;
+                    zoffset: 38+ animation_frame;
+                    xextent: 11;
+                    yextent: 16;
+                    zextent: 7;
+                    hide_sprite: animation_frame > 19;
+                }
+                // smoke sprites
+                building {
+                    sprite: 2040 + (animation_frame / 4);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: -1;
+                    yoffset: 6;
+                    zoffset: 38+ animation_frame;
+                    xextent: 11;
+                    yextent: 16;
+                    zextent: 7;
+                    hide_sprite: animation_frame > 19;
+                }
+        }
+        spritelayout manganese_mine_spritelayout_exit_shed_rear {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: manganese_mine_spriteset_8_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: manganese_mine_spriteset_8_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 1): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 2): manganese_mine_spritelayout_winding_house;
+                relative_coord(1, 0): manganese_mine_spritelayout_crusher_rear_part;
+                relative_coord(1, 1): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 2): manganese_mine_spritelayout_hut_vents;
+                relative_coord(2, 0): manganese_mine_spritelayout_tile_empty;
+                relative_coord(2, 1): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 2): manganese_mine_spritelayout_tile_empty;
+                relative_coord(3, 0): manganese_mine_spritelayout_crusher_front_part;
+                relative_coord(3, 1): manganese_mine_spritelayout_ore_1;
+                relative_coord(3, 2): manganese_mine_spritelayout_ore_2;
+            manganese_mine_spritelayout_headgear_animated; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): manganese_mine_spritelayout_crusher_rear_part;
+                relative_coord(0, 1): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 2): manganese_mine_spritelayout_winding_house;
+                relative_coord(0, 3): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 4): manganese_mine_spritelayout_winding_house;
+                relative_coord(1, 0): manganese_mine_spritelayout_tile_empty;
+                relative_coord(1, 1): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 2): manganese_mine_spritelayout_tile_empty;
+                relative_coord(1, 3): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 4): manganese_mine_spritelayout_hut_vents;
+                relative_coord(2, 0): manganese_mine_spritelayout_crusher_front_part;
+                relative_coord(2, 1): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 2): manganese_mine_spritelayout_ore_1;
+                relative_coord(2, 3): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 4): manganese_mine_spritelayout_ore_2;
+            manganese_mine_spritelayout_crusher_rear_part; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_industry_layout_3_graphics_switch, relative_pos) {
+                relative_coord(0, 0): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 1): manganese_mine_spritelayout_winding_house;
+                relative_coord(1, 0): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 1): manganese_mine_spritelayout_ore_2;
+                relative_coord(1, 2): manganese_mine_spritelayout_tile_empty;
+                relative_coord(2, 0): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 1): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(2, 2): manganese_mine_spritelayout_winding_house;
+                relative_coord(3, 2): manganese_mine_spritelayout_hut_vents;
+                relative_coord(3, 1): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(3, 0): manganese_mine_spritelayout_crusher_rear_part;
+                relative_coord(4, 0): manganese_mine_spritelayout_tile_empty;
+                relative_coord(4, 1): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(4, 2): manganese_mine_spritelayout_ore_2;
+                relative_coord(5, 0): manganese_mine_spritelayout_crusher_front_part;
+                relative_coord(5, 1): manganese_mine_spritelayout_ore_1;
+            manganese_mine_spritelayout_headgear_animated; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_industry_layout_4_graphics_switch, relative_pos) {
+                relative_coord(0, 0): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 1): manganese_mine_spritelayout_winding_house;
+                relative_coord(0, 2): manganese_mine_spritelayout_headgear_animated;
+                relative_coord(0, 3): manganese_mine_spritelayout_winding_house;
+                relative_coord(0, 4): manganese_mine_spritelayout_crusher_rear_part;
+                relative_coord(1, 0): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 1): manganese_mine_spritelayout_ore_2;
+                relative_coord(1, 2): manganese_mine_spritelayout_exit_shed_rear;
+                relative_coord(1, 3): manganese_mine_spritelayout_tile_empty;
+                relative_coord(1, 4): manganese_mine_spritelayout_tile_empty;
+                relative_coord(2, 0): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 1): manganese_mine_spritelayout_hut_vents;
+                relative_coord(2, 2): manganese_mine_spritelayout_exit_trestle_animated;
+                relative_coord(2, 3): manganese_mine_spritelayout_ore_1;
+                relative_coord(2, 4): manganese_mine_spritelayout_crusher_front_part;
+            manganese_mine_spritelayout_headgear_animated; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, manganese_mine_industry_graphics_switch_layouts, layout_num) {
+            1: manganese_mine_industry_layout_1_graphics_switch;
+            2: manganese_mine_industry_layout_2_graphics_switch;
+            3: manganese_mine_industry_layout_3_graphics_switch;
+            4: manganese_mine_industry_layout_4_graphics_switch;
+        manganese_mine_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        manganese_mine_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        manganese_mine_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, manganese_mine_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        manganese_mine_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        manganese_mine_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        manganese_mine_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        manganese_mine_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, manganese_mine_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        manganese_mine_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: manganese_mine_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_2_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, manganese_mine_tile_2_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        manganese_mine_tile_2_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_2_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: manganese_mine_tile_2_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_3_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, manganese_mine_tile_3_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        manganese_mine_tile_3_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_3_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: manganese_mine_tile_3_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_1_anim_control, 0) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_2_anim_control, (extra_callback_info1 % 71)) {
+            0: return 0;
+            1: return 1;
+            2: return 2;
+            3: return 3;
+            4: return 4;
+            5: return 5;
+            6: return 6;
+            7: return 7;
+            8: return 8;
+            9: return 9;
+            10: return 10;
+            11: return 11;
+            12: return 12;
+            13: return 13;
+            14: return 14;
+            15: return 15;
+            16: return 16;
+            17: return 17;
+            18: return 18;
+            19: return 19;
+            20: return 20;
+            21: return 21;
+            22: return 22;
+            23: return 23;
+            24: return 24;
+            25: return 25;
+            26: return 26;
+            27: return 27;
+            28: return 28;
+            29: return 29;
+            30: return 30;
+            31: return 31;
+            32: return 32;
+            33: return 33;
+            34: return 34;
+            35: return 35;
+            36: return 36;
+            37: return 37;
+            38: return 38;
+            39: return 39;
+            40: return 40;
+            41: return 41;
+            42: return 42;
+            43: return 43;
+            44: return 44;
+            45: return 45;
+            46: return 46;
+            47: return 47;
+            48: return 48;
+            49: return 49;
+            50: return 50;
+            51: return 51;
+            52: return 52;
+            53: return 53;
+            54: return 54;
+            55: return 55;
+            56: return 56;
+            57: return 57;
+            58: return 58;
+            59: return 59;
+            60: return 60;
+            61: return 61;
+            62: return 62;
+            63: return 63;
+            64: return 64;
+            65: return 65;
+            66: return 66;
+            67: return 67;
+            68: return 68;
+            69: return 69;
+            70: return 70;
+        return CB_RESULT_NEXT_FRAME;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, manganese_mine_tile_3_anim_control, 0) {
+        return 0;
+    }
+    item(FEAT_INDUSTRYTILES, manganese_mine_tile_1, 155) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 81];
+                animation_speed: 1;
+            animation_triggers: bitmask(ANIM_TRIGGER_INDTILE_TILE_LOOP);
+        }
+        graphics {
+    		    tile_check: manganese_mine_tile_1_lc_0;
+                anim_next_frame: return ((animation_frame == 80) ? CB_RESULT_STOP_ANIMATION : CB_RESULT_NEXT_FRAME);
+    		    anim_control: manganese_mine_tile_1_anim_control;
+            manganese_mine_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, manganese_mine_tile_1, 155) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+    item(FEAT_INDUSTRYTILES, manganese_mine_tile_2, 156) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 71];
+                animation_speed: 2;
+            animation_triggers: bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE);
+        }
+        graphics {
+    		    tile_check: manganese_mine_tile_2_lc_0;
+    		    anim_control: manganese_mine_tile_2_anim_control;
+            manganese_mine_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, manganese_mine_tile_2, 156) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+    item(FEAT_INDUSTRYTILES, manganese_mine_tile_3, 157) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 200];
+                animation_speed: 3;
+            animation_triggers: bitmask(ANIM_TRIGGER_INDTILE_TILE_LOOP);
+        }
+        graphics {
+    		    tile_check: manganese_mine_tile_3_lc_0;
+                anim_next_frame: return ((animation_frame == 18) ? CB_RESULT_STOP_ANIMATION : CB_RESULT_NEXT_FRAME);
+    		    anim_control: manganese_mine_tile_3_anim_control;
+            manganese_mine_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, manganese_mine_tile_3, 157) {
+                    property {
+                        accepted_cargos:  [[cargotype("ENSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout manganese_mine_industry_layout_1_tilelayout {
+            0, 1: manganese_mine_tile_1;
+            0, 2: manganese_mine_tile_2;
+            1, 0: manganese_mine_tile_2;
+            1, 1: manganese_mine_tile_2;
+            1, 2: manganese_mine_tile_2;
+            2, 0: manganese_mine_tile_2;
+            2, 1: manganese_mine_tile_3;
+            2, 2: manganese_mine_tile_2;
+            3, 0: manganese_mine_tile_2;
+            3, 1: manganese_mine_tile_2;
+            3, 2: manganese_mine_tile_2;
+    }
+    tilelayout manganese_mine_industry_layout_2_tilelayout {
+            0, 0: manganese_mine_tile_2;
+            0, 1: manganese_mine_tile_1;
+            0, 2: manganese_mine_tile_2;
+            0, 3: manganese_mine_tile_1;
+            0, 4: manganese_mine_tile_2;
+            1, 0: manganese_mine_tile_2;
+            1, 1: manganese_mine_tile_2;
+            1, 2: manganese_mine_tile_2;
+            1, 3: manganese_mine_tile_2;
+            1, 4: manganese_mine_tile_2;
+            2, 0: manganese_mine_tile_2;
+            2, 1: manganese_mine_tile_3;
+            2, 2: manganese_mine_tile_2;
+            2, 3: manganese_mine_tile_3;
+            2, 4: manganese_mine_tile_2;
+    }
+    tilelayout manganese_mine_industry_layout_3_tilelayout {
+            0, 0: manganese_mine_tile_1;
+            0, 1: manganese_mine_tile_2;
+            1, 0: manganese_mine_tile_2;
+            1, 1: manganese_mine_tile_2;
+            1, 2: manganese_mine_tile_2;
+            2, 0: manganese_mine_tile_3;
+            2, 1: manganese_mine_tile_1;
+            2, 2: manganese_mine_tile_2;
+            3, 2: manganese_mine_tile_2;
+            3, 1: manganese_mine_tile_2;
+            3, 0: manganese_mine_tile_2;
+            4, 0: manganese_mine_tile_2;
+            4, 1: manganese_mine_tile_3;
+            4, 2: manganese_mine_tile_2;
+            5, 0: manganese_mine_tile_2;
+            5, 1: manganese_mine_tile_2;
+    }
+    tilelayout manganese_mine_industry_layout_4_tilelayout {
+            0, 0: manganese_mine_tile_1;
+            0, 1: manganese_mine_tile_2;
+            0, 2: manganese_mine_tile_1;
+            0, 3: manganese_mine_tile_2;
+            0, 4: manganese_mine_tile_2;
+            1, 0: manganese_mine_tile_2;
+            1, 1: manganese_mine_tile_2;
+            1, 2: manganese_mine_tile_2;
+            1, 3: manganese_mine_tile_2;
+            1, 4: manganese_mine_tile_2;
+            2, 0: manganese_mine_tile_3;
+            2, 1: manganese_mine_tile_2;
+            2, 2: manganese_mine_tile_3;
+            2, 3: manganese_mine_tile_2;
+            2, 4: manganese_mine_tile_2;
+    }
+switch(FEAT_INDUSTRIES, SELF, manganese_mine_extra_text, [
+	STORE_TEMP((primary_level1_requirement * 1) |
+	(primary_level2_requirement * 1) << 16, 0x100),
+	LOAD_PERM(3)
+]) {
+	primary_level2_bonus: return string(STR_PRIMARY_PRODUCTION_4X);
+	primary_level1_bonus: return string(STR_PRIMARY_PRODUCTION_2X);
+	return string(STR_PRIMARY_PRODUCTION_1X);
+}
+switch (FEAT_INDUSTRIES, SELF, manganese_mine_cargo_subtype_display, 1) {
+    return 0x3800 + string(STR_EMPTY);
+}
+/* Primary production which is boosted by supplies */
+    produce(manganese_mine_production, 9999, 9999, 9999, 0, 0, 0);
+    switch(FEAT_INDUSTRIES, SELF, manganese_mine_produce, STORE_PERM(waiting_cargo_1 + waiting_cargo_2 + waiting_cargo_3 + LOAD_PERM(0), 0)) {
+        manganese_mine_production;
+    }
+    produce(manganese_mine_production_256, 0, 0, 0, LOAD_TEMP(9) * production_rate_1 / 100, LOAD_TEMP(9) * production_rate_2 / 100, 0);
+    switch(FEAT_INDUSTRIES, SELF, manganese_mine_produce_256_ticks,
+            [STORE_TEMP(
+                LOAD_PERM(0) +
+                LOAD_PERM(1) +
+                LOAD_PERM(2),
+            8),
+            STORE_TEMP((LOAD_TEMP(8) >= (1 * primary_level2_requirement)) ? primary_level2_bonus :
+                       (LOAD_TEMP(8) >= (1 * primary_level1_requirement)) ? primary_level1_bonus : 0, 9),
+            STORE_PERM(LOAD_TEMP(9), 3)
+            ]) {
+        manganese_mine_production_256;
+    }
+/* =================================== */
+/* Production change evaluated monthly */
+/* =================================== */
+    switch(FEAT_INDUSTRIES, SELF, manganese_mine_monthly_update, [
+        STORE_PERM(LOAD_PERM(1), 2),
+        STORE_PERM(LOAD_PERM(0), 1),
+        STORE_PERM(0, 0)
+    ]) {
+        return CB_RESULT_IND_PROD_NO_CHANGE;
+    }
+switch(FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	manganese_mine_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, manganese_mine_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: manganese_mine_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): manganese_mine_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability, economy) {
+        2: manganese_mine_check_availability_2;
+        0: manganese_mine_check_availability_0;
+        1: manganese_mine_check_availability_1;
+        4: manganese_mine_check_availability_4;
+        5: manganese_mine_check_availability_5;
+        3: manganese_mine_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_77, industry_distance(77)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        manganese_mine_min_distance_51;
+    }
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_75, industry_distance(75)) {
+        0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
+        manganese_mine_min_distance_77;
+    }
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_cluster_manganese_mine,
+                industry_count(manganese_mine) >= (3 * industry_clusters) &&
+                industry_distance(manganese_mine) > 70
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        manganese_mine_min_distance_75;
+    }
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        manganese_mine_cluster_manganese_mine;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, manganese_mine, 75) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 16;
+                    life_type: IND_LIFE_TYPE_EXTRACTIVE;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [manganese_mine_industry_layout_1_tilelayout,manganese_mine_industry_layout_2_tilelayout,manganese_mine_industry_layout_3_tilelayout,manganese_mine_industry_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_MANGANESE_MINE);
+                    prod_multiplier: [20, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 7;
+                    prob_in_game: 2;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 232;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("ENSP")];
+                    prod_cargo_types: [cargotype("MNO2")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_MANGANESE_MINES));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, manganese_mine, 75) {
+                graphics {
+                    construction_probability: manganese_mine_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    manganese_mine_produce;
+                    produce_256_ticks:        manganese_mine_produce_256_ticks;
+                    monthly_prod_change:      manganese_mine_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           manganese_mine_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      manganese_mine_extra_text;
+                    cargo_subtype_display:    manganese_mine_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

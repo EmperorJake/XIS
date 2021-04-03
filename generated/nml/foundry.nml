@@ -1,0 +1,1131 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(foundry_spriteset_0_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(150, 10)
+            }
+            spriteset(foundry_spriteset_0_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(foundry_spriteset_1_0, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(360, 10)
+            }
+            spriteset(foundry_spriteset_1_0_snow, "src/graphics/industries/groundtiles.png") {
+                    tmpl_ground_tile(220, 10)
+            }
+            spriteset(foundry_spriteset_2_0) {
+                        [10, 60, 64, 70, -31, -39, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_2_0_snow) {
+                            [10, 60, 64, 70, -31, -39, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_3_0) {
+                        [80, 60, 64, 70, -31, -39, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_3_0_snow) {
+                            [80, 60, 64, 70, -31, -39, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_4_0) {
+                        [150, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_4_0_snow) {
+                            [150, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_5_0) {
+                        [220, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_5_0_snow) {
+                            [220, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_6_0) {
+                        [290, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_6_0_snow) {
+                            [290, 60, 64, 51, -31, -20, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_7_0) {
+                        [360, 60, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_7_0_snow) {
+                            [360, 60, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+            spriteset(foundry_spriteset_8_0) {
+                        [430, 60, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/foundry_1.png"]
+            }
+            spriteset(foundry_spriteset_8_0_snow) {
+                            [430, 60, 64, 31, -31, 0, ANIM | NOCROP, "src/graphics/industries/foundry_1_snow.png"]
+            }
+        spritelayout foundry_spritelayout_1 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                // smoke sprites
+                building {
+                    sprite: 2040 + (animation_frame / 4);
+                    recolour_mode: RECOLOUR_REMAP;
+                    palette: PALETTE_USE_DEFAULT;
+                    xoffset: 0;
+                    yoffset: 8;
+                    zoffset: 53+ animation_frame;
+                    xextent: 11;
+                    yextent: 16;
+                    zextent: 7;
+                    hide_sprite: animation_frame > 19;
+                }
+        }
+        spritelayout foundry_spritelayout_2 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout foundry_spritelayout_3 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout foundry_spritelayout_4 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout foundry_spritelayout_5 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout foundry_spritelayout_6 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_7_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_7_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout foundry_spritelayout_7 {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: foundry_spriteset_0_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: foundry_spriteset_0_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: foundry_spriteset_1_0_snow(0);
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: foundry_spriteset_8_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: foundry_spriteset_8_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, foundry_industry_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): foundry_spritelayout_3;
+                relative_coord(0, 1): foundry_spritelayout_3;
+                relative_coord(0, 2): foundry_spritelayout_5;
+                relative_coord(0, 3): foundry_spritelayout_4;
+                relative_coord(0, 4): foundry_spritelayout_5;
+                relative_coord(1, 0): foundry_spritelayout_3;
+                relative_coord(1, 1): foundry_spritelayout_3;
+                relative_coord(1, 2): foundry_spritelayout_5;
+                relative_coord(1, 3): foundry_spritelayout_4;
+                relative_coord(1, 4): foundry_spritelayout_6;
+                relative_coord(2, 0): foundry_spritelayout_3;
+                relative_coord(2, 1): foundry_spritelayout_1;
+                relative_coord(2, 2): foundry_spritelayout_2;
+                relative_coord(2, 3): foundry_spritelayout_7;
+                relative_coord(2, 4): foundry_spritelayout_7;
+            foundry_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, foundry_industry_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 2): foundry_spritelayout_3;
+                relative_coord(0, 3): foundry_spritelayout_3;
+                relative_coord(1, 0): foundry_spritelayout_1;
+                relative_coord(1, 1): foundry_spritelayout_2;
+                relative_coord(1, 2): foundry_spritelayout_3;
+                relative_coord(1, 3): foundry_spritelayout_3;
+                relative_coord(2, 0): foundry_spritelayout_4;
+                relative_coord(2, 1): foundry_spritelayout_7;
+                relative_coord(2, 2): foundry_spritelayout_6;
+                relative_coord(2, 3): foundry_spritelayout_6;
+                relative_coord(3, 0): foundry_spritelayout_4;
+                relative_coord(3, 1): foundry_spritelayout_5;
+                relative_coord(3, 2): foundry_spritelayout_4;
+                relative_coord(3, 3): foundry_spritelayout_3;
+            foundry_spritelayout_3; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, foundry_industry_graphics_switch_layouts, layout_num) {
+            1: foundry_industry_layout_1_graphics_switch;
+            2: foundry_industry_layout_2_graphics_switch;
+        foundry_industry_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, foundry_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        foundry_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, foundry_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        foundry_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, foundry_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        foundry_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, foundry_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        foundry_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, foundry_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        foundry_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, foundry_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        foundry_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, foundry_tile_1_lc_2,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, foundry_tile_1_lc_1, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        foundry_tile_1_lc_2;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, foundry_tile_1_lc_0,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: foundry_tile_1_lc_1;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    item(FEAT_INDUSTRYTILES, foundry_tile_1, 137) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+                animation_info: [ANIMATION_LOOPING, 47];
+                animation_speed: 2;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: foundry_tile_1_lc_0;
+            foundry_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, foundry_tile_1, 137) {
+                    property {
+                        accepted_cargos:  [[cargotype("IRON"), 8],[cargotype("METL"), 8],[cargotype("SAND"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout foundry_industry_layout_1_tilelayout {
+            0, 0: foundry_tile_1;
+            0, 1: foundry_tile_1;
+            0, 2: foundry_tile_1;
+            0, 3: foundry_tile_1;
+            0, 4: foundry_tile_1;
+            1, 0: foundry_tile_1;
+            1, 1: foundry_tile_1;
+            1, 2: foundry_tile_1;
+            1, 3: foundry_tile_1;
+            1, 4: foundry_tile_1;
+            2, 0: foundry_tile_1;
+            2, 1: foundry_tile_1;
+            2, 2: foundry_tile_1;
+            2, 3: foundry_tile_1;
+            2, 4: foundry_tile_1;
+    }
+    tilelayout foundry_industry_layout_2_tilelayout {
+            0, 2: foundry_tile_1;
+            0, 3: foundry_tile_1;
+            1, 0: foundry_tile_1;
+            1, 1: foundry_tile_1;
+            1, 2: foundry_tile_1;
+            1, 3: foundry_tile_1;
+            2, 0: foundry_tile_1;
+            2, 1: foundry_tile_1;
+            2, 2: foundry_tile_1;
+            2, 3: foundry_tile_1;
+            3, 0: foundry_tile_1;
+            3, 1: foundry_tile_1;
+            3, 2: foundry_tile_1;
+            3, 3: foundry_tile_1;
+    }
+    produce (foundry_simple_produce,
+                waiting_cargo_1,
+                waiting_cargo_2,
+                waiting_cargo_3,
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(4) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(4) / (64),
+                LOAD_PERM(4) * LOAD_PERM(1) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(5) * LOAD_PERM(2) * LOAD_TEMP(5) / (64) +
+                LOAD_PERM(6) * LOAD_PERM(3) * LOAD_TEMP(5) / (64),
+                [
+                STORE_PERM(LOAD_PERM(4) % (8 / LOAD_TEMP(3)), 4),
+                STORE_PERM(LOAD_PERM(5) % (8 / LOAD_TEMP(3)), 5),
+                STORE_PERM(LOAD_PERM(6) % (8 / LOAD_TEMP(3)), 6),
+                0
+                ]
+    );
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_2,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_0,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_1,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_4,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_5,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+        switch (FEAT_INDUSTRIES, SELF, foundry_produce_economy_3,
+                [
+                STORE_TEMP(2, 3),
+                STORE_TEMP(4, 4),
+                STORE_TEMP(4, 5),
+                STORE_PERM( max(LOAD_PERM(10),(waiting_cargo_1 > 0) * current_date), 10),
+                STORE_PERM( max(LOAD_PERM(11),(waiting_cargo_2 > 0) * current_date), 11),
+                STORE_PERM( max(LOAD_PERM(12),(waiting_cargo_3 > 0) * current_date), 12),
+                STORE_PERM( (waiting_cargo_1 == 0 && waiting_cargo_2 == 0 && waiting_cargo_3 == 0) * LOAD_PERM(15), 15),
+                STORE_TEMP( (current_date - LOAD_PERM(10)) <= 90, 0),
+                STORE_TEMP( (current_date - LOAD_PERM(11)) <= 90, 1),
+                STORE_TEMP( (current_date - LOAD_PERM(12)) <= 90, 2),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(1) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    1
+                ),
+                STORE_PERM( 6 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(2) * 2,
+                    2
+                ),
+                STORE_PERM( 2 +
+                            LOAD_TEMP(0) * 6 +
+                            LOAD_TEMP(1) * 6,
+                    3
+                ),
+                STORE_PERM( LOAD_PERM(4) + waiting_cargo_1, 4),
+                STORE_PERM( LOAD_PERM(5) + waiting_cargo_2, 5),
+                STORE_PERM( LOAD_PERM(6) + waiting_cargo_3, 6),
+                1
+                ]) {
+            foundry_simple_produce;
+        }
+    switch (FEAT_INDUSTRIES, SELF, foundry_produce, economy) {
+            2: foundry_produce_economy_2;
+            0: foundry_produce_economy_0;
+            1: foundry_produce_economy_1;
+            4: foundry_produce_economy_4;
+            5: foundry_produce_economy_5;
+            3: foundry_produce_economy_3;
+    }
+    switch(FEAT_INDUSTRIES, SELF, foundry_secondary_increase_closure_counter,
+           STORE_PERM((1 + LOAD_PERM(15)), 15)) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, foundry_secondary_reset_closure_counter, [STORE_PERM(0, 15), 1]) {
+        return 0;
+    }
+    switch(FEAT_INDUSTRIES, SELF, foundry_check_secondary_production_level, [
+                transported_last_month_1 > 0 ||
+                transported_last_month_2 > 0 ||
+                (current_date - LOAD_PERM(10)) < 30 ||
+                (current_date - LOAD_PERM(11)) < 30 ||
+                (current_date - LOAD_PERM(12)) < 30
+                ]
+            ) {
+        0: foundry_secondary_increase_closure_counter;
+        foundry_secondary_reset_closure_counter;
+    }
+switch(FEAT_INDUSTRIES, SELF, foundry_secondary_close_random, (extra_callback_info2 & 32)) {
+	0: return CB_RESULT_IND_PROD_CLOSE;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch(FEAT_INDUSTRIES, SELF, foundry_secondary_had_produced_check, LOAD_PERM(15)) {
+	0..60: return CB_RESULT_IND_PROD_NO_CHANGE;
+	foundry_secondary_close_random;
+}
+switch(FEAT_INDUSTRIES, SELF, foundry_check_secondary_closure, allow_close_secondary) {
+	1..255: foundry_secondary_had_produced_check;
+	return CB_RESULT_IND_PROD_NO_CHANGE;
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_extra_text, economy) {
+            2: return string(STR_EXTRA_TEXT_SECONDARY_COMBINATORY);
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_cargo_subtype_display_cargo_1, [current_date - LOAD_PERM(10) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_cargo_subtype_display_cargo_2, [current_date - LOAD_PERM(11) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_cargo_subtype_display_cargo_3, [current_date - LOAD_PERM(12) > 90]) {
+    0: return 0x3800 + string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+    1: return 0x3800 + string(STR_EMPTY);
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_cargo_subtype_display_switch_cargo, getbits(extra_callback_info2, 0, 8)) {
+    0: foundry_cargo_subtype_display_cargo_1;
+    1: foundry_cargo_subtype_display_cargo_2;
+    2: foundry_cargo_subtype_display_cargo_3;
+    return CB_RESULT_NO_TEXT;
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_cargo_subtype_display, getbits(extra_callback_info2, 8, 8)) {
+    1: foundry_cargo_subtype_display_switch_cargo;
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_INDUSTRIES, SELF, foundry_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	foundry_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, foundry_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: foundry_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_2, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_0, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_1, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_4, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_5, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 1762 */
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_availability_3, current_date) {
+        date(1762,1,1) .. date(5000000,12,31): foundry_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, foundry_check_availability, economy) {
+        2: foundry_check_availability_2;
+        0: foundry_check_availability_0;
+        1: foundry_check_availability_1;
+        4: foundry_check_availability_4;
+        5: foundry_check_availability_5;
+        3: foundry_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_10, industry_distance(10)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_20, industry_distance(20)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_10;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_8, industry_distance(8)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_20;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_68, industry_distance(68)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_8;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_68;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_38, industry_distance(38)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_62, industry_distance(62)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_38;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_62;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_13, industry_distance(13)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_51;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_21, industry_distance(21)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_13;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_7, industry_distance(7)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_21;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_57, industry_distance(57)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_7;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_min_distance_81, industry_distance(81)) {
+        0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
+        foundry_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, foundry_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        foundry_min_distance_81;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, foundry, 81) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 43;
+                    life_type: IND_LIFE_TYPE_PROCESSING;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [foundry_industry_layout_1_tilelayout,foundry_industry_layout_2_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_FOUNDRY);
+                    prod_multiplier: [0, 0];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 5;
+                    prob_in_game: 3;
+                    fund_cost_multiplier: 120;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("IRON"),cargotype("METL"),cargotype("SAND")];
+                    prod_cargo_types: [cargotype("VPTS"),cargotype("GOOD")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_CASTINGS));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, foundry, 81) {
+                graphics {
+                    construction_probability: foundry_check_availability;
+                    produce_cargo_arrival:    foundry_produce;
+                    monthly_prod_change:      foundry_check_secondary_production_level;
+                    random_prod_change:       foundry_check_secondary_closure;
+                    location_check:           foundry_check_location;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1762);
+                    extra_text_industry:      foundry_extra_text;
+                    cargo_subtype_display:    foundry_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }

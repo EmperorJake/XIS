@@ -1,0 +1,74 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+
+<tal:include metal:use-macro="load: spritesets.pynml" />
+
+<tal:include metal:use-macro="load: spritelayouts.pynml" />
+
+<tal:include metal:use-macro="load: graphics_switches.pynml" />
+
+<tal:include define="location_checks_tile load: location_check_macros_tile.pynml"
+             metal:use-macro="location_checks_tile.macros['render_tree']" />
+
+<tal:include define="animation_macros load: animation_macros.pynml"
+             metal:use-macro="animation_macros.macros['tile_animation']" />
+
+<tal:include metal:use-macro="load: properties_tile.pynml" />
+
+/* *************************************************
+ * Definition of the industry layouts
+ * *************************************************/
+
+<tal:include metal:use-macro="load: layouts.pynml" />
+
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+
+<tal:include define="location_checks_industry load: location_check_macros_industry.pynml"
+             metal:use-macro="location_checks_industry.macros['render_tree']" />
+
+<tal:include metal:use-macro="load: availability.pynml" />
+
+<!--!
+    We have a special production code here:
+    Production depends on the town population: population / 12 is output
+ -->
+produce(${industry.id}_production,
+		waiting_cargo_1, // should be 0
+		waiting_cargo_2, // should be 0
+		waiting_cargo_3, // should be 0
+		LOAD_TEMP(1),    // we stored output here
+		0,               // no 2nd output
+		0                // don't repeat
+		);
+
+
+switch(FEAT_INDUSTRIES, PARENT, ${industry.id}_produce, [STORE_TEMP(((population + 11) / (12 * 7)), 1)]) {
+	0: ${industry.id}_production;
+	${industry.id}_production;
+}
+
+
+<tal:include metal:use-macro="load: properties_industry.pynml" />
+
+<!--! graphics block defined explicitly per industry subclass, to avoid too much fiddly conditional stuff -->
+<tal:build_economies repeat="economy economies">
+    <tal:industry_on_or_off condition="industry.get_property('enabled', economy) == True">
+        if (economy==${economy.numeric_id}) {
+            item(FEAT_INDUSTRIES, ${industry.id}, ${industry.numeric_id}) {
+                graphics {
+                    produce_256_ticks:       ${industry.id}_produce;
+                    construction_probability:${industry.id}_check_availability;
+                    location_check:          ${industry.id}_check_location;
+                    monthly_prod_change:     CB_RESULT_IND_PROD_NO_CHANGE;
+                    random_prod_change:      CB_RESULT_IND_PROD_NO_CHANGE;
+                    extra_text_fund:         ${industry.get_extra_text_fund(economy)};
+                    extra_text_industry:     return string(STR_EXTRA_RECYCLING_DEPOT);
+                    colour:                  switch_colour;
+                }
+            }
+        }
+    </tal:industry_on_or_off>
+</tal:build_economies>

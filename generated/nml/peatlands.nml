@@ -1,0 +1,934 @@
+/* ******************************************************************
+ * Definition of the industry tile, its callbacks, and graphics chain
+ * ******************************************************************/
+            spriteset(peatlands_spriteset_0_0) {
+                        [10, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_0_0_snow) {
+                            [10, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_1_0) {
+                        [80, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_1_0_snow) {
+                            [80, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_2_0) {
+                        [150, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_2_0_snow) {
+                            [150, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_3_0) {
+                        [220, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_3_0_snow) {
+                            [220, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_4_0) {
+                        [290, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_4_0_snow) {
+                            [290, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_5_0) {
+                        [360, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_5_0_snow) {
+                            [360, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+            spriteset(peatlands_spriteset_6_0) {
+                        [430, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1.png"]
+            }
+            spriteset(peatlands_spriteset_6_0_snow) {
+                            [430, 10, 64, 64, -31, -31, ANIM | NOCROP, "src/graphics/industries/peatlands_1_snow.png"]
+            }
+        spritelayout peatlands_spritelayout_bare_ground {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+        }
+        spritelayout peatlands_spritelayout_tractor {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_2_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_2_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout peatlands_spritelayout_harvester {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 4126;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_3_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_3_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout peatlands_spritelayout_nissen_hut {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_1_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_1_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout peatlands_spritelayout_crane {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_5_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_5_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_4_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_4_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        spritelayout peatlands_spritelayout_peat_pile {
+            // Industry-specific ground (snow aware)
+            // non-snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            // snow
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+            childsprite {
+                sprite: 2022;
+                recolour_mode: RECOLOUR_REMAP;
+                palette: PALETTE_USE_DEFAULT;
+                hide_sprite: (!LOAD_TEMP(13));
+                always_draw: 1;
+            }
+                    // buildings (snow aware)
+                    building {
+                        sprite: peatlands_spriteset_6_0(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(255));
+                    }
+                    building {
+                        sprite: peatlands_spriteset_6_0_snow(0);
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 32;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(245));
+                    }
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, peatlands_layout_1_graphics_switch, relative_pos) {
+                relative_coord(0, 0): peatlands_spritelayout_nissen_hut;
+                relative_coord(0, 1): peatlands_spritelayout_peat_pile;
+                relative_coord(0, 2): peatlands_spritelayout_crane;
+                relative_coord(1, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 0): peatlands_spritelayout_tractor;
+                relative_coord(2, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 2): peatlands_spritelayout_harvester;
+                relative_coord(3, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 1): peatlands_spritelayout_harvester;
+                relative_coord(3, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(4, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(4, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(4, 2): peatlands_spritelayout_bare_ground;
+            peatlands_spritelayout_nissen_hut; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, peatlands_layout_2_graphics_switch, relative_pos) {
+                relative_coord(0, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(0, 1): peatlands_spritelayout_harvester;
+                relative_coord(0, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 0): peatlands_spritelayout_tractor;
+                relative_coord(2, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 1): peatlands_spritelayout_harvester;
+                relative_coord(3, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(4, 0): peatlands_spritelayout_nissen_hut;
+                relative_coord(4, 1): peatlands_spritelayout_peat_pile;
+                relative_coord(4, 2): peatlands_spritelayout_crane;
+            peatlands_spritelayout_bare_ground; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, peatlands_layout_3_graphics_switch, relative_pos) {
+                relative_coord(0, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(0, 1): peatlands_spritelayout_harvester;
+                relative_coord(0, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(0, 3): peatlands_spritelayout_peat_pile;
+                relative_coord(1, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 3): peatlands_spritelayout_crane;
+                relative_coord(2, 0): peatlands_spritelayout_harvester;
+                relative_coord(2, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 2): peatlands_spritelayout_tractor;
+                relative_coord(2, 3): peatlands_spritelayout_nissen_hut;
+                relative_coord(3, 0): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 3): peatlands_spritelayout_peat_pile;
+            peatlands_spritelayout_bare_ground; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+        switch(FEAT_INDUSTRYTILES, SELF, peatlands_layout_4_graphics_switch, relative_pos) {
+                relative_coord(0, 0): peatlands_spritelayout_peat_pile;
+                relative_coord(0, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(0, 2): peatlands_spritelayout_harvester;
+                relative_coord(0, 3): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 0): peatlands_spritelayout_nissen_hut;
+                relative_coord(1, 1): peatlands_spritelayout_harvester;
+                relative_coord(1, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(1, 3): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 0): peatlands_spritelayout_crane;
+                relative_coord(2, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(2, 3): peatlands_spritelayout_tractor;
+                relative_coord(3, 0): peatlands_spritelayout_peat_pile;
+                relative_coord(3, 1): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 2): peatlands_spritelayout_bare_ground;
+                relative_coord(3, 3): peatlands_spritelayout_bare_ground;
+            peatlands_spritelayout_peat_pile; // a default is needed, but should never be reached, layout definitions are explicit
+        }
+    switch(FEAT_INDUSTRYTILES, PARENT, peatlands_industry_graphics_switch_layouts, layout_num) {
+            1: peatlands_layout_1_graphics_switch;
+            2: peatlands_layout_2_graphics_switch;
+            3: peatlands_layout_3_graphics_switch;
+            4: peatlands_layout_4_graphics_switch;
+        peatlands_layout_1_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_industry_construction_state_graphics_switch, construction_state) {
+        0..2: spritelayout_default_construction_states;
+        peatlands_industry_graphics_switch_layouts; // default
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_store_temp_vars,
+            [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
+                    , STORE_TEMP(0,
+                                 255) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
+                                 255)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
+                                 245) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
+                                 255)
+            ]) {
+        peatlands_industry_construction_state_graphics_switch; // default
+    }
+    switch(FEAT_INDUSTRYTILES, PARENT, peatlands_industry_master_graphics_switch, STORE_TEMP(random_bits, 14)) {
+        peatlands_store_temp_vars; // default
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, peatlands_tile_fence_station, [
+                STORE_TEMP(LOAD_TEMP(9) * (nearby_tile_class(-1,  0) != TILE_CLASS_STATION), 9),
+                STORE_TEMP(LOAD_TEMP(10) * (nearby_tile_class( 0, -1) != TILE_CLASS_STATION), 10),
+                STORE_TEMP(LOAD_TEMP(11) * (nearby_tile_class( 0,  1) != TILE_CLASS_STATION), 11),
+                STORE_TEMP(LOAD_TEMP(12) * (nearby_tile_class( 1,  0) != TILE_CLASS_STATION), 12),
+            ]) {
+        peatlands_industry_master_graphics_switch;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, peatlands_tile_fence_industry, [
+                STORE_TEMP(LOAD_TEMP(9) * !nearby_tile_is_same_industry(-1,  0), 9),
+                STORE_TEMP(LOAD_TEMP(10) * !nearby_tile_is_same_industry( 0, -1), 10),
+                STORE_TEMP(LOAD_TEMP(11) * !nearby_tile_is_same_industry( 0,  1), 11),
+                STORE_TEMP(LOAD_TEMP(12) * !nearby_tile_is_same_industry( 1,  0), 12),
+            ]) {
+        peatlands_tile_fence_station;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, peatlands_tile_fences, [
+                STORE_TEMP(0, 1),
+                STORE_TEMP(0, 2),
+                STORE_TEMP(0, 3),
+                STORE_TEMP(0, 4),
+                STORE_TEMP(1, 9),
+                STORE_TEMP(1, 10),
+                STORE_TEMP(1, 11),
+                STORE_TEMP(1, 12),
+                STORE_TEMP(0, 5),
+                STORE_TEMP(0, 6),
+                STORE_TEMP(0, 7),
+                STORE_TEMP(0, 8),
+                ]) {
+        peatlands_tile_fence_industry;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_tile_1_lc_3,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, peatlands_tile_1_lc_2, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        peatlands_tile_1_lc_3;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, peatlands_tile_1_lc_1,
+                (
+                nearby_tile_height(-relative_x, -relative_y)
+                + (nearby_tile_slope(-relative_x, -relative_y)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(-relative_x, -relative_y) == bitmask(IS_STEEP_SLOPE) ? 2 : 1
+                )) == (nearby_tile_height(0, 0)
+                + (nearby_tile_slope(0, 0)
+                == SLOPE_FLAT ? 0 :
+                nearby_tile_slope(0, 0) == bitmask(IS_STEEP_SLOPE) ? 2 : 1))
+                ) {
+        1: peatlands_tile_1_lc_2;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_tile_1_lc_0,
+                (nearby_tile_terrain_type( 1, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 1,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 1,  1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0,  1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1,  1) == TILETYPE_DESERT)
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_tile_1_lc_1;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_tile_2_lc_4,
+        (nearby_tile_class( 1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1, -1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  0) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class(-1,  1) == TILE_CLASS_INDUSTRY) |
+        (nearby_tile_class( 0,  1) == TILE_CLASS_INDUSTRY)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRYTILES, PARENT, peatlands_tile_2_lc_3, (
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_FUND) ||
+                (((extra_callback_info2 & 0xFF00) >> 8) == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        peatlands_tile_2_lc_4;
+    }
+    switch (FEAT_INDUSTRYTILES, SELF, peatlands_tile_2_lc_2, nearby_tile_slope(0,0) == SLOPE_FLAT) {
+        1: peatlands_tile_2_lc_3;
+        return CB_RESULT_LOCATION_DISALLOW;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_tile_2_lc_1,
+                (nearby_tile_terrain_type( 1, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 1,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 1,  1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type( 0,  1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1, -1) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1,  0) == TILETYPE_DESERT) &&
+                (nearby_tile_terrain_type(-1,  1) == TILETYPE_DESERT)
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_tile_2_lc_2;
+    }
+    switch(FEAT_INDUSTRYTILES, SELF, peatlands_tile_2_lc_0, nearby_tile_is_water(0, 0)) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_tile_2_lc_1;
+    }
+    item(FEAT_INDUSTRYTILES, peatlands_tile_1, 147) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: peatlands_tile_1_lc_0;
+            peatlands_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, peatlands_tile_1, 147) {
+                    property {
+                        accepted_cargos:  [[cargotype("FMSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+    item(FEAT_INDUSTRYTILES, peatlands_tile_2, 148) {
+        property {
+            substitute:         0;
+            land_shape_flags:   0;
+            animation_triggers: bitmask();
+        }
+        graphics {
+    		    tile_check: peatlands_tile_2_lc_0;
+                foundations: return CB_RESULT_NO_FOUNDATIONS;
+                autoslope: return CB_RESULT_NO_AUTOSLOPE;
+            peatlands_tile_fences;
+        }
+    }
+        if (economy==2) {
+                item(FEAT_INDUSTRYTILES, peatlands_tile_2, 148) {
+                    property {
+                        accepted_cargos:  [[cargotype("FMSP"), 8]];
+                    }
+                }
+        }
+        if (economy==0) {
+        }
+        if (economy==1) {
+        }
+        if (economy==4) {
+        }
+        if (economy==5) {
+        }
+        if (economy==3) {
+        }
+/* *************************************************
+ * Definition of the industry
+ * *************************************************/
+    tilelayout peatlands_layout_1_tilelayout {
+            0, 0: peatlands_tile_2;
+            0, 1: peatlands_tile_2;
+            0, 2: peatlands_tile_2;
+            1, 0: peatlands_tile_2;
+            1, 1: peatlands_tile_1;
+            1, 2: peatlands_tile_2;
+            2, 0: peatlands_tile_2;
+            2, 1: peatlands_tile_1;
+            2, 2: peatlands_tile_2;
+            3, 0: peatlands_tile_2;
+            3, 1: peatlands_tile_1;
+            3, 2: peatlands_tile_2;
+            4, 0: peatlands_tile_2;
+            4, 1: peatlands_tile_2;
+            4, 2: peatlands_tile_2;
+    }
+    tilelayout peatlands_layout_2_tilelayout {
+            0, 0: peatlands_tile_2;
+            0, 1: peatlands_tile_2;
+            0, 2: peatlands_tile_2;
+            1, 0: peatlands_tile_2;
+            1, 1: peatlands_tile_1;
+            1, 2: peatlands_tile_2;
+            2, 0: peatlands_tile_2;
+            2, 1: peatlands_tile_1;
+            2, 2: peatlands_tile_2;
+            3, 0: peatlands_tile_2;
+            3, 1: peatlands_tile_1;
+            3, 2: peatlands_tile_2;
+            4, 0: peatlands_tile_2;
+            4, 1: peatlands_tile_2;
+            4, 2: peatlands_tile_2;
+    }
+    tilelayout peatlands_layout_3_tilelayout {
+            0, 0: peatlands_tile_2;
+            0, 1: peatlands_tile_2;
+            0, 2: peatlands_tile_2;
+            0, 3: peatlands_tile_2;
+            1, 0: peatlands_tile_2;
+            1, 1: peatlands_tile_1;
+            1, 2: peatlands_tile_1;
+            1, 3: peatlands_tile_2;
+            2, 0: peatlands_tile_2;
+            2, 1: peatlands_tile_1;
+            2, 2: peatlands_tile_1;
+            2, 3: peatlands_tile_2;
+            3, 0: peatlands_tile_2;
+            3, 1: peatlands_tile_2;
+            3, 2: peatlands_tile_2;
+            3, 3: peatlands_tile_2;
+    }
+    tilelayout peatlands_layout_4_tilelayout {
+            0, 0: peatlands_tile_1;
+            0, 1: peatlands_tile_1;
+            0, 2: peatlands_tile_1;
+            0, 3: peatlands_tile_1;
+            1, 0: peatlands_tile_1;
+            1, 1: peatlands_tile_1;
+            1, 2: peatlands_tile_1;
+            1, 3: peatlands_tile_1;
+            2, 0: peatlands_tile_1;
+            2, 1: peatlands_tile_1;
+            2, 2: peatlands_tile_1;
+            2, 3: peatlands_tile_1;
+            3, 0: peatlands_tile_1;
+            3, 1: peatlands_tile_1;
+            3, 2: peatlands_tile_1;
+            3, 3: peatlands_tile_1;
+    }
+switch(FEAT_INDUSTRIES, SELF, peatlands_extra_text, [
+	STORE_TEMP((primary_level1_requirement * 1) |
+	(primary_level2_requirement * 1) << 16, 0x100),
+	LOAD_PERM(3)
+]) {
+	primary_level2_bonus: return string(STR_PRIMARY_PRODUCTION_4X);
+	primary_level1_bonus: return string(STR_PRIMARY_PRODUCTION_2X);
+	return string(STR_PRIMARY_PRODUCTION_1X);
+}
+switch (FEAT_INDUSTRIES, SELF, peatlands_cargo_subtype_display, 1) {
+    return 0x3800 + string(STR_EMPTY);
+}
+/* Primary production which is boosted by supplies */
+    produce(peatlands_production, 9999, 9999, 9999, 0, 0, 0);
+    switch(FEAT_INDUSTRIES, SELF, peatlands_produce, STORE_PERM(waiting_cargo_1 + waiting_cargo_2 + waiting_cargo_3 + LOAD_PERM(0), 0)) {
+        peatlands_production;
+    }
+    produce(peatlands_production_256, 0, 0, 0, LOAD_TEMP(9) * production_rate_1 / 100, LOAD_TEMP(9) * production_rate_2 / 100, 0);
+    switch(FEAT_INDUSTRIES, SELF, peatlands_produce_256_ticks,
+            [STORE_TEMP(
+                LOAD_PERM(0) +
+                LOAD_PERM(1) +
+                LOAD_PERM(2),
+            8),
+            STORE_TEMP((LOAD_TEMP(8) >= (1 * primary_level2_requirement)) ? primary_level2_bonus :
+                       (LOAD_TEMP(8) >= (1 * primary_level1_requirement)) ? primary_level1_bonus : 0, 9),
+            STORE_PERM(LOAD_TEMP(9), 3)
+            ]) {
+        peatlands_production_256;
+    }
+/* =================================== */
+/* Production change evaluated monthly */
+/* =================================== */
+    switch(FEAT_INDUSTRIES, SELF, peatlands_monthly_update, [
+        STORE_PERM(LOAD_PERM(1), 2),
+        STORE_PERM(LOAD_PERM(0), 1),
+        STORE_PERM(0, 0)
+    ]) {
+        return CB_RESULT_IND_PROD_NO_CHANGE;
+    }
+switch(FEAT_INDUSTRIES, SELF, peatlands_check_availability_param, restrict_open_during_gameplay) {
+	1..255: return CB_RESULT_IND_NO_CONSTRUCTION;         // disallow when restrictions in place
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;       // we may build
+}
+switch (FEAT_INDUSTRIES, SELF, peatlands_check_map_gen, extra_callback_info2 == IND_CREATION_GENERATION) {
+	1: return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+	peatlands_check_availability_param;
+}
+switch (FEAT_INDUSTRIES, SELF, peatlands_available_game_mode, game_mode == GAMEMODE_GAME) {
+	1: peatlands_check_map_gen;
+	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
+}
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_2, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_0, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_1, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_4, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_5, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+    /* 0 */
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability_3, current_date) {
+        date(0,1,1) .. date(5000000,12,31): peatlands_available_game_mode;
+        return CB_RESULT_IND_NO_CONSTRUCTION;
+    }
+switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability, economy) {
+        2: peatlands_check_availability_2;
+        0: peatlands_check_availability_0;
+        1: peatlands_check_availability_1;
+        4: peatlands_check_availability_4;
+        5: peatlands_check_availability_5;
+        3: peatlands_check_availability_3;
+}
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_66, industry_distance(66)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_66;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_40, industry_distance(40)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_69, industry_distance(69)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_40;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_69;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_5, industry_distance(5)) {
+        0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_cluster_peatlands,
+                industry_count(peatlands) >= (4 * industry_clusters) &&
+                industry_distance(peatlands) > 90
+            ) {
+        1: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_5;
+    }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_check_location, (
+                (extra_callback_info2 == IND_CREATION_FUND) ||
+                (extra_callback_info2 == IND_CREATION_PROSPECT)
+                )
+            ) {
+        1: return CB_RESULT_LOCATION_ALLOW;
+        peatlands_cluster_peatlands;
+    }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, peatlands, 5) {
+                property {
+                    substitute: 0;
+                    override: 0;
+                    map_colour: 72;
+                    life_type: IND_LIFE_TYPE_ORGANIC;
+                    min_cargo_distr: 5;
+                    spec_flags: 0;
+                    layouts: [peatlands_layout_1_tilelayout,peatlands_layout_2_tilelayout,peatlands_layout_3_tilelayout,peatlands_layout_4_tilelayout];
+                    conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
+                    random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
+                    name: string(STR_IND_PEATLANDS);
+                    prod_multiplier: [14, 14];
+                    input_multiplier_1: [0, 0];
+                    input_multiplier_2: [0, 0];
+                    input_multiplier_3: [0, 0];
+                    prob_random: 3;
+                    prob_in_game: 2;
+                    prospect_chance: 0.75;
+                    fund_cost_multiplier: 210;
+                    remove_cost_multiplier: 0;
+                    remove_cost_multiplier: 0;
+                    accept_cargo_types: [cargotype("FMSP")];
+                    prod_cargo_types: [cargotype("PEAT")];
+                    nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_IND_PEATLANDS));
+                }
+            }
+        }
+        if (economy==2) {
+            item(FEAT_INDUSTRIES, peatlands, 5) {
+                graphics {
+                    construction_probability: peatlands_check_availability;
+                    build_prod_change:        randomise_primary_production_on_build;
+                    produce_cargo_arrival:    peatlands_produce;
+                    produce_256_ticks:        peatlands_produce_256_ticks;
+                    monthly_prod_change:      peatlands_monthly_update;
+                    random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
+                    location_check:           peatlands_check_location;
+                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_industry:      peatlands_extra_text;
+                    cargo_subtype_display:    peatlands_cargo_subtype_display;
+                    colour:                   switch_colour;
+                }
+            }
+        }
