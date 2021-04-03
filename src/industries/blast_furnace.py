@@ -12,7 +12,7 @@ industry = IndustrySecondary(id='blast_furnace',
                              name='TTD_STR_INDUSTRY_NAME_STEEL_MILL',  # default to steel mill
                              nearby_station_name='string(STR_STATION_FURNACE)',
                              fund_cost_multiplier='190',
-                             intro_year=1850)
+                             intro_year=1800)
 
 
 

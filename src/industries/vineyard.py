@@ -9,7 +9,8 @@ industry = IndustrySecondary(id='vineyard',
                              map_colour='186',
                              name='string(STR_IND_FACTORY)',
                              nearby_station_name='string(STR_STATION_INDUSTRY_ESTATE_1)',
-                             fund_cost_multiplier='95')
+                             fund_cost_multiplier='95'
+                             intro_year='1860')
 
 industry.economy_variations['FIRS'].enabled = True
 
