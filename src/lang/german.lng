@@ -32,56 +32,56 @@ STR_CARGO_NAME_ACID                                                             
 STR_CARGO_NAME_ALCOHOL                                                          :Alkohol
 STR_CARGO_NAME_BAUXITE                                                          :Bauxit
 STR_CARGO_NAME_BEANS                                                            :Sojabohnen
-STR_CARGO_NAME_BUILDING_MATERIALS                                               :Building Materials
-STR_CARGO_NAME_CASSAVA                                                          :Cassava
-STR_CARGO_NAME_CEMENT                                                           :Cement
-STR_CARGO_NAME_CHEMICALS                                                        :Petrochemicals
-STR_CARGO_NAME_CHLORINE                                                         :Chlorine
-STR_CARGO_NAME_CLAY                                                             :Clay
-STR_CARGO_NAME_COFFEE                                                           :Coffee
-STR_CARGO_NAME_COKE                                                             :Coke
-STR_CARGO_NAME_COPPER                                                           :Copper
-STR_CARGO_NAME_EDIBLE_OIL                                                       :Edible Oil
-STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Electrical Machines
-STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Engineering Supplies
-STR_CARGO_NAME_EXPLOSIVES                                                       :Explosives
-STR_CARGO_NAME_FIBRES                                                           :Fibres
-STR_CARGO_NAME_FISH                                                             :Fish
-STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farm Supplies
-STR_CARGO_NAME_FERTILISER                                                       :Fertiliser
-STR_CARGO_NAME_FRUITS                                                           :Fruit
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :Baustoffe
+STR_CARGO_NAME_CASSAVA                                                          :Maniok
+STR_CARGO_NAME_CEMENT                                                           :Zement
+STR_CARGO_NAME_CHEMICALS                                                        :Chemikalien
+STR_CARGO_NAME_CHLORINE                                                         :Chlor
+STR_CARGO_NAME_CLAY                                                             :Tonerde
+STR_CARGO_NAME_COFFEE                                                           :Kaffee
+STR_CARGO_NAME_COKE                                                             :Koks
+STR_CARGO_NAME_COPPER                                                           :Kupfer
+STR_CARGO_NAME_EDIBLE_OIL                                                       :Speiseöl
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Elektrische Maschinen
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Maschinenteile
+STR_CARGO_NAME_EXPLOSIVES                                                       :Sprengstoff
+STR_CARGO_NAME_FIBRES                                                           :Textilfasern
+STR_CARGO_NAME_FISH                                                             :Fisch
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :Landwirtschaftliche Geräte
+STR_CARGO_NAME_FERTILISER                                                       :Düngemittel
+STR_CARGO_NAME_FRUITS                                                           :Früchte
 STR_CARGO_NAME_KAOLIN                                                           :Lithium
-STR_CARGO_NAME_LIMESTONE                                                        :Limestone
-STR_CARGO_NAME_LUMBER                                                           :Timber
+STR_CARGO_NAME_LIMESTONE                                                        :Kalkstein
+STR_CARGO_NAME_LUMBER                                                           :Schnittholz
 STR_CARGO_NAME_METAL                                                            :Aluminium
-STR_CARGO_NAME_MILK                                                             :Milk
-STR_CARGO_NAME_MANGANESE                                                        :Manganese
-STR_CARGO_NAME_NITRATES                                                         :Nitrates
-STR_CARGO_NAME_NUTS                                                             :Nuts
-STR_CARGO_NAME_PACKAGING                                                        :Packaging
-STR_CARGO_NAME_PEAT                                                             :Biomass
-STR_CARGO_NAME_PETROL                                                           :Petroleum Fuels
-STR_CARGO_NAME_PHOSPHATE                                                        :Oil Sands
-STR_CARGO_NAME_PIG_IRON                                                         :Pig Iron
-STR_CARGO_NAME_PIPE                                                             :Pipe
-STR_CARGO_NAME_POTASH                                                           :Potash
-STR_CARGO_NAME_PYRITE_ORE                                                       :Zinc Ore
-STR_CARGO_NAME_QUICKLIME                                                        :Quicklime
-STR_CARGO_NAME_RECYCLABLES                                                      :Recyclables
-STR_CARGO_NAME_SALT                                                             :Salt
+STR_CARGO_NAME_MILK                                                             :Milch
+STR_CARGO_NAME_MANGANESE                                                        :Manganerz
+STR_CARGO_NAME_NITRATES                                                         :Nitratsalz
+STR_CARGO_NAME_NUTS                                                             :Nüsse
+STR_CARGO_NAME_PACKAGING                                                        :Verpackungsmaterial
+STR_CARGO_NAME_PEAT                                                             :Torf
+STR_CARGO_NAME_PETROL                                                           :Benzin
+STR_CARGO_NAME_PHOSPHATE                                                        :Ölsand
+STR_CARGO_NAME_PIG_IRON                                                         :Roheisen
+STR_CARGO_NAME_PIPE                                                             :Röhren
+STR_CARGO_NAME_POTASH                                                           :Kalisalz
+STR_CARGO_NAME_PYRITE_ORE                                                       :Zinkerz
+STR_CARGO_NAME_QUICKLIME                                                        :Branntkalk
+STR_CARGO_NAME_RECYCLABLES                                                      :Recyclingmaterial
+STR_CARGO_NAME_SALT                                                             :Salz
 STR_CARGO_NAME_SAND                                                             :Sand
-STR_CARGO_NAME_SCRAP_METAL                                                      :Scrap Metal
-STR_CARGO_NAME_SLAG                                                             :Slag
-STR_CARGO_NAME_SODA_ASH                                                         :Soda Ash
-STR_CARGO_NAME_STEEL                                                            :Steel
+STR_CARGO_NAME_SCRAP_METAL                                                      :Schrott
+STR_CARGO_NAME_SLAG                                                             :Schlacke
+STR_CARGO_NAME_SODA_ASH                                                         :Soda
+STR_CARGO_NAME_STEEL                                                            :Stahl
 STR_CARGO_NAME_STONE                                                            :Aggregate
-STR_CARGO_NAME_SUGAR_BEET                                                       :Sugar Beet
-STR_CARGO_NAME_SULPHUR                                                          :Sulphur
-STR_CARGO_NAME_VEHICLE_BODIES                                                   :Vehicle Bodies
-STR_CARGO_NAME_VEHICLE_PARTS                                                    :Parts
-STR_CARGO_NAME_VEHICLES                                                         :Vehicles
-STR_CARGO_NAME_WOOL                                                             :Wool
-STR_CARGO_NAME_ZINC                                                             :Zinc
+STR_CARGO_NAME_SUGAR_BEET                                                       :Zuckerrüben
+STR_CARGO_NAME_SULPHUR                                                          :Schwefel
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :Fahrzeugkarosserien
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :Fahrzeugteile
+STR_CARGO_NAME_VEHICLES                                                         :Fahrzeuge
+STR_CARGO_NAME_WOOL                                                             :Wolle
+STR_CARGO_NAME_ZINC                                                             :Zink
 
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} of acid
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} of alcohol
