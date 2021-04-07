@@ -113,7 +113,7 @@ STR_CARGO_UNIT_MANGANESE                                                        
 STR_CARGO_UNIT_METAL                                                            :{WEIGHT} Aluminium
 STR_CARGO_UNIT_MILK                                                             :{VOLUME} Milch
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} Nickel
-STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} Nitratsalz
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} Kalisalz
 STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} Sack{P 0 "" e}  Nüsse
 STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} Verpackungsmaterial
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} Torf
@@ -204,106 +204,106 @@ STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               
 STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Inkompatibler Parameter: {ORANGE}NA City Set-Parameter 2 muß 0 sein um mit FIRS zu funktionieren {YELLOW}Siehe FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Inkompatible Version: {ORANGE}Total Town Replacement Set benötigt Version 3.11 oder neuer {YELLOW}Siehe FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 
-STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :must be placed below the snow line.
-STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :must be placed above the snow line.
-STR_ERR_LOCATION_NOT_ON_WATER                                                   :must be placed on dry land.
-STR_ERR_LOCATION_NOT_IN_DESERT                                                  :That can't grow there you dingus!
-STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Too steep ya numpty!
-STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :only one industry of this type allowed per town.
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :Muß unterhalb der Schneegrenze plaziert werden.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :Muß oberhalb der Schneegrenze plaziert werden.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :Muß auf trockenem Land plaziert werden.
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :Wächst nicht in der Wüste.
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Abhang zu steil.
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :Nur eine Industrie dieser Klasse pro Stadt erlaubt.
 
-STR_IND_ALUMINIUM_PLANT                                                         :Aluminium Plant
-STR_IND_AMMONIA_PLANT                                                           :Ammonia Plant
-STR_IND_ARABLE_FARM                                                             :Arable Farm
-STR_IND_ASSEMBLY_PLANT                                                          :Assembly Plant
-STR_IND_BATTERY_PLANT                                                           :Battery Plant
-STR_IND_BASICFARM                                                               :Farm
-STR_IND_BASIC_OXYGEN_FURNACE                                                    :Basic Oxygen Furnace
-STR_IND_BAUXITE_MINE		                                                    :Bauxite Mine
-STR_IND_BIOREFINERY                                                             :Biorefinery
-STR_IND_BLAST_FURNACE                                                           :Blast Furnace
-STR_IND_BREWERY                                                                 :Brewery
-STR_IND_CIDER_MILL                                                              :Cider Mill
-STR_IND_BRICK_WORKS                                                             :Brick Works
-STR_IND_BUILDERS_YARD                                                           :Builders Yard
-STR_IND_BULK_TERMINAL                                                           :Bulk Terminal
-STR_IND_CEMENT_PLANT                                                            :Cement Plant
-STR_IND_CHEMICAL_PLANT                                                          :Chemical Plant
-STR_IND_CRACKING_PLANT                                                          :Cracking Plant
-STR_IND_CLAY_PIT                                                                :Clay Pit
-STR_IND_COFFEE_ESTATE                                                           :Coffee Estate
-STR_IND_COKE_OVEN                                                               :Coke Oven
-STR_IND_COPPER_REFINERY                                                         :Copper Refinery
-STR_IND_DAIRY                                                                   :Dairy
-STR_IND_DAIRY_FARM                                                              :Dairy Farm
-STR_IND_DREDGING_SITE                                                           :Dredging Site
-STR_IND_ELECTRIC_ARC_FURNACE                                                    :Electric Arc Furnace
-STR_IND_FACTORY                                                                 :Manufacturing Plant
-STR_IND_FISHING_GROUND                                                          :Fishing Grounds
-STR_IND_FISHING_HARBOUR                                                         :Fishing Harbour
-STR_IND_FISHING_VILLAGE                                                         :Fishing Village
-STR_IND_FLOUR_MILL                                                              :Flour Mill
-STR_IND_FOOD_MARKET                                                             :Grocer's Shop
-STR_IND_FOOD_PROCESSOR                                                          :Food Processing Plant
-STR_IND_FOUNDRY                                                                 :Foundry
-STR_IND_FURNITURE_FACTORY                                                       :Furniture Factory
-STR_IND_GENERAL_STORE                                                           :General Store
-STR_IND_GLASS_WORKS                                                             :Glass Works
-STR_IND_HARDWARE_STORE                                                          :Hardware Store
+STR_IND_ALUMINIUM_PLANT                                                         :Aluminiumschmelze
+STR_IND_AMMONIA_PLANT                                                           :Düngemittelfabrik
+STR_IND_ARABLE_FARM                                                             :Getreide-Bauernhof
+STR_IND_ASSEMBLY_PLANT                                                          :Fabrik
+STR_IND_BATTERY_PLANT                                                           :Batteriefabrik
+STR_IND_BASICFARM                                                               :Bauernhof
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :Blasstahlwerk
+STR_IND_BAUXITE_MINE		                                                        :Bauxit-Mine
+STR_IND_BIOREFINERY                                                             :Bioraffinerie
+STR_IND_BLAST_FURNACE                                                           :Hochofen
+STR_IND_BREWERY                                                                 :Brauerei
+STR_IND_CIDER_MILL                                                              :Cider-Fabrik
+STR_IND_BRICK_WORKS                                                             :Ziegelei
+STR_IND_BUILDERS_YARD                                                           :Baustofflager
+STR_IND_BULK_TERMINAL                                                           :Massengut-Terminal
+STR_IND_CEMENT_PLANT                                                            :Zementfabrik
+STR_IND_CHEMICAL_PLANT                                                          :Chemiefabrik
+STR_IND_CRACKING_PLANT                                                          :Steamcracker
+STR_IND_CLAY_PIT                                                                :Tongrube
+STR_IND_COFFEE_ESTATE                                                           :Kaffee-Plantage
+STR_IND_COKE_OVEN                                                               :Kokerei
+STR_IND_COPPER_REFINERY                                                         :Kupferschmelze
+STR_IND_DAIRY                                                                   :Molkerei
+STR_IND_DAIRY_FARM                                                              :Milchvieh-Bauernhof
+STR_IND_DREDGING_SITE                                                           :Baggersee
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :Elektrostahlwerk
+STR_IND_FACTORY                                                                 :Fabrik
+STR_IND_FISHING_GROUND                                                          :Fischgrund
+STR_IND_FISHING_HARBOUR                                                         :Fischerei-Hafen
+STR_IND_FISHING_VILLAGE                                                         :Fischerdorf
+STR_IND_FLOUR_MILL                                                              :Getreidemühle
+STR_IND_FOOD_MARKET                                                             :Supermarkt
+STR_IND_FOOD_PROCESSOR                                                          :Lebensmittelfabrik
+STR_IND_FOUNDRY                                                                 :Gießerei
+STR_IND_FURNITURE_FACTORY                                                       :Möbelfabrik
+STR_IND_GENERAL_STORE                                                           :Supermarkt
+STR_IND_GLASS_WORKS                                                             :Glashütte
+STR_IND_HARDWARE_STORE                                                          :Baumarkt
 STR_IND_HOTEL                                                                   :Hotel
-STR_IND_HERDING_COOP                                                            :Herding Co-op
-STR_IND_IRON_WORKS                                                              :Iron Works
-STR_IND_JUNKYARD                                                                :Scrap Yard
-STR_IND_LIME_KILN                                                               :Lime Kiln
-STR_IND_LIMESTONE_MINE                                                          :Limestone Mine
-STR_IND_LITHIUM_MINE                                                            :Lithium Mine
-STR_IND_LIQUIDS_TERMINAL                                                        :Liquids Terminal
-STR_IND_LUMBER_YARD                                                             :Timber Yard
-STR_IND_MACHINE_SHOP                                                            :Machine Shop
-STR_IND_MANGANESE_MINE                                                          :Manganese Mine
-STR_IND_METAL_FABRICATION_PLANT                                                 :Metal Fabrication Plant
-STR_IND_METAL_WORKSHOP                                                          :Electrical Workshop
-STR_IND_MIXEDFARM                                                               :Mixed Farm
-STR_IND_NITRATE_MINE                                                            :Nitrate Mine
-STR_IND_ORCHARD_PIGGERY                                                         :Orchard and Piggery
-STR_IND_OIL_SANDS_MINE                                                          :Oil Sands Mine
-STR_IND_PEATLANDS                                                               :Peatlands
-STR_IND_PETROLPUMP                                                              :Petrol Station
-STR_IND_PHOSPHATE_MINE                                                          :Phosphate Mine
-STR_IND_PLASTICS_PLANT                                                          :Plastics Plant
-STR_IND_PRINTING_PLANT                                                          :Printing Plant
-STR_IND_POLYMER_PLANT                                                           :Polymer Plant
-STR_IND_PORT                                                                    :Port
-STR_IND_POTASH_MINE                                                             :Potash Mine
-STR_IND_PYRITE_MINE                                                             :Zinc Ore Mine
-STR_IND_PYRITE_SMELTER                                                          :Zinc Smelter
-STR_IND_POWER_PLANT                                                             :Power Plant
-STR_IND_QUARRY                                                                  :Quarry
+STR_IND_HERDING_COOP                                                            :Schäferhütte
+STR_IND_IRON_WORKS                                                              :Eisenhütte
+STR_IND_JUNKYARD                                                                :Schrottplatz
+STR_IND_LIME_KILN                                                               :Kalkwerk
+STR_IND_LIMESTONE_MINE                                                          :Kalksteinbruch
+STR_IND_LITHIUM_MINE                                                            :Lithium-Mine
+STR_IND_LIQUIDS_TERMINAL                                                        :Tanklager
+STR_IND_LUMBER_YARD                                                             :Holzlagerplatz
+STR_IND_MACHINE_SHOP                                                            :Maschinenfabrik
+STR_IND_MANGANESE_MINE                                                          :Mangan-Bergwerk
+STR_IND_METAL_FABRICATION_PLANT                                                 :Walzwerk
+STR_IND_METAL_WORKSHOP                                                          :Elektromaschinenfabrik
+STR_IND_MIXEDFARM                                                               :Bauernhof
+STR_IND_NITRATE_MINE                                                            :Kalibergwerk
+STR_IND_ORCHARD_PIGGERY                                                         :Obstplantage
+STR_IND_OIL_SANDS_MINE                                                          :Ölsand-Mine
+STR_IND_PEATLANDS                                                               :Torfmoor
+STR_IND_PETROLPUMP                                                              :Tankstelle
+STR_IND_PHOSPHATE_MINE                                                          :Phosphat-Mine
+STR_IND_PLASTICS_PLANT                                                          :Kunststofffabrik
+STR_IND_PRINTING_PLANT                                                          :Druckerei
+STR_IND_POLYMER_PLANT                                                           :Polymerfabrik
+STR_IND_PORT                                                                    :Hafen
+STR_IND_POTASH_MINE                                                             :Kalibergwerk
+STR_IND_PYRITE_MINE                                                             :Zinkerz-Bergwerk
+STR_IND_PYRITE_SMELTER                                                          :Zinkhütte
+STR_IND_POWER_PLANT                                                             :Kraftwerk
+STR_IND_QUARRY                                                                  :Steinbruch
 STR_IND_RANCH                                                                   :Ranch
-STR_IND_RECYCLING_DEPOT                                                         :Recycling Depot
-STR_IND_RECYCLING_PLANT                                                         :Recycling Plant
+STR_IND_RECYCLING_DEPOT                                                         :Entsorgungszentrum
+STR_IND_RECYCLING_PLANT                                                         :Recycling-Fabrik
 STR_IND_REINDEER_FARM                                                           :Reindeer Farm
-STR_IND_SHEEPFARM                                                               :Sheep Farm
-STR_IND_SLAG_GRINDING_PLANT                                                     :Slag Grinding Plant
-STR_IND_SMITHY_FORGE                                                            :Smithy Forge
-STR_IND_SODA_ASH_MINE                                                           :Soda Ash Mine
-STR_IND_STEEL_FINISHING_PLANT                                                   :Galvanising Plant
-STR_IND_STOCKYARD                                                               :Abattoir
-STR_IND_SUGAR_REFINERY                                                          :Sugar Refinery
-STR_IND_SULPHIDE_MINE                                                           :Zinc Ore Mine
-STR_IND_SUPPLY_YARD                                                             :Supply Yard
-STR_IND_ENSP_YARD                                                               :Engineering Supplies Depot
-STR_IND_FMSP_YARD                                                               :Farm Supplies Depot
-STR_IND_TEXTILE_MILL                                                            :Textile Mill
-STR_IND_TRADING_POST                                                            :Trading Post
-STR_IND_TYRE_PLANT                                                              :Tyre Plant
-STR_IND_UPGRADER                                                                :Oil Extractor
-STR_IND_VINEYARD                                                                :Vineyard
-STR_IND_VEHICLE_DEALER                                                          :Vehicle Dealer
-STR_IND_WHARF                                                                   :Wharf
-STR_IND_ZINC_SMELTER                                                            :Zinc Smelter
+STR_IND_SHEEPFARM                                                               :Schaffarm
+STR_IND_SLAG_GRINDING_PLANT                                                     :Schlackemühle
+STR_IND_SMITHY_FORGE                                                            :Schmiede
+STR_IND_SODA_ASH_MINE                                                           :Soda-Bergwerk
+STR_IND_STEEL_FINISHING_PLANT                                                   :Verzinkerei
+STR_IND_STOCKYARD                                                               :Schlachthof
+STR_IND_SUGAR_REFINERY                                                          :Zuckerfabrik
+STR_IND_SULPHIDE_MINE                                                           :Zinkerz-Mine
+STR_IND_SUPPLY_YARD                                                             :Lagerplatz
+STR_IND_ENSP_YARD                                                               :Gerätedepot
+STR_IND_FMSP_YARD                                                               :Landwirtschaftliche Genossenschaft
+STR_IND_TEXTILE_MILL                                                            :Textilfabrik
+STR_IND_TRADING_POST                                                            :Handelsposten
+STR_IND_TYRE_PLANT                                                              :Reifenfabrik
+STR_IND_UPGRADER                                                                :Ölaufbereitungsanlage
+STR_IND_VINEYARD                                                                :Weingut
+STR_IND_VEHICLE_DEALER                                                          :Fahrzeughändler
+STR_IND_WHARF                                                                   :Hafen
+STR_IND_ZINC_SMELTER                                                            :Zinkschmelze
 
 
-STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(angeliefert)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
 STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}For maximum production rate, supply {WHITE}all {BLACK}required cargos at least once every three months.
 STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Production is proportional to town population.
@@ -315,19 +315,19 @@ STR_PORT_PRODUCTION_2X                                                          
 STR_PORT_PRODUCTION_4X                                                          :{BLACK}Current production: {YELLOW}Crankin' it {}{}{BLACK}To keep this level, deliver {SKIP}{SIGNED_WORD} units of cargo within three months.
 STR_GENERIC_NEWLINE                                                             :{}
 
-STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_FOREST                                                                 :{}{BLACK}Location: {YELLOW}Cannot be funded in deserts.
-STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Location: {YELLOW}Cannot be funded on snow.
-STR_FUND_HERDING_COOP                                                           :{}{BLACK}Location: {YELLOW}Can only be funded on snow.
-STR_FUND_MIXED_FARM                                                             :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
-STR_FUND_VINEYARD                                                               :{}{BLACK}Location: {YELLOW}Cannot be funded on snow or in deserts.
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden.
+STR_FUND_FOREST                                                                 :{}{BLACK}Location: {YELLOW}Kann nicht in der Wüste gebaut werden.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee gebaut werden.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Location: {YELLOW}Kann nur auf Schnee gebaut werden.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden
+STR_FUND_VINEYARD                                                               :{}{BLACK}Location: {YELLOW}Kann nicht auf Schnee oder in der Wüste gebaut werden
 
-STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Available from: {YELLOW}{COMMA}
-STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Not available after: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Verfügbar ab: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Nicht verfügbar nach: {YELLOW}{COMMA}
 
 STR_TOWN                                                                        :{STRING}
 STR_STATION                                                                     :{STRING} {STRING}
