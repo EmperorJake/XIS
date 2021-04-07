@@ -28,10 +28,10 @@ STR_PARAM_VALUE_ECONOMIES_FIRS                                                  
 STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :INCOMPLETE
 STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :INCOMPLETE
 
-STR_CARGO_NAME_ACID                                                             :Acid
-STR_CARGO_NAME_ALCOHOL                                                          :Alcohol
-STR_CARGO_NAME_BAUXITE                                                          :Bauxite
-STR_CARGO_NAME_BEANS                                                            :Soy
+STR_CARGO_NAME_ACID                                                             :Säure
+STR_CARGO_NAME_ALCOHOL                                                          :Alkohol
+STR_CARGO_NAME_BAUXITE                                                          :Bauxit
+STR_CARGO_NAME_BEANS                                                            :Sojabohnen
 STR_CARGO_NAME_BUILDING_MATERIALS                                               :Building Materials
 STR_CARGO_NAME_CASSAVA                                                          :Cassava
 STR_CARGO_NAME_CEMENT                                                           :Cement
