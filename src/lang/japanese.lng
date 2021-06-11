@@ -83,47 +83,47 @@ STR_CARGO_NAME_VEHICLES                                                         
 STR_CARGO_NAME_WOOL                                                             :羊毛
 STR_CARGO_NAME_ZINC                                                             :亜鉛
 
-STR_CARGO_UNIT_ACID                                                             :硫酸　{VOLUME}
-STR_CARGO_UNIT_ALCOHOL                                                          :酒　{VOLUME}
-STR_CARGO_UNIT_BAUXITE                                                          :ボーキサイト　{WEIGHT}
-STR_CARGO_UNIT_BEANS                                                            :大豆　{WEIGHT}
-STR_CARGO_UNIT_BUILDING_MATERIALS                                               :建設資材　{WEIGHT}
-STR_CARGO_UNIT_CASSAVA                                                          :キャッサバ　{WEIGHT}
-STR_CARGO_UNIT_CEMENT                                                           :セメント　{WEIGHT}
-STR_CARGO_UNIT_CHEMICALS                                                        :石油製品　{VOLUME}
-STR_CARGO_UNIT_CHLORINE                                                         :塩素　{VOLUME}
-STR_CARGO_UNIT_CLAY                                                             :粘土　{WEIGHT}
+STR_CARGO_UNIT_ACID                                                             :硫酸 {VOLUME}
+STR_CARGO_UNIT_ALCOHOL                                                          :酒 {VOLUME}
+STR_CARGO_UNIT_BAUXITE                                                          :ボーキサイト {WEIGHT}
+STR_CARGO_UNIT_BEANS                                                            :大豆 {WEIGHT}
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :建設資材 {WEIGHT}
+STR_CARGO_UNIT_CASSAVA                                                          :キャッサバ {WEIGHT}
+STR_CARGO_UNIT_CEMENT                                                           :セメント {WEIGHT}
+STR_CARGO_UNIT_CHEMICALS                                                        :石油製品 {VOLUME}
+STR_CARGO_UNIT_CHLORINE                                                         :塩素 {VOLUME}
+STR_CARGO_UNIT_CLAY                                                             :粘土 {WEIGHT}
 STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} sack{P 0 "" s} of coffee
-STR_CARGO_UNIT_COKE                                                             :コークス　{WEIGHT}
-STR_CARGO_UNIT_COPPER                                                           :銅　{WEIGHT}
-STR_CARGO_UNIT_EDIBLE_OIL                                                       :食用油　{VOLUME}
-STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} 電気製品　{P 0 "" s}　箱
-STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} 建設資材　{P 0 "" s}　箱
-STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} 爆発物　{P 0 "" s}　箱
-STR_CARGO_UNIT_FERTILISER                                                       :肥料　{WEIGHT}
-STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} bale{P 0 "" s} of fibres
-STR_CARGO_UNIT_FISH                                                             :魚　{WEIGHT}
-STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} 農業資材　{P 0 "" s}　箱
-STR_CARGO_UNIT_FRUITS                                                           :果物　{WEIGHT}
-STR_CARGO_UNIT_KAOLIN                                                           :リチウム　{WEIGHT}
-STR_CARGO_UNIT_LIMESTONE                                                        :石灰石　{WEIGHT}
-STR_CARGO_UNIT_LUMBER                                                           :木材　{WEIGHT}
+STR_CARGO_UNIT_COKE                                                             :コークス {WEIGHT}
+STR_CARGO_UNIT_COPPER                                                           :銅 {WEIGHT}
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :食用油 {VOLUME}
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :電気製品 {SIGNED_WORD}箱
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :建設資材 {P 0 "" s}箱
+STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物 {P 0 "" s}箱
+STR_CARGO_UNIT_FERTILISER                                                       :肥料 {WEIGHT}
+STR_CARGO_UNIT_FIBRES                                                           :繊維 {SIGNED_WORD}ベール
+STR_CARGO_UNIT_FISH                                                             :魚{WEIGHT}
+STR_CARGO_UNIT_FMSP                                                             :農業資材 {SIGNED_WORD}箱
+STR_CARGO_UNIT_FRUITS                                                           :果物 {WEIGHT}
+STR_CARGO_UNIT_KAOLIN                                                           :リチウム {WEIGHT}
+STR_CARGO_UNIT_LIMESTONE                                                        :石灰石 {WEIGHT}
+STR_CARGO_UNIT_LUMBER                                                           :木材 {WEIGHT}
 STR_CARGO_UNIT_LYE                                                              :{VOLUME} of lye
-STR_CARGO_UNIT_MANGANESE                                                        :マンガン　{WEIGHT}
-STR_CARGO_UNIT_METAL                                                            :アルミニウム　{WEIGHT}
-STR_CARGO_UNIT_MILK                                                             :牛乳　{VOLUME}
-STR_CARGO_UNIT_NICKEL                                                           :ニッケル　{WEIGHT}
-STR_CARGO_UNIT_NITRATES                                                         :硝酸塩　{WEIGHT}
+STR_CARGO_UNIT_MANGANESE                                                        :マンガン {WEIGHT}
+STR_CARGO_UNIT_METAL                                                            :アルミニウム {WEIGHT}
+STR_CARGO_UNIT_MILK                                                             :牛乳 {VOLUME}
+STR_CARGO_UNIT_NICKEL                                                           :ニッケル {WEIGHT}
+STR_CARGO_UNIT_NITRATES                                                         :硝酸塩 {WEIGHT}
 STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} sack{P 0 "" s}  of nuts
-STR_CARGO_UNIT_PACKAGING                                                        :包装材料　{WEIGHT}
-STR_CARGO_UNIT_PEAT                                                             :バイオマス　{WEIGHT}
-STR_CARGO_UNIT_PETROL                                                           :石油燃料　{VOLUME}
-STR_CARGO_UNIT_PHOSPHATE                                                        :オイルサンド　{WEIGHT}
-STR_CARGO_UNIT_PIG_IRON                                                         :銑鉄　{WEIGHT}
-STR_CARGO_UNIT_PIPE                                                             :パイプ　{WEIGHT}
-STR_CARGO_UNIT_POTASH                                                           :カリ岩塩　{WEIGHT}
-STR_CARGO_UNIT_PYRITE_ORE                                                       :閃亜鉛鉱　{WEIGHT}
-STR_CARGO_UNIT_QUICKLIME                                                        :生石灰　{WEIGHT}
+STR_CARGO_UNIT_PACKAGING                                                        :包装材料 {WEIGHT}
+STR_CARGO_UNIT_PEAT                                                             :バイオマス {WEIGHT}
+STR_CARGO_UNIT_PETROL                                                           :石油燃料 {VOLUME}
+STR_CARGO_UNIT_PHOSPHATE                                                        :オイルサンド {WEIGHT}
+STR_CARGO_UNIT_PIG_IRON                                                         :銑鉄 {WEIGHT}
+STR_CARGO_UNIT_PIPE                                                             :パイプ {WEIGHT}
+STR_CARGO_UNIT_POTASH                                                           :カリ岩塩 {WEIGHT}
+STR_CARGO_UNIT_PYRITE_ORE                                                       :閃亜鉛鉱 {WEIGHT}
+STR_CARGO_UNIT_QUICKLIME                                                        :生石灰 {WEIGHT}
 STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} of recyclables
 STR_CARGO_UNIT_SALT                                                             :{WEIGHT} of salt
 STR_CARGO_UNIT_SAND                                                             :{WEIGHT} of sand
@@ -204,19 +204,19 @@ STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               
 STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Incompatible version: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 
-STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :must be placed below the snow line.
-STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :must be placed above the snow line.
-STR_ERR_LOCATION_NOT_ON_WATER                                                   :must be placed on dry land.
-STR_ERR_LOCATION_NOT_IN_DESERT                                                  :That can't grow there you dingus!
-STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Too steep ya numpty!
-STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :only one industry of this type allowed per town.
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :雪線より下にしか建設出来ません。
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :雪線より上にしか建設出来ません。
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :陸上にしか建設できません。
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :こんな砂漠で何が育つのですか
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :急勾配すぎます。
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :町には最大1個までしか建設出来ません。
 
-STR_IND_ALUMINIUM_PLANT                                                         :Aluminium Plant
-STR_IND_AMMONIA_PLANT                                                           :Ammonia Plant
+STR_IND_ALUMINIUM_PLANT                                                         :アルミ工場
+STR_IND_AMMONIA_PLANT                                                           :アンモニア工場
 STR_IND_ARABLE_FARM                                                             :Arable Farm
-STR_IND_ASSEMBLY_PLANT                                                          :Assembly Plant
-STR_IND_BATTERY_PLANT                                                           :Battery Plant
-STR_IND_BASICFARM                                                               :Farm
+STR_IND_ASSEMBLY_PLANT                                                          :組み立て工場
+STR_IND_BATTERY_PLANT                                                           :電池工場
+STR_IND_BASICFARM                                                               :畑
 STR_IND_BASIC_OXYGEN_FURNACE                                                    :Basic Oxygen Furnace
 STR_IND_BAUXITE_MINE		                                                    :Bauxite Mine
 STR_IND_BIOREFINERY                                                             :Biorefinery
@@ -255,7 +255,7 @@ STR_IND_IRON_WORKS                                                              
 STR_IND_JUNKYARD                                                                :Scrap Yard
 STR_IND_LIME_KILN                                                               :Lime Kiln
 STR_IND_LIMESTONE_MINE                                                          :Limestone Mine
-STR_IND_LITHIUM_MINE                                                            :Lithium Mine
+STR_IND_LITHIUM_MINE                                                            :Lithium Min。
 STR_IND_LIQUIDS_TERMINAL                                                        :Liquids Terminal
 STR_IND_LUMBER_YARD                                                             :Timber Yard
 STR_IND_MACHINE_SHOP                                                            :Machine Shop
@@ -303,7 +303,7 @@ STR_IND_WHARF                                                                   
 STR_IND_ZINC_SMELTER                                                            :Zinc Smelter
 
 
-STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             :{BLACK}(supplied)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
 STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}For maximum production rate, supply {WHITE}all {BLACK}required cargos at least once every three months.
 STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Production is proportional to town population.
