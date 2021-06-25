@@ -1,11 +1,11 @@
 ##grflangid 0x39
 ##plural 1
 
-STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62種類の貨物と83種類の工業! A fork of FIRS 3.0.10. Economy designed by Emperor Jake, additional graphics by Emperor Jake, GarryG and Toni Babelony; all other code and graphics thanks to andythenorth and the rest of the FIRS team. License: GPL v2.
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set　- 究極の産業セット{}{BLACK}62種類の貨物と83種類の産業! A fork of FIRS 3.0.10. Economy designed by Emperor Jake, additional graphics by Emperor Jake, GarryG and Toni Babelony; all other code and graphics thanks to andythenorth and the rest of the FIRS team. License: GPL v2.
 STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
 
-STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :漁場、海上油田、浚渫工事場などの海岸からの最大距離（タイル）。
-STR_PARAM_DESC_ECONOMIES                                                        :Each economy provides a different combination of cargos and industries.{}{}Only one economy is complete at the moment.
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :漁場、海上油田、浚渫工事場などの海岸からの最大距離（タイル.）。
+STR_PARAM_DESC_ECONOMIES                                                        :選択された経済の種類により様々な産業の組み合わせが楽しめます。{}{}現在は1つしかありません。
 STR_PARAM_DESC_NO_OPENINGS                                                      :初期設定では新しい工場などは自動的に開きます。{}{}もし{SILVER}開業を止める{BLACK}が{GREEN}入{BLACK}の状態であると新しい工場や農場は開きません。またプレイヤーが新規産業に出資することも出来なくなります。
 STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :初期設定では2次産業の工場などは閉鎖しません。{}{}If secondary closing is turned on, secondary industries may close if no cargo is transported for a long time.  Primary industries will never close in XIS and are not affected by this setting.
 STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :海洋産業の海岸からの最大距離
@@ -14,12 +14,12 @@ STR_PARAM_NAME_NO_OPENINGS                                                      
 STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :2次工業の閉鎖を許す
 STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :制限なし
 
-STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Supply crates required for 向上中 primary production (default 16)
-STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Supply crates required for マッハprimary production (default 80)
-STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Farms, mines and similar industries will increase production when supply crates are delivered, first to {SILVER}向上中{BLACK}, and then to {SILVER}Crankin' It{BLACK}, if enough crates are delivered.  {}{}The default values are good, but if you need to, you can change them here.  {}{}Cargo requirements for port-type industries will be 8x the values set here.
-STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :向上中 primary production level (%)
-STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :マッハprimary production level (%)
-STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Production at farms, mines and similar industries when supply requirements are met (as percentage of {SILVER}Normal {BLACK}production level).
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :稼働率（産業の生産速度）を向上中にするために必要な資材の数 (デフォルト：16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :稼働率（産業の生産速度）をマッハにするために必要な資材の数 (デフォルト：80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :農場や鉱山などの産業に資材が供給されると稼働率（生産速度）が上がります。必要な数の資材が産業に運ばれると生産速度は2段階上がります。（レベル1：{SILVER}向上中{BLACK}　レベル2：{SILVER}マッハ{BLACK}）{}{}デフォルトの設定でプレイには故障しませんが、必要に応じてここで変更してください。{}{}港などの海洋産業のレベルを上げるためにはここで設定された値の8倍が必要になります。
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :{SILVER}レベル1：向上中{BLACK}の稼働率（生産速度）(%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :{SILVER}レベル2：マッハ{BLACK}の稼働率（生産速度）(%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :農場や鉱山などの産業に資材が供給された後の稼働率。{SILVER}普通{BLACK}の稼働率に対しての割合。（パーセント％）
 
 STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :INCOMPLETE
 STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :INCOMPLETE
@@ -197,12 +197,12 @@ STR_CID_WOOL                                                                    
 STR_CID_ZINC                                                                    :{TINYFONT}ｱｴ
 
 
-STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS is not designed to be used with Toyland climate
-STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS requires OpenTTD 1.9.0 or JGRPP 0.32.x or higher.
-STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
-STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
-STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
-STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Incompatible version: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}おもちゃの国ではXISは使えません。
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XISはバージョン　OpenTTD 1.9.0 又は JGRPP　0.32.x 以上が必要です。
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}産業不適合エラー: {ORANGE}XISは他の産業セットと一緒に使えません。{STRING}　{YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}パラメータエラー: {ORANGE}CanSetのパラメータ2は0に設定してください。{YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}パラメータエラー: {ORANGE}NA City Setのパラメータ2は0に設定してください。 {YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}バージョンエラー: {ORANGE}Total Town Replacement Setはバージョン3.11より新しいのを使ってください。 {YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 
 STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :雪線より下にしか建設出来ません。
 STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :雪線より上にしか建設出来ません。
@@ -304,15 +304,15 @@ STR_IND_ZINC_SMELTER                                                            
 
 
 STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             :{BLACK}(供給済み)
-STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}必要な貨物の内、{WHITE}いずれか{BLACK}が供給されれば最大生産率で稼働します。
-STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}最大生産率を保つためには、{WHITE}すべて{BLACK}の必須貨物を最低3ヶ月に一度供給してください。
-STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}生産率は町の人口に比例します。
-STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}現在の生産率: {YELLOW}普通 {}{}{BLACK}生産率を{WHITE}向上中{BLACK}にするには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}マッハ{BLACK}には{SIGNED_WORD}箱供給してください。
-STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}現在の生産率: {YELLOW}向上中 {}{}{BLACK}この生産率をキープするには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}マッハ{BLACK}production deliver {SIGNED_WORD} crates.
-STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}現在の生産率: {YELLOW}マッハ{}{}{BLACK}この生産率をキープするには資材を{SKIP}{SIGNED_WORD}箱、3ヶ月に一度供給してください。
-STR_PORT_PRODUCTION_1X                                                          :{BLACK}現在の生産率: {YELLOW}普通 {}{}{BLACK}生産率を{WHITE}向上中{BLACK}にするには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
-STR_PORT_PRODUCTION_2X                                                          :{BLACK}現在の生産率: {YELLOW}向上中 {}{}{BLACK}この生産率をキープするには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
-STR_PORT_PRODUCTION_4X                                                          :{BLACK}現在の生産率: {YELLOW}マッハ{}{}{BLACK}この生産率をキープするには貨物を{SKIP}{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}必要な貨物の内、{WHITE}いずれか{BLACK}が供給されれば最大稼働率で稼働します。
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}最大稼働率を保つためには、{WHITE}すべて{BLACK}の必須貨物を最低3ヶ月に一度供給してください。
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}稼働率は町の人口に比例します。
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}現在の稼働率: {YELLOW}普通 {}{}{BLACK}稼働率を{WHITE}レベル1：向上中{BLACK}にするには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}箱供給してください。
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}現在の稼働率: {YELLOW}レベル1：向上中{}{}{BLACK}この稼働率を維持するには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}production deliver {SIGNED_WORD} crates.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}現在の稼働率: {YELLOW}レベル2：マッハ{}{}{BLACK}この稼働率を維持するには資材を{SKIP}{SIGNED_WORD}箱、3ヶ月に一度供給してください。
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}現在の稼働率: {YELLOW}普通 {}{}{BLACK}稼働率を{WHITE}レベル1：向上中{BLACK}にするには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}現在の稼働率: {YELLOW}レベル1：向上中{}{}{BLACK}この稼働率を維持するには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}現在の稼働率: {YELLOW}レベル2：マッハ{}{}{BLACK}この稼働率を維持するには貨物を{SKIP}{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。
 STR_GENERIC_NEWLINE                                                             :{}
 
 STR_FUND_ARABLE_FARM                                                            :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
@@ -338,7 +338,7 @@ STR_STATION_BAR_GRILL_AND_ROOMS                                                 
 STR_STATION_BARNS                                                               :小屋
 STR_STATION_BARREL_AND_KEG                                                      :酒場
 STR_STATION_BASE                                                                :基地
-STR_STATION_BATTERY_PLANT                                                       :電池工場
+STR_STATION_BATTERY_PLANT                                                       :電池
 STR_STATION_BAUXITE_MINE                                                        :ボーキサイト鉱床
 STR_STATION_BONEYARD                                                            :墓場
 STR_STATION_BANK_TOP                                                            :台
@@ -369,47 +369,47 @@ STR_STATION_INDUSTRY_HARBOUR_3                                                  
 STR_STATION_IRONSTONE                                                           :鉄鉱
 STR_STATION_JOINERS_SHOP                                                        :建具店
 STR_STATION_KILNS                                                               :窯
-STR_STATION_KIMBERLITE_DEPOSITS                                                 :ボーキサイト鉱床
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :ボーキサイト
 STR_STATION_LIMESTONE_MINES                                                     :石灰石
-STR_STATION_LITHIUM_MINES                                                       :Lithium Mines
-STR_STATION_MANGANESE_MINES                                                     :Manganese Mines
-STR_STATION_MARKET                                                              :Market
-STR_STATION_MERCHANTS_LANE                                                      :Shop Avenue
-STR_STATION_MILL                                                                :Mill
-STR_STATION_MINE                                                                :Biff Tanner Road
-STR_STATION_MOULDINGS                                                           :Mouldings
-STR_STATION_OIL_RIG                                                             :Field
-STR_STATION_ORCHARDS                                                            :Orchards
-STR_STATION_PIT                                                                 :Pit
-STR_STATION_PLANTATION                                                          :Plantation
-STR_STATION_PRINTERS                                                            :Printers
-STR_STATION_POWERHUNGRY                                                         :Generation Station
-STR_STATION_POLYMERS                                                            :Polymers
-STR_STATION_PUMPS                                                               :Pumps
-STR_STATION_PYRITES                                                             :Sphalerite Deposits
-STR_STATION_REFINERY                                                            :Refineries
-STR_STATION_RUBBER_COMPANY                                                      :Rubber Company
-STR_STATION_SALTPETER_WORKS                                                     :Saltpeter Works
-STR_STATION_SHARP_STREET                                                        :Sharp Street
-STR_STATION_SHEEP_FOLD                                                          :Sheep Fold
-STR_STATION_SHOALS                                                              :Shoals
-STR_STATION_SILO                                                                :Silo
-STR_STATION_SMELTER                                                             :Smelter
-STR_STATION_STACKS                                                              :Stacks
-STR_STATION_STAMP_AND_PLATE                                                     :Stamp and Plate
-STR_STATION_WATT_STREET                                                         :James Watt Street
-STR_STATION_SUGAR_COMPANY                                                       :Sugar Company
-STR_STATION_TANK_FARM                                                           :Tank Farm
-STR_STATION_TAPPERS_SHED                                                        :Tappers Shed
-STR_STATION_TOWN_1                                                              :High Street
-STR_STATION_TOWN_2                                                              :Business Park
-STR_STATION_TOWN_3                                                              :Market Square
-STR_STATION_TRONA_BEDS                                                          :Trona Beds
-STR_STATION_WATER                                                               :Sandbank
-STR_STATION_WEAVE_AND_DYE                                                       :Nonwovens
-STR_STATION_WELLS                                                               :Wells
-STR_STATION_WINERY                                                              :Winery
-STR_STATION_WORKS_YARD                                                          :Works Yard
-STR_STATION_UPGRADER                                                            :Syncrude Facility
-STR_STATION_VEHICLE_DEALER                                                      :Truck Lot
+STR_STATION_LITHIUM_MINES                                                       :リチウム
+STR_STATION_MANGANESE_MINES                                                     :マンガン
+STR_STATION_MARKET                                                              :市場
+STR_STATION_MERCHANTS_LANE                                                      :商店街
+STR_STATION_MILL                                                                :製粉
+STR_STATION_MINE                                                                :皮革
+STR_STATION_MOULDINGS                                                           :鋳型
+STR_STATION_OIL_RIG                                                             :油田
+STR_STATION_ORCHARDS                                                            :果樹園
+STR_STATION_PIT                                                                 :採掘場
+STR_STATION_PLANTATION                                                          :農園
+STR_STATION_PRINTERS                                                            :印刷所
+STR_STATION_POWERHUNGRY                                                         :発電所
+STR_STATION_POLYMERS                                                            :ポリマー
+STR_STATION_PUMPS                                                               :サービスステーション
+STR_STATION_PYRITES                                                             :亜鉛   
+STR_STATION_REFINERY                                                            :製油所
+STR_STATION_RUBBER_COMPANY                                                      :ゴム
+STR_STATION_SALTPETER_WORKS                                                     :塩硝土
+STR_STATION_SHARP_STREET                                                        :電器
+STR_STATION_SHEEP_FOLD                                                          :カントリーファーム
+STR_STATION_SHOALS                                                              :浅瀬
+STR_STATION_SILO                                                                :サイロ
+STR_STATION_SMELTER                                                             :製錬所
+STR_STATION_STACKS                                                              :煙突
+STR_STATION_STAMP_AND_PLATE                                                     :金属
+STR_STATION_WATT_STREET                                                         :電器街
+STR_STATION_SUGAR_COMPANY                                                       :砂糖株式会社
+STR_STATION_TANK_FARM                                                           :コンビナート
+STR_STATION_TAPPERS_SHED                                                        :漆掻き小屋
+STR_STATION_TOWN_1                                                              :大通り
+STR_STATION_TOWN_2                                                              :ビジネスパーク
+STR_STATION_TOWN_3                                                              :広場
+STR_STATION_TRONA_BEDS                                                          :トロナ鉱床
+STR_STATION_WATER                                                               :砂丘
+STR_STATION_WEAVE_AND_DYE                                                       :繊維加工
+STR_STATION_WELLS                                                               :油井
+STR_STATION_WINERY                                                              :ワイン
+STR_STATION_WORKS_YARD                                                          :開発
+STR_STATION_UPGRADER                                                            :合成ガス
+STR_STATION_VEHICLE_DEALER                                                      :自動車
 
