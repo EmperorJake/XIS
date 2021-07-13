@@ -1453,21 +1453,21 @@ switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_7;
     }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_74, industry_distance(74)) {
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_43, industry_distance(43)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_1;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_45, industry_distance(45)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_74;
+        coffee_estate_min_distance_43;
     }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_43, industry_distance(43)) {
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_45;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_43;
+        coffee_estate_min_distance_74;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;

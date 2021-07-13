@@ -7,7 +7,7 @@ industry = IndustryPrimaryOrganic(id='sheep_farm',
                                   prod_multiplier='[12, 14]',
                                   map_colour='168',
                                   location_checks=dict(cluster=[72, 4]),
-                                  spec_flags='bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT)',
+                                  
                                   prospect_chance='0.75',
                                   name='string(STR_IND_SHEEPFARM)',
                                   nearby_station_name='string(STR_STATION_SHEEP_FOLD)',

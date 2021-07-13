@@ -8,7 +8,7 @@ industry = IndustryPrimaryOrganic(id='fruit_plantation',
                                   name='TTD_STR_INDUSTRY_NAME_FRUIT_PLANTATION',
                                   extra_text_fund='string(STR_FUND_FRUIT_PLANTATION)',
                                   nearby_station_name='string(STR_STATION_PLANTATION)',
-                                  spec_flags='bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT)',
+
                                   # fruit plantation doesn't cluster, by design - no industry location checks needed
                                   prod_cargo_types=['FRUT', 'FICR'],
                                   fund_cost_multiplier='54',

@@ -1256,7 +1256,7 @@ switch (FEAT_INDUSTRIES, SELF, mixed_farm_check_availability, economy) {
                     map_colour: 85;
                     life_type: IND_LIFE_TYPE_ORGANIC;
                     min_cargo_distr: 5;
-                    spec_flags: bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT);
+                    spec_flags: 0;
                     layouts: [mixed_farm_industry_layout_1_tilelayout,mixed_farm_industry_layout_2_tilelayout,mixed_farm_industry_layout_3_tilelayout];
                     conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
                     random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
@@ -1285,7 +1285,7 @@ switch (FEAT_INDUSTRIES, SELF, mixed_farm_check_availability, economy) {
                     map_colour: 85;
                     life_type: IND_LIFE_TYPE_ORGANIC;
                     min_cargo_distr: 5;
-                    spec_flags: bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT);
+                    spec_flags: 0;
                     layouts: [mixed_farm_industry_layout_1_tilelayout,mixed_farm_industry_layout_2_tilelayout,mixed_farm_industry_layout_3_tilelayout];
                     conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
                     random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
@@ -1314,7 +1314,7 @@ switch (FEAT_INDUSTRIES, SELF, mixed_farm_check_availability, economy) {
                     map_colour: 85;
                     life_type: IND_LIFE_TYPE_ORGANIC;
                     min_cargo_distr: 5;
-                    spec_flags: bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT);
+                    spec_flags: 0;
                     layouts: [mixed_farm_industry_layout_1_tilelayout,mixed_farm_industry_layout_2_tilelayout,mixed_farm_industry_layout_3_tilelayout];
                     conflicting_ind_types: []; // set this prop empty, FIRS has it's own better checks for this
                     random_sound_effects: []; // set this empty to avoid spurious default industry sounds (as of May 2017 FIRS does not yet use sound effects)
