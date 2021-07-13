@@ -847,13 +847,9 @@ switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability, economy) {
         5: peatlands_check_availability_5;
         3: peatlands_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_66, industry_distance(66)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
     switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        peatlands_min_distance_66;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -867,9 +863,13 @@ switch (FEAT_INDUSTRIES, SELF, peatlands_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         peatlands_min_distance_69;
     }
+    switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_66, industry_distance(66)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        peatlands_min_distance_52;
+    }
     switch (FEAT_INDUSTRIES, SELF, peatlands_min_distance_5, industry_distance(5)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        peatlands_min_distance_52;
+        peatlands_min_distance_66;
     }
     switch (FEAT_INDUSTRIES, SELF, peatlands_cluster_peatlands,
                 industry_count(peatlands) >= (4 * industry_clusters) &&

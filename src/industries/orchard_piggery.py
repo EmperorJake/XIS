@@ -11,8 +11,8 @@ industry = IndustryPrimaryExtractive(id='orchard_piggery',
                                      prospect_chance='0.75',
                                      name='string(STR_IND_BAUXITE_MINE)',
                                      nearby_station_name='string(STR_STATION_BAUXITE_MINE)',
-                                     fund_cost_multiplier='200'
-                                     intro_year='1900')
+                                     fund_cost_multiplier='200',
+                                     intro_year=1900)
 
 industry.economy_variations['FIRS'].enabled = True
 industry.economy_variations['BASIC_TEMPERATE'].enabled = True

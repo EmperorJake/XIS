@@ -1143,34 +1143,34 @@ switch (FEAT_INDUSTRIES, SELF, vineyard_available_game_mode, game_mode == GAMEMO
 	1: vineyard_check_map_gen;
 	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
 }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_2, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_0, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_1, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_4, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_5, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1860 */
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability_3, current_date) {
-        date(0,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
+        date(1860,1,1) .. date(5000000,12,31): vineyard_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
 switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability, economy) {
@@ -1181,45 +1181,9 @@ switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability, economy) {
         5: vineyard_check_availability_5;
         3: vineyard_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_81, industry_distance(81)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_8, industry_distance(8)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_81;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_8;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_60;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_61, industry_distance(61)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_52;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_42, industry_distance(42)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_61;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_9, industry_distance(9)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_42;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_51, industry_distance(51)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_9;
-    }
-    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_22, industry_distance(22)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_51;
-    }
     switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_22;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1237,9 +1201,45 @@ switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         vineyard_min_distance_6;
     }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_8, industry_distance(8)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_8;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_42, industry_distance(42)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_42;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_81;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_9, industry_distance(9)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        vineyard_min_distance_9;
+    }
     switch (FEAT_INDUSTRIES, SELF, vineyard_min_distance_68, industry_distance(68)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        vineyard_min_distance_57;
+        vineyard_min_distance_51;
     }
     switch (FEAT_INDUSTRIES, SELF, vineyard_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||
@@ -1285,7 +1285,7 @@ switch (FEAT_INDUSTRIES, SELF, vineyard_check_availability, economy) {
                     monthly_prod_change:      vineyard_check_secondary_production_level;
                     random_prod_change:       vineyard_check_secondary_closure;
                     location_check:           vineyard_check_location;
-                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1860);
                     extra_text_industry:      vineyard_extra_text;
                     cargo_subtype_display:    vineyard_cargo_subtype_display;
                     colour:                   switch_colour;

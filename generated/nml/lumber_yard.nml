@@ -1109,37 +1109,37 @@ switch (FEAT_INDUSTRIES, SELF, lumber_yard_check_availability, economy) {
         5: lumber_yard_check_availability_5;
         3: lumber_yard_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_51, industry_distance(51)) {
+    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_17, industry_distance(17)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lumber_yard_min_distance_51;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_74, industry_distance(74)) {
+    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lumber_yard_min_distance_17;
     }
     switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_12, industry_distance(12)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lumber_yard_min_distance_74;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_46, industry_distance(46)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lumber_yard_min_distance_12;
+        lumber_yard_min_distance_46;
     }
     switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_39, industry_distance(39)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lumber_yard_min_distance_46;
+        lumber_yard_min_distance_12;
     }
     switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lumber_yard_min_distance_39;
     }
+    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_74, industry_distance(74)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lumber_yard_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lumber_yard_min_distance_74;
+    }
     switch (FEAT_INDUSTRIES, SELF, lumber_yard_min_distance_41, industry_distance(41)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        lumber_yard_min_distance_57;
+        lumber_yard_min_distance_51;
     }
     switch (FEAT_INDUSTRIES, SELF, lumber_yard_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

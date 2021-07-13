@@ -10695,17 +10695,17 @@ switch (FEAT_INDUSTRIES, SELF, forest_check_availability, economy) {
         5: forest_check_availability_5;
         3: forest_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, forest_min_distance_14, industry_distance(14)) {
+    switch (FEAT_INDUSTRIES, SELF, forest_min_distance_12, industry_distance(12)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, forest_min_distance_12, industry_distance(12)) {
+    switch (FEAT_INDUSTRIES, SELF, forest_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        forest_min_distance_14;
+        forest_min_distance_12;
     }
     switch (FEAT_INDUSTRIES, SELF, forest_min_distance_11, industry_distance(11)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        forest_min_distance_12;
+        forest_min_distance_14;
     }
     switch (FEAT_INDUSTRIES, SELF, forest_cluster_forest,
                 industry_count(forest) >= (3 * industry_clusters) &&

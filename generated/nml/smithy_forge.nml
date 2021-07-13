@@ -1185,53 +1185,53 @@ switch (FEAT_INDUSTRIES, SELF, smithy_forge_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         smithy_forge_min_distance_82;
     }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_49;
+        smithy_forge_min_distance_57;
     }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_67, industry_distance(67)) {
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         smithy_forge_min_distance_74;
     }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_38, industry_distance(38)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_67;
-    }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_38;
-    }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_60, industry_distance(60)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_52;
+        smithy_forge_min_distance_49;
     }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_61, industry_distance(61)) {
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_67, industry_distance(67)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         smithy_forge_min_distance_60;
     }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_68, industry_distance(68)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_61;
+        smithy_forge_min_distance_67;
+    }
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_38, industry_distance(38)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        smithy_forge_min_distance_68;
+    }
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        smithy_forge_min_distance_38;
+    }
+    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        smithy_forge_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_54, industry_distance(54)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_68;
+        smithy_forge_min_distance_61;
     }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         smithy_forge_min_distance_54;
     }
-    switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_57, industry_distance(57)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_51;
-    }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_min_distance_6, industry_distance(6)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        smithy_forge_min_distance_57;
+        smithy_forge_min_distance_51;
     }
     switch (FEAT_INDUSTRIES, SELF, smithy_forge_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

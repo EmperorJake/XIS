@@ -1,6 +1,6 @@
 # Various needed programs
 HG= hg
-PYTHON3 = python3
+PYTHON3 = python3.6
 SED = sed
 ZIP = zip
 

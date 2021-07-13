@@ -1257,17 +1257,17 @@ switch (FEAT_INDUSTRIES, SELF, manganese_mine_check_availability, economy) {
         5: manganese_mine_check_availability_5;
         3: manganese_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_51, industry_distance(51)) {
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_77, industry_distance(77)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_77, industry_distance(77)) {
+    switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        manganese_mine_min_distance_51;
+        manganese_mine_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, manganese_mine_min_distance_75, industry_distance(75)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        manganese_mine_min_distance_77;
+        manganese_mine_min_distance_51;
     }
     switch (FEAT_INDUSTRIES, SELF, manganese_mine_cluster_manganese_mine,
                 industry_count(manganese_mine) >= (3 * industry_clusters) &&

@@ -101,6 +101,9 @@ if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 
     if (grf_future_status("OG+3")) {
         error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "OpenGFX+ Industries"));
     }
+    if (grf_future_status("\47\47\51\54")) {
+        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "OTIS"));
+    }
     if (grf_future_status("DD\06\02")) {
         error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Pikka Basic Industries"));
     }

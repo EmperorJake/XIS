@@ -988,21 +988,13 @@ switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_check_availability, economy) 
         5: slag_grinding_plant_check_availability_5;
         3: slag_grinding_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_43, industry_distance(43)) {
+    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_67, industry_distance(67)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_67, industry_distance(67)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        slag_grinding_plant_min_distance_43;
-    }
-    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        slag_grinding_plant_min_distance_67;
-    }
     switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        slag_grinding_plant_min_distance_7;
+        slag_grinding_plant_min_distance_67;
     }
     switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_69, industry_distance(69)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1012,12 +1004,20 @@ switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_check_availability, economy) 
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         slag_grinding_plant_min_distance_69;
     }
+    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        slag_grinding_plant_min_distance_77;
+    }
+    switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_7, industry_distance(7)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        slag_grinding_plant_min_distance_43;
+    }
     switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_check_industry_max_distance_2, industry_distance(7)) {
-        0 .. 72: slag_grinding_plant_min_distance_77;
+        0 .. 72: slag_grinding_plant_min_distance_7;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_max_distance_7, industry_count(7)) {
-        0: slag_grinding_plant_min_distance_77;
+        0: slag_grinding_plant_min_distance_7;
         slag_grinding_plant_check_industry_max_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, slag_grinding_plant_min_distance_80, industry_distance(80)) {
