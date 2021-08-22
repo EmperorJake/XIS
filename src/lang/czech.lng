@@ -1,5 +1,7 @@
 ##grflangid 0x15
 ##plural 0
+##gender fp map f mnp m n np
+##case acc nom loc big voc ins dat small gen
 
 STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 nákladů and 83 typů průmyslových budov! Založeno na FIRS 3.0.10. Ekonomie designovaná Emperor Jake, dodatečné grafiky od Emperor Jake, GarryG and Toni Babelony; ostatní kód a grafiky díky andythenorth a zbytku týmu FIRSu. Licence: GPL v2.
 STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
