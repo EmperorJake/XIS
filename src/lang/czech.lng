@@ -1,84 +1,86 @@
 ##grflangid 0x15
-##plural 0
+##plural 10
+##gender fp map f mnp m n np
+##case acc nom loc big voc ins dat small gen
 
-STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 n·klad˘ and 83 typ˘ pr˘myslov˝ch budov! Zaloûeno na FIRS 3.0.10. Ekonomie designovan· Emperor Jake, dodateËnÈ grafiky od Emperor Jake, GarryG and Toni Babelony; ostatnÌ kÛd a grafiky dÌky andythenorth a zbytku t˝mu FIRSu. Licence: GPL v2.
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 n√°klad√π and 83 typ√π pr√πmyslov√Ωch budov! Zalo≈æeno na FIRS 3.0.10. Ekonomie designovan√° Emperor Jake, dodate√®n√© grafiky od Emperor Jake, GarryG and Toni Babelony; ostatn√≠ k√≥d a grafiky d√≠ky andythenorth a zbytku t√Ωmu FIRSu. Licence: GPL v2.
 STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
 
-STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maxim·lnÌ vzd·lenost ryb·¯sk˝ch oblastÌ, ropn˝ch ploöin a pÌsËin od pob¯eûÌ v dÌlcÌch mapy.
-STR_PARAM_DESC_ECONOMIES                                                        :Kaûd· ekonomie nabÌzÌ r˘znÈ kombinace pr˘myslov˝ch budov a r˘znÈ n·klady.{}{}Pouze jedna je v souËasnosti kompletnÌ.
-STR_PARAM_DESC_NO_OPENINGS                                                      :Norm·lnÏ se budou otevÌrat novÈ pr˘myslovÈ budovy.{}{}Pokud je {SILVER}zabr·nit otevÌr·nÌ {BLACK}zapnuto, nebudou se novÈ pr˘myslovÈ budovy otevÌrat, a hr·Ëi nebudou schopni je zakl·dat.
-STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Norm·lnÏ nebudou sekund·rnÌ pr˘myslovÈ budovy zavÌrat.{}{}Pokud je zavÌr·nÌ sekund·rnÌch pr˘yslov˝ch budov zapnuto, mohou zav¯Ìt, pokud do nich nebyl po dlouhou dobu p¯epraven û·dn˝ n·klad. Prim·rnÌ pr˘myslovÈ budovy nikdy nezav¯ou a tÌmto nastavenÌm nejsou ovlivnÏny.
-STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maxim·lnÌ vzd·lenost vodnÌch pr˘mysl˘ od pob¯eûÌ
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maxim√°ln√≠ vzd√°lenost ryb√°√∏sk√Ωch oblast√≠, ropn√Ωch plo≈°in a p√≠s√®in od pob√∏e≈æ√≠ v d√≠lc√≠ch mapy.
+STR_PARAM_DESC_ECONOMIES                                                        :Ka≈æd√° ekonomie nab√≠z√≠ r√πzn√© kombinace pr√πmyslov√Ωch budov a r√πzn√© n√°klady.{}{}Pouze jedna je v sou√®asnosti kompletn√≠.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Norm√°ln√¨ se budou otev√≠rat nov√© pr√πmyslov√© budovy.{}{}Pokud je {SILVER}zabr√°nit otev√≠r√°n√≠ {BLACK}zapnuto, nebudou se nov√© pr√πmyslov√© budovy otev√≠rat, a hr√°√®i nebudou schopni je zakl√°dat.
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Norm√°ln√¨ nebudou sekund√°rn√≠ pr√πmyslov√© budovy zav√≠rat.{}{}Pokud je zav√≠r√°n√≠ sekund√°rn√≠ch pr√πyslov√Ωch budov zapnuto, mohou zav√∏√≠t, pokud do nich nebyl po dlouhou dobu p√∏epraven ≈æ√°dn√Ω n√°klad. Prim√°rn√≠ pr√πmyslov√© budovy nikdy nezav√∏ou a t√≠mto nastaven√≠m nejsou ovlivn√¨ny.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maxim√°ln√≠ vzd√°lenost vodn√≠ch pr√πmysl√π od pob√∏e≈æ√≠
 STR_PARAM_NAME_ECONOMIES                                                        :Ekonomie
-STR_PARAM_NAME_NO_OPENINGS                                                      :Zabr·nit otevÌr·nÌ nov˝ch pr˘myslov˝ch budov
-STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Povolit sekund·rnÌm pr˘myslov˝m budov·m zav¯Ìt
+STR_PARAM_NAME_NO_OPENINGS                                                      :Zabr√°nit otev√≠r√°n√≠ nov√Ωch pr√πmyslov√Ωch budov
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Povolit sekund√°rn√≠m pr√πmyslov√Ωm budov√°m zav√∏√≠t
 STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :Bez limitu
 
-STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :MnoûstvÌ vyûadovan˝ch beden pro Enhanced produkci (norm·lnÏ 16)
-STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :MnoûstvÌ vyûadovan˝ch beden pro Crankin' It produkci (norm·lnÏ 80)
-STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Prim·rnÌ pr˘myslovÈ budovy (farmy, doly, atd.) zv˝öÌ produkci, pokud jsou dod·ny bedny, nejprve na {SILVER}Enhanced{BLACK}, a potÈ na {SILVER}Crankin' It{BLACK}, pokud je dod·n dostatek beden.  {}{}StandardnÌ hodnoty jsou dobrÈ, ale zde je lze zmÏnit.  {}{}Pro pr˘myslovÈ budovy typu p¯Ìstav bude hodnota 8x vyööÌ.
-STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :⁄roveÚ Enhanced produkce (%)
-STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :⁄roveÚ Crankin' It produkce (%)
-STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkce prim·rnÌch pr˘myslov˝ch budov, pokud je dod·n dostatek beden (v procentech {SILVER}Norm·lnÌ {BLACK}˙rovnÏ produkce).
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Mno≈æstv√≠ vy≈æadovan√Ωch beden pro Enhanced produkci (norm√°ln√¨ 16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Mno≈æstv√≠ vy≈æadovan√Ωch beden pro Crankin' It produkci (norm√°ln√¨ 80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Prim√°rn√≠ pr√πmyslov√© budovy (farmy, doly, atd.) zv√Ω≈°√≠ produkci, pokud jsou dod√°ny bedny, nejprve na {SILVER}Enhanced{BLACK}, a pot√© na {SILVER}Crankin' It{BLACK}, pokud je dod√°n dostatek beden.  {}{}Standardn√≠ hodnoty jsou dobr√©, ale zde je lze zm√¨nit.  {}{}Pro pr√πmyslov√© budovy typu p√∏√≠stav bude hodnota 8x vy≈°≈°√≠.
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :√örove√≤ Enhanced produkce (%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :√örove√≤ Crankin' It produkce (%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkce prim√°rn√≠ch pr√πmyslov√Ωch budov, pokud je dod√°n dostatek beden (v procentech {SILVER}Norm√°ln√≠ {BLACK}√∫rovn√¨ produkce).
 
-STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :NEKOMPLETNÕ
-STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NEKOMPLETNÕ
-STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :NEKOMPLETNÕ
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :NEKOMPLETN√ç
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NEKOMPLETN√ç
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :NEKOMPLETN√ç
 STR_PARAM_VALUE_ECONOMIES_FIRS                                                  :Mnoho
-STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :NEKOMPLETNÕ
-STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :NEKOMPLETNÕ
+STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :NEKOMPLETN√ç
+STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :NEKOMPLETN√ç
 
 STR_CARGO_NAME_ACID                                                             :Kyselina
 STR_CARGO_NAME_ALCOHOL                                                          :Alkohol
 STR_CARGO_NAME_BAUXITE                                                          :Bauxit
-STR_CARGO_NAME_BEANS                                                            :SÛja
-STR_CARGO_NAME_BUILDING_MATERIALS                                               :StavebnÌ materi·ly
+STR_CARGO_NAME_BEANS                                                            :S√≥ja
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :Stavebn√≠ materi√°ly
 STR_CARGO_NAME_CASSAVA                                                          :Maniok
 STR_CARGO_NAME_CEMENT                                                           :Cement
-STR_CARGO_NAME_CHEMICALS                                                        :Petrochemik·lie
+STR_CARGO_NAME_CHEMICALS                                                        :Petrochemik√°lie
 STR_CARGO_NAME_CHLORINE                                                         :Chlor
-STR_CARGO_NAME_CLAY                                                             :JÌl
-STR_CARGO_NAME_COFFEE                                                           :K·va
+STR_CARGO_NAME_CLAY                                                             :J√≠l
+STR_CARGO_NAME_COFFEE                                                           :K√°va
 STR_CARGO_NAME_COKE                                                             :Koks
-STR_CARGO_NAME_COPPER                                                           :MÏÔ
-STR_CARGO_NAME_EDIBLE_OIL                                                       :Jedl˝ olej
-STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :ElektrickÈ p¯Ìstroje
-STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Inûen˝rskÈ pot¯eby
-STR_CARGO_NAME_EXPLOSIVES                                                       :V˝buöniny
-STR_CARGO_NAME_FIBRES                                                           :Vl·kna
+STR_CARGO_NAME_COPPER                                                           :M√¨√Ø
+STR_CARGO_NAME_EDIBLE_OIL                                                       :Jedl√Ω olej
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Elektrick√© p√∏√≠stroje
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :In≈æen√Ωrsk√© pot√∏eby
+STR_CARGO_NAME_EXPLOSIVES                                                       :V√Ωbu≈°niny
+STR_CARGO_NAME_FIBRES                                                           :Vl√°kna
 STR_CARGO_NAME_FISH                                                             :Ryby
-STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farm·¯skÈ pot¯eby
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farm√°√∏sk√© pot√∏eby
 STR_CARGO_NAME_FERTILISER                                                       :Hnojivo
 STR_CARGO_NAME_FRUITS                                                           :Ovoce
 STR_CARGO_NAME_KAOLIN                                                           :Lithium
-STR_CARGO_NAME_LIMESTONE                                                        :V·penec
+STR_CARGO_NAME_LIMESTONE                                                        :V√°penec
 STR_CARGO_NAME_LUMBER                                                           :Prkna
-STR_CARGO_NAME_METAL                                                            :HlinÌk
-STR_CARGO_NAME_MILK                                                             :MlÈko
+STR_CARGO_NAME_METAL                                                            :Hlin√≠k
+STR_CARGO_NAME_MILK                                                             :Ml√©ko
 STR_CARGO_NAME_MANGANESE                                                        :Mangan
-STR_CARGO_NAME_NITRATES                                                         :Nitr·ty
-STR_CARGO_NAME_NUTS                                                             :O¯echy
+STR_CARGO_NAME_NITRATES                                                         :Nitr√°ty
+STR_CARGO_NAME_NUTS                                                             :O√∏echy
 STR_CARGO_NAME_PACKAGING                                                        :Obaly
 STR_CARGO_NAME_PEAT                                                             :Biomasa
-STR_CARGO_NAME_PETROL                                                           :Ropn· paliva
-STR_CARGO_NAME_PHOSPHATE                                                        :RopnÈ pÌsky
-STR_CARGO_NAME_PIG_IRON                                                         :SurovÈ ûelezo
+STR_CARGO_NAME_PETROL                                                           :Ropn√° paliva
+STR_CARGO_NAME_PHOSPHATE                                                        :Ropn√© p√≠sky
+STR_CARGO_NAME_PIG_IRON                                                         :Surov√© ≈æelezo
 STR_CARGO_NAME_PIPE                                                             :Trubky
-STR_CARGO_NAME_POTASH                                                           :Potaö
+STR_CARGO_NAME_POTASH                                                           :Pota≈°
 STR_CARGO_NAME_PYRITE_ORE                                                       :Ruda zinku
-STR_CARGO_NAME_QUICKLIME                                                        :NehaöenÈ v·pno
-STR_CARGO_NAME_RECYCLABLES                                                      :Recyklovateln˝ odpad
-STR_CARGO_NAME_SALT                                                             :S˘l
-STR_CARGO_NAME_SAND                                                             :PÌsek
-STR_CARGO_NAME_SCRAP_METAL                                                      :ärot
+STR_CARGO_NAME_QUICKLIME                                                        :Neha≈°en√© v√°pno
+STR_CARGO_NAME_RECYCLABLES                                                      :Recyklovateln√Ω odpad
+STR_CARGO_NAME_SALT                                                             :S√πl
+STR_CARGO_NAME_SAND                                                             :P√≠sek
+STR_CARGO_NAME_SCRAP_METAL                                                      :≈†rot
 STR_CARGO_NAME_SLAG                                                             :Struska
-STR_CARGO_NAME_SODA_ASH                                                         :Sodn˝ pr·öek
+STR_CARGO_NAME_SODA_ASH                                                         :Sodn√Ω pr√°≈°ek
 STR_CARGO_NAME_STEEL                                                            :Ocel
 STR_CARGO_NAME_STONE                                                            :Kamenivo
-STR_CARGO_NAME_SUGAR_BEET                                                       :Cukrov· ¯epa
-STR_CARGO_NAME_SULPHUR                                                          :SÌra
+STR_CARGO_NAME_SUGAR_BEET                                                       :Cukrov√° √∏epa
+STR_CARGO_NAME_SULPHUR                                                          :S√≠ra
 STR_CARGO_NAME_VEHICLE_BODIES                                                   :Karoserie
-STR_CARGO_NAME_VEHICLE_PARTS                                                    :DÌly
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :D√≠ly
 STR_CARGO_NAME_VEHICLES                                                         :Vozidla
 STR_CARGO_NAME_WOOL                                                             :Vlna
 STR_CARGO_NAME_ZINC                                                             :Zinek
@@ -86,58 +88,58 @@ STR_CARGO_NAME_ZINC                                                             
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} kyseliny
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} alkoholu
 STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} bauxitu
-STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} sÛji
-STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} stavebnÌch materi·l˘
+STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} s√≥ji
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} stavebn√≠ch materi√°l√π
 STR_CARGO_UNIT_CASSAVA                                                          :{WEIGHT} manioku
 STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} cementu
-STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} petrochemik·liÌ
+STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} petrochemik√°li√≠
 STR_CARGO_UNIT_CHLORINE                                                         :{VOLUME} chloru
-STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} jÌlu
-STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} pytl˘ k·vy
+STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} j√≠lu
+STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} pytl√π k√°vy
 STR_CARGO_UNIT_COKE                                                             :{WEIGHT} koksu
-STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} mÏdi
-STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} jedlÈho oleje
-STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} beden elektrick˝ch p¯Ìstroj˘
-STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} beden inûen˝rsk˝ch pot¯eb
-STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} beden v˝buönin
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} m√¨di
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} jedl√©ho oleje
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} beden elektrick√Ωch p√∏√≠stroj√π
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} beden in≈æen√Ωrsk√Ωch pot√∏eb
+STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} beden v√Ωbu≈°nin
 STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} hnojiva
-STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} balÌk˘ vl·ken
+STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} bal√≠k√π vl√°ken
 STR_CARGO_UNIT_FISH                                                             :{WEIGHT} ryb
-STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} beden farm·¯sk˝ch pot¯eb
+STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} beden farm√°√∏sk√Ωch pot√∏eb
 STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} ovoce
 STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} lithia
-STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} v·pence
+STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} v√°pence
 STR_CARGO_UNIT_LUMBER                                                           :{WEIGHT} prken
 STR_CARGO_UNIT_LYE                                                              :{VOLUME} louhu
 STR_CARGO_UNIT_MANGANESE                                                        :{WEIGHT} manganu
-STR_CARGO_UNIT_METAL                                                            :{WEIGHT} hlinÌku
-STR_CARGO_UNIT_MILK                                                             :{VOLUME} mlÈka
+STR_CARGO_UNIT_METAL                                                            :{WEIGHT} hlin√≠ku
+STR_CARGO_UNIT_MILK                                                             :{VOLUME} ml√©ka
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} niklu
-STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT}nitr·t˘
-STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} pytl˘ o¯ech˘
-STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} obal˘
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT}nitr√°t√π
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} pytl√π o√∏ech√π
+STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} obal√π
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} biomasy
-STR_CARGO_UNIT_PETROL                                                           :{VOLUME} ropn˝ch paliv
-STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} ropn˝ch pÌsk˘
-STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} surovÈho ûeleza
+STR_CARGO_UNIT_PETROL                                                           :{VOLUME} ropn√Ωch paliv
+STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} ropn√Ωch p√≠sk√π
+STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} surov√©ho ≈æeleza
 STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} trubek
-STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} potaöe
+STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} pota≈°e
 STR_CARGO_UNIT_PYRITE_ORE                                                       :{WEIGHT} rudy zinku
-STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} nahaöenÈho v·pna
-STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} recyklovatelnÈho odpadu
+STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} naha≈°en√©ho v√°pna
+STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} recyklovateln√©ho odpadu
 STR_CARGO_UNIT_SALT                                                             :{WEIGHT} soli
-STR_CARGO_UNIT_SAND                                                             :{WEIGHT} pÌsku
-STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} örotu
+STR_CARGO_UNIT_SAND                                                             :{WEIGHT} p√≠sku
+STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} ≈°rotu
 STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} strusky
-STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} sodnÈho pr·öku
+STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} sodn√©ho pr√°≈°ku
 STR_CARGO_UNIT_STEEL                                                            :{WEIGHT} oceli
 STR_CARGO_UNIT_STONE                                                            :{WEIGHT} kameniva
-STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} cukrovÈ ¯epy
-STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} sÌry
-STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} karoseriÌ
-STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} dÌl˘
+STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} cukrov√© √∏epy
+STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} s√≠ry
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} karoseri√≠
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} d√≠l√π
 STR_CARGO_UNIT_VEHICLES                                                         :{WEIGHT} vozidel
-STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} balÌk˘ vlny
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} bal√≠k√π vlny
 STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} zinku
 
 STR_CID_ACID                                                                    :{TINYFONT}AC
@@ -198,217 +200,217 @@ STR_CID_ZINC                                                                    
 
 
 STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS is not designed to be used with Toyland climate
-STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS vyûaduje minim·lnÏ OpenTTD 1.9.0 nebo JGRPP 0.32.x.
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS vy≈æaduje minim√°ln√¨ OpenTTD 1.9.0 nebo JGRPP 0.32.x.
 STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Incompatible version: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 
-STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :nesmÌ b˝t na snÏhu.
-STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :musÌ b˝t na snÏhu.
-STR_ERR_LOCATION_NOT_ON_WATER                                                   :musÌ b˝t na zemi.
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :nesm√≠ b√Ωt na sn√¨hu.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :mus√≠ b√Ωt na sn√¨hu.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :mus√≠ b√Ωt na zemi.
 STR_ERR_LOCATION_NOT_IN_DESERT                                                  :To ti tady nevyroste!
-STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :P¯Ìliö prudk˝ kopec!
-STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :pouze jeden exempl·¯ od tÈto pr˘myslovÈ budovy je dovolen na mÏsto.
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :P√∏√≠li≈° prudk√Ω kopec!
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :pouze jeden exempl√°√∏ od t√©to pr√πmyslov√© budovy je dovolen na m√¨sto.
 
-STR_IND_ALUMINIUM_PLANT                                                         :SlÈv·rna hlinÌku
-STR_IND_AMMONIA_PLANT                                                           :Tov·rna na hnojiva (a na v˝buöniny)
-STR_IND_ARABLE_FARM                                                             :ZemÏdÏlsk· farma
+STR_IND_ALUMINIUM_PLANT                                                         :Sl√©v√°rna hlin√≠ku
+STR_IND_AMMONIA_PLANT                                                           :Tov√°rna na hnojiva (a na v√Ωbu≈°niny)
+STR_IND_ARABLE_FARM                                                             :Zem√¨d√¨lsk√° farma
 STR_IND_ASSEMBLY_PLANT                                                          :Montovna
-STR_IND_BATTERY_PLANT                                                           :Tov·rna na baterie
+STR_IND_BATTERY_PLANT                                                           :Tov√°rna na baterie
 STR_IND_BASICFARM                                                               :Farma
 STR_IND_BASIC_OXYGEN_FURNACE                                                    :Pec
-STR_IND_BAUXITE_MINE		                                                        :D˘l na bauxit
+STR_IND_BAUXITE_MINE		                                                        :D√πl na bauxit
 STR_IND_BIOREFINERY                                                             :Biorafinerie
-STR_IND_BLAST_FURNACE                                                           :Ocel·rna
+STR_IND_BLAST_FURNACE                                                           :Ocel√°rna
 STR_IND_BREWERY                                                                 :Pivovar
-STR_IND_CIDER_MILL                                                              :PalÌrna
-STR_IND_BRICK_WORKS                                                             :Cihl·rna
+STR_IND_CIDER_MILL                                                              :Pal√≠rna
+STR_IND_BRICK_WORKS                                                             :Cihl√°rna
 STR_IND_BUILDERS_YARD                                                           :Stavebniny
-STR_IND_BULK_TERMINAL                                                           :N·kladov˝ termin·l
-STR_IND_CEMENT_PLANT                                                            :Cement·rna
-STR_IND_CHEMICAL_PLANT                                                          :ChemiËka
-STR_IND_CRACKING_PLANT                                                          :KrakovacÌ rafinerie
-STR_IND_CLAY_PIT                                                                :D˘l na jÌl
-STR_IND_COFFEE_ESTATE                                                           :Plant·û na k·vu
+STR_IND_BULK_TERMINAL                                                           :N√°kladov√Ω termin√°l
+STR_IND_CEMENT_PLANT                                                            :Cement√°rna
+STR_IND_CHEMICAL_PLANT                                                          :Chemi√®ka
+STR_IND_CRACKING_PLANT                                                          :Krakovac√≠ rafinerie
+STR_IND_CLAY_PIT                                                                :D√πl na j√≠l
+STR_IND_COFFEE_ESTATE                                                           :Plant√°≈æ na k√°vu
 STR_IND_COKE_OVEN                                                               :Koksovna
-STR_IND_COPPER_REFINERY                                                         :TavÌrna mÏdÏnÈ rudy
-STR_IND_DAIRY                                                                   :MlÈk·rna
-STR_IND_DAIRY_FARM                                                              :MlÈËn· farma
-STR_IND_DREDGING_SITE                                                           :PÌsËina
-STR_IND_ELECTRIC_ARC_FURNACE                                                    :Obloukov· pec
-STR_IND_FACTORY                                                                 :Tov·rna
-STR_IND_FISHING_GROUND                                                          :Ryb·¯sk· oblast
-STR_IND_FISHING_HARBOUR                                                         :Ryb·¯sk˝ p¯Ìstav
-STR_IND_FISHING_VILLAGE                                                         :Ryb·¯sk· vesnice
-STR_IND_FLOUR_MILL                                                              :Ml˝n na mouku
+STR_IND_COPPER_REFINERY                                                         :Tav√≠rna m√¨d√¨n√© rudy
+STR_IND_DAIRY                                                                   :Ml√©k√°rna
+STR_IND_DAIRY_FARM                                                              :Ml√©√®n√° farma
+STR_IND_DREDGING_SITE                                                           :P√≠s√®ina
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :Obloukov√° pec
+STR_IND_FACTORY                                                                 :Tov√°rna
+STR_IND_FISHING_GROUND                                                          :Ryb√°√∏sk√° oblast
+STR_IND_FISHING_HARBOUR                                                         :Ryb√°√∏sk√Ω p√∏√≠stav
+STR_IND_FISHING_VILLAGE                                                         :Ryb√°√∏sk√° vesnice
+STR_IND_FLOUR_MILL                                                              :Ml√Ωn na mouku
 STR_IND_FOOD_MARKET                                                             :Samoobsluha
-STR_IND_FOOD_PROCESSOR                                                          :Velkov˝robna jÌdla
-STR_IND_FOUNDRY                                                                 :SlÈv·rna
-STR_IND_FURNITURE_FACTORY                                                       :Truhl·¯stvÌ
-STR_IND_GENERAL_STORE                                                           :SmÌöenÈ zboûÌ
-STR_IND_GLASS_WORKS                                                             :Skl·rna
-STR_IND_HARDWARE_STORE                                                          :éelez·¯stvÌ
+STR_IND_FOOD_PROCESSOR                                                          :Velkov√Ωrobna j√≠dla
+STR_IND_FOUNDRY                                                                 :Sl√©v√°rna
+STR_IND_FURNITURE_FACTORY                                                       :Truhl√°√∏stv√≠
+STR_IND_GENERAL_STORE                                                           :Sm√≠≈°en√© zbo≈æ√≠
+STR_IND_GLASS_WORKS                                                             :Skl√°rna
+STR_IND_HARDWARE_STORE                                                          :≈Ωelez√°√∏stv√≠
 STR_IND_HOTEL                                                                   :Hotel
-STR_IND_HERDING_COOP                                                            :Pasteveck· komunita
-STR_IND_IRON_WORKS                                                              :Ocel·rna
-STR_IND_JUNKYARD                                                                :Skl·dka
-STR_IND_LIME_KILN                                                               :V·penka
-STR_IND_LIMESTONE_MINE                                                          :D˘l na v·penec
-STR_IND_LITHIUM_MINE                                                            :D˘l na lithium
-STR_IND_LIQUIDS_TERMINAL                                                        :Termin·l na kapaliny
+STR_IND_HERDING_COOP                                                            :Pasteveck√° komunita
+STR_IND_IRON_WORKS                                                              :Ocel√°rna
+STR_IND_JUNKYARD                                                                :Skl√°dka
+STR_IND_LIME_KILN                                                               :V√°penka
+STR_IND_LIMESTONE_MINE                                                          :D√πl na v√°penec
+STR_IND_LITHIUM_MINE                                                            :D√πl na lithium
+STR_IND_LIQUIDS_TERMINAL                                                        :Termin√°l na kapaliny
 STR_IND_LUMBER_YARD                                                             :Pila
-STR_IND_MACHINE_SHOP                                                            :V˝robna stroj˘
-STR_IND_MANGANESE_MINE                                                          :D˘l na mangan
-STR_IND_METAL_FABRICATION_PLANT                                                 :SlÈv·rna
-STR_IND_METAL_WORKSHOP                                                          :Elektrick· dÌlna
-STR_IND_MIXEDFARM                                                               :SmÌöen· farma
-STR_IND_NITRATE_MINE                                                            :D˘l na nitr·ty
-STR_IND_ORCHARD_PIGGERY                                                         :Sad a vep¯Ìn
-STR_IND_OIL_SANDS_MINE                                                          :D˘l na ropnÈ pÌsky
-STR_IND_PEATLANDS                                                               :RaöeliniötÏ
-STR_IND_PETROLPUMP                                                              :»erpacÌ stanice
-STR_IND_PHOSPHATE_MINE                                                          :Fosf·tov˝ d˘l
-STR_IND_PLASTICS_PLANT                                                          :Tov·rna na plasty
-STR_IND_PRINTING_PLANT                                                          :Tisk·rna
-STR_IND_POLYMER_PLANT                                                           :Tov·rna na polymery
-STR_IND_PORT                                                                    :P¯Ìstav
-STR_IND_POTASH_MINE                                                             :D˘l na potaö
-STR_IND_PYRITE_MINE                                                             :D˘l na pyrit
-STR_IND_PYRITE_SMELTER                                                          :TavÌrna pyritu
-STR_IND_POWER_PLANT                                                             :Elektr·rna
+STR_IND_MACHINE_SHOP                                                            :V√Ωrobna stroj√π
+STR_IND_MANGANESE_MINE                                                          :D√πl na mangan
+STR_IND_METAL_FABRICATION_PLANT                                                 :Sl√©v√°rna
+STR_IND_METAL_WORKSHOP                                                          :Elektrick√° d√≠lna
+STR_IND_MIXEDFARM                                                               :Sm√≠≈°en√° farma
+STR_IND_NITRATE_MINE                                                            :D√πl na nitr√°ty
+STR_IND_ORCHARD_PIGGERY                                                         :Sad a vep√∏√≠n
+STR_IND_OIL_SANDS_MINE                                                          :D√πl na ropn√© p√≠sky
+STR_IND_PEATLANDS                                                               :Ra≈°elini≈°t√¨
+STR_IND_PETROLPUMP                                                              :√àerpac√≠ stanice
+STR_IND_PHOSPHATE_MINE                                                          :Fosf√°tov√Ω d√πl
+STR_IND_PLASTICS_PLANT                                                          :Tov√°rna na plasty
+STR_IND_PRINTING_PLANT                                                          :Tisk√°rna
+STR_IND_POLYMER_PLANT                                                           :Tov√°rna na polymery
+STR_IND_PORT                                                                    :P√∏√≠stav
+STR_IND_POTASH_MINE                                                             :D√πl na pota≈°
+STR_IND_PYRITE_MINE                                                             :D√πl na pyrit
+STR_IND_PYRITE_SMELTER                                                          :Tav√≠rna pyritu
+STR_IND_POWER_PLANT                                                             :Elektr√°rna
 STR_IND_QUARRY                                                                  :Lom
-STR_IND_RANCH                                                                   :RanË
-STR_IND_RECYCLING_DEPOT                                                         :SbÏrn˝ dv˘r
-STR_IND_RECYCLING_PLANT                                                         :T¯ÌdÌcÌ st¯edisko
-STR_IND_REINDEER_FARM                                                           :SobÌ farma
-STR_IND_SHEEPFARM                                                               :OvËÌ farma
-STR_IND_SLAG_GRINDING_PLANT                                                     :TavÌrna strusky
-STR_IND_SMITHY_FORGE                                                            :Kov·rna
-STR_IND_SODA_ASH_MINE                                                           :D˘l na sodn˝ pr·öek
-STR_IND_STEEL_FINISHING_PLANT                                                   :Tov·rna na pozinkov·v·nÌ
-STR_IND_STOCKYARD                                                               :Masokombin·t
+STR_IND_RANCH                                                                   :Ran√®
+STR_IND_RECYCLING_DEPOT                                                         :Sb√¨rn√Ω dv√πr
+STR_IND_RECYCLING_PLANT                                                         :T√∏√≠d√≠c√≠ st√∏edisko
+STR_IND_REINDEER_FARM                                                           :Sob√≠ farma
+STR_IND_SHEEPFARM                                                               :Ov√®√≠ farma
+STR_IND_SLAG_GRINDING_PLANT                                                     :Tav√≠rna strusky
+STR_IND_SMITHY_FORGE                                                            :Kov√°rna
+STR_IND_SODA_ASH_MINE                                                           :D√πl na sodn√Ω pr√°≈°ek
+STR_IND_STEEL_FINISHING_PLANT                                                   :Tov√°rna na pozinkov√°v√°n√≠
+STR_IND_STOCKYARD                                                               :Masokombin√°t
 STR_IND_SUGAR_REFINERY                                                          :Cukrovar
-STR_IND_SULPHIDE_MINE                                                           :D˘l na sulfid
-STR_IND_SUPPLY_YARD                                                             :Sklad pot¯eb
-STR_IND_ENSP_YARD                                                               :Sklad inûen˝rsk˝ch pot¯eb
-STR_IND_FMSP_YARD                                                               :Sklad farm·¯sk˝ch pot¯eb
-STR_IND_TEXTILE_MILL                                                            :Tov·rna na textil
-STR_IND_TRADING_POST                                                            :ObchodnÌ mÌsto
-STR_IND_TYRE_PLANT                                                              :Tov·rna na pneumatiky
+STR_IND_SULPHIDE_MINE                                                           :D√πl na sulfid
+STR_IND_SUPPLY_YARD                                                             :Sklad pot√∏eb
+STR_IND_ENSP_YARD                                                               :Sklad in≈æen√Ωrsk√Ωch pot√∏eb
+STR_IND_FMSP_YARD                                                               :Sklad farm√°√∏sk√Ωch pot√∏eb
+STR_IND_TEXTILE_MILL                                                            :Tov√°rna na textil
+STR_IND_TRADING_POST                                                            :Obchodn√≠ m√≠sto
+STR_IND_TYRE_PLANT                                                              :Tov√°rna na pneumatiky
 STR_IND_UPGRADER                                                                :Extraktor ropy
 STR_IND_VINEYARD                                                                :Vinice
 STR_IND_VEHICLE_DEALER                                                          :Prodejce vozidfel
 STR_IND_WHARF                                                                   :Doky
-STR_IND_ZINC_SMELTER                                                            :TavÌrna zinku
+STR_IND_ZINC_SMELTER                                                            :Tav√≠rna zinku
 
 
-STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(dod·no)
-STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Maxim·lnÌ produkce pokud je dod·n {WHITE}jak˝koliv {BLACK}vyûadovan˝ n·klad.
-STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Pro maxim·lnÌ produkci dodejte {WHITE}vöechny {BLACK}vyûadovanÈ n·klady alespoÚ jednou za t¯i mÏsÌce.
-STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Produkce z·visÌ na velikosti mÏsta..
-STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktu·lnÌ produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} beden pot¯eb{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
-STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktu·lnÌ produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udrûenÌ tÈto ˙rovnÏ dodejte {SIGNED_WORD} beden pot¯eb do t¯Ì mÏsÌc˘.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
-STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktu·lnÌ produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udrûenÌ tÈto ˙rovnÏ dodejte {SKIP}{SIGNED_WORD} beden pot¯eb do t¯Ì mÏsÌc˘.
-STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktu·lnÌ produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} n·kladu do t¯Ì mÏsÌc˘.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} n·kladu.
-STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktu·lnÌ produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udrûenÌ tÈto ˙rovnÏ dodejte {SIGNED_WORD} n·kladu do t¯Ì mÏsÌc˘.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} n·kladu.
-STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktu·lnÌ produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udrûenÌ tÈto ˙rovnÏ dodejte {SKIP}{SIGNED_WORD} n·kladu do t¯Ì mÏsÌc˘.
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(dod√°no)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Maxim√°ln√≠ produkce pokud je dod√°n {WHITE}jak√Ωkoliv {BLACK}vy≈æadovan√Ω n√°klad.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Pro maxim√°ln√≠ produkci dodejte {WHITE}v≈°echny {BLACK}vy≈æadovan√© n√°klady alespo√≤ jednou za t√∏i m√¨s√≠ce.
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Produkce z√°vis√≠ na velikosti m√¨sta..
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} beden pot√∏eb{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udr≈æen√≠ t√©to √∫rovn√¨ dodejte {SIGNED_WORD} beden pot√∏eb do t√∏√≠ m√¨s√≠c√π.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udr≈æen√≠ t√©to √∫rovn√¨ dodejte {SKIP}{SIGNED_WORD} beden pot√∏eb do t√∏√≠ m√¨s√≠c√π.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} n√°kladu do t√∏√≠ m√¨s√≠c√π.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} n√°kladu.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udr≈æen√≠ t√©to √∫rovn√¨ dodejte {SIGNED_WORD} n√°kladu do t√∏√≠ m√¨s√≠c√π.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} n√°kladu.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktu√°ln√≠ produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udr≈æen√≠ t√©to √∫rovn√¨ dodejte {SKIP}{SIGNED_WORD} n√°kladu do t√∏√≠ m√¨s√≠c√π.
 STR_GENERIC_NEWLINE                                                             :{}
 
-STR_FUND_ARABLE_FARM                                                            :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_DAIRY_FARM                                                             :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_FOREST                                                                 :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûen v pouöti.
-STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu.
-STR_FUND_HERDING_COOP                                                           :{}{BLACK}UmÌstÏnÌ: {YELLOW}M˘ûe b˝t zaloûena pouze na snÏhu.
-STR_FUND_MIXED_FARM                                                             :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
-STR_FUND_VINEYARD                                                               :{}{BLACK}UmÌstÏnÌ: {YELLOW}Nem˘ûe b˝t zaloûena na snÏhu Ëi v pouöti.
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_FOREST                                                                 :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æen v pou≈°ti.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}M√π≈æe b√Ωt zalo≈æena pouze na sn√¨hu.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
+STR_FUND_VINEYARD                                                               :{}{BLACK}Um√≠st√¨n√≠: {YELLOW}Nem√π≈æe b√Ωt zalo≈æena na sn√¨hu √®i v pou≈°ti.
 
-STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}DostupnÈ od: {YELLOW}{COMMA}
-STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}NedostupnÈ po: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Dostupn√© od: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Nedostupn√© po: {YELLOW}{COMMA}
 
 STR_TOWN                                                                        :{STRING}
 STR_STATION                                                                     :{STRING} {STRING}
 
-STR_STATION_ANIMALS                                                             :Masokombin·t
+STR_STATION_ANIMALS                                                             :Masokombin√°t
 STR_STATION_AUTOMOTIVE                                                          :Automobilka
 STR_STATION_BAR_GRILL_AND_ROOMS                                                 :Hotel
-STR_STATION_BARNS                                                               :StodolnÌ
-STR_STATION_BARREL_AND_KEG                                                      :Alkoholov·
-STR_STATION_BASE                                                                :Z·kladna
-STR_STATION_BATTERY_PLANT                                                       :Tov·rna na baterie
-STR_STATION_BAUXITE_MINE                                                        :Bauxitov·
-STR_STATION_BONEYARD                                                            :Skl·dka
-STR_STATION_BANK_TOP                                                            :BankovnÌ
-STR_STATION_CASTINGS                                                            :U odlitk˘
-STR_STATION_COLLIERY                                                            :äachetnÌ
-STR_STATION_COPPER_LODE                                                         :MÏdÏn·
+STR_STATION_BARNS                                                               :Stodoln√≠
+STR_STATION_BARREL_AND_KEG                                                      :Alkoholov√°
+STR_STATION_BASE                                                                :Z√°kladna
+STR_STATION_BATTERY_PLANT                                                       :Tov√°rna na baterie
+STR_STATION_BAUXITE_MINE                                                        :Bauxitov√°
+STR_STATION_BONEYARD                                                            :Skl√°dka
+STR_STATION_BANK_TOP                                                            :Bankovn√≠
+STR_STATION_CASTINGS                                                            :U odlitk√π
+STR_STATION_COLLIERY                                                            :≈†achetn√≠
+STR_STATION_COPPER_LODE                                                         :M√¨d√¨n√°
 STR_STATION_CREOSOTING                                                          :Lakovna
 STR_STATION_CRACKING                                                            :Crakovna
-STR_STATION_DAIRY_LANE                                                          :MlÈk·rna
-STR_STATION_ESTATE                                                              :U Statk˘
-STR_STATION_EXCHANGE                                                            :SmÏnn·
-STR_STATION_FARM_1                                                              :K zemÏdÏlskÈmu druûstvu
-STR_STATION_FARM_2                                                              :Na pastvin·ch
-STR_STATION_FARM_3                                                              :RanË
-STR_STATION_FISHMARKET                                                          :RybÌ
-STR_STATION_FEED_SEED                                                           :Krmn·
-STR_STATION_FOOD_CORPORATION                                                    :JÌdelnÌ
+STR_STATION_DAIRY_LANE                                                          :Ml√©k√°rna
+STR_STATION_ESTATE                                                              :U Statk√π
+STR_STATION_EXCHANGE                                                            :Sm√¨nn√°
+STR_STATION_FARM_1                                                              :K zem√¨d√¨lsk√©mu dru≈æstvu
+STR_STATION_FARM_2                                                              :Na pastvin√°ch
+STR_STATION_FARM_3                                                              :Ran√®
+STR_STATION_FISHMARKET                                                          :Ryb√≠
+STR_STATION_FEED_SEED                                                           :Krmn√°
+STR_STATION_FOOD_CORPORATION                                                    :J√≠deln√≠
 STR_STATION_FOREST                                                              :Les
-STR_STATION_FORGE                                                               :Kov·rna
+STR_STATION_FORGE                                                               :Kov√°rna
 STR_STATION_FURNACE                                                             :Pece
-STR_STATION_HEAVY_EQUIPMENT_YARD                                                :StrojÌrensk·
-STR_STATION_HEAVY_INDUSTRY_2                                                    :Z·vody
-STR_STATION_HERDING_COOP                                                        :Pastevc˘
-STR_STATION_INDUSTRY_ESTATE_1                                                   :Pr˘myslov· oblast
-STR_STATION_INDUSTRY_HARBOUR_1                                                  :Pob¯eûnÌ
-STR_STATION_INDUSTRY_HARBOUR_2                                                  :KotevnÌ
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Stroj√≠rensk√°
+STR_STATION_HEAVY_INDUSTRY_2                                                    :Z√°vody
+STR_STATION_HERDING_COOP                                                        :Pastevc√π
+STR_STATION_INDUSTRY_ESTATE_1                                                   :Pr√πmyslov√° oblast
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :Pob√∏e≈æn√≠
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :Kotevn√≠
 STR_STATION_INDUSTRY_HARBOUR_3                                                  :U vody
-STR_STATION_IRONSTONE                                                           :éelezn· Ruda
-STR_STATION_JOINERS_SHOP                                                        :Truhl·¯sk·
-STR_STATION_KILNS                                                               :V·penka
-STR_STATION_KIMBERLITE_DEPOSITS                                                 :Kimberlitov·
-STR_STATION_LIMESTONE_MINES                                                     :V·pencov·
-STR_STATION_LITHIUM_MINES                                                       :Lithiov·
-STR_STATION_MANGANESE_MINES                                                     :Manganov·
+STR_STATION_IRONSTONE                                                           :≈Ωelezn√° Ruda
+STR_STATION_JOINERS_SHOP                                                        :Truhl√°√∏sk√°
+STR_STATION_KILNS                                                               :V√°penka
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :Kimberlitov√°
+STR_STATION_LIMESTONE_MINES                                                     :V√°pencov√°
+STR_STATION_LITHIUM_MINES                                                       :Lithiov√°
+STR_STATION_MANGANESE_MINES                                                     :Manganov√°
 STR_STATION_MARKET                                                              :Obchod
-STR_STATION_MERCHANTS_LANE                                                      :ObchodnÌ
-STR_STATION_MILL                                                                :U ml˝na
+STR_STATION_MERCHANTS_LANE                                                      :Obchodn√≠
+STR_STATION_MILL                                                                :U ml√Ωna
 STR_STATION_MINE                                                                :K dolu
-STR_STATION_MOULDINGS                                                           :Litc˘
-STR_STATION_OIL_RIG                                                             :Ropn· ploöina
-STR_STATION_ORCHARDS                                                            :Sadov·
-STR_STATION_PIT                                                                 :U dÌry
-STR_STATION_PLANTATION                                                          :Plant·û
-STR_STATION_PRINTERS                                                            :Tiska¯sk·
-STR_STATION_POWERHUNGRY                                                         :Elektrick·
-STR_STATION_POLYMERS                                                            :U Polymer˘
-STR_STATION_PUMPS                                                               :»erpacÌ stanice
-STR_STATION_PYRITES                                                             :Sphaleritov·
+STR_STATION_MOULDINGS                                                           :Litc√π
+STR_STATION_OIL_RIG                                                             :Ropn√° plo≈°ina
+STR_STATION_ORCHARDS                                                            :Sadov√°
+STR_STATION_PIT                                                                 :U d√≠ry
+STR_STATION_PLANTATION                                                          :Plant√°≈æ
+STR_STATION_PRINTERS                                                            :Tiska√∏sk√°
+STR_STATION_POWERHUNGRY                                                         :Elektrick√°
+STR_STATION_POLYMERS                                                            :U Polymer√π
+STR_STATION_PUMPS                                                               :√àerpac√≠ stanice
+STR_STATION_PYRITES                                                             :Sphaleritov√°
 STR_STATION_REFINERY                                                            :Rafinerie
-STR_STATION_RUBBER_COMPANY                                                      :Pneumatikov·
-STR_STATION_SALTPETER_WORKS                                                     :Ledkov·
-STR_STATION_SHARP_STREET                                                        :Ostr·
-STR_STATION_SHEEP_FOLD                                                          :K ovËÌ farmÏ
-STR_STATION_SHOALS                                                              :RybÌ
+STR_STATION_RUBBER_COMPANY                                                      :Pneumatikov√°
+STR_STATION_SALTPETER_WORKS                                                     :Ledkov√°
+STR_STATION_SHARP_STREET                                                        :Ostr√°
+STR_STATION_SHEEP_FOLD                                                          :K ov√®√≠ farm√¨
+STR_STATION_SHOALS                                                              :Ryb√≠
 STR_STATION_SILO                                                                :Sila
-STR_STATION_SMELTER                                                             :TavÌcÌ
-STR_STATION_STACKS                                                              :Hromadn·
-STR_STATION_STAMP_AND_PLATE                                                     :Kovov·
-STR_STATION_WATT_STREET                                                         :Frantiöka K¯iûÌka
+STR_STATION_SMELTER                                                             :Tav√≠c√≠
+STR_STATION_STACKS                                                              :Hromadn√°
+STR_STATION_STAMP_AND_PLATE                                                     :Kovov√°
+STR_STATION_WATT_STREET                                                         :Franti≈°ka K√∏i≈æ√≠ka
 STR_STATION_SUGAR_COMPANY                                                       :Cukrovar
-STR_STATION_TANK_FARM                                                           :U N·drûÌ
-STR_STATION_TAPPERS_SHED                                                        :KauËukov·
-STR_STATION_TOWN_1                                                              :Vysok·
-STR_STATION_TOWN_2                                                              :Ke sbÏrnÈmu dvoru
-STR_STATION_TOWN_3                                                              :ObchodnÌ n·mÏstÌ
-STR_STATION_TRONA_BEDS                                                          :Soln· jeskynÏ
-STR_STATION_WATER                                                               :Na PÌsk·ch
-STR_STATION_WEAVE_AND_DYE                                                       :Koûeluh˘
-STR_STATION_WELLS                                                               :RopnÈ vrty
-STR_STATION_WINERY                                                              :Vina¯sk·
-STR_STATION_WORKS_YARD                                                          :DÏlnick·
-STR_STATION_UPGRADER                                                            :RopnopÌskov·
+STR_STATION_TANK_FARM                                                           :U N√°dr≈æ√≠
+STR_STATION_TAPPERS_SHED                                                        :Kau√®ukov√°
+STR_STATION_TOWN_1                                                              :Vysok√°
+STR_STATION_TOWN_2                                                              :Ke sb√¨rn√©mu dvoru
+STR_STATION_TOWN_3                                                              :Obchodn√≠ n√°m√¨st√≠
+STR_STATION_TRONA_BEDS                                                          :Soln√° jeskyn√¨
+STR_STATION_WATER                                                               :Na P√≠sk√°ch
+STR_STATION_WEAVE_AND_DYE                                                       :Ko≈æeluh√π
+STR_STATION_WELLS                                                               :Ropn√© vrty
+STR_STATION_WINERY                                                              :Vina√∏sk√°
+STR_STATION_WORKS_YARD                                                          :D√¨lnick√°
+STR_STATION_UPGRADER                                                            :Ropnop√≠skov√°
 STR_STATION_VEHICLE_DEALER                                                      :Autosalon
