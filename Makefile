@@ -14,7 +14,7 @@ MK_ARCHIVE = bin/mk-archive
 
 
 # Project details
-PROJECT_NAME = firs
+PROJECT_NAME = xis
 
 # graphics is not copied to generated currently in FIRS, unlike RH, IH etc - could be changed
 GRAPHICS_DIR = src/graphics
@@ -31,7 +31,7 @@ ifeq ($(strip $(EXPORTED)),no)
   REPO_VERSION = $(word 2,$(REPO_INFO))
 else
   # Exported version, lines below should get modified in 'bundle_src' target
-  REPO_REVISION = 9070
+  REPO_REVISION = 9080
   REPO_VERSION = 0.0
 endif
 
