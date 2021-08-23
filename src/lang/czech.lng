@@ -1,27 +1,27 @@
 ##grflangid 0x15
-##plural 10
+##plural 0
 ##gender fp map f mnp m n np
 ##case acc nom loc big voc ins dat small gen
 
-STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 nákladù and 83 typù prùmyslových budov! Založeno na FIRS 3.0.10. Ekonomie designovaná Emperor Jake, dodateèné grafiky od Emperor Jake, GarryG and Toni Babelony; ostatní kód a grafiky díky andythenorth a zbytku týmu FIRSu. Licence: GPL v2.
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 nákladů and 83 typů průmyslových budov! Založeno na FIRS 3.0.10. Ekonomie designovaná Emperor Jake, dodatečné grafiky od Emperor Jake, GarryG and Toni Babelony; ostatní kód a grafiky díky andythenorth a zbytku týmu FIRSu. Licence: GPL v2.
 STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
 
-STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximální vzdálenost rybáøských oblastí, ropných plošin a písèin od pobøeží v dílcích mapy.
-STR_PARAM_DESC_ECONOMIES                                                        :Každá ekonomie nabízí rùzné kombinace prùmyslových budov a rùzné náklady.{}{}Pouze jedna je v souèasnosti kompletní.
-STR_PARAM_DESC_NO_OPENINGS                                                      :Normálnì se budou otevírat nové prùmyslové budovy.{}{}Pokud je {SILVER}zabránit otevírání {BLACK}zapnuto, nebudou se nové prùmyslové budovy otevírat, a hráèi nebudou schopni je zakládat.
-STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Normálnì nebudou sekundární prùmyslové budovy zavírat.{}{}Pokud je zavírání sekundárních prùyslových budov zapnuto, mohou zavøít, pokud do nich nebyl po dlouhou dobu pøepraven žádný náklad. Primární prùmyslové budovy nikdy nezavøou a tímto nastavením nejsou ovlivnìny.
-STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximální vzdálenost vodních prùmyslù od pobøeží
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximální vzdálenost rybářských oblastí, ropných plošin a písčin od pobřeží v dílcích mapy.
+STR_PARAM_DESC_ECONOMIES                                                        :Každá ekonomie nabízí různé kombinace průmyslových budov a různé náklady.{}{}Pouze jedna je v současnosti kompletní.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Normálně se budou otevírat nové průmyslové budovy.{}{}Pokud je {SILVER}zabránit otevírání {BLACK}zapnuto, nebudou se nové průmyslové budovy otevírat, a hráči nebudou schopni je zakládat.
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Normálně nebudou sekundární průmyslové budovy zavírat.{}{}Pokud je zavírání sekundárních průyslových budov zapnuto, mohou zavřít, pokud do nich nebyl po dlouhou dobu přepraven žádný náklad. Primární průmyslové budovy nikdy nezavřou a tímto nastavením nejsou ovlivněny.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximální vzdálenost vodních průmyslů od pobřeží
 STR_PARAM_NAME_ECONOMIES                                                        :Ekonomie
-STR_PARAM_NAME_NO_OPENINGS                                                      :Zabránit otevírání nových prùmyslových budov
-STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Povolit sekundárním prùmyslovým budovám zavøít
+STR_PARAM_NAME_NO_OPENINGS                                                      :Zabránit otevírání nových průmyslových budov
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Povolit sekundárním průmyslovým budovám zavřít
 STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :Bez limitu
 
-STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Množství vyžadovaných beden pro Enhanced produkci (normálnì 16)
-STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Množství vyžadovaných beden pro Crankin' It produkci (normálnì 80)
-STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Primární prùmyslové budovy (farmy, doly, atd.) zvýší produkci, pokud jsou dodány bedny, nejprve na {SILVER}Enhanced{BLACK}, a poté na {SILVER}Crankin' It{BLACK}, pokud je dodán dostatek beden.  {}{}Standardní hodnoty jsou dobré, ale zde je lze zmìnit.  {}{}Pro prùmyslové budovy typu pøístav bude hodnota 8x vyšší.
-STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :Úroveò Enhanced produkce (%)
-STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Úroveò Crankin' It produkce (%)
-STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkce primárních prùmyslových budov, pokud je dodán dostatek beden (v procentech {SILVER}Normální {BLACK}úrovnì produkce).
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Množství vyžadovaných beden pro Enhanced produkci (normálně 16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Množství vyžadovaných beden pro Crankin' It produkci (normálně 80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Primární průmyslové budovy (farmy, doly, atd.) zvýší produkci, pokud jsou dodány bedny, nejprve na {SILVER}Enhanced{BLACK}, a poté na {SILVER}Crankin' It{BLACK}, pokud je dodán dostatek beden.  {}{}Standardní hodnoty jsou dobré, ale zde je lze změnit.  {}{}Pro průmyslové budovy typu přístav bude hodnota 8x vyšší.
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :Úroveň Enhanced produkce (%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Úroveň Crankin' It produkce (%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkce primárních průmyslových budov, pokud je dodán dostatek beden (v procentech {SILVER}Normální {BLACK}úrovně produkce).
 
 STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :NEKOMPLETNÍ
 STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NEKOMPLETNÍ
@@ -32,8 +32,10 @@ STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             
 
 STR_CARGO_NAME_ACID                                                             :Kyselina
 STR_CARGO_NAME_ALCOHOL                                                          :Alkohol
+STR_CARGO_NAME_ALUMINIUM                                                        :Hliník
 STR_CARGO_NAME_BAUXITE                                                          :Bauxit
 STR_CARGO_NAME_BEANS                                                            :Sója
+STR_CARGO_NAME_BIOMASS                                                          :Biomasa
 STR_CARGO_NAME_BUILDING_MATERIALS                                               :Stavební materiály
 STR_CARGO_NAME_CASSAVA                                                          :Maniok
 STR_CARGO_NAME_CEMENT                                                           :Cement
@@ -42,24 +44,26 @@ STR_CARGO_NAME_CHLORINE                                                         
 STR_CARGO_NAME_CLAY                                                             :Jíl
 STR_CARGO_NAME_COFFEE                                                           :Káva
 STR_CARGO_NAME_COKE                                                             :Koks
-STR_CARGO_NAME_COPPER                                                           :Mìï
+STR_CARGO_NAME_COPPER                                                           :Měď
 STR_CARGO_NAME_EDIBLE_OIL                                                       :Jedlý olej
-STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Elektrické pøístroje
-STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Inženýrské potøeby
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Elektrické přístroje
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Inženýrské potřeby
 STR_CARGO_NAME_EXPLOSIVES                                                       :Výbušniny
 STR_CARGO_NAME_FIBRES                                                           :Vlákna
 STR_CARGO_NAME_FISH                                                             :Ryby
-STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farmáøské potøeby
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :Farmářské potřeby
 STR_CARGO_NAME_FERTILISER                                                       :Hnojivo
 STR_CARGO_NAME_FRUITS                                                           :Ovoce
 STR_CARGO_NAME_KAOLIN                                                           :Lithium
 STR_CARGO_NAME_LIMESTONE                                                        :Vápenec
+STR_CARGO_NAME_LITHIUM                                                          :Lithium
 STR_CARGO_NAME_LUMBER                                                           :Prkna
 STR_CARGO_NAME_METAL                                                            :Hliník
 STR_CARGO_NAME_MILK                                                             :Mléko
 STR_CARGO_NAME_MANGANESE                                                        :Mangan
 STR_CARGO_NAME_NITRATES                                                         :Nitráty
-STR_CARGO_NAME_NUTS                                                             :Oøechy
+STR_CARGO_NAME_NUTS                                                             :Ořechy
+STR_CARGO_NAME_OILSANDS                                                         :Ropné písky
 STR_CARGO_NAME_PACKAGING                                                        :Obaly
 STR_CARGO_NAME_PEAT                                                             :Biomasa
 STR_CARGO_NAME_PETROL                                                           :Ropná paliva
@@ -70,42 +74,43 @@ STR_CARGO_NAME_POTASH                                                           
 STR_CARGO_NAME_PYRITE_ORE                                                       :Ruda zinku
 STR_CARGO_NAME_QUICKLIME                                                        :Nehašené vápno
 STR_CARGO_NAME_RECYCLABLES                                                      :Recyklovatelný odpad
-STR_CARGO_NAME_SALT                                                             :Sùl
+STR_CARGO_NAME_SALT                                                             :Sůl
 STR_CARGO_NAME_SAND                                                             :Písek
 STR_CARGO_NAME_SCRAP_METAL                                                      :Šrot
 STR_CARGO_NAME_SLAG                                                             :Struska
 STR_CARGO_NAME_SODA_ASH                                                         :Sodný prášek
 STR_CARGO_NAME_STEEL                                                            :Ocel
 STR_CARGO_NAME_STONE                                                            :Kamenivo
-STR_CARGO_NAME_SUGAR_BEET                                                       :Cukrová øepa
+STR_CARGO_NAME_SUGAR_BEET                                                       :Cukrová řepa
 STR_CARGO_NAME_SULPHUR                                                          :Síra
 STR_CARGO_NAME_VEHICLE_BODIES                                                   :Karoserie
 STR_CARGO_NAME_VEHICLE_PARTS                                                    :Díly
 STR_CARGO_NAME_VEHICLES                                                         :Vozidla
 STR_CARGO_NAME_WOOL                                                             :Vlna
 STR_CARGO_NAME_ZINC                                                             :Zinek
+STR_CARGO_NAME_ZINCORE                                                          :Ruda zinku
 
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} kyseliny
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} alkoholu
 STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} bauxitu
 STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} sóji
-STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} stavebních materiálù
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} stavebních materiálů
 STR_CARGO_UNIT_CASSAVA                                                          :{WEIGHT} manioku
 STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} cementu
 STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} petrochemikálií
 STR_CARGO_UNIT_CHLORINE                                                         :{VOLUME} chloru
 STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} jílu
-STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} pytlù kávy
+STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} pyt{P 0 el le lů} kávy
 STR_CARGO_UNIT_COKE                                                             :{WEIGHT} koksu
-STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} mìdi
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} mědi
 STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} jedlého oleje
-STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} beden elektrických pøístrojù
-STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} beden inženýrských potøeb
-STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} beden výbušnin
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} bed{P 0 na ny en} elektrických přístrojů
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} bed{P 0 na ny en} inženýrských potřeb
+STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} bed{P 0 na ny en} výbušnin
 STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} hnojiva
-STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} balíkù vláken
+STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} balík{P 0 "" y ů} vláken
 STR_CARGO_UNIT_FISH                                                             :{WEIGHT} ryb
-STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} beden farmáøských potøeb
+STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} bed{P 0 na ny en} farmářských potřeb
 STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} ovoce
 STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} lithia
 STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} vápence
@@ -115,12 +120,12 @@ STR_CARGO_UNIT_MANGANESE                                                        
 STR_CARGO_UNIT_METAL                                                            :{WEIGHT} hliníku
 STR_CARGO_UNIT_MILK                                                             :{VOLUME} mléka
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} niklu
-STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT}nitrátù
-STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} pytlù oøechù
-STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} obalù
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT}nitrátů
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} pyt{P 0 el le lů} ořechů
+STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} obalů
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} biomasy
 STR_CARGO_UNIT_PETROL                                                           :{VOLUME} ropných paliv
-STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} ropných pískù
+STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} ropných písků
 STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} surového železa
 STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} trubek
 STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} potaše
@@ -134,12 +139,12 @@ STR_CARGO_UNIT_SLAG                                                             
 STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} sodného prášku
 STR_CARGO_UNIT_STEEL                                                            :{WEIGHT} oceli
 STR_CARGO_UNIT_STONE                                                            :{WEIGHT} kameniva
-STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} cukrové øepy
+STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} cukrové řepy
 STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} síry
 STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} karoserií
-STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} dílù
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} dílů
 STR_CARGO_UNIT_VEHICLES                                                         :{WEIGHT} vozidel
-STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} balíkù vlny
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} balík{P 0 "" y ů} vláken
 STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} zinku
 
 STR_CID_ACID                                                                    :{TINYFONT}AC
@@ -199,28 +204,28 @@ STR_CID_WOOL                                                                    
 STR_CID_ZINC                                                                    :{TINYFONT}ZN
 
 
-STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS is not designed to be used with Toyland climate
-STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS vyžaduje minimálnì OpenTTD 1.9.0 nebo JGRPP 0.32.x.
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}XIS není designován pro Zemi Hraček
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS vyžaduje minimálně OpenTTD 1.9.0 nebo JGRPP 0.32.x.
 STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Incompatible version: {ORANGE}Total Town Replacement Set must be version release 3.11 or newer. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 
-STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :nesmí být na snìhu.
-STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :musí být na snìhu.
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :nesmí být na sněhu.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :musí být na sněhu.
 STR_ERR_LOCATION_NOT_ON_WATER                                                   :musí být na zemi.
 STR_ERR_LOCATION_NOT_IN_DESERT                                                  :To ti tady nevyroste!
-STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Pøíliš prudký kopec!
-STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :pouze jeden exempláø od této prùmyslové budovy je dovolen na mìsto.
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Příliš prudký kopec!
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :pouze jeden exemplář od této průmyslové budovy je dovolen na město.
 
 STR_IND_ALUMINIUM_PLANT                                                         :Slévárna hliníku
 STR_IND_AMMONIA_PLANT                                                           :Továrna na hnojiva (a na výbušniny)
-STR_IND_ARABLE_FARM                                                             :Zemìdìlská farma
+STR_IND_ARABLE_FARM                                                             :Zemědělská farma
 STR_IND_ASSEMBLY_PLANT                                                          :Montovna
 STR_IND_BATTERY_PLANT                                                           :Továrna na baterie
 STR_IND_BASICFARM                                                               :Farma
 STR_IND_BASIC_OXYGEN_FURNACE                                                    :Pec
-STR_IND_BAUXITE_MINE		                                                        :Dùl na bauxit
+STR_IND_BAUXITE_MINE		                                                    :Důl na bauxit
 STR_IND_BIOREFINERY                                                             :Biorafinerie
 STR_IND_BLAST_FURNACE                                                           :Ocelárna
 STR_IND_BREWERY                                                                 :Pivovar
@@ -229,72 +234,72 @@ STR_IND_BRICK_WORKS                                                             
 STR_IND_BUILDERS_YARD                                                           :Stavebniny
 STR_IND_BULK_TERMINAL                                                           :Nákladový terminál
 STR_IND_CEMENT_PLANT                                                            :Cementárna
-STR_IND_CHEMICAL_PLANT                                                          :Chemièka
+STR_IND_CHEMICAL_PLANT                                                          :Chemička
 STR_IND_CRACKING_PLANT                                                          :Krakovací rafinerie
-STR_IND_CLAY_PIT                                                                :Dùl na jíl
+STR_IND_CLAY_PIT                                                                :Důl na jíl
 STR_IND_COFFEE_ESTATE                                                           :Plantáž na kávu
 STR_IND_COKE_OVEN                                                               :Koksovna
-STR_IND_COPPER_REFINERY                                                         :Tavírna mìdìné rudy
+STR_IND_COPPER_REFINERY                                                         :Tavírna měděné rudy
 STR_IND_DAIRY                                                                   :Mlékárna
-STR_IND_DAIRY_FARM                                                              :Mléèná farma
-STR_IND_DREDGING_SITE                                                           :Písèina
+STR_IND_DAIRY_FARM                                                              :Mléčná farma
+STR_IND_DREDGING_SITE                                                           :Písčina
 STR_IND_ELECTRIC_ARC_FURNACE                                                    :Oblouková pec
 STR_IND_FACTORY                                                                 :Továrna
-STR_IND_FISHING_GROUND                                                          :Rybáøská oblast
-STR_IND_FISHING_HARBOUR                                                         :Rybáøský pøístav
-STR_IND_FISHING_VILLAGE                                                         :Rybáøská vesnice
+STR_IND_FISHING_GROUND                                                          :Rybářská oblast
+STR_IND_FISHING_HARBOUR                                                         :Rybářský přístav
+STR_IND_FISHING_VILLAGE                                                         :Rybářská vesnice
 STR_IND_FLOUR_MILL                                                              :Mlýn na mouku
 STR_IND_FOOD_MARKET                                                             :Samoobsluha
 STR_IND_FOOD_PROCESSOR                                                          :Velkovýrobna jídla
 STR_IND_FOUNDRY                                                                 :Slévárna
-STR_IND_FURNITURE_FACTORY                                                       :Truhláøství
+STR_IND_FURNITURE_FACTORY                                                       :Truhlářství
 STR_IND_GENERAL_STORE                                                           :Smíšené zboží
 STR_IND_GLASS_WORKS                                                             :Sklárna
-STR_IND_HARDWARE_STORE                                                          :Železáøství
+STR_IND_HARDWARE_STORE                                                          :Železářství
 STR_IND_HOTEL                                                                   :Hotel
 STR_IND_HERDING_COOP                                                            :Pastevecká komunita
 STR_IND_IRON_WORKS                                                              :Ocelárna
 STR_IND_JUNKYARD                                                                :Skládka
 STR_IND_LIME_KILN                                                               :Vápenka
-STR_IND_LIMESTONE_MINE                                                          :Dùl na vápenec
-STR_IND_LITHIUM_MINE                                                            :Dùl na lithium
+STR_IND_LIMESTONE_MINE                                                          :Důl na vápenec
+STR_IND_LITHIUM_MINE                                                            :Důl na lithium
 STR_IND_LIQUIDS_TERMINAL                                                        :Terminál na kapaliny
 STR_IND_LUMBER_YARD                                                             :Pila
-STR_IND_MACHINE_SHOP                                                            :Výrobna strojù
-STR_IND_MANGANESE_MINE                                                          :Dùl na mangan
+STR_IND_MACHINE_SHOP                                                            :Výrobna strojů
+STR_IND_MANGANESE_MINE                                                          :Důl na mangan
 STR_IND_METAL_FABRICATION_PLANT                                                 :Slévárna
 STR_IND_METAL_WORKSHOP                                                          :Elektrická dílna
 STR_IND_MIXEDFARM                                                               :Smíšená farma
-STR_IND_NITRATE_MINE                                                            :Dùl na nitráty
-STR_IND_ORCHARD_PIGGERY                                                         :Sad a vepøín
-STR_IND_OIL_SANDS_MINE                                                          :Dùl na ropné písky
-STR_IND_PEATLANDS                                                               :Rašeliništì
-STR_IND_PETROLPUMP                                                              :Èerpací stanice
-STR_IND_PHOSPHATE_MINE                                                          :Fosfátový dùl
+STR_IND_NITRATE_MINE                                                            :Důl na nitráty
+STR_IND_ORCHARD_PIGGERY                                                         :Sad a vepřín
+STR_IND_OIL_SANDS_MINE                                                          :Důl na ropné písky
+STR_IND_PEATLANDS                                                               :Rašeliniště
+STR_IND_PETROLPUMP                                                              :Čerpací stanice
+STR_IND_PHOSPHATE_MINE                                                          :Fosfátový důl
 STR_IND_PLASTICS_PLANT                                                          :Továrna na plasty
 STR_IND_PRINTING_PLANT                                                          :Tiskárna
 STR_IND_POLYMER_PLANT                                                           :Továrna na polymery
-STR_IND_PORT                                                                    :Pøístav
-STR_IND_POTASH_MINE                                                             :Dùl na potaš
-STR_IND_PYRITE_MINE                                                             :Dùl na pyrit
+STR_IND_PORT                                                                    :Přístav
+STR_IND_POTASH_MINE                                                             :Důl na potaš
+STR_IND_PYRITE_MINE                                                             :Důl na pyrit
 STR_IND_PYRITE_SMELTER                                                          :Tavírna pyritu
 STR_IND_POWER_PLANT                                                             :Elektrárna
 STR_IND_QUARRY                                                                  :Lom
-STR_IND_RANCH                                                                   :Ranè
-STR_IND_RECYCLING_DEPOT                                                         :Sbìrný dvùr
-STR_IND_RECYCLING_PLANT                                                         :Tøídící støedisko
+STR_IND_RANCH                                                                   :Ranč
+STR_IND_RECYCLING_DEPOT                                                         :Sběrný dvůr
+STR_IND_RECYCLING_PLANT                                                         :Třídící středisko
 STR_IND_REINDEER_FARM                                                           :Sobí farma
-STR_IND_SHEEPFARM                                                               :Ovèí farma
+STR_IND_SHEEPFARM                                                               :Ovčí farma
 STR_IND_SLAG_GRINDING_PLANT                                                     :Tavírna strusky
 STR_IND_SMITHY_FORGE                                                            :Kovárna
-STR_IND_SODA_ASH_MINE                                                           :Dùl na sodný prášek
+STR_IND_SODA_ASH_MINE                                                           :Důl na sodný prášek
 STR_IND_STEEL_FINISHING_PLANT                                                   :Továrna na pozinkovávání
 STR_IND_STOCKYARD                                                               :Masokombinát
 STR_IND_SUGAR_REFINERY                                                          :Cukrovar
-STR_IND_SULPHIDE_MINE                                                           :Dùl na sulfid
-STR_IND_SUPPLY_YARD                                                             :Sklad potøeb
-STR_IND_ENSP_YARD                                                               :Sklad inženýrských potøeb
-STR_IND_FMSP_YARD                                                               :Sklad farmáøských potøeb
+STR_IND_SULPHIDE_MINE                                                           :Důl na sulfid
+STR_IND_SUPPLY_YARD                                                             :Sklad potřeb
+STR_IND_ENSP_YARD                                                               :Sklad inženýrských potřeb
+STR_IND_FMSP_YARD                                                               :Sklad farmářských potřeb
 STR_IND_TEXTILE_MILL                                                            :Továrna na textil
 STR_IND_TRADING_POST                                                            :Obchodní místo
 STR_IND_TYRE_PLANT                                                              :Továrna na pneumatiky
@@ -307,26 +312,26 @@ STR_IND_ZINC_SMELTER                                                            
 
 STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(dodáno)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Maximální produkce pokud je dodán {WHITE}jakýkoliv {BLACK}vyžadovaný náklad.
-STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Pro maximální produkci dodejte {WHITE}všechny {BLACK}vyžadované náklady alespoò jednou za tøi mìsíce.
-STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Produkce závisí na velikosti mìsta..
-STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktuální produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} beden potøeb{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
-STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktuální produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udržení této úrovnì dodejte {SIGNED_WORD} beden potøeb do tøí mìsícù.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
-STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktuální produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udržení této úrovnì dodejte {SKIP}{SIGNED_WORD} beden potøeb do tøí mìsícù.
-STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktuální produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} nákladu do tøí mìsícù.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} nákladu.
-STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktuální produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udržení této úrovnì dodejte {SIGNED_WORD} nákladu do tøí mìsícù.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} nákladu.
-STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktuální produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udržení této úrovnì dodejte {SKIP}{SIGNED_WORD} nákladu do tøí mìsícù.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Pro maximální produkci dodejte {WHITE}všechny {BLACK}vyžadované náklady alespoň jednou za tři měsíce.
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Produkce závisí na velikosti města..
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktuální produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} beden potřeb{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktuální produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udržení této úrovně dodejte {SIGNED_WORD} beden potřeb do tří měsíců.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} beden.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktuální produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udržení této úrovně dodejte {SKIP}{SIGNED_WORD} beden potřeb do tří měsíců.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktuální produkce: {YELLOW}Normal {}{}{BLACK}Pro {WHITE}Enhanced {BLACK}produkci dodejte {SIGNED_WORD} nákladu do tří měsíců.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} nákladu.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktuální produkce: {YELLOW}Enhanced {}{}{BLACK}Pro udržení této úrovně dodejte {SIGNED_WORD} nákladu do tří měsíců.{}Pro produkci {WHITE}Crankin' it, {BLACK}dodejte {SIGNED_WORD} nákladu.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktuální produkce: {YELLOW}Crankin' it {}{}{BLACK}Pro udržení této úrovně dodejte {SKIP}{SIGNED_WORD} nákladu do tří měsíců.
 STR_GENERIC_NEWLINE                                                             :{}
 
-STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_FOREST                                                                 :{}{BLACK}Umístìní: {YELLOW}Nemùže být založen v poušti.
-STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu.
-STR_FUND_HERDING_COOP                                                           :{}{BLACK}Umístìní: {YELLOW}Mùže být založena pouze na snìhu.
-STR_FUND_MIXED_FARM                                                             :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
-STR_FUND_VINEYARD                                                               :{}{BLACK}Umístìní: {YELLOW}Nemùže být založena na snìhu èi v poušti.
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_FOREST                                                                 :{}{BLACK}Umístění: {YELLOW}Nemůže být založen v poušti.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Umístění: {YELLOW}Může být založena pouze na sněhu.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
+STR_FUND_VINEYARD                                                               :{}{BLACK}Umístění: {YELLOW}Nemůže být založena na sněhu či v poušti.
 
 STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Dostupné od: {YELLOW}{COMMA}
 STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Nedostupné po: {YELLOW}{COMMA}
@@ -344,17 +349,17 @@ STR_STATION_BATTERY_PLANT                                                       
 STR_STATION_BAUXITE_MINE                                                        :Bauxitová
 STR_STATION_BONEYARD                                                            :Skládka
 STR_STATION_BANK_TOP                                                            :Bankovní
-STR_STATION_CASTINGS                                                            :U odlitkù
+STR_STATION_CASTINGS                                                            :U odlitků
 STR_STATION_COLLIERY                                                            :Šachetní
-STR_STATION_COPPER_LODE                                                         :Mìdìná
+STR_STATION_COPPER_LODE                                                         :Měděná
 STR_STATION_CREOSOTING                                                          :Lakovna
 STR_STATION_CRACKING                                                            :Crakovna
 STR_STATION_DAIRY_LANE                                                          :Mlékárna
-STR_STATION_ESTATE                                                              :U Statkù
-STR_STATION_EXCHANGE                                                            :Smìnná
-STR_STATION_FARM_1                                                              :K zemìdìlskému družstvu
+STR_STATION_ESTATE                                                              :U Statků
+STR_STATION_EXCHANGE                                                            :Směnná
+STR_STATION_FARM_1                                                              :K zemědělskému družstvu
 STR_STATION_FARM_2                                                              :Na pastvinách
-STR_STATION_FARM_3                                                              :Ranè
+STR_STATION_FARM_3                                                              :Ranč
 STR_STATION_FISHMARKET                                                          :Rybí
 STR_STATION_FEED_SEED                                                           :Krmná
 STR_STATION_FOOD_CORPORATION                                                    :Jídelní
@@ -363,13 +368,13 @@ STR_STATION_FORGE                                                               
 STR_STATION_FURNACE                                                             :Pece
 STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Strojírenská
 STR_STATION_HEAVY_INDUSTRY_2                                                    :Závody
-STR_STATION_HERDING_COOP                                                        :Pastevcù
-STR_STATION_INDUSTRY_ESTATE_1                                                   :Prùmyslová oblast
-STR_STATION_INDUSTRY_HARBOUR_1                                                  :Pobøežní
+STR_STATION_HERDING_COOP                                                        :Pastevců
+STR_STATION_INDUSTRY_ESTATE_1                                                   :Průmyslová oblast
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :Pobřežní
 STR_STATION_INDUSTRY_HARBOUR_2                                                  :Kotevní
 STR_STATION_INDUSTRY_HARBOUR_3                                                  :U vody
 STR_STATION_IRONSTONE                                                           :Železná Ruda
-STR_STATION_JOINERS_SHOP                                                        :Truhláøská
+STR_STATION_JOINERS_SHOP                                                        :Truhlářská
 STR_STATION_KILNS                                                               :Vápenka
 STR_STATION_KIMBERLITE_DEPOSITS                                                 :Kimberlitová
 STR_STATION_LIMESTONE_MINES                                                     :Vápencová
@@ -379,38 +384,38 @@ STR_STATION_MARKET                                                              
 STR_STATION_MERCHANTS_LANE                                                      :Obchodní
 STR_STATION_MILL                                                                :U mlýna
 STR_STATION_MINE                                                                :K dolu
-STR_STATION_MOULDINGS                                                           :Litcù
+STR_STATION_MOULDINGS                                                           :Litců
 STR_STATION_OIL_RIG                                                             :Ropná plošina
 STR_STATION_ORCHARDS                                                            :Sadová
 STR_STATION_PIT                                                                 :U díry
 STR_STATION_PLANTATION                                                          :Plantáž
-STR_STATION_PRINTERS                                                            :Tiskaøská
+STR_STATION_PRINTERS                                                            :Tiskařská
 STR_STATION_POWERHUNGRY                                                         :Elektrická
-STR_STATION_POLYMERS                                                            :U Polymerù
-STR_STATION_PUMPS                                                               :Èerpací stanice
+STR_STATION_POLYMERS                                                            :U Polymerů
+STR_STATION_PUMPS                                                               :Čerpací stanice
 STR_STATION_PYRITES                                                             :Sphaleritová
 STR_STATION_REFINERY                                                            :Rafinerie
 STR_STATION_RUBBER_COMPANY                                                      :Pneumatiková
 STR_STATION_SALTPETER_WORKS                                                     :Ledková
 STR_STATION_SHARP_STREET                                                        :Ostrá
-STR_STATION_SHEEP_FOLD                                                          :K ovèí farmì
+STR_STATION_SHEEP_FOLD                                                          :K ovčí farmě
 STR_STATION_SHOALS                                                              :Rybí
 STR_STATION_SILO                                                                :Sila
 STR_STATION_SMELTER                                                             :Tavící
 STR_STATION_STACKS                                                              :Hromadná
 STR_STATION_STAMP_AND_PLATE                                                     :Kovová
-STR_STATION_WATT_STREET                                                         :Františka Køižíka
+STR_STATION_WATT_STREET                                                         :Františka Křižíka
 STR_STATION_SUGAR_COMPANY                                                       :Cukrovar
 STR_STATION_TANK_FARM                                                           :U Nádrží
-STR_STATION_TAPPERS_SHED                                                        :Kauèuková
+STR_STATION_TAPPERS_SHED                                                        :Kaučuková
 STR_STATION_TOWN_1                                                              :Vysoká
-STR_STATION_TOWN_2                                                              :Ke sbìrnému dvoru
-STR_STATION_TOWN_3                                                              :Obchodní námìstí
-STR_STATION_TRONA_BEDS                                                          :Solná jeskynì
+STR_STATION_TOWN_2                                                              :Ke sběrnému dvoru
+STR_STATION_TOWN_3                                                              :Obchodní náměstí
+STR_STATION_TRONA_BEDS                                                          :Solná jeskyně
 STR_STATION_WATER                                                               :Na Pískách
-STR_STATION_WEAVE_AND_DYE                                                       :Koželuhù
+STR_STATION_WEAVE_AND_DYE                                                       :Koželuhů
 STR_STATION_WELLS                                                               :Ropné vrty
-STR_STATION_WINERY                                                              :Vinaøská
-STR_STATION_WORKS_YARD                                                          :Dìlnická
+STR_STATION_WINERY                                                              :Vinařská
+STR_STATION_WORKS_YARD                                                          :Dělnická
 STR_STATION_UPGRADER                                                            :Ropnopísková
 STR_STATION_VEHICLE_DEALER                                                      :Autosalon
