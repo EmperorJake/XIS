@@ -1,0 +1,28 @@
+XIS changelog
+
+
+
+
+0.5.0 2020-05-10
+
+Tweaked chains, wharf accepts alcohol etc.
+
+0.5.1 2020-08-01
+
+Removed fences from most industries, for better blending with Object sets
+
+0.6.0 2020-08-19
+
+Change port to accept Parts
+
+First full public release. Renamed HIS to XIS
+
+0.6.1 2020-11-23
+
+Change: allow more industries to be placed on desert
+
+0.6.2 2021-08-22
+
+Change: OTIS to incompatible GRFs
+
+Translations: Japanese, German, Czech, Chinese

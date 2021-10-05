@@ -333,17 +333,17 @@ switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_check_availability, economy) {
         5: vehicle_dealer_check_availability_5;
         3: vehicle_dealer_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_min_distance_38, industry_distance(38)) {
+    switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_min_distance_62, industry_distance(62)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_min_distance_62, industry_distance(62)) {
+    switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_min_distance_38, industry_distance(38)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        vehicle_dealer_min_distance_38;
+        vehicle_dealer_min_distance_62;
     }
     switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_min_distance_33, industry_distance(33)) {
         0 .. 32: return CB_RESULT_LOCATION_DISALLOW;
-        vehicle_dealer_min_distance_62;
+        vehicle_dealer_min_distance_38;
     }
     switch (FEAT_INDUSTRIES, SELF, vehicle_dealer_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

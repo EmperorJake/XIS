@@ -3025,29 +3025,29 @@ switch (FEAT_INDUSTRIES, SELF, junk_yard_check_availability, economy) {
         5: junk_yard_check_availability_5;
         3: junk_yard_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_72, industry_distance(72)) {
+    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_67, industry_distance(67)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_67, industry_distance(67)) {
+    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_8, industry_distance(8)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        junk_yard_min_distance_72;
+        junk_yard_min_distance_67;
     }
     switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        junk_yard_min_distance_67;
+        junk_yard_min_distance_8;
     }
     switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         junk_yard_min_distance_7;
     }
-    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_8, industry_distance(8)) {
+    switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_72, industry_distance(72)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         junk_yard_min_distance_79;
     }
     switch (FEAT_INDUSTRIES, SELF, junk_yard_min_distance_25, industry_distance(25)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        junk_yard_min_distance_8;
+        junk_yard_min_distance_72;
     }
     switch (FEAT_INDUSTRIES, SELF, junk_yard_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

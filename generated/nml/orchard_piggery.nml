@@ -3774,34 +3774,34 @@ switch (FEAT_INDUSTRIES, SELF, orchard_piggery_available_game_mode, game_mode ==
 	1: orchard_piggery_check_map_gen;
 	return CB_RESULT_IND_PROBABILITY_FROM_PROPERTY;
 }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_2, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_0, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_1, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_4, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_5, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
-    /* 0 */
+    /* 1900 */
     switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability_3, current_date) {
-        date(0,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
+        date(1900,1,1) .. date(5000000,12,31): orchard_piggery_available_game_mode;
         return CB_RESULT_IND_NO_CONSTRUCTION;
     }
 switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability, economy) {
@@ -3903,7 +3903,7 @@ switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability, economy) {
                     monthly_prod_change:      orchard_piggery_monthly_update;
                     random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
                     location_check:           orchard_piggery_check_location;
-                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1900);
                     extra_text_industry:      orchard_piggery_extra_text;
                     cargo_subtype_display:    orchard_piggery_cargo_subtype_display;
                     colour:                   switch_colour;
@@ -3920,7 +3920,7 @@ switch (FEAT_INDUSTRIES, SELF, orchard_piggery_check_availability, economy) {
                     monthly_prod_change:      orchard_piggery_monthly_update;
                     random_prod_change:       return CB_RESULT_IND_PROD_NO_CHANGE;
                     location_check:           orchard_piggery_check_location;
-                    extra_text_fund:          return CB_RESULT_NO_TEXT;
+                    extra_text_fund:          return string(STR_FUND_AVAILABLE_FROM, 1900);
                     extra_text_industry:      orchard_piggery_extra_text;
                     cargo_subtype_display:    orchard_piggery_cargo_subtype_display;
                     colour:                   switch_colour;

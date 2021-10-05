@@ -1273,45 +1273,45 @@ switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_check_availability, economy) {
         5: pyrite_smelter_check_availability_5;
         3: pyrite_smelter_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_82, industry_distance(82)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_82;
-    }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_25, industry_distance(25)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_14;
-    }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_55, industry_distance(55)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_25;
-    }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_55;
-    }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_49, industry_distance(49)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_2;
-    }
     switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_49;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_71, industry_distance(71)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         pyrite_smelter_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_23, industry_distance(23)) {
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_82, industry_distance(82)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         pyrite_smelter_min_distance_71;
     }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_82;
+    }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_25, industry_distance(25)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_23;
+    }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_25;
+    }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_55, industry_distance(55)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_49;
+    }
+    switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_2, industry_distance(2)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        pyrite_smelter_min_distance_55;
+    }
     switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_min_distance_72, industry_distance(72)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        pyrite_smelter_min_distance_23;
+        pyrite_smelter_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, pyrite_smelter_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

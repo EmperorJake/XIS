@@ -2886,21 +2886,9 @@ switch (FEAT_INDUSTRIES, SELF, quarry_check_availability, economy) {
         5: quarry_check_availability_5;
         3: quarry_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_43, industry_distance(43)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_22, industry_distance(22)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        quarry_min_distance_43;
-    }
-    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_45, industry_distance(45)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        quarry_min_distance_22;
-    }
     switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        quarry_min_distance_45;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -2910,9 +2898,21 @@ switch (FEAT_INDUSTRIES, SELF, quarry_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         quarry_min_distance_1;
     }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_81;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_45, industry_distance(45)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        quarry_min_distance_45;
+    }
     switch (FEAT_INDUSTRIES, SELF, quarry_min_distance_10, industry_distance(10)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        quarry_min_distance_81;
+        quarry_min_distance_43;
     }
     switch (FEAT_INDUSTRIES, SELF, quarry_cluster_quarry,
                 industry_count(quarry) >= (4 * industry_clusters) &&

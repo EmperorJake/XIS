@@ -7676,45 +7676,49 @@ switch (FEAT_INDUSTRIES, SELF, port_check_availability, economy) {
         5: port_check_availability_5;
         3: port_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_43, industry_distance(43)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        port_min_distance_18;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_43;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_56, industry_distance(56)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_42, industry_distance(42)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_36;
+    }
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_56, industry_distance(56)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        port_min_distance_42;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_56;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_42, industry_distance(42)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_34;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_9, industry_distance(9)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_29, industry_distance(29)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_42;
+        port_min_distance_9;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_9;
+        port_min_distance_29;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_29, industry_distance(29)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_19;
-    }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_45, industry_distance(45)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_29;
+        port_min_distance_19;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -7724,29 +7728,25 @@ switch (FEAT_INDUSTRIES, SELF, port_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_55;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_81, industry_distance(81)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_37, industry_distance(37)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_31;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_37, industry_distance(37)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_81;
-    }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_41, industry_distance(41)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_81, industry_distance(81)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_37;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_41;
+        port_min_distance_81;
     }
-    switch (FEAT_INDUSTRIES, SELF, port_min_distance_18, industry_distance(18)) {
+    switch (FEAT_INDUSTRIES, SELF, port_min_distance_41, industry_distance(41)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         port_min_distance_22;
     }
     switch (FEAT_INDUSTRIES, SELF, port_min_distance_39, industry_distance(39)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        port_min_distance_18;
+        port_min_distance_41;
     }
     switch (FEAT_INDUSTRIES, SELF, port_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

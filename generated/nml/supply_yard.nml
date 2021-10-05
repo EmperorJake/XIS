@@ -925,9 +925,13 @@ switch (FEAT_INDUSTRIES, SELF, supply_yard_check_availability, economy) {
         5: supply_yard_check_availability_5;
         3: supply_yard_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_80, industry_distance(80)) {
+    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_80, industry_distance(80)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        supply_yard_min_distance_19;
     }
     switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -937,29 +941,25 @@ switch (FEAT_INDUSTRIES, SELF, supply_yard_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         supply_yard_min_distance_49;
     }
-    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_40, industry_distance(40)) {
+    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_31, industry_distance(31)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         supply_yard_min_distance_5;
+    }
+    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_40, industry_distance(40)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        supply_yard_min_distance_31;
     }
     switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_38, industry_distance(38)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         supply_yard_min_distance_40;
     }
-    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_31, industry_distance(31)) {
+    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_62, industry_distance(62)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         supply_yard_min_distance_38;
     }
-    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_62, industry_distance(62)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        supply_yard_min_distance_31;
-    }
-    switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_19, industry_distance(19)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        supply_yard_min_distance_62;
-    }
     switch (FEAT_INDUSTRIES, SELF, supply_yard_min_distance_69, industry_distance(69)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        supply_yard_min_distance_19;
+        supply_yard_min_distance_62;
     }
     switch (FEAT_INDUSTRIES, SELF, supply_yard_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

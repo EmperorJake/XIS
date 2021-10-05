@@ -1182,37 +1182,37 @@ switch (FEAT_INDUSTRIES, SELF, herding_coop_check_availability, economy) {
         5: herding_coop_check_availability_5;
         3: herding_coop_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_51, industry_distance(51)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_49;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_70, industry_distance(70)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_51;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_17, industry_distance(17)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_70;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_73, industry_distance(73)) {
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_0, industry_distance(0)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         herding_coop_min_distance_17;
     }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_0, industry_distance(0)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_73;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_14, industry_distance(14)) {
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         herding_coop_min_distance_0;
     }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_73, industry_distance(73)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_70;
+    }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_73;
+    }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_51;
+    }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_85, industry_distance(85)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_14;
+        herding_coop_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

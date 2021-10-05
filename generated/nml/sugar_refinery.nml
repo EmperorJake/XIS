@@ -1086,9 +1086,17 @@ switch (FEAT_INDUSTRIES, SELF, sugar_refinery_check_availability, economy) {
         5: sugar_refinery_check_availability_5;
         3: sugar_refinery_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_26, industry_distance(26)) {
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_58, industry_distance(58)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        sugar_refinery_min_distance_58;
+    }
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_26, industry_distance(26)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        sugar_refinery_min_distance_18;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1098,29 +1106,29 @@ switch (FEAT_INDUSTRIES, SELF, sugar_refinery_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sugar_refinery_min_distance_14;
     }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_39, industry_distance(39)) {
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_60, industry_distance(60)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sugar_refinery_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        sugar_refinery_min_distance_60;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_69, industry_distance(69)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sugar_refinery_min_distance_39;
     }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_60, industry_distance(60)) {
+    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sugar_refinery_min_distance_69;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_60;
-    }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_52;
+        sugar_refinery_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_2;
+        sugar_refinery_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1142,17 +1150,9 @@ switch (FEAT_INDUSTRIES, SELF, sugar_refinery_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sugar_refinery_min_distance_61;
     }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_58, industry_distance(58)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_22;
-    }
-    switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_58;
-    }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_min_distance_19, industry_distance(19)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        sugar_refinery_min_distance_18;
+        sugar_refinery_min_distance_22;
     }
     switch (FEAT_INDUSTRIES, SELF, sugar_refinery_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

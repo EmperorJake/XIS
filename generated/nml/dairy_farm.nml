@@ -963,17 +963,17 @@ switch (FEAT_INDUSTRIES, SELF, dairy_farm_check_availability, economy) {
         5: dairy_farm_check_availability_5;
         3: dairy_farm_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, dairy_farm_min_distance_37, industry_distance(37)) {
+    switch (FEAT_INDUSTRIES, SELF, dairy_farm_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, dairy_farm_min_distance_36, industry_distance(36)) {
+    switch (FEAT_INDUSTRIES, SELF, dairy_farm_min_distance_37, industry_distance(37)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        dairy_farm_min_distance_37;
+        dairy_farm_min_distance_36;
     }
     switch (FEAT_INDUSTRIES, SELF, dairy_farm_min_distance_28, industry_distance(28)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        dairy_farm_min_distance_36;
+        dairy_farm_min_distance_37;
     }
     switch (FEAT_INDUSTRIES, SELF, dairy_farm_cluster_dairy_farm,
                 industry_count(dairy_farm) >= (4 * industry_clusters) &&

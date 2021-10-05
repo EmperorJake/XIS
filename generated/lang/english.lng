@@ -30,8 +30,10 @@ STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             
 
 STR_CARGO_NAME_ACID                                                             :Acid
 STR_CARGO_NAME_ALCOHOL                                                          :Alcohol
+STR_CARGO_NAME_ALUMINIUM														:Aluminium
 STR_CARGO_NAME_BAUXITE                                                          :Bauxite
 STR_CARGO_NAME_BEANS                                                            :Soy
+STR_CARGO_NAME_BIOMASS															:Biomass
 STR_CARGO_NAME_BUILDING_MATERIALS                                               :Building Materials
 STR_CARGO_NAME_CASSAVA                                                          :Cassava
 STR_CARGO_NAME_CEMENT                                                           :Cement
@@ -52,12 +54,14 @@ STR_CARGO_NAME_FERTILISER                                                       
 STR_CARGO_NAME_FRUITS                                                           :Fruit
 STR_CARGO_NAME_KAOLIN                                                           :Lithium
 STR_CARGO_NAME_LIMESTONE                                                        :Limestone
+STR_CARGO_NAME_LITHIUM															:Lithium
 STR_CARGO_NAME_LUMBER                                                           :Timber
 STR_CARGO_NAME_METAL                                                            :Aluminium
 STR_CARGO_NAME_MILK                                                             :Milk
 STR_CARGO_NAME_MANGANESE                                                        :Manganese
 STR_CARGO_NAME_NITRATES                                                         :Nitrates
 STR_CARGO_NAME_NUTS                                                             :Nuts
+STR_CARGO_NAME_OILSANDS															:Oil Sands
 STR_CARGO_NAME_PACKAGING                                                        :Packaging
 STR_CARGO_NAME_PEAT                                                             :Biomass
 STR_CARGO_NAME_PETROL                                                           :Petroleum Fuels
@@ -82,6 +86,7 @@ STR_CARGO_NAME_VEHICLE_PARTS                                                    
 STR_CARGO_NAME_VEHICLES                                                         :Vehicles
 STR_CARGO_NAME_WOOL                                                             :Wool
 STR_CARGO_NAME_ZINC                                                             :Zinc
+STR_CARGO_NAME_ZINCORE															:Zinc Ore
 
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} of acid
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} of alcohol
@@ -159,7 +164,7 @@ STR_CID_ENGINEERING_SUPPLIES                                                    
 STR_CID_EXPLOSIVES                                                              :{TINYFONT}EX
 STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}FS
 STR_CID_FERTILISER                                                              :{TINYFONT}FL
-STR_CID_FIBRES                                                                  :{TINYFONT}FC
+STR_CID_FIBRES                                                                  :{TINYFONT}FB
 STR_CID_FISH                                                                    :{TINYFONT}FI
 STR_CID_KAOLIN                                                                  :{TINYFONT}LI
 STR_CID_LIMESTONE                                                               :{TINYFONT}LS
@@ -197,7 +202,7 @@ STR_CID_WOOL                                                                    
 STR_CID_ZINC                                                                    :{TINYFONT}ZN
 
 
-STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}FIRS is not designed to be used with Toyland climate
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}XIS is not designed to be used with Toyland climate
 STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS requires OpenTTD 1.9.0 or JGRPP 0.32.x or higher.
 STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
 STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Incompatible parameter: {ORANGE}CanSet parameter 2 must be 0 to work with FIRS. {YELLOW}Consult FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
@@ -413,6 +418,6 @@ STR_STATION_WORKS_YARD                                                          
 STR_STATION_UPGRADER                                                            :Syncrude Facility
 STR_STATION_VEHICLE_DEALER                                                      :Truck Lot
 
-STR_GRF_NAME                                                    :XIS Extreme Industry Set 0.6.1
+STR_GRF_NAME                                                    :XIS Extreme Industry Set 0.6.2.9081
 
 STR_EMPTY                                                       :

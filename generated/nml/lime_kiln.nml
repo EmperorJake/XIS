@@ -1281,9 +1281,13 @@ switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_availability, economy) {
         5: lime_kiln_check_availability_5;
         3: lime_kiln_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_10, industry_distance(10)) {
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_10, industry_distance(10)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_79;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_43, industry_distance(43)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1317,13 +1321,9 @@ switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lime_kiln_min_distance_77;
     }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_79, industry_distance(79)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_22;
-    }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_1, industry_distance(1)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_79;
+        lime_kiln_min_distance_22;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||
