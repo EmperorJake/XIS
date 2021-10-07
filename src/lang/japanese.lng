@@ -99,7 +99,7 @@ STR_CARGO_UNIT_COPPER                                                           
 STR_CARGO_UNIT_EDIBLE_OIL                                                       :食用油 {VOLUME}
 STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :電気製品 {SIGNED_WORD} 箱
 STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :工業資材 {SIGNED_WORD} 箱
-STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物 {SIGNED_WORD} } 箱
+STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物 {SIGNED_WORD} 箱
 STR_CARGO_UNIT_FERTILISER                                                       :肥料 {WEIGHT}
 STR_CARGO_UNIT_FIBRES                                                           :繊維 {SIGNED_WORD}ベール
 STR_CARGO_UNIT_FISH                                                             :魚{WEIGHT}
