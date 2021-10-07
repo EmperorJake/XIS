@@ -93,17 +93,17 @@ STR_CARGO_UNIT_CEMENT                                                           
 STR_CARGO_UNIT_CHEMICALS                                                        :石油製品 {VOLUME}
 STR_CARGO_UNIT_CHLORINE                                                         :塩素 {VOLUME}
 STR_CARGO_UNIT_CLAY                                                             :粘土 {WEIGHT}
-STR_CARGO_UNIT_COFFEE                                                           :コーヒー{SIGNED_WORD}袋
+STR_CARGO_UNIT_COFFEE                                                           :コーヒー {SIGNED_WORD}袋
 STR_CARGO_UNIT_COKE                                                             :コークス {WEIGHT}
 STR_CARGO_UNIT_COPPER                                                           :銅 {WEIGHT}
 STR_CARGO_UNIT_EDIBLE_OIL                                                       :食用油 {VOLUME}
-STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :電気製品 {SIGNED_WORD} 箱
-STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :工業資材 {SIGNED_WORD} 箱
-STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物 {SIGNED_WORD} 箱
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :電気製品 {SIGNED_WORD}箱
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :工業資材 {SIGNED_WORD}箱
+STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物 {SIGNED_WORD}箱
 STR_CARGO_UNIT_FERTILISER                                                       :肥料 {WEIGHT}
 STR_CARGO_UNIT_FIBRES                                                           :繊維 {SIGNED_WORD}ベール
-STR_CARGO_UNIT_FISH                                                             :魚{WEIGHT}
-STR_CARGO_UNIT_FMSP                                                             :農業資材 {SIGNED_WORD} 箱
+STR_CARGO_UNIT_FISH                                                             :魚 {WEIGHT}
+STR_CARGO_UNIT_FMSP                                                             :農業資材 {SIGNED_WORD}箱
 STR_CARGO_UNIT_FRUITS                                                           :果物 {WEIGHT}
 STR_CARGO_UNIT_KAOLIN                                                           :リチウム {WEIGHT}
 STR_CARGO_UNIT_LIMESTONE                                                        :石灰石 {WEIGHT}
@@ -114,7 +114,7 @@ STR_CARGO_UNIT_METAL                                                            
 STR_CARGO_UNIT_MILK                                                             :牛乳 {VOLUME}
 STR_CARGO_UNIT_NICKEL                                                           :ニッケル {WEIGHT}
 STR_CARGO_UNIT_NITRATES                                                         :硝酸塩 {WEIGHT}
-STR_CARGO_UNIT_NUTS                                                             :ナッツ{SIGNED_WORD} 袋
+STR_CARGO_UNIT_NUTS                                                             :ナッツ {SIGNED_WORD}袋
 STR_CARGO_UNIT_PACKAGING                                                        :包装材料 {WEIGHT}
 STR_CARGO_UNIT_PEAT                                                             :バイオマス {WEIGHT}
 STR_CARGO_UNIT_PETROL                                                           :石油燃料 {VOLUME}
@@ -124,21 +124,21 @@ STR_CARGO_UNIT_PIPE                                                             
 STR_CARGO_UNIT_POTASH                                                           :カリ岩塩 {WEIGHT}
 STR_CARGO_UNIT_PYRITE_ORE                                                       :閃亜鉛鉱 {WEIGHT}
 STR_CARGO_UNIT_QUICKLIME                                                        :生石灰 {WEIGHT}
-STR_CARGO_UNIT_RECYCLABLES                                                      :資源ごみ{WEIGHT}
-STR_CARGO_UNIT_SALT                                                             :岩塩{WEIGHT}
-STR_CARGO_UNIT_SAND                                                             :砂{WEIGHT}
-STR_CARGO_UNIT_SCRAP_METAL                                                      :鉄くず{WEIGHT}
-STR_CARGO_UNIT_SLAG                                                             :スラグ{WEIGHT}
-STR_CARGO_UNIT_SODA_ASH                                                         :ソーダ灰{WEIGHT} 
-STR_CARGO_UNIT_STEEL                                                            :鋼鉄{WEIGHT}
-STR_CARGO_UNIT_STONE                                                            :石材{WEIGHT} 
-STR_CARGO_UNIT_SUGAR_BEET                                                       :サトウキビ{WEIGHT}
-STR_CARGO_UNIT_SULPHUR                                                          :硫黄{WEIGHT}
-STR_CARGO_UNIT_VEHICLE_BODIES                                                   :自動車ボデー{WEIGHT}
-STR_CARGO_UNIT_VEHICLE_PARTS                                                    :部品{WEIGHT} 
-STR_CARGO_UNIT_VEHICLES                                                         :自動車{WEIGHT}
-STR_CARGO_UNIT_WOOL                                                             :羊毛{SIGNED_WORD}ベール
-STR_CARGO_UNIT_ZINC                                                             :亜鉛{WEIGHT}
+STR_CARGO_UNIT_RECYCLABLES                                                      :資源ごみ {WEIGHT}
+STR_CARGO_UNIT_SALT                                                             :岩塩 {WEIGHT}
+STR_CARGO_UNIT_SAND                                                             :砂 {WEIGHT}
+STR_CARGO_UNIT_SCRAP_METAL                                                      :鉄くず {WEIGHT}
+STR_CARGO_UNIT_SLAG                                                             :スラグ {WEIGHT}
+STR_CARGO_UNIT_SODA_ASH                                                         :ソーダ灰 {WEIGHT} 
+STR_CARGO_UNIT_STEEL                                                            :鋼鉄 {WEIGHT}
+STR_CARGO_UNIT_STONE                                                            :石材 {WEIGHT} 
+STR_CARGO_UNIT_SUGAR_BEET                                                       :サトウキビ {WEIGHT}
+STR_CARGO_UNIT_SULPHUR                                                          :硫黄 {WEIGHT}
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :自動車ボデー {WEIGHT}
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :部品 {WEIGHT} 
+STR_CARGO_UNIT_VEHICLES                                                         :自動車 {WEIGHT}
+STR_CARGO_UNIT_WOOL                                                             :羊毛 {SIGNED_WORD}ベール
+STR_CARGO_UNIT_ZINC                                                             :亜鉛 {WEIGHT}
 
 STR_CID_ACID                                                                    :{TINYFONT}ｻﾝ
 STR_CID_ALCOHOL                                                                 :{TINYFONT}ｻｹ
