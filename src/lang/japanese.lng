@@ -129,13 +129,13 @@ STR_CARGO_UNIT_SALT                                                             
 STR_CARGO_UNIT_SAND                                                             :砂 {WEIGHT}
 STR_CARGO_UNIT_SCRAP_METAL                                                      :鉄くず {WEIGHT}
 STR_CARGO_UNIT_SLAG                                                             :スラグ {WEIGHT}
-STR_CARGO_UNIT_SODA_ASH                                                         :ソーダ灰 {WEIGHT} 
+STR_CARGO_UNIT_SODA_ASH                                                         :ソーダ灰 {WEIGHT}
 STR_CARGO_UNIT_STEEL                                                            :鋼鉄 {WEIGHT}
-STR_CARGO_UNIT_STONE                                                            :石材 {WEIGHT} 
+STR_CARGO_UNIT_STONE                                                            :石材 {WEIGHT}
 STR_CARGO_UNIT_SUGAR_BEET                                                       :サトウキビ {WEIGHT}
 STR_CARGO_UNIT_SULPHUR                                                          :硫黄 {WEIGHT}
 STR_CARGO_UNIT_VEHICLE_BODIES                                                   :自動車ボデー {WEIGHT}
-STR_CARGO_UNIT_VEHICLE_PARTS                                                    :部品 {WEIGHT} 
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :部品 {WEIGHT}
 STR_CARGO_UNIT_VEHICLES                                                         :自動車 {WEIGHT}
 STR_CARGO_UNIT_WOOL                                                             :羊毛 {SIGNED_WORD}ベール
 STR_CARGO_UNIT_ZINC                                                             :亜鉛 {WEIGHT}
