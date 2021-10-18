@@ -7148,17 +7148,17 @@ switch (FEAT_INDUSTRIES, SELF, rubber_plantation_check_availability, economy) {
         5: rubber_plantation_check_availability_5;
         3: rubber_plantation_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_52, industry_distance(52)) {
+    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        rubber_plantation_min_distance_70;
+        rubber_plantation_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_53, industry_distance(53)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        rubber_plantation_min_distance_52;
+        rubber_plantation_min_distance_70;
     }
     switch (FEAT_INDUSTRIES, SELF, rubber_plantation_cluster_rubber_plantation,
                 industry_count(rubber_plantation) >= (4 * industry_clusters) &&

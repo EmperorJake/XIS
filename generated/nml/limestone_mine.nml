@@ -2866,17 +2866,17 @@ switch (FEAT_INDUSTRIES, SELF, limestone_mine_check_availability, economy) {
         5: limestone_mine_check_availability_5;
         3: limestone_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, limestone_mine_min_distance_14, industry_distance(14)) {
+    switch (FEAT_INDUSTRIES, SELF, limestone_mine_min_distance_6, industry_distance(6)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, limestone_mine_min_distance_6, industry_distance(6)) {
+    switch (FEAT_INDUSTRIES, SELF, limestone_mine_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        limestone_mine_min_distance_14;
+        limestone_mine_min_distance_6;
     }
     switch (FEAT_INDUSTRIES, SELF, limestone_mine_min_distance_54, industry_distance(54)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        limestone_mine_min_distance_6;
+        limestone_mine_min_distance_14;
     }
     switch (FEAT_INDUSTRIES, SELF, limestone_mine_cluster_limestone_mine,
                 industry_count(limestone_mine) >= (3 * industry_clusters) &&

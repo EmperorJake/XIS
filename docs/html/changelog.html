@@ -1,0 +1,1751 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title >FIRS Industry Replacement Set</title>
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="static/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link type="text/css" href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript" src="static/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="static/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.tablesorter.widgets.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tablesorter').tablesorter({
+                textExtraction: function(node){
+                            var cell_value = $(node).text();
+                            var sort_value = $(node).data('value');
+                    return (sort_value != undefined) ? sort_value : cell_value;
+                 },
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse"
+         style="border-bottom:1px solid #000; border-radius:0; margin-bottom:0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#firs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="get_started.html">FIRS</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="firs-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                    </li>
+                    <li class="">
+                        <a href="economies.html">Economies</a>
+                    </li>
+                    <li class="">
+                        <a href="cargos.html">Cargos</a>
+                    </li>
+                    <li class="">
+                        <a href="industries.html">Industries</a>
+                    </li>
+                    <li class="">
+                        <a href="code_reference.html">Code Reference</a>
+                    </li>
+                    <li class="active">
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="translations.html"><i class="fa fa-globe icon-white"></i> Help Translate FIRS</a>
+                    </li>
+                    <li>
+                        <a href="http://www.tt-forums.net/viewtopic.php?t=41607"><i class="fa fa-comments icon-white"></i> Discuss at TT-Forums.net</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero-unit subhead">
+        <div class="container text-center">
+            <h1 style="font-size:48px; padding-top:30px;">FIRS Industry Replacement Set</h1>
+            <p class="lead">New Industries and Cargos for OpenTTD</p>
+            <br />
+            <br />
+            <script language="JavaScript">
+            function random_img(num_images){
+                var images=new Array(
+                    
+                    'stockyard','aluminium_plant','ammonia_plant','arable_farm','assembly_plant','basic_oxygen_furnace','smithy_forge','orchard_piggery','biorefinery','blast_furnace','brewery','brick_works','bulk_terminal','cement_plant','chemical_plant','clay_pit','coal_mine','coke_oven','copper_refinery','coffee_estate','dairy','dairy_farm','dredging_site','electric_arc_furnace','metal_workshop','builders_yard','mixed_farm','supply_yard','fishing_grounds','fishing_harbour','flour_mill','food_processor','forest','foundry','fruit_plantation','furniture_factory','diamond_mine','general_store','glass_works','food_market','hardware_store','iron_ore_mine','lime_kiln','liquids_terminal','limestone_mine','machine_shop','manganese_mine','vineyard','metal_fabrication_plant','nitrate_mine','herding_coop','oil_refinery','phosphate_mine','oil_wells','paper_mill','peatlands','petrol_pump','plastics_plant','ranch','port','iron_works','quarry','recycling_depot','recycling_plant','rubber_plantation','junk_yard','sheep_farm','slag_grinding_plant','soda_ash_mine','sugar_refinery','textile_mill','lumber_yard','trading_post','tyre_plant','vehicle_dealer','wharf','pyrite_mine','pyrite_smelter'
+                );
+
+                for(i = 0; i < num_images; i++){
+                    var random_image = images.splice(Math.floor(Math.random()*images.length), 1);
+                    document.write('<a href="industries.html#' + random_image + '"><img style="margin-top:-30px; margin-bottom:0;" width="20%" src="static/img/industries/'+ random_image +'.png"></a>')
+                }
+            }
+            random_img(5)
+            </script>
+        </div>
+    </div>
+    
+        
+    
+    <div class="container firs-larger-font">
+        
+    <div class="span12" style="margin-top:40px; margin-bottom:20px;">
+        <h1>Changelog</h1>
+<hr />
+<h2>3.0.10 Release</h2>
+<p><em>Docs</em></p>
+<ul>
+<li>fix broken links in economies page</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>updated</li>
+</ul>
+<hr />
+<h2>3.0.9 Release</h2>
+<p><em>Codechange</em></p>
+<ul>
+<li>improved how 'make install' handles copying the grf to install location</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>updated</li>
+</ul>
+<hr />
+<h2>3.0.8 Release</h2>
+<p><em>Fix</em></p>
+<ul>
+<li>3.0.7 didn't show the version number correctly</li>
+</ul>
+<hr />
+<h2>3.0.7 Release</h2>
+<p><em>Fix</em></p>
+<ul>
+<li>3.0.6 unintentionally broke industry availability, now fixed</li>
+</ul>
+<p><em>Docs</em></p>
+<ul>
+<li>more accurate licensing information</li>
+</ul>
+<hr />
+<h2>3.0.6 Release</h2>
+<p><em>Docs</em></p>
+<ul>
+<li>cargos, economies and industries can now be deep linked</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>updated</li>
+</ul>
+<hr />
+<h2>3.0.5 Release</h2>
+<p><em>Fixes</em></p>
+<ul>
+<li>display correct version number in grf name</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>cleaned up makefile and build scripts</li>
+<li>switched to generated lang files<ul>
+<li>dropped custom_tags.txt</li>
+<li>STR_EMPTY now only provided once, eliminating a proven source of bugs coming in from translated lang files</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>3.0.4 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>3.0.3 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>3.0.2 Release</h2>
+<p><em>Fixes</em></p>
+<ul>
+<li>Vehicle Dealer should not have an intro date set</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>3.0.1 Release</h2>
+<p><em>Docs</em></p>
+<ul>
+<li>show cargo classes in code reference page</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>3.0.0 Release</h2>
+<p><strong>FIRS 3.0.0 is not savegame-compatible with any previous version of FIRS.</strong></p>
+<p>FIRS 3.0.0 requires OpenTTD 1.7.0 or newer.</p>
+<p><em>Improved Economies</em></p>
+<ul>
+<li>'Arctic Basic' economy<ul>
+<li>totally reworked, inspired by Finland, Northern Canada and Northern Siberia</li>
+<li>mixed economy, based on natural resources extraction and processing</li>
+<li>multiple new chains and cargo types, including Explosives, Peat, Sulphur and Zinc</li>
+<li>new industries include Herding Co-op and Peatlands</li>
+<li>includes Fish as important food source</li>
+</ul>
+</li>
+<li>'Steeltown' economy<ul>
+<li>highly industrial economy, dominated by Iron and Steel chain</li>
+<li>multiple new chains and cargo types, including Acid, Cement, Chlorine, Coke, Electrical Machines, Limestone, Pig Iron, Pipe, Quicklime, Salt, Soda Ash, Slag and Zinc</li>
+<li>new industries include Basic Oxygen Furnace, Coke Oven, Soda Ash Mine and Electric Arc Furnace</li>
+<li>a complex economy with 31 cargos and 25 industries</li>
+<li>highly focussed on industrial production</li>
+<li>most chains connect to ultimately produce Vehicles</li>
+<li>use with any climate</li>
+</ul>
+</li>
+</ul>
+<p><em>Improved Industries</em></p>
+<ul>
+<li>new industry types:<ul>
+<li>Basic Oxygen Furnace</li>
+<li>Coke Oven</li>
+<li>Electric Arc Furnace</li>
+<li>Farm</li>
+<li>Foundry</li>
+<li>Farm / Mixed Farm</li>
+<li>Herding Co-op</li>
+<li>Limestone Mine</li>
+<li>Peatlands</li>
+<li>Slag Grinding Plant</li>
+<li>Soda Ash Mine</li>
+<li>Vehicle Dealer</li>
+</ul>
+</li>
+<li>improved industry graphics and layouts:<ul>
+<li>Coffee Estate</li>
+<li>Dredging Site</li>
+<li>Forest</li>
+<li>Fruit Plantation</li>
+<li>Orchard and Piggery</li>
+<li>Paper Mill (DanMacK)</li>
+<li>Pyrite Mine</li>
+<li>Rubber Plantation</li>
+<li>Vineyard</li>
+</ul>
+</li>
+<li>Diamond Mine: no longer uses graphics from base set, and has additional layouts</li>
+<li>Fishing Grounds / Fishing Harbour:<ul>
+<li>better clustering and co-location behaviour for this chain</li>
+<li>where possible, Fishing Harbours will be built within a sensible distance of Fishing Grounds</li>
+<li>this isn't always possible, good luck!</li>
+</ul>
+</li>
+<li>Iron Ore Mine: no longer uses graphics from base set, and has additional layouts</li>
+<li>Fertiliser Plant:<ul>
+<li>renamed to Ammonia Plant</li>
+<li>now produces Engineering Supplies (civil explosives) in addition to Farm Supplies</li>
+</ul>
+</li>
+<li>Lime Kiln: production ratios improved, industry output was previously nerfed, not intentionally</li>
+<li>Metal Fabrication Plant:<ul>
+<li>name varies by economy, either Metal Fabrication Plant or Steel Finishing Plant</li>
+</ul>
+</li>
+<li>Mixed Farm:<ul>
+<li>name varies by economy, either Farm or Mixed Farm</li>
+</ul>
+</li>
+<li>Quarry:<ul>
+<li>minor tweaks to appearance of sand</li>
+</ul>
+</li>
+<li>Steel Mill<ul>
+<li>name varies by economy, either Blast Furnace or Steel Mill</li>
+<li>Blast Furnace variant requires Coke, Iron Ore, Limestone, produces Pig Iron and Slag</li>
+<li>Steel Mill variant unchanged, requires Coal, Iron Ore, Scrap Metal, produces Metal or Steel</li>
+</ul>
+</li>
+<li>Trading Post<ul>
+<li>name varies by economy, either Trading Post or Wharf</li>
+</ul>
+</li>
+<li>Vehicle Factory<ul>
+<li>renamed to Assembly Plant</li>
+</ul>
+</li>
+</ul>
+<p><em>Improved Cargos</em></p>
+<ul>
+<li>new cargo types:<ul>
+<li>Acid</li>
+<li>Cement</li>
+<li>Chlorine</li>
+<li>Coke</li>
+<li>Electrical Machines</li>
+<li>Explosives</li>
+<li>Fertiliser</li>
+<li>Kaolin</li>
+<li>Limestone</li>
+<li>Peat</li>
+<li>Pig Iron</li>
+<li>Pipe</li>
+<li>Quicklime</li>
+<li>Salt</li>
+<li>Slag</li>
+<li>Soda Ash</li>
+<li>Steel</li>
+<li>Sulphur</li>
+<li>Vehicle Bodies</li>
+<li>Zinc</li>
+</ul>
+</li>
+<li>Chemicals:<ul>
+<li>increase cargo weight</li>
+</ul>
+</li>
+<li>Packaging:<ul>
+<li>renamed from Manufacturing Supplies to avoid confusion between this ordinary cargo and Engineering Supplies / Farm Supplies which have special behaviour</li>
+<li>uses 'tonnes' (or equivalent localised weight) as unit, rather than 'crates'</li>
+</ul>
+</li>
+<li>Vehicle Parts:<ul>
+<li>removed incorrect 'express' cargo class</li>
+</ul>
+</li>
+<li>Vehicles:<ul>
+<li>now uses 'tonnes' (or equivalent localised weight) as unit, rather than 'vehicles'</li>
+<li>simpler for vehicle newgrf authors to deal with, no special treatment needed for Vehicles cargo</li>
+</ul>
+</li>
+</ul>
+<p><em>General Improvements</em></p>
+<ul>
+<li>reworked industry window text for processing industries<ul>
+<li>dropped 'produces x output per y delivered' text</li>
+<li>was hard to understand, frequently had mistakes, and made much work for translators</li>
+<li>now simplified, taking advantage of new features in OpenTTD 1.7.0</li>
+<li>cargos are simply shown as 'required'</li>
+<li>'supplied' will be shown if a cargo has been delivered within the last 90 days</li>
+</ul>
+</li>
+<li>industries accepting Packaging (previously Manufacturing Supplies):<ul>
+<li>these industries now use same production boost behaviour as all other processing industries when combining cargo</li>
+<li>previously these industries had special boost behaviour which was hard to explain</li>
+<li>Packaging only available in Extreme economy</li>
+<li>Packaging dropped from some industries entirely</li>
+</ul>
+</li>
+<li>tweaks to industry probabilities for game balance and consistency</li>
+<li>primary industry production levels<ul>
+<li>adjusted production levels at some primary industries for game balance</li>
+<li>adjusted initial randomisation of these production levels for game balance</li>
+</ul>
+</li>
+<li>distance checks to incompatible industries now applied consistently</li>
+<li>adjusted clustering behaviour for some primary industries</li>
+<li>Brewery, Flour Mill, Hotel and Junk Yard now check for nearby houses, instead of distance to town sign, this will improve game placement of these industries in large cities</li>
+<li>industry 'nearby station' names are expanded and reworked<ul>
+<li>more industries set unique names for nearby stations</li>
+<li>existing names reworked</li>
+</ul>
+</li>
+<li>adjusted all cargo colours:<ul>
+<li>all cargo colours now unique within FIRS</li>
+<li>each cargo now uses same colour everywhere (charts, station list, cargo flow view) etc.</li>
+</ul>
+</li>
+<li>adjusted multiple cargo payment curves<ul>
+<li>fix issue where some cargos overlapped each other on cargo payment chart in-game</li>
+<li>rebalance some cargos for gameplay reasons</li>
+</ul>
+</li>
+<li>adjusted cargo weights</li>
+<li>rework of industry map colours for better legibility on all 3 map colours (green, dark green, violet) - based on work by Frosch</li>
+<li>added checks for incompatible 'OpenGFX+Industries' and 'Improved Oil Rig Layout' grfs</li>
+<li>adjusted order of economies in parameter menu and docs</li>
+</ul>
+<p><em>Online Docs</em></p>
+<ul>
+<li>text now more helpful for players who are new to FIRS</li>
+<li>improved readme, removing confusing and/or outdated info, and linking to main docs</li>
+<li>Cargos page shows hints about many cargos, to aid vehicle set authors</li>
+<li>Code Reference page shows cargo colours and industry map colours</li>
+<li>Industries page updated with images for new and changed industries</li>
+<li>improved cargo-flow graphs in Economies page</li>
+<li>zoom-and-pan tools to view 'larger' version of cargo-flow graphs (may not work in all browsers, sorry, 3rd-party plugin for this is not 100% reliable)</li>
+<li>docs no longer show cargos that are not used (including Sugar and Sugarcane)</li>
+<li>much more variety in randomised banner images for docs</li>
+<li>upgrade UI library to Boostrap 3</li>
+<li>all pages now use a responsive grid and should work across a wide range of devices</li>
+<li>page layouts redesigned to be more legible and more visually appealing</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>grfid bumped, v3 is different enough to v2 to justify a new grfid</li>
+<li>improved/fixed display of repo revision in filenames etc</li>
+<li>move lang dir into src for consistency with Iron Horse etc</li>
+<li>new Makefile, much simplified (Alberth)</li>
+<li>remove all use of C-Pre-Processor templates<ul>
+<li>FIRS templating is now 100% python</li>
+<li>no longer requires GCC-compatible compiler to build FIRS</li>
+</ul>
+</li>
+<li>only render extra text switches for economies where industry is active (aids compile speed)</li>
+<li>only render 'if economy=x' when needed, saving ~1k lines in output, and slightly faster compile</li>
+<li>only include construction states in spritelayout if needed</li>
+<li>don't set zextents, it's not useful, and may have caused some sprite flickering bugs which now seem resolved</li>
+<li>remove secondary industry debug text; use the newgrf debug to read storages instead</li>
+<li>processing industries with two outputs now have option to produce in ratios other than 50:50</li>
+<li>don't set multiple unnecessary properties for industries and cargos</li>
+<li>fixed minor linting issues found by pyflakes</li>
+<li>removed files and imports for some unused industries and cargos</li>
+<li>rename templates on the filesystem for consistency and ease of navigation</li>
+<li>clean up usage and documentation of industry permanent storage</li>
+<li>remove manually declared ids from spritesets, much less boilerplate and find-replace for industry spritsets</li>
+<li>don't fail silently if tile numeric IDs are not defined; fix a bunch of missing tile numeric IDs</li>
+<li>minor code refactoring in many other places, simplifying where possible</li>
+<li>GPL notice is not required imho for every source file, remove them widely</li>
+<li>pep8 some python files</li>
+<li>magic templates:<ul>
+<li>for industries with trees, including terrain and slope support</li>
+<li>for harbours</li>
+</ul>
+</li>
+<li>automated incompatible industry checks</li>
+<li>automated guard against some cases where cargos could be missing</li>
+<li>require_houses_nearby check circular tile search range increased to 7 (and uses automated generator for the ranges)</li>
+<li>set random_sound_effects to empty array to prevent spurious sounds due to default industry properties</li>
+<li>Metal cargo label now 'METL' not 'STEL', cargo labels must be unique per cargo, cannot be reused inside FIRS</li>
+</ul>
+<hr />
+<h2>2.1.5 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>updated</li>
+<li>translator credits: http://bundles.openttdcoop.org/firs/releases/LATEST/credits.txt</li>
+</ul>
+<hr />
+<h2>2.1.4 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>updated</li>
+<li>translator credits: http://bundles.openttdcoop.org/firs/releases/LATEST/credits.txt</li>
+</ul>
+<hr />
+<h2>2.1.3 Release</h2>
+<p><em>Fixes</em></p>
+<ul>
+<li>wrong output in some economies for secondary industries with two output cargos</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.1.2 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.1.1 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.1.0 Release</h2>
+<p><em>Changes</em></p>
+<ul>
+<li>new graphics and layouts for Manganese Mine</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Stockyard had wrong unit for livestock extra info string</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.0.3 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.0.2 Release</h2>
+<p><em>Fixes</em></p>
+<ul>
+<li>Metal Workshop production ratios wrong</li>
+<li>Smithy Forge production ratios wrong</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.0.1 Release</h2>
+<p><em>Changes</em></p>
+<ul>
+<li>reduce port-type industries supply requirements to 8x parameter setting, not 10x (10x is too hard)</li>
+<li>reduce fund cost of Supply Yard</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>make Copper cargo colour different to Wool in industry chain, cargo payment chart</li>
+<li>Plastics Plant had wrong string in Arctic Basic economy</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>2.0.0 Release</h2>
+<p>"Better, faster, stronger."</p>
+<p><strong>FIRS 2.0.0 is not savegame-compatible with any previous version of FIRS.</strong></p>
+<p><em>Improved Economies</em></p>
+<ul>
+<li>'Temperate Basic' economy<ul>
+<li>added Fish chain, it's important for South West UK, which is the inspiration for this economy</li>
+<li>adjusted Steel Mill and Metal Workshop intro dates to 1800, fixing broken metal cargo chain before 1850</li>
+</ul>
+</li>
+<li>'Arctic Basic' economy<ul>
+<li>totally reworked, inspired by Scandinavia (previously generic sub-Arctic regions)</li>
+<li>highly industrial economy, dominated by Chemicals chain</li>
+<li>recommended start date: 1950</li>
+<li>multiple new chains, including Pyrites, Vehicles and Vehicle Parts chains</li>
+</ul>
+</li>
+<li>'Tropic Basic' economy<ul>
+<li>partially reworked, inspired directly by Argentina, Chile and Peru (previously generic South American)</li>
+<li>this economy focuses mostly on agriculture, and a couple of extractive industry types</li>
+<li>removed Bauxite and Vehicles chains</li>
+<li>added Alcohol, Copper and Fish chains</li>
+</ul>
+</li>
+<li>'In a Hot Country'<ul>
+<li>replaces 'Heart of Darkness' economy</li>
+<li>inspired by central-western Africa</li>
+<li>best used with sub-Tropic climate</li>
+<li>a complex economy with 30 cargos and 32 industries</li>
+<li>highly focussed on exporting primary cargos</li>
+<li>multiple new chains and cargo types, including Cassava, Edible Oil, Nuts, Phosphate and Manganese</li>
+</ul>
+</li>
+<li>'Extreme' economy<ul>
+<li>renamed 'FIRS' to 'Extreme'</li>
+<li>added Power Plant</li>
+<li>tip: try 'Extreme' with the Busy Bee Game Script which provides cargo delivery goals</li>
+</ul>
+</li>
+</ul>
+<p><em>Improved Industries</em></p>
+<ul>
+<li>new industry types:<ul>
+<li>Copper Refinery</li>
+<li>Liquids Terminal</li>
+<li>Manganese Mine</li>
+<li>Phosphate Mine</li>
+<li>Power Plant</li>
+<li>Pyrite Mine</li>
+<li>Pyrite Smelter</li>
+<li>Supply Yard</li>
+<li>Tyre Plant</li>
+<li>Vineyard</li>
+</ul>
+</li>
+<li>improved industry graphics and layouts<ul>
+<li>Brewery - animated the flag :)</li>
+<li>Builders Yard</li>
+<li>Chemical Plant</li>
+<li>Coal Mine</li>
+<li>Coffee Estate</li>
+<li>Food Processing Plant</li>
+<li>Fruit Plantation</li>
+<li>Iron Works</li>
+<li>Rubber Plantation</li>
+<li>Steel Mill</li>
+<li>Vehicle Factory</li>
+</ul>
+</li>
+<li>Dairies: no longer need to locate near towns</li>
+<li>Dredging Site:<ul>
+<li>now available from year 0, consistent with Quarry, which fixes broken cargo chains in some economies</li>
+<li>flashing pixels removed from 1st generation graphics</li>
+</ul>
+</li>
+<li>Furniture Factory: 'crates' not 't' in extra text string for</li>
+<li>Grain Mill:<ul>
+<li>renamed to Flour Mill</li>
+<li>windmill version has improved graphics and layout</li>
+</ul>
+</li>
+<li>Hotels: now build near any houses, rather than being restricted to 'near town sign', which could limit hotel construction in larger cities</li>
+<li>Lumber Yard: kiln building was broken when built on slopes</li>
+<li>Nitrate Mine: fixed station name</li>
+<li>Oil Refinery: no longer uses graphics from base set, and has additional layouts</li>
+<li>Quarry and Clay Pit:<ul>
+<li>improved graphics, including animation</li>
+<li>revised industry layouts to be smaller and easier to place on the map</li>
+<li>the map generator can now reliably place the quarry and clay pit at game start (previously these industry types were often missing)</li>
+<li>restored the standard 1-tile gap between these industry types and any other industry</li>
+</ul>
+</li>
+<li>Recycling Plant:<ul>
+<li>no longer randomises cargos at construction time, that was the source of too many bug reports and confusions</li>
+<li>now introduced in 1978, for higher chance of seeing it in a game before getting bored</li>
+</ul>
+</li>
+<li>Sawmill: additional layouts</li>
+</ul>
+<p><em>Improved Cargos</em></p>
+<ul>
+<li>new cargo types<ul>
+<li>Cassava</li>
+<li>Copper</li>
+<li>Edible Oil</li>
+<li>Maize</li>
+<li>Manganese</li>
+<li>Nuts</li>
+<li>Phosphate</li>
+<li>Pyrite Ore</li>
+<li>Vehicles</li>
+</ul>
+</li>
+<li>Engineering Supplies: new cargo icon</li>
+<li>Petrol: now named Petroleum Fuels, better reflects actual use in-game</li>
+<li>Recyclables: removed covered class, added bulk class</li>
+<li>Sugar Beet and Sugarcane:<ul>
+<li>removed the daft magic where Sugarcane was only in Tropic climate, and otherwise Sugarbeet was used</li>
+<li>these two cargos are now completely independent from each other, don't change per climate</li>
+<li>Sugar Beet appears in some economies, Sugarcane in others</li>
+</ul>
+</li>
+</ul>
+<p><em>General Improvements</em></p>
+<ul>
+<li>adjusted clustering behaviour for most primary industries<ul>
+<li>clusters are less dense, making it much easier to place stations</li>
+<li>especially easier for placing supply delivery stations that should not overlap multiple industries</li>
+</ul>
+</li>
+<li>adjusted industry production rates for most primary industries<ul>
+<li>production is generally adjusted upwards, especially for farms</li>
+<li>revised production allows pickup of sensible amounts from a single industry instead of needing to aggregate several industries</li>
+<li>amount of supplies required now same for farms and mines</li>
+</ul>
+</li>
+<li>industry probability revised to better distribute numbers of each industry type</li>
+<li>processing industries that combine cargo now have a three-month delivery window instead of one month for increased output<ul>
+<li>this supports a wider range of transport types and play-styles, for example infrequent deliveries with ships</li>
+</ul>
+</li>
+<li>added missing boost behaviour at some processing industries</li>
+<li>for many industries, allow location on a wider range of slopes, for better distribution on map gen<ul>
+<li>instead of simply disallowing all slopes, require 'effectively level' land, where only the highest corner of each tile must match the highest corner of the industry north tile</li>
+<li>the benefit of this is that industries are no longer mostly crowded into flat valleys by map generator</li>
+</ul>
+</li>
+<li>removed gaps in layouts from multiple industries, they look unsightly and aren't actually useful for building routes/stations</li>
+<li>explicitly preserve cargo slots (IDs) for passengers, mail, goods and food, default OTTD houses need them</li>
+<li>removed custom station rating parameter</li>
+<li>added parameters for adjusting 'Enhanced' and 'Gung-Ho' production behaviour at primary industries<ul>
+<li>amount of supplies required for each level can be set</li>
+<li>increased production at each level can be set</li>
+<li>affects farm-type and mine-type industries</li>
+<li>port-type industries are also affected, with requirements at 10x the parameter value</li>
+</ul>
+</li>
+<li>explicitly set the order of economies in parameter menu and docs (progression is from basic to more complex)</li>
+<li>updated online docs with images for new and changed industries</li>
+<li>docs now include charts showing cargo flow</li>
+<li>docs had some broken html</li>
+<li>updated translations page of docs, linking to newgrf translator</li>
+<li>updated readme.txt with newer vehicle sets</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>converted significant number of legacy C-Pre-Processor templates to python templates</li>
+<li>removed a large number of redundant industry templates, code is now much easier to maintain</li>
+<li>reduced compile time substantially (from &gt; 2 mins to &lt; 1 min on the test machine)</li>
+<li>support for single-industry compiles using make argument 'TEST_INDUSTRY=clay_pit' (swap 'clay_pit' to the required industry id)<ul>
+<li>single-industry compiles take around 5s on the test machine</li>
+</ul>
+</li>
+<li>take advantage of increased industry limit in OpenTTD and stop trying to stuff &gt; 64 industries into 64 slots</li>
+<li>grfid bumped, v2 is different enough to v1 to justify a new grfid</li>
+</ul>
+<hr />
+<h2>1.4.4 Release</h2>
+<p><em>Translations</em></p>
+<ul>
+<li>multiple languages updated</li>
+</ul>
+<hr />
+<h2>1.4.3 Release</h2>
+<p><em>Fix</em></p>
+<ul>
+<li>Machine Shop tiles were not accepting Metal (and incorrectly accepting Manufacturing Supplies instead)</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Croatian</li>
+<li>Dutch</li>
+<li>French</li>
+<li>Hungarian</li>
+<li>Italian</li>
+</ul>
+<hr />
+<h2>1.4.2 Release</h2>
+<p><strong>FIRS 1.4.2 is not savegame-compatible with any previous FIRS versions</strong></p>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>Full FIRS economy<ul>
+<li>added Port, providing a direct source of Engineering Supplies</li>
+<li>added Bulk Terminal, providing a direct source of Farm Supplies</li>
+</ul>
+</li>
+<li>Temperate Basic economy<ul>
+<li>added Bulk Terminal, providing Farm Supplies, solving issue that Farm Supplies were unavailable in this economy before 1927</li>
+<li>adjusted Port cargos for balance against Bulk Terminal</li>
+<li>removed Fertiliser Plant, replaced by Bulk Terminal</li>
+</ul>
+</li>
+<li>Arctic Basic economy<ul>
+<li>new cargo Paper (roughly identical to Paper cargo in default OpenTTD)</li>
+<li>Paper Mill now produces Paper instead of Goods in this economy</li>
+<li>removed Grain Mill industry</li>
+<li>added Bulk Terminal, providing Farm Supplies, solving issue that Farm Supplies were unavailable in this economy before 1927</li>
+<li>adjusted Port cargos for balance against Bulk Terminal</li>
+<li>Goods is now an import cargo rather than an export cargo</li>
+<li>added Iron Ore cargo and Iron Ore Mine</li>
+</ul>
+</li>
+<li>Tropic Basic economy<ul>
+<li>new cargos Beans, Nitrates and Vehicle Parts</li>
+<li>added Coffee cargo</li>
+<li>removed Fish, Metal and Petrol cargos</li>
+<li>removed Oil Refinery, Petrol Station and Plastics Plant</li>
+<li>new Chemical Plant, Food Processing Plant, Nitrate Mine and Vehicle Factory industries</li>
+<li>added Bulk Terminal, providing Farm Supplies, solving issue that Farm Supplies were unavailable in this economy before 1927</li>
+<li>added Coffee Estate, replacing Fruit Plantation</li>
+<li>added Arable Farm, replacing Sugar Plantation</li>
+<li>adjusted Port cargos for balance against Bulk Terminal</li>
+</ul>
+</li>
+<li>Introduce some industries earlier for game balance:<ul>
+<li>Fertiliser Plant now 1890</li>
+<li>Machine Shop now 1790, to ensure Engineering Supplies and Farm Supplies more widely available from a sensible date</li>
+<li>Metal Fabrication Plant now 1832</li>
+<li>Petrol Pump now 1900</li>
+<li>Bauxite Mine and Aluminium Plant now 1900</li>
+</ul>
+</li>
+<li>improved Port graphics, now looks clearly different to Fishing Harbour</li>
+<li>improved Recycling Plant with smoke, improved sprites, and two new layouts</li>
+<li>improved Trading Post graphics</li>
+<li>improved Iron Works graphics and layouts</li>
+<li>smoke for Smithy Forge</li>
+<li>explain about Reycling Plant randomisation in docs, keeps catching people out</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Bulk Terminal and Trading Post<ul>
+<li>now easier for players to build (reduced water tile checks)</li>
+<li>construction states fixed</li>
+</ul>
+</li>
+<li>Port construction states fixed</li>
+<li>Mail cargo no longer sets 'is_freight' flag to 1, caused issues with livery for mail cars and was inconsistent with default mail</li>
+<li>bad comparison in magic that figures out whether to use Sugar Cane or Sugar Beet</li>
+</ul>
+<p><em>Translation Updates</em></p>
+<ul>
+<li>Afrikaans</li>
+<li>Catalan</li>
+<li>Chinese (Simplified)</li>
+<li>Chinese (Traditional)</li>
+<li>Finnish</li>
+<li>French</li>
+<li>Latin</li>
+<li>Norwegian (Bokmal)</li>
+<li>Polish</li>
+<li>Russian</li>
+<li>Scottish Gaelic</li>
+<li>Spanish</li>
+<li>Swedish</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>fixed broken Makefile (planetmaker, Alberth)</li>
+<li>better structure for generated files in compile</li>
+<li>use python multiprocessing for faster python templating step</li>
+<li>use the PYTHON variable of the Makefile to refer to the Python interpreter (planetmaker)</li>
+<li>cleanup Makefile.in</li>
+<li>suppress Mercurial default arguments (planetmaker)</li>
+<li>moved docs_src to src/docs_templates, consistent with Iron Horse, Road Hog etc</li>
+<li>removed dead string STR_IND_SUPERMARKET</li>
+<li>docs handle Sugar Beet / Sugarcane climate split better, now counting them as only one cargo</li>
+</ul>
+<p>1.4.0 and 1.4.1 releases weren't shipped, due to an oops with tag names not matching changelog.</p>
+<hr />
+<h2>1.3.0 Release</h2>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>New economy: Heart of Darkness<ul>
+<li>"Mistah Kurtz - he dead"</li>
+<li>22 cargos, including new cargos Coffee, Copper Ore, Diamonds, Rubber and Sugar</li>
+<li>21 industries, including new industries Bulk Terminal, Coffee Estate, Copper Mine, Diamond Mine, Fibre Crop Farm, Rubber Plantation, and Trading Post</li>
+<li>best used with Sub-Tropic climate and many rivers</li>
+</ul>
+</li>
+<li>Pre-1906 graphics for Dredging Site (DanMacK)</li>
+<li>Pre-1928 sprites for Arable Farm (DanMacK)</li>
+<li>Pre-1920 graphics for Machine Shop (DanMacK, Zephyris)</li>
+<li>Pre-1935 graphics for Forest (DanMacK)</li>
+<li>Docs improvements, including making this changelog visible in html as well as markdown text, and multiple fixes</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Hotels were unexpectedly closing</li>
+<li>Correct order for cargo information text at Brewery</li>
+<li>Primary production boost required an incorrect amount of supplies</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Brazilian Portuguese</li>
+<li>Croatian</li>
+<li>Dutch</li>
+<li>Finnish</li>
+<li>German</li>
+<li>Hungarian</li>
+<li>Italian</li>
+<li>Korean</li>
+<li>Norwegian</li>
+<li>Polish</li>
+<li>Portugese</li>
+<li>Russian</li>
+<li>Spanish</li>
+<li>Swedish</li>
+<li>simplified Chinese</li>
+<li>traditional Chinese</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>multiple improvements to compile environment for speed and ease of use</li>
+<li>refactored some industry templating to be saner</li>
+</ul>
+<hr />
+<h2>1.2.0 Release</h2>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>Adjusted Hotels for better game balance:<ul>
+<li>more expensive to build</li>
+<li>lower passenger production</li>
+<li>constructed by prospecting if prospecting is enabled in game settings</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>1.1.0 Release</h2>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>New graphics for Coal Mine (using sprites from DanMacK)</li>
+<li>Many improvements to online docs http://bundles.openttdcoop.org/firs/releases/LATEST/docs</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>German</li>
+</ul>
+<hr />
+<h2>1.0.1 Release</h2>
+<p><em>Fixes</em></p>
+<ul>
+<li>Fix: serious bug with supplies behaviour for primary industries (wrong amounts for supply requirements)</li>
+<li>Fix: missing tile in one layout for Cement Plant</li>
+</ul>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>Updated online docs http://bundles.openttdcoop.org/firs/releases/LATEST/docs</li>
+<li>Changed url for OpenTTD 'Visit Website' to point to online docs</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Simplified Chinese</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>Refactor some CPP templating to use python instead</li>
+<li>Stop declaring a couple of includes in 22 different industry files, declare them once in a template instead</li>
+</ul>
+<hr />
+<h2>1.0.0 Release</h2>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>Feature: it's 1.0.0</li>
+<li>Feature: show pigs at Orchard and Piggery</li>
+<li>Feature: online HTML docs: http://bundles.openttdcoop.org/firs/releases/LATEST/docs</li>
+</ul>
+<hr />
+<h2>0.12.0 Release</h2>
+<p><em>New Features / Changes</em></p>
+<ul>
+<li>HTML docs (unfinished)</li>
+<li>bumped savegame min version to avoid breaking savegames</li>
+</ul>
+<p><em>Codechanges</em></p>
+<ul>
+<li>make Ranch a separate industry to allow for customised graphics in future</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Update: Swedish</li>
+</ul>
+<hr />
+<h2>0.11.0 Release</h2>
+<p>*New Features / Changes *</p>
+<ul>
+<li>Feature: improved construction states for Fishing Harbour and Port</li>
+<li>Change: updated graphics for Smithy Forge (DanMacK)</li>
+<li>Change: adjust base construction costs, FIRS shouldn't be trying to dictate so much what players do with their money</li>
+<li>Change: adjust fund costs of town industries to compensate for changed base costs</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Custom station rating (set by parameter) wasn't used for some cargos</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Update: Dutch</li>
+<li>Update: Hungarian</li>
+<li>Update: US English</li>
+<li>Change: Polish - improve cargo requirements string for Sugar Refinery (wojteks86)</li>
+</ul>
+<hr />
+<h2>0.10.0 Release</h2>
+<p>*New Features / Changes *</p>
+<ul>
+<li>Feature: reworked Basic Temperate economy</li>
+<li>Feature: add Orchard and Piggery industry in Basic Temperate</li>
+<li>Feature: rework Tropic Basic economy</li>
+<li>Feature: add General Store and remove Food Market and Hardware Store for Basic economies (graphics by DanMacK)</li>
+<li>Change: improve map colour for General Store</li>
+<li>Change: add cargo class 'covered' to Clay cargo</li>
+<li>Change: make Scrap Metal more visible in station list and payment rate views by changing colour (Supercheese)</li>
+<li>Change: improve map colour for Glass Works</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Fix: bad date range check for Grain Mill during construction</li>
+<li>Fix: Grain Mill couldn't be built by player at all before 1870, and layout handling on construction for windmill variant was broken</li>
+<li>Fix: use 'crates' instead of 't' for text about Smithy Forge output cargo</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Change: tweaks to various English strings</li>
+<li>Change: remove strings from multiple languages to suppress build warnings</li>
+<li>Fix: Typo in string command of Polish language file.</li>
+<li>Fix: Italian lang file had wrong lang ID</li>
+<li>Change: update Dutch translation</li>
+<li>Change: update Spanish translation</li>
+<li>Change: update Swedish translation</li>
+<li>Change: update Polish translation</li>
+</ul>
+<hr />
+<h2>0.9.x Releases</h2>
+<p><strong>0.9.3</strong></p>
+<ul>
+<li>Fix: capacity multiplier for pax should be 4 not 1</li>
+<li>Fix: Sugar Refinery had outdated string; also extraneous space in another string</li>
+<li>Fix: string for Brewery shouldn't mention Fruit in Arctic Basic economy (no fruit there)</li>
+<li>Change: update Croatian translation</li>
+<li>Change: update Dutch translation</li>
+<li>Change: update German translation</li>
+<li>Change: update Hungarian translation</li>
+<li>Change: update Italian translation</li>
+<li>Change: update Polish translation</li>
+<li>Change: update Spanish translation</li>
+<li>Change: update US English translation</li>
+</ul>
+<p><strong>0.9.2</strong></p>
+<ul>
+<li>Fix: Port too cheap to fund</li>
+<li>Fix: Port doesn't need fund menu text</li>
+<li>Fix: Port wasn't checking 2nd or 3rd delivered cargo for boosts, nor processing them</li>
+</ul>
+<p><strong>0.9.1</strong></p>
+<ul>
+<li>Fix: Steel Mill was producing wrong cargos</li>
+</ul>
+<p><strong>0.9.0</strong></p>
+<ul>
+<li>Feature: add Port industry (Arctic Basic economy only)</li>
+<li>Change: some town based industries no longer set nearby station name (Pikka said it was silly)</li>
+<li>Change: reduce supply requirements for industries using ENSP to 21t and 84t</li>
+<li>Change: adjust supply requirements for industries using FMSP to 14t and 56t</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Fix: wrong produced cargos at Iron Ore Mine and Coal Mine</li>
+<li>Fix: prevent flickering graphics at Fishing Harbour</li>
+<li>Fix: sprites out of place at Cement Works</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Change: update Catalan translation</li>
+<li>Fix: bad control string in german lang file</li>
+<li>Change: plural forms in NML are now decimal like in OpenTTD lang files. Adopt the Slovakian lang file accordingly</li>
+<li>Change: update Hungarian translation</li>
+<li>Add: Slovak language file.</li>
+<li>Change: update US English translation</li>
+</ul>
+<hr />
+<h2>0.8.x Releases</h2>
+<p><strong>0.8.4</strong></p>
+<ul>
+<li>Fix: Portugese translation was broken when it was added (fixed by Foobar)</li>
+<li>Change: vehicles parked at Machine Shop no longer show flashing lights</li>
+</ul>
+<p><strong>0.8.3</strong></p>
+<ul>
+<li>Fix: Sugarcane Plantation had no cargo output in non-Tropic climates</li>
+<li>Change: rename Sugarcane Plantation to Sugar Plantation as it produces Sugar Beet in non-Tropic climates</li>
+<li>Fix: remove Sugar Plantation from main FIRS economy (shouldn't be there)</li>
+<li>Fix: double 'per' in Biorefinery industry window text</li>
+<li>Portugese translation</li>
+<li>Updated translations for Dutch, German and Spanish</li>
+</ul>
+<p><strong>0.8.2</strong></p>
+<ul>
+<li>Fix display of wrong grf name</li>
+</ul>
+<p><strong>0.8.1</strong></p>
+<ul>
+<li>Fix a simple bug with cargo multipliers</li>
+</ul>
+<p><strong>0.8.0</strong></p>
+<p><em>New Features</em></p>
+<ul>
+<li>Reworked supplies mechanic: deliver supplies regularly for temporary production boost</li>
+<li>Economies, selected by parameter:<ul>
+<li>standard FIRS economy (31 cargos, 50 industries)</li>
+<li>a basic economy to suit each climate, designed by DanMacK<ul>
+<li>Temperate Basic (18 cargos, 19 industries)</li>
+<li>Arctic Basic (17 cargos, 19 industries)</li>
+<li>Tropic Basic (18 cargos, 21 industries)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Construction sprites for majority of industries</li>
+<li>Snow for windmill version of Grain Mill</li>
+<li>Fences for Smithy Forge</li>
+<li>Snow for Cement Plant, Brick Works, Recycling Depot, Recycling Plant and Machine Shop</li>
+<li>Snow and fences for Biorefinery and Glass Works, Metal Workshop and Textile Mill</li>
+<li>Snow, fences and smoke for Metal Fabrication Plant, Sugar Refinery and Stockyard</li>
+<li>Snow and smoke for Lumber Yard</li>
+<li>Smoke and animated winding wheels for Bauxite Mine</li>
+<li>Smoke for Lime Kiln</li>
+<li>Lime Kiln shows different crane / loader graphics depending on date</li>
+<li>Dredging Site shows steam or diesel cranes depending on date</li>
+<li>Aluminimum Plant, Fertiliser Plant, Junk Yard, Machine Shop have date-sensitive graphics
+(most new snow sprites have been drawn by DanMacK)</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>Adjusted various primary industry probabilities and clustering behaviours</li>
+<li>Remove parameters that offered primary industry production change / closing as options</li>
+<li>Improved names for station rating algorithm parameter options</li>
+<li>Removed intro date from Furniture Factory for better game balance</li>
+<li>Removed intro date from Paper Mill to improve gameplay balance</li>
+<li>Removed intro date from Stockyard to prevent broken chains</li>
+<li>Removed intro date from Dairy to prevent broken industry chains</li>
+<li>Removed intro date from Sugar Refinery to avoid breaking Sugarcane / Sugar Beet chain for early start dates</li>
+<li>Removed intro date from Textile Mill to avoid breaking cargo chains</li>
+<li>Fishing Harbours no longer required to locate near town - increases probability of being built</li>
+<li>Use 1825 as intro date for Dredging Site for better game balance</li>
+<li>Use 1830 as intro date for Oil Wells and Oil Refinery to improve game balance</li>
+<li>Use 1824 as intro date for Cement Plant to improve game balance</li>
+<li>Improved snow for Brewery, Plastics Plant and Fertiliser Plant</li>
+<li>Improved appearance of Food Market (DanMacK)</li>
+<li>[Makefile] use nml translation report script by Alberth</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Recycling Depot production code was incorrect</li>
+<li>Palette wrong for Quarry</li>
+<li>Bad company colour pixels in Fishing Harbour</li>
+<li>Hotels were too cheap to build</li>
+<li>Hotel tile didn't accept passengers</li>
+<li>Removed STR_EXTRA_FERTILIZER_PLANT from all translations that still used {WEIGHT_SHORT}</li>
+<li>Missing 'chemicals' in Fertiliser Plant extra text string (alberth)</li>
+<li>[Makefile] Adopt NML version check to NML's new version output</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Afrikaans</li>
+<li>Catalan</li>
+<li>Dutch</li>
+<li>Finnish</li>
+<li>French</li>
+<li>Hungarian</li>
+<li>Indonesian</li>
+<li>Romanian</li>
+<li>Spanish</li>
+<li>Swedish</li>
+</ul>
+<hr />
+<h2>0.7.x Releases</h2>
+<p><strong>0.7.5</strong></p>
+<p><em>Fixes</em></p>
+<ul>
+<li>added missing space in fund menu 'Available from' text (OliTTD)</li>
+<li>remove shape checks at Quarry and Clay Pit, thereby enabling terraforming<ul>
+<li>increases chance that these industries appear on steep maps</li>
+</ul>
+</li>
+<li>allow Hotels to build near town instead of forcing to build in town (hotels weren't built often)</li>
+<li>1-tile industry spacing buffer for Sawmill didn't have cb enabled</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>use smaller trees at food market</li>
+<li>improve appearance of Lumber Yard shed</li>
+</ul>
+<p><em>Features</em></p>
+<ul>
+<li>1-tile industry spacing for Steel Mill, Paper Mill, Oil Refinery, Iron Ore Mine, Coal Mine<ul>
+<li>prevents industries touching when built</li>
+</ul>
+</li>
+<li>randomise initial production for industries that produce cargo</li>
+<li>make Forests easier to see with invisibility on - prevents machinery tile being transparent</li>
+<li>maximum construction dates for Iron Works (1901) and Smithy Forge (1948)</li>
+<li>Iron Works and Lumber Yard can now locate on slopes</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>French</li>
+<li>Russian</li>
+<li>Spanish</li>
+</ul>
+<p><strong>0.7.4</strong></p>
+<p><em>Fixes</em></p>
+<ul>
+<li>prevent Windmill sprites jittering when zoomed out</li>
+<li>Metal Fabrication Plant had wrong number of output cargos (Rhamphoryncus)</li>
+<li>don't need to use production cb for town industries (no more 'cargo waiting to be processed')<ul>
+<li>affects Builders Yard, Food Market, Hardware Store, Hotel and Petrol Pump</li>
+</ul>
+</li>
+<li>only one Recycling Depot per town (otherwise population-dependent production is wrong)</li>
+<li>intro date for Recycling Depot was wrong</li>
+<li>adjust various checks for steep slopes when building industry, some fixed, some have been removed</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>improved Cement Plant kiln animation</li>
+<li>Recycling Depot will always try to locate at edge of town, and avoid Recycling Plants</li>
+<li>introduce Biorefinery a little later</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>introduce 'bales' as unit for Wool and Plant Fibres cargos</li>
+<li>educate town industries to locate more sensibly, for better gameplay and appearance<ul>
+<li>improves Builders Yard, Food Market, Hardware Store, Hotel and Petrol Pump</li>
+</ul>
+</li>
+<li>additional layout for Metal Fabrication Plant; improved existing layouts</li>
+<li>add 'Available from' dates for industries that have availability restricted by date</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Dutch</li>
+<li>English US</li>
+<li>English GB</li>
+<li>English AU</li>
+<li>French</li>
+<li>Hungarian</li>
+</ul>
+<p><strong>0.7.3</strong></p>
+<p>Minimum compatible version bumped to r2734 (will break compatibility with older savegames).</p>
+<p><em>Fixes</em></p>
+<ul>
+<li>prevent unwanted closure of secondary industries - untested, but looks right (patch by Radmir)</li>
+<li>Oil Well animation was broken (patch by Terkhen / Yexo)</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>improved appearance of Biorefinery</li>
+<li>improved appearance of Cement Plant</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>station name will match industry name (except for original industries) (patch by Eddi)</li>
+<li>added some explanatory text to readme about small cargo amounts and primary production</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Dutch</li>
+<li>Italian</li>
+<li>French</li>
+<li>Polish</li>
+<li>Spanish</li>
+</ul>
+<p><strong>0.7.2</strong></p>
+<p><em>Fixes</em></p>
+<ul>
+<li>Terraforming under some industries was possible (bug in nml), resulting in garbled graphics</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>improved appearance of Quarry and Clay Pit</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Dutch</li>
+<li>Finnish</li>
+<li>French</li>
+<li>Hungarian, Welsh, Serbian</li>
+<li>Polish</li>
+</ul>
+<p><strong>0.7.1</strong></p>
+<p><em>Fixes</em></p>
+<ul>
+<li>Recycling Depot production was wrong; production now correctly depends on town population</li>
+<li>Dredging Site didn't set AI routes flag, so was invisible to AIs</li>
+<li>Forest should not set the disaster typical for mines</li>
+<li>remove white pixels from Clay Pit</li>
+<li>AlpineClimate grf is only incompatible in the arctic climate</li>
+</ul>
+<p><em>Changes</em></p>
+<ul>
+<li>try to make bouy for Dredging Site more visible</li>
+<li>set description text for station rating algorithm parameter</li>
+<li>improve text for 'no opening' parameter</li>
+<li>improved appearance of Quarry / Clay Pit graphics</li>
+<li>make use of CC_NON_POURABLE cargo class (Scrap Metal, Sugarcane)</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>German</li>
+<li>Russian</li>
+<li>Polish</li>
+</ul>
+<p><strong>0.7.0</strong></p>
+<ul>
+<li>release</li>
+</ul>
+<p><strong>0.7.0-beta1</strong></p>
+<ul>
+<li>first beta release</li>
+<li>intended for translators to update translations</li>
+<li>intended to find bugs prior to 0.7.0 release</li>
+</ul>
+<p>FIRS 0.7 is <em>not</em> savegame compatible with any previous release of FIRS.</p>
+<p>OpenTTD version 1.2.x or newer is required for FIRS 0.7.</p>
+<p><em>What's new in 0.7?</em></p>
+<p>Several hundred changes since FIRS 0.6.4</p>
+<p><em>New / Changed Industries</em></p>
+<ul>
+<li>Hardware Store (accepts Building Materials, Goods)</li>
+<li>Metal Fabrication Plant (available 1852; accepts Metal, Chemicals, produces Building Materials)</li>
+<li>Recycling Depot (produces Recyclables)</li>
+<li>Recycling Plant (accepts Recyclables, produces two random cargos from this list: Building Materials, Chemicals, Engineering Supplies, Farm Supplies, Manufacturing Supplies, Scrap Metal)</li>
+<li>
+<p>Hotel (accepts Food, Alcohol, Passengers, produces Passengers)</p>
+</li>
+<li>
+<p>Food Market now accepts Fruit instead of Goods</p>
+</li>
+<li>Lime Kiln production reduced slightly for better balance of Farm Supplies chain</li>
+<li>Metal Foundry renamed to Metal Workshop, now also accepts Chemicals</li>
+</ul>
+<p><em>Removed Industries</em></p>
+<ul>
+<li>None</li>
+</ul>
+<p><em>New / Changed Cargos</em></p>
+<ul>
+<li>Introduce separate cargo labels for Sugar Beet (SGBT) and Sugarcane (SGCN).  Helps vehicle set authors provide more specific graphics.</li>
+<li>
+<p>set Sugar Cane classes to 'bulk, non-pourable'</p>
+</li>
+<li>
+<p>Introduced Recyclables cargo, produced by Recycling Depot, accepted by Recycling Plant</p>
+</li>
+<li>Scrap Metal now uses label SCMT instead of SCRP (due to changed classes); changed classes for Scrap Metal</li>
+<li>removed 'covered' class from Building Materials cargo, added 'bulk' class</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>Parameter to prevent industry opening during game (useful for scenarios / multi-player challenges)</li>
+<li>Station ratings can be controlled with a parameter (default | improved | always 100%).  Affects amount of cargo distributed to stations by industries.</li>
+<li>Hint on possible locations for farms in the fund menu</li>
+<li>Petrol Pump will locate next to roads, in or out of towns</li>
+<li>Animation (flag) for Dairy</li>
+<li>Animation (pumps) for Oil Wells</li>
+<li>Animation (molten metal) for Iron Works</li>
+<li>Fences for some industries</li>
+<li>Graphics to show metal at Metal Foundry</li>
+<li>Improved appearance of Dairy</li>
+<li>Improved appearance of Arable Farm farmhouse</li>
+<li>Improved appearance of Fruit Plantation farmhouse</li>
+<li>Improved appearance of Furniture Factory</li>
+<li>Improved appearance of Dairy Farm farmhouse</li>
+<li>Improved appearance of Mixed Farm farmhouse</li>
+<li>Improved appearance of Sheep Farm farmhouse</li>
+<li>Improved appearance of Food Market (added trees)</li>
+<li>Improved appearance of Fishing Harbour (updated fishing boats, missing waves)</li>
+<li>Improved appearance of Grain Mill (bakery)</li>
+<li>Improved appearance of Grain Mill (windmill)</li>
+<li>Improved appearance of Glass Works</li>
+<li>Improved appearance of Petrol Pump</li>
+<li>Improved appearance of Sugar Refinery</li>
+<li>Improved appearance of Plastics Plant</li>
+<li>Improved appearance of Textile Mill</li>
+<li>Improved appearance of Machine Shop</li>
+<li>Improved appearance of Oil Wells (building added)</li>
+<li>Additional layout for Sheep Farm</li>
+<li>Additional layouts for reworked Glass Works</li>
+<li>Snow for Aluminium Mill</li>
+<li>Snow for Builders Yard</li>
+<li>Snow for Dairy</li>
+<li>Snow for Food Market</li>
+<li>Snow for Forge</li>
+<li>Snow for Grain Mill (bakery)</li>
+<li>Snow for Hotel</li>
+<li>Snow for Lime Kiln</li>
+<li>Snow for Petrol Pump</li>
+<li>Snow for Sheep Farm</li>
+<li>Better snow support (greeble tile) for Forest</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Allow the player to also place industries where s/he wants in the scenario editor</li>
+<li>Builders Yard had special flag set twice</li>
+<li>Builders Yard construction probability was wrong</li>
+<li>Lime Kiln construction probability was wrong</li>
+<li>Store construction probability was wrong</li>
+<li>Flickering graphics issue solved for Fishing Harbour</li>
+<li>Cargo slot 1E left empty for NARS2 regearing compatibility</li>
+<li>Small amounts of delivered cargo could be 'lost' at secondary industries</li>
+<li>Always draw all ground sprites, so that in transparent mode the correct one is shown</li>
+<li>Industry production info text now uses litres, crates etc appropriately (previously all units were 't')</li>
+<li>Tile offset wrong for Forest above snowline</li>
+</ul>
+<p><em>Internal changes</em></p>
+<ul>
+<li>FIRS converted entirely to nml instead of nfo</li>
+<li>Replaced all pcx graphics files with png files</li>
+<li>Update to grf v8</li>
+</ul>
+<p><em>Translations Updates</em></p>
+<ul>
+<li>Hungarian translation</li>
+<li>Italian translation</li>
+<li>Polish translation</li>
+<li>Russian translation</li>
+<li>Serbian translation</li>
+<li>Welsh translation</li>
+<li>Update Croation translation</li>
+<li>Update Dutch translation</li>
+<li>Update Spanish translation</li>
+<li>Update German translation</li>
+<li>!! translations framework changed, translations require updating for 0.7.x</li>
+<li>Updated script to log missing strings: http://bundles.openttdcoop.org/firs/nightlies/LATEST/log/</li>
+</ul>
+<p><em>Documentation</em></p>
+<ul>
+<li>Add GPL header to all industry files.</li>
+</ul>
+<p><em>Additional Compatibility checks</em></p>
+<ul>
+<li>FIRS 0.7 will report requirement for OTTD 1.2.0 or r22780 or later</li>
+<li>Set FIRS 0.7 as minimum compatible version to prevent breaking savegames using older FIRS</li>
+</ul>
+<hr />
+<h2>0.6.x Releases</h2>
+<p><strong>0.6.4</strong></p>
+<ul>
+<li>Fix Recycling Plant availability (shouldn't have been in game)</li>
+<li>Partial fix for Fishing Harbours building in rivers/canals</li>
+</ul>
+<p><strong>0.6.3</strong></p>
+<ul>
+<li>Updated translations for Czech, Serbian, Spanish</li>
+<li>Use a better 'mud' ground tile for multiple industries</li>
+<li>Lime Kiln uses 'mud' ground tile instead of concrete (looks better)</li>
+<li>Graphical improvements to Clay Pit and Quarry so they fit better with stations</li>
+<li>Slightly reduce Junk Yard initial production for gameplay balance</li>
+<li>Fix Fishing Grounds closing + production (will never change production, never close; does not use FIRS parameters)</li>
+<li>Fix unintended change to base costs for 'stuff with town' and 'fund town' (reset to game defaults)</li>
+<li>Builders Yard can build on steep slopes</li>
+<li>Fix disasters for Dairy Farm (removed unintended explosion disaster)</li>
+<li>Fix disasters for Biorefinery (use airplane disaster instead of helicopter)</li>
+<li>Internal improvements (suppress some non-useful build errors)</li>
+<li>Internal work to restore Recycling Plant (but not available in game for 0.6.3)</li>
+</ul>
+<p><strong>0.6.2</strong></p>
+<ul>
+<li>Changed intro dates for Steel Mill (1873), Junk Yard (1878) and Machine Shop (1870), previously introduced in 1840s - this is for better gameplay balance against Iron Works and Smithy Forge</li>
+<li>Improved appearance of Aluminium Plant (additional layouts, better graphics)</li>
+<li>Improved appearance of Plastics Plant (uses company colours)</li>
+<li>Improved appearance of Brickworks (additional layouts, uses more company colours)</li>
+<li>Improved appearance of Lime Kiln (additional layouts, better graphics,</li>
+<li>Updated translations for Dutch, Serbian, Spanish</li>
+<li>Windmill graphics for Grain Mill (work in progress, DanMacK)</li>
+<li>Sawmills will try to locate close to Forests (with random chance of success) - helps link an industry chain in  games played before fast vehicles are available (Iron Works and Fishing Harbour already do this)</li>
+<li>Fixed missing cargo amount string for Fruit and Vegetables cargo</li>
+<li>Fix (untested) - Plantation and Oil Wells could incorrectly cause a subsidence</li>
+<li>Plastic Plant - removed easter egg ability to hide a truck station in the industry as this allowed town buildings to appear inside the industry</li>
+<li>Sugar Refinery no longer produces Alcohol in Tropic, this wasn't working and is too much work to support</li>
+<li>Updated some credits in documentation</li>
+<li>Multiple internal improvements and code changes with no effect on gameplay</li>
+</ul>
+<p>Between releases:
+- Translators can use a script that indicates what's changed in language files.
+- Added a FIRS page to OpenTTD wiki http://wiki.openttd.org/FIRS</p>
+<p><strong>0.6.1</strong></p>
+<ul>
+<li>New parameter to control maximum distance to coast for water based industries (such as Fishing Grounds, Dredging Site and Oil Platform)</li>
+<li>Improve display of cargo units: more consistent, better translation support, better plurals support  (issue reported by Simons Mith)</li>
+<li>Added cargo icons for Alcohol, Clay, Sugar Beet, Building Materials (DanMacK)</li>
+<li>Improved animation cycle for smoke where used</li>
+<li>Map colour for Iron Works improved</li>
+<li>Iron Works was incorrectly showing intro date in fund menu</li>
+<li>Improve position of Dredging Site sprites</li>
+<li>Dredging Site shows intro date in fund menu</li>
+<li>Fix numerous industries that weren't using placement checks correctly</li>
+<li>Updated translations for German and Serbian</li>
+</ul>
+<p><strong>0.6</strong></p>
+<p>FIRS 0.6 is <em>not</em> savegame compatible with any previous release of FIRS.</p>
+<p><em>What's new in 0.6?</em></p>
+<p>Over 150 changes since FIRS 0.5.5</p>
+<p><em>New Industries</em></p>
+<ul>
+<li>Dredging Site</li>
+<li>Smithy Forge</li>
+<li>Iron Works</li>
+</ul>
+<p><em>Removed Industries</em></p>
+<ul>
+<li>Forge</li>
+</ul>
+<p><em>New / Changed Cargos</em></p>
+<ul>
+<li>Alcohol cargo added (cargo label: BEER) - produced by Brewery, Sugar Refinery (Tropic only) - accepted by Store</li>
+<li>Cargo classes changed for Wool from Piece to Piece + Covered (to match ECS spec)</li>
+<li>Cargo classes changed for Goods from Piece + Express to Express (to match default TTD)</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>Fund / prospecting costs set for all industries</li>
+<li>Production level reduced at Fishing Grounds to better match fishing boat capacity</li>
+<li>Many industries try to locate a minimum distance from industries that supply / accept their cargo</li>
+<li>Improved appearance of Textile Mill</li>
+<li>New graphics for Lime Kiln</li>
+<li>Builders Yard / Petrol Pump - industry window no longer indicates closure in n months (they didn't close anyway)</li>
+<li>Smoke (animated) for many industries</li>
+<li>Rebalanced cargo payment rates for better gameplay</li>
+<li>Game will try and locate Fishing Harbours and Fishing Grounds near each other</li>
+<li>Graphics for Smithy Forge (Yatta / DanMacK)</li>
+<li>Remove large brick building from Sugar Refinery for better appearance</li>
+<li>Furniture Factory graphics now feature lumber and crates</li>
+<li>Cement plant has animation for rotating kiln (not very good, needs improving)</li>
+<li>Brewery uses company colour for flag</li>
+<li>Cargo colours improved (used in cargo payment rate graph, and in industry chain view)</li>
+</ul>
+<p><em>Fixes</em></p>
+<ul>
+<li>Secondary industries were unexpectedly closing even when supplied with cargo (mistake with industry registers)</li>
+<li>Deliveries of Engineering Supplies / Farm Supplies now reported correctly in industry windows</li>
+<li>Mixed Farm now creates fields when built</li>
+<li>Boring minor error with Petrol Pump ground sprite</li>
+<li>Minor errors with Biorefinery tiles</li>
+<li>Flashing red pixel in Lumber Yard</li>
+<li>Boring minor error with Dairy ground sprite</li>
+<li>Changed callback handling to be more explicit in production code (removes one known error now, prevents future errors)</li>
+<li>Update attribution of graphics</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Some translations update</li>
+<li>German language now uses genders</li>
+</ul>
+<p><em>Documentation</em></p>
+<ul>
+<li>Readme now explains what causes primary and secondary industry to close (if closure is enabled)</li>
+</ul>
+<p><em>Additional Compatibility checks</em></p>
+<ul>
+<li>Experts Hard Industries NewGRF will be reported as incompatible</li>
+<li>Citybuilder NewGRFS will be reported as incompatible</li>
+<li>FIRS 0.6 will report requirement for OTTD 1.1.x or r21208 or later</li>
+<li>Set FIRS 0.6 as minimum compatible version to prevent breaking savegames using older FIRS</li>
+</ul>
+<hr />
+<h2>0.5.x Releases</h2>
+<p><strong>0.5.5</strong></p>
+<ul>
+<li>Fixed mistake where secondary industries with two output cargos would produce even with no input cargo</li>
+<li>Fixed mistake with production ratio registers which broke production at many industries</li>
+</ul>
+<p><strong>0.5.4</strong></p>
+<ul>
+<li>Small amounts of delivered cargo no longer 'lost' at secondary industries</li>
+<li>Additional layouts for Biorefinery</li>
+<li>Additional layouts for Lumber Yard</li>
+<li>Fixed wrong characters in Serbian translation</li>
+</ul>
+<p><strong>0.5.3</strong></p>
+<ul>
+<li>Add/update translations: Croatian, Czech, French, German, Serbian, Polish, Russian, Spanish</li>
+<li>Additional layout for Builders Yard</li>
+<li>Graphics for Sugar Refinery (replaces green box)</li>
+<li>Graphics for Biorefinery (replaces red box)</li>
+<li>Fixed Clay Pit colour in Arctic climate</li>
+<li>Fixed Brick Works industry window text (wrong cargos listed)</li>
+<li>Fixed short names for some cargos.</li>
+</ul>
+<p><strong>0.5.2</strong></p>
+<p>Fixes bug with Lime Kiln graphics.  No other changes.</p>
+<p><strong>0.5.1</strong></p>
+<p>Fixes bug with Forge cargo acceptance.  No other changes.</p>
+<p><strong>0.5.0</strong></p>
+<p>First release of FIRS 0.5.</p>
+<p><em>Important</em></p>
+<p>The grfID has changed in FIRS 0.5.  It is <em>not</em> savegame compatible with any previous release of FIRS.</p>
+<p><em>What's new in 0.5?</em></p>
+<p>Over 120 changes since FIRS 0.4</p>
+<p><em>New Industries</em></p>
+<ul>
+<li>Biorefinery (no graphics yet)</li>
+<li>Lime Kiln (graphics unfinished)</li>
+<li>Builders Yard</li>
+<li>Brick Works</li>
+</ul>
+<p><em>New / Changed Cargos</em></p>
+<ul>
+<li>Building Materials</li>
+<li>Plant Fibres (replaces Cotton and available in all climates)</li>
+<li>Stone (formerly Gravel)</li>
+<li>Removed Water cargo.  Tropic towns in Desert require Goods instead.</li>
+</ul>
+<p><em>Removed Industries</em></p>
+<ul>
+<li>Water Plant and Water Tower</li>
+<li>Windmill</li>
+<li>Supermarket</li>
+<li>Retail Market</li>
+<li>Wholesale Market</li>
+<li>Gravel Pit</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>Sand Pit is now Quarry, also produces Stone</li>
+<li>Significantly improved appearance of Quarry (formerly Sand Pit) and Clay Pit</li>
+<li>Primary industries show when maximum production of output cargos is reached (experimental)</li>
+<li>Cement Plant now produces Building Materials cargo instead of Goods</li>
+<li>Paper Mill accepts additional cargos - Clay, Chemicals</li>
+<li>Blacksmith renamed to Forge</li>
+<li>Forge accepts Wood instead of Coal</li>
+<li>Forge produces Engineering Supplies instead of Goods</li>
+<li>Bakery renamed to Grain Mill, intro date removed</li>
+<li>Mixed Farm now produces Plant Fibres instead of Fruit &amp; Vegetables</li>
+<li>Textile Mill accepts additional cargo - Plant Fibres</li>
+<li>Plastics Plant accepts additional cargo - Plant Fibres</li>
+<li>Meat Packer renamed to Stockyard, intro date removed</li>
+<li>Glass Works accepts additional cargo - Chemicals</li>
+<li>Glass Works produces Building Materials instead of Goods</li>
+<li>Lumber Yard intro date removed</li>
+<li>Lumber Yard produces additional cargo - Building Materials</li>
+<li>General Store renamed to Store</li>
+<li>Fishing Grounds production lower to better match vehicles</li>
+<li>Improved minimap colours for various industries</li>
+<li>Bug fixed with Lumber Yard production ratios</li>
+<li>Various industry window texts fixed</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Most translations updated</li>
+</ul>
+<hr />
+<h2>0.4 Release</h2>
+<p><em>Important</em></p>
+<p>The grfID has changed in FIRS 0.4.  It is <em>not</em> savegame compatible with any previous release of FIRS.</p>
+<p><em>What's new in 0.4?</em></p>
+<p>Over 220 changes since FIRS 0.3</p>
+<p><em>New Industries</em></p>
+<ul>
+<li>Blacksmith (no new graphics)</li>
+<li>Windmill (no new graphics)</li>
+<li>Wholesale Market (no new graphics)</li>
+<li>Supermarket (no new graphics)</li>
+<li>Retail Market (no new graphics)</li>
+<li>Sugar refinery (no new graphics)</li>
+</ul>
+<p><em>New Cargos</em></p>
+<ul>
+<li>Sugar Cane / Sugar Beet</li>
+<li>Petrol (formerly Fuel Oil)</li>
+<li>Metal (formerly Steel and Aluminium)</li>
+</ul>
+<p><em>Removed Industries</em></p>
+<ul>
+<li>Cane Plantation (yes, we added it and removed it in the same release!)</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>Several industries can now build on slopes</li>
+<li>Improved forest appearance</li>
+<li>Improved fruit planation appearance</li>
+<li>Improved sand and gravel pit appearance</li>
+<li>Disallow certain industries above snowline</li>
+<li>Disallow certain industries to build in desert</li>
+<li>1 tile buffer between most industries if randomly generated</li>
+<li>Strict OpenTTD version requirements</li>
+<li>Reviewed third party set compatibility: Allow LV4 and recent TTRS</li>
+<li>Blacksmith now also produces farm supplies</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Most translations updated</li>
+<li>Reworked translation framework</li>
+</ul>
+<hr />
+<h2>0.3 Release</h2>
+<p><em>What's new in 0.3?</em></p>
+<p>Over 80 changes since FIRS 0.2</p>
+<p><em>New Industries</em></p>
+<ul>
+<li>Fishing Grounds</li>
+<li>Fishing Harbour</li>
+</ul>
+<p><em>New Cargo</em></p>
+<ul>
+<li>Fish</li>
+</ul>
+<p><em>Removed Industries</em></p>
+<ul>
+<li>Power station</li>
+</ul>
+<p><em>New Features</em></p>
+<ul>
+<li>Set parameters for production increase/decrease and industry closure.</li>
+<li>Industry introduction dates in fund industry window. See how long you have to wait before you can build something.</li>
+<li>New industry production code</li>
+</ul>
+<p><em>Translations</em></p>
+<ul>
+<li>Dutch</li>
+<li>German</li>
+<li>Polish</li>
+</ul>
+<hr />
+<h2>0.2 Release</h2>
+<p><em>Important</em></p>
+<p>The grfID has changed in FIRS 0.2.  It is <em>not</em> savegame compatible with any previous release of FIRS.</p>
+<p><em>What's new in 0.2?</em></p>
+<p>Over 230 changes since FIRS 0.1.2</p>
+<p><em>New Industries</em></p>
+<ul>
+<li>Lumber Yard: produces Engineering Supplies from Lumber and Chemicals</li>
+<li>Gas Station: accepts Food, Goods, Fuel Oil.  Locates in town only.  Graphics are temporary and will be replaced.</li>
+</ul>
+<p>Clustering for primary industries (farms, mines, forests, plantations).  These industries will locate in clusters when constructed by the game during map generation or randomly during gameplay.  Players may build these industries anywhere during gameplay or in scenario editor.  The number of clusters is adjusted to suit the map size.  Thanks Planetmaker, Yexo and Frosch for making this feature possible.*</p>
+<p>Anti-clustering for most secondary industries.  This prevents secondary industries of the same type locating next to each other when constructed by the game during map generation or randomly during gameplay.  Players may build these industries anywhere during gameplay or in scenario editor.*</p>
+<p>*Clustering only available in OpenTTD nightly r19902 or newer.  Will fail gracefully in older versions.</p>
+<p><em>Tweaked numerous production levels</em></p>
+<ul>
+<li>Farms now have much lower production.  Use feeder services or one large station to cover multiple farms.</li>
+<li>Oil wells have much higher production.  Oil was not widely available enough on the map.  More industries now use chemicals, so the oil cargo chain is a little more important in gameplay.</li>
+</ul>
+<p><em>Aluminium Plant production changes</em></p>
+<ul>
+<li>now accepts Chemicals.  Chemicals are a small but important cargo for real-life Aluminium production, and this makes for nice gameplay.</li>
+<li>production is now 'combinatory'.  Delivering more than one cargo type within a month will increase output ratios (a good change requested by Terkhen to balance Aluminium Plant better against the Steel Mill).</li>
+</ul>
+<p>Seriously improved map colours.  Seriously.</p>
+<p>Space out General Stores within a town.  This uses 'prevent conflicting industry types' rather than the FIRS anti-clustering code.  Please report if the effects are weird.</p>
+<p>Rework of strings / translation framework to correctly support UTF-8.  Entirely the work of Planetmaker and Terkhen - thanks.</p>
+<p>Spanish translation updated (Terkhen)</p>
+<p>Reporting of errors in-game is more useful.  Entirely the work of Planetmaker - thanks.</p>
+<p>Fruit and Vegetables cargo had the wrong cargo classes defined.  Now fixed.</p>
+<p>Changes to industry colours:
+- more industries now use industry colours
+- some industry colours are now prevented from appearing because they just suck</p>
+<p>Completely revised graphics and layouts for:
+- Fertiliser Plant
+- Aluminium Plant</p>
+<p>Snow sprites for several more industries (thanks Irwe!)</p>
+<p>Many new / additional layouts for industries including:
+- Arable Farm
+- Bakery
+- Brewery
+- Cement Plant
+- Dairy
+- Furniture Factory
+- Glass Works
+- Junk Yard
+- Machine Shop
+- Plastic Plant
+- Textile Mill</p>
+<p>Improved detail and anti-aliasing of graphics for many industries including:
+- Cement Plant
+- Furniture Factory
+- Machine Shop
+- Textile Mill
+...and more.</p>
+    </div>
+
+    </div>
+    <div style="margin-top:30px; text-align:center; color:#999; padding:5px; background-color:#eee; border-top:solid 1px #ddd; box-shadow: inset 0px 1px 1px #ddd">
+        FIRS, with thanks to all who helped
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

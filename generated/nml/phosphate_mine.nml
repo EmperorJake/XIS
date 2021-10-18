@@ -2866,17 +2866,17 @@ switch (FEAT_INDUSTRIES, SELF, phosphate_mine_check_availability, economy) {
         5: phosphate_mine_check_availability_5;
         3: phosphate_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, phosphate_mine_min_distance_85, industry_distance(85)) {
+    switch (FEAT_INDUSTRIES, SELF, phosphate_mine_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, phosphate_mine_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, phosphate_mine_min_distance_85, industry_distance(85)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        phosphate_mine_min_distance_85;
+        phosphate_mine_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, phosphate_mine_min_distance_73, industry_distance(73)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        phosphate_mine_min_distance_49;
+        phosphate_mine_min_distance_85;
     }
     switch (FEAT_INDUSTRIES, SELF, phosphate_mine_cluster_phosphate_mine,
                 industry_count(phosphate_mine) >= (4 * industry_clusters) &&

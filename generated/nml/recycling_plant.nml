@@ -945,61 +945,61 @@ switch (FEAT_INDUSTRIES, SELF, recycling_plant_check_availability, economy) {
         5: recycling_plant_check_availability_5;
         3: recycling_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_19, industry_distance(19)) {
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_72, industry_distance(72)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_19;
-    }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_72;
-    }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_79, industry_distance(79)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_7;
-    }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_35, industry_distance(35)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_79;
+        recycling_plant_min_distance_34;
     }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_35;
+        recycling_plant_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_24, industry_distance(24)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         recycling_plant_min_distance_36;
     }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_8, industry_distance(8)) {
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_72, industry_distance(72)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         recycling_plant_min_distance_24;
     }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_31, industry_distance(31)) {
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_8;
+        recycling_plant_min_distance_72;
     }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_67, industry_distance(67)) {
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_31;
+        recycling_plant_min_distance_19;
     }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_37, industry_distance(37)) {
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_8, industry_distance(8)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_67;
-    }
-    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_34, industry_distance(34)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_37;
+        recycling_plant_min_distance_79;
     }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_56, industry_distance(56)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_34;
+        recycling_plant_min_distance_8;
+    }
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_37, industry_distance(37)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        recycling_plant_min_distance_56;
+    }
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_67, industry_distance(67)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        recycling_plant_min_distance_37;
+    }
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        recycling_plant_min_distance_67;
+    }
+    switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_35, industry_distance(35)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        recycling_plant_min_distance_31;
     }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_min_distance_23, industry_distance(23)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        recycling_plant_min_distance_56;
+        recycling_plant_min_distance_35;
     }
     switch (FEAT_INDUSTRIES, SELF, recycling_plant_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

@@ -1173,17 +1173,17 @@ switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_check_availability, economy) {
         5: soda_ash_mine_check_availability_5;
         3: soda_ash_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_min_distance_22, industry_distance(22)) {
+    switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        soda_ash_mine_min_distance_22;
+        soda_ash_mine_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_min_distance_86, industry_distance(86)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        soda_ash_mine_min_distance_49;
+        soda_ash_mine_min_distance_22;
     }
     switch (FEAT_INDUSTRIES, SELF, soda_ash_mine_cluster_soda_ash_mine,
                 industry_count(soda_ash_mine) >= (3 * industry_clusters) &&

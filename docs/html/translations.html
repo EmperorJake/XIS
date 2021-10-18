@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title >FIRS Industry Replacement Set</title>
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="static/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link type="text/css" href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript" src="static/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="static/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.tablesorter.widgets.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tablesorter').tablesorter({
+                textExtraction: function(node){
+                            var cell_value = $(node).text();
+                            var sort_value = $(node).data('value');
+                    return (sort_value != undefined) ? sort_value : cell_value;
+                 },
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse"
+         style="border-bottom:1px solid #000; border-radius:0; margin-bottom:0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#firs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="get_started.html">FIRS</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="firs-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                    </li>
+                    <li class="">
+                        <a href="economies.html">Economies</a>
+                    </li>
+                    <li class="">
+                        <a href="cargos.html">Cargos</a>
+                    </li>
+                    <li class="">
+                        <a href="industries.html">Industries</a>
+                    </li>
+                    <li class="">
+                        <a href="code_reference.html">Code Reference</a>
+                    </li>
+                    <li class="">
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="translations.html"><i class="fa fa-globe icon-white"></i> Help Translate FIRS</a>
+                    </li>
+                    <li>
+                        <a href="http://www.tt-forums.net/viewtopic.php?t=41607"><i class="fa fa-comments icon-white"></i> Discuss at TT-Forums.net</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero-unit subhead">
+        <div class="container text-center">
+            <h1 style="font-size:48px; padding-top:30px;">FIRS Industry Replacement Set</h1>
+            <p class="lead">New Industries and Cargos for OpenTTD</p>
+            <br />
+            <br />
+            <script language="JavaScript">
+            function random_img(num_images){
+                var images=new Array(
+                    
+                    'stockyard','aluminium_plant','ammonia_plant','arable_farm','assembly_plant','basic_oxygen_furnace','smithy_forge','orchard_piggery','biorefinery','blast_furnace','brewery','brick_works','bulk_terminal','cement_plant','chemical_plant','clay_pit','coal_mine','coke_oven','copper_refinery','coffee_estate','dairy','dairy_farm','dredging_site','electric_arc_furnace','metal_workshop','builders_yard','mixed_farm','supply_yard','fishing_grounds','fishing_harbour','flour_mill','food_processor','forest','foundry','fruit_plantation','furniture_factory','diamond_mine','general_store','glass_works','food_market','hardware_store','iron_ore_mine','lime_kiln','liquids_terminal','limestone_mine','machine_shop','manganese_mine','vineyard','metal_fabrication_plant','nitrate_mine','herding_coop','oil_refinery','phosphate_mine','oil_wells','paper_mill','peatlands','petrol_pump','plastics_plant','ranch','port','iron_works','quarry','recycling_depot','recycling_plant','rubber_plantation','junk_yard','sheep_farm','slag_grinding_plant','soda_ash_mine','sugar_refinery','textile_mill','lumber_yard','trading_post','tyre_plant','vehicle_dealer','wharf','pyrite_mine','pyrite_smelter'
+                );
+
+                for(i = 0; i < num_images; i++){
+                    var random_image = images.splice(Math.floor(Math.random()*images.length), 1);
+                    document.write('<a href="industries.html#' + random_image + '"><img style="margin-top:-30px; margin-bottom:0;" width="20%" src="static/img/industries/'+ random_image +'.png"></a>')
+                }
+            }
+            random_img(5)
+            </script>
+        </div>
+    </div>
+    
+        
+    
+    <div class="container firs-larger-font">
+        <div>
+    <div class="page-header">
+        <h1>Help Translate FIRS</h1>
+        <p>FIRS has already been translated into multiple languages, and more translations are always welcome.</p>
+        <p>FIRS translations use the <a href="https://translator.openttdcoop.org">Web Translator</a> from #openttdcoop.</p>
+    </div>
+
+    <div id="status">
+        <h2>Current Translation Status</h2>
+        <p>See which languages FIRS has been translated into, and how complete each translation is.</p>
+        <a class="btn btn-info" href="https://translator.openttdcoop.org/project/firs">Translation Status Report</a>
+    </div>
+    <br />
+    <hr />
+
+    <div id="translating">
+        <h2>Get Started with Translating</h2>
+        <h3>1. Get a Web Translator account.</h3>
+        <p>If you don't already have a Web Translator account, you'll need to apply for one.</p>
+        <p><a class="btn btn-info" href="https://translator.openttdcoop.org">Apply to be a Translator</a></p>
+        <br />
+
+        <h3>2. Translate Strings</h3>
+        <p>Change or update FIRS strings to appropriate translations for the language.</p>
+        <p><a class="btn btn-primary btn-large" href="https://translator.openttdcoop.org/project/firs">Translate FIRS</a></p>
+        <br />
+        <h3>3. Have Cake</h3>
+        <p>The translations will be featured in the next release of FIRS.  There's no timetable for releases, it might be days or it might be months, but it <strong>will</strong> be released eventually.</p>
+        <p>Thanks :)</p>
+        <br />
+    </div>
+
+</div>
+    </div>
+    <div style="margin-top:30px; text-align:center; color:#999; padding:5px; background-color:#eee; border-top:solid 1px #ddd; box-shadow: inset 0px 1px 1px #ddd">
+        FIRS, with thanks to all who helped
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

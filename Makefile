@@ -1,6 +1,6 @@
 # Various needed programs
 HG= hg
-PYTHON3 = python3.6
+PYTHON3 = python3
 SED = sed
 ZIP = zip
 
@@ -31,7 +31,7 @@ ifeq ($(strip $(EXPORTED)),no)
   REPO_VERSION = $(word 2,$(REPO_INFO))
 else
   # Exported version, lines below should get modified in 'bundle_src' target
-  REPO_REVISION = 9081
+  REPO_REVISION = 9085
   REPO_VERSION = 0.0
 endif
 

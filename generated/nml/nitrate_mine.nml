@@ -892,17 +892,17 @@ switch (FEAT_INDUSTRIES, SELF, nitrate_mine_check_availability, economy) {
         5: nitrate_mine_check_availability_5;
         3: nitrate_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, nitrate_mine_min_distance_40, industry_distance(40)) {
+    switch (FEAT_INDUSTRIES, SELF, nitrate_mine_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, nitrate_mine_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, nitrate_mine_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        nitrate_mine_min_distance_40;
+        nitrate_mine_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, nitrate_mine_min_distance_65, industry_distance(65)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        nitrate_mine_min_distance_49;
+        nitrate_mine_min_distance_40;
     }
     switch (FEAT_INDUSTRIES, SELF, nitrate_mine_cluster_nitrate_mine,
                 industry_count(nitrate_mine) >= (3 * industry_clusters) &&
