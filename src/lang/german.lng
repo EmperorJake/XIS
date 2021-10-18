@@ -115,8 +115,8 @@ STR_CARGO_UNIT_MANGANESE                                                        
 STR_CARGO_UNIT_METAL                                                            :{WEIGHT} Aluminium
 STR_CARGO_UNIT_MILK                                                             :{VOLUME} Milch
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} Nickel
-STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} Nitrate
-STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} S{P 0 ack äcke} Nüsse
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} Kalisalz
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} S{P 0 ack äcke}  Nüsse
 STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} Verpackungsmaterial
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} Biomasse
 STR_CARGO_UNIT_PETROL                                                           :{VOLUME} Treibstoff
@@ -333,6 +333,7 @@ STR_FUND_AVAILABLE_UNTIL                                                        
 
 STR_TOWN                                                                        :{STRING}
 STR_STATION                                                                     :{STRING} {STRING}
+
 
 STR_STATION_ANIMALS                                                             :Viehmarkt
 STR_STATION_AUTOMOTIVE                                                          :Fahrzeugbau
