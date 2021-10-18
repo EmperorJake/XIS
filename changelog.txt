@@ -26,3 +26,12 @@ Change: allow more industries to be placed on desert
 Change: OTIS to incompatible GRFs
 
 Translations: Japanese, German, Czech, Chinese
+
+0.6.3 2021-10-18
+
+Translation updates: German, Japanese
+
+Fix: Compile errors caused by storing registers
+Fix: Compile errors due to file endings
+
+Update NoFields to latest commit
