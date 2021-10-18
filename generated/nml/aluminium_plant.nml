@@ -279,7 +279,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_2_0_snow(0);
@@ -292,7 +292,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -306,7 +306,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_2_1_snow(0);
@@ -319,7 +319,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -333,7 +333,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_2_2_snow(0);
@@ -346,7 +346,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_2 {
@@ -393,7 +393,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_3_0_snow(0);
@@ -406,7 +406,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -420,7 +420,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_3_1_snow(0);
@@ -433,7 +433,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -447,7 +447,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_3_2_snow(0);
@@ -460,7 +460,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_3 {
@@ -507,7 +507,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_4_0_snow(0);
@@ -520,7 +520,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -534,7 +534,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_4_1_snow(0);
@@ -547,7 +547,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -561,7 +561,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_4_2_snow(0);
@@ -574,7 +574,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_4 {
@@ -621,7 +621,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_5_0_snow(0);
@@ -634,7 +634,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -648,7 +648,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_5_1_snow(0);
@@ -661,7 +661,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -675,7 +675,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_5_2_snow(0);
@@ -688,7 +688,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                 // smoke sprites
                 building {
@@ -774,7 +774,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_6_0_snow(0);
@@ -787,7 +787,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -801,7 +801,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_6_1_snow(0);
@@ -814,7 +814,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -828,7 +828,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_6_2_snow(0);
@@ -841,7 +841,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                 // fences SE
                 building {
@@ -914,7 +914,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_7_0_snow(0);
@@ -927,7 +927,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -941,7 +941,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_7_1_snow(0);
@@ -954,7 +954,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -968,7 +968,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_7_2_snow(0);
@@ -981,7 +981,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_7 {
@@ -1028,7 +1028,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_8_0_snow(0);
@@ -1041,7 +1041,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1055,7 +1055,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_8_1_snow(0);
@@ -1068,7 +1068,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1082,7 +1082,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_8_2_snow(0);
@@ -1095,7 +1095,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_8 {
@@ -1142,7 +1142,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_9_0_snow(0);
@@ -1155,7 +1155,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1169,7 +1169,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_9_1_snow(0);
@@ -1182,7 +1182,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1196,7 +1196,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_9_2_snow(0);
@@ -1209,7 +1209,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_9 {
@@ -1256,7 +1256,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_10_0_snow(0);
@@ -1269,7 +1269,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1283,7 +1283,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_10_1_snow(0);
@@ -1296,7 +1296,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1310,7 +1310,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_10_2_snow(0);
@@ -1323,7 +1323,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_10 {
@@ -1370,7 +1370,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_11_0_snow(0);
@@ -1383,7 +1383,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1397,7 +1397,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_11_1_snow(0);
@@ -1410,7 +1410,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1424,7 +1424,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_11_2_snow(0);
@@ -1437,7 +1437,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_11 {
@@ -1484,7 +1484,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_12_0_snow(0);
@@ -1497,7 +1497,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1511,7 +1511,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_12_1_snow(0);
@@ -1524,7 +1524,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1538,7 +1538,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: aluminium_plant_spriteset_12_2_snow(0);
@@ -1551,7 +1551,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout aluminium_plant_spritelayout_concrete {
@@ -1631,7 +1631,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: 2054;
@@ -1644,34 +1644,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
-                    }
-                    // buildings (snow aware)
-                    building {
-                        sprite: 2054;
-                        recolour_mode: RECOLOUR_REMAP;
-                        palette: PALETTE_USE_DEFAULT;
-                        xoffset: 0;
-                        yoffset: 0;
-                        zoffset: 0;
-                        xextent: 16;
-                        yextent: 16;
-                        zextent: 16;
-                        always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
-                    }
-                    building {
-                        sprite: 2054;
-                        recolour_mode: RECOLOUR_REMAP;
-                        palette: PALETTE_USE_DEFAULT;
-                        xoffset: 0;
-                        yoffset: 0;
-                        zoffset: 0;
-                        xextent: 16;
-                        yextent: 16;
-                        zextent: 16;
-                        always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1685,7 +1658,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: 2054;
@@ -1698,7 +1671,34 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(116));
+                    }
+                    // buildings (snow aware)
+                    building {
+                        sprite: 2054;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(125));
+                    }
+                    building {
+                        sprite: 2054;
+                        recolour_mode: RECOLOUR_REMAP;
+                        palette: PALETTE_USE_DEFAULT;
+                        xoffset: 0;
+                        yoffset: 0;
+                        zoffset: 0;
+                        xextent: 16;
+                        yextent: 16;
+                        zextent: 16;
+                        always_draw: 0;
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, aluminium_plant_industry_layout_1_graphics_switch, relative_pos) {
@@ -1788,29 +1788,29 @@
     switch(FEAT_INDUSTRYTILES, SELF, aluminium_plant_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1942,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1942 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1980,
-                                 254) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(254),
-                                 254)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(254), 
-                                 244) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(254), 
-                                 254)
+                                 126) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(126),
+                                 126)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(126), 
+                                 116) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(126), 
+                                 126)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1980,
-                                 253) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(253),
-                                 253)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(253), 
-                                 243) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(253), 
-                                 253)
+                                 125) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(125),
+                                 125)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(125), 
+                                 115) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(125), 
+                                 125)
             ]) {
         aluminium_plant_industry_construction_state_graphics_switch; // default
     }

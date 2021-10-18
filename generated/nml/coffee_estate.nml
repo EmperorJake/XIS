@@ -105,7 +105,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_2_0_snow(0);
@@ -118,7 +118,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coffee_estate_spritelayout_frac_columns {
@@ -165,7 +165,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_3_0_snow(0);
@@ -178,7 +178,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coffee_estate_spritelayout_drop_tower_and_thin_chimney {
@@ -225,7 +225,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_4_0_snow(0);
@@ -238,7 +238,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -298,7 +298,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_5_0_snow(0);
@@ -311,7 +311,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -410,7 +410,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_6_0_snow(0);
@@ -423,7 +423,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -522,7 +522,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_7_0_snow(0);
@@ -535,7 +535,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coffee_estate_spritelayout_vertical_tanks {
@@ -582,7 +582,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_8_0_snow(0);
@@ -595,7 +595,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coffee_estate_spritelayout_barrels {
@@ -642,7 +642,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coffee_estate_spriteset_9_0_snow(0);
@@ -655,7 +655,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, coffee_estate_industry_layout_1_graphics_switch, relative_pos) {
@@ -782,13 +782,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, coffee_estate_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         coffee_estate_industry_construction_state_graphics_switch; // default
     }
@@ -1453,9 +1453,13 @@ switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_43;
     }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_1, industry_distance(1)) {
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_45;
+    }
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_1, industry_distance(1)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        coffee_estate_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1473,13 +1477,9 @@ switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_46;
     }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_60;
-    }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_7;
+        coffee_estate_min_distance_60;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_50, industry_distance(50)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
