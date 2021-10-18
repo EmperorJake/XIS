@@ -51,7 +51,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: (terrain_type == TILETYPE_SNOW) ? 1450 : 1450;
@@ -64,7 +64,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout hotel_spritelayout_2 {
@@ -111,7 +111,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: (terrain_type == TILETYPE_SNOW) ? 1453 : 1453;
@@ -124,7 +124,7 @@
                         yextent: 16;
                         zextent: 16;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, hotel_industry_layout_graphics_switch, relative_pos) {
@@ -145,13 +145,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, hotel_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         hotel_industry_construction_state_graphics_switch; // default
     }
@@ -1219,45 +1219,45 @@ switch (FEAT_INDUSTRIES, SELF, hotel_check_availability, economy) {
         5: hotel_check_availability_5;
         3: hotel_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_19, industry_distance(19)) {
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_35, industry_distance(35)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_19;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_36, industry_distance(36)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_35;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_31, industry_distance(31)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_36;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_37, industry_distance(37)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_31;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_34, industry_distance(34)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_37;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_56, industry_distance(56)) {
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         hotel_min_distance_34;
     }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        hotel_min_distance_56;
-    }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_29, industry_distance(29)) {
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         hotel_min_distance_52;
     }
-    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_36;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         hotel_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_56, industry_distance(56)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_19;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_37, industry_distance(37)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_56;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_37;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_35, industry_distance(35)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, hotel_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        hotel_min_distance_35;
     }
     switch (FEAT_INDUSTRIES, SELF, hotel_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

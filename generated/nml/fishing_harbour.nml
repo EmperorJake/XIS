@@ -471,7 +471,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_7_0_snow(0);
@@ -484,7 +484,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -498,7 +498,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -511,7 +511,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -525,7 +525,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -538,7 +538,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_1 {
@@ -625,7 +625,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -638,7 +638,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_3 {
@@ -845,7 +845,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -858,7 +858,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -872,7 +872,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -885,7 +885,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -899,7 +899,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -912,7 +912,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -926,7 +926,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -939,7 +939,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_4 {
@@ -1146,7 +1146,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -1159,7 +1159,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1173,7 +1173,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_4_0_snow(0);
@@ -1186,7 +1186,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1200,7 +1200,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -1213,7 +1213,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1227,7 +1227,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -1240,7 +1240,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_5 {
@@ -1447,7 +1447,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_5_0_snow(0);
@@ -1460,7 +1460,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1474,7 +1474,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_4_0_snow(0);
@@ -1487,7 +1487,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1501,7 +1501,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -1514,7 +1514,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1528,7 +1528,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -1541,7 +1541,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_6 {
@@ -1748,7 +1748,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_5_0_snow(0);
@@ -1761,7 +1761,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1775,7 +1775,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -1788,7 +1788,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1802,7 +1802,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -1815,7 +1815,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1829,7 +1829,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -1842,7 +1842,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_7 {
@@ -2009,7 +2009,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_6_0_snow(0);
@@ -2022,7 +2022,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2036,7 +2036,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -2049,7 +2049,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2063,7 +2063,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -2076,7 +2076,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_1_8 {
@@ -2283,7 +2283,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_6_0_snow(0);
@@ -2296,7 +2296,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2310,7 +2310,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_7_0_snow(0);
@@ -2323,7 +2323,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2337,7 +2337,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -2350,7 +2350,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2364,7 +2364,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -2377,7 +2377,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_1 {
@@ -2544,7 +2544,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_7_0_snow(0);
@@ -2557,7 +2557,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2571,7 +2571,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -2584,7 +2584,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2598,7 +2598,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -2611,7 +2611,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_2 {
@@ -2738,7 +2738,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -2751,7 +2751,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2765,7 +2765,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -2778,7 +2778,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_3 {
@@ -2985,7 +2985,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -2998,7 +2998,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3012,7 +3012,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -3025,7 +3025,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3039,7 +3039,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -3052,7 +3052,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3066,7 +3066,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -3079,7 +3079,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_4 {
@@ -3286,7 +3286,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -3299,7 +3299,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3313,7 +3313,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_4_0_snow(0);
@@ -3326,7 +3326,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3340,7 +3340,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -3353,7 +3353,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3367,7 +3367,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -3380,7 +3380,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_5 {
@@ -3587,7 +3587,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_5_0_snow(0);
@@ -3600,7 +3600,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3614,7 +3614,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_4_0_snow(0);
@@ -3627,7 +3627,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3641,7 +3641,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -3654,7 +3654,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3668,7 +3668,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -3681,7 +3681,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_6 {
@@ -3888,7 +3888,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_5_0_snow(0);
@@ -3901,7 +3901,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3915,7 +3915,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -3928,7 +3928,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3942,7 +3942,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -3955,7 +3955,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3969,7 +3969,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -3982,7 +3982,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_7 {
@@ -4149,7 +4149,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_6_0_snow(0);
@@ -4162,7 +4162,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4176,7 +4176,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -4189,7 +4189,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4203,7 +4203,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -4216,7 +4216,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_land_tile_2_8 {
@@ -4423,7 +4423,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_6_0_snow(0);
@@ -4436,7 +4436,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4450,7 +4450,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_7_0_snow(0);
@@ -4463,7 +4463,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4477,7 +4477,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -4490,7 +4490,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4504,7 +4504,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -4517,7 +4517,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_1 {
@@ -4684,7 +4684,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -4697,7 +4697,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4711,7 +4711,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -4724,7 +4724,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4738,7 +4738,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -4751,7 +4751,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_2 {
@@ -4918,7 +4918,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -4931,7 +4931,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4945,7 +4945,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -4958,7 +4958,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -4972,7 +4972,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_20_0_snow(0);
@@ -4985,7 +4985,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_11 {
@@ -5152,7 +5152,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -5165,7 +5165,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5179,7 +5179,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -5192,7 +5192,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5206,7 +5206,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -5219,7 +5219,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_12 {
@@ -5386,7 +5386,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -5399,7 +5399,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5413,7 +5413,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -5426,7 +5426,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5440,7 +5440,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -5453,7 +5453,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_13 {
@@ -5660,7 +5660,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -5673,7 +5673,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5687,7 +5687,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -5700,7 +5700,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5714,7 +5714,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -5727,7 +5727,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -5741,7 +5741,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_8_0_snow(0);
@@ -5754,7 +5754,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_21 {
@@ -5841,7 +5841,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_12_0_snow(0);
@@ -5854,7 +5854,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_22 {
@@ -5941,7 +5941,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_13_0_snow(0);
@@ -5954,7 +5954,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_23 {
@@ -6041,7 +6041,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_14_0_snow(0);
@@ -6054,7 +6054,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_24 {
@@ -6141,7 +6141,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_15_0_snow(0);
@@ -6154,7 +6154,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_25 {
@@ -6241,7 +6241,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_15_0_snow(0);
@@ -6254,7 +6254,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_26 {
@@ -6341,7 +6341,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_16_0_snow(0);
@@ -6354,7 +6354,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_27 {
@@ -6441,7 +6441,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_17_0_snow(0);
@@ -6454,7 +6454,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_28 {
@@ -6661,7 +6661,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -6674,7 +6674,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -6688,7 +6688,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -6701,7 +6701,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -6715,7 +6715,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -6728,7 +6728,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -6742,7 +6742,7 @@
                         yextent: 12;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_9_0_snow(0);
@@ -6755,7 +6755,7 @@
                         yextent: 12;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_29 {
@@ -6962,7 +6962,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -6975,7 +6975,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -6989,7 +6989,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -7002,7 +7002,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -7016,7 +7016,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -7029,7 +7029,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -7043,7 +7043,7 @@
                         yextent: 12;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_11_0_snow(0);
@@ -7056,7 +7056,7 @@
                         yextent: 12;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_30 {
@@ -7263,7 +7263,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_2_0_snow(0);
@@ -7276,7 +7276,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -7290,7 +7290,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_3_0_snow(0);
@@ -7303,7 +7303,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -7317,7 +7317,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_1_0_snow(0);
@@ -7330,7 +7330,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -7344,7 +7344,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_10_0_snow(0);
@@ -7357,7 +7357,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_31 {
@@ -7444,7 +7444,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_18_0_snow(0);
@@ -7457,7 +7457,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_32 {
@@ -7544,7 +7544,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: fishing_harbour_spriteset_19_0_snow(0);
@@ -7557,7 +7557,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 1;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout fishing_harbour_spritelayout_null {
@@ -7726,13 +7726,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, fishing_harbour_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         fishing_harbour_industry_construction_state_graphics_switch; // default
     }
@@ -8283,76 +8283,76 @@ switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_availability, economy) {
         5: fishing_harbour_check_availability_5;
         3: fishing_harbour_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_58;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_46, industry_distance(46)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_14;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_46;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_39, industry_distance(39)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_60;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_69, industry_distance(69)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_39;
-    }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_69;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_32, industry_distance(32)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_2;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_32;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_66, industry_distance(66)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_52;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_23, industry_distance(23)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_66;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_59, industry_distance(59)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_23;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_40, industry_distance(40)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_59;
-    }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_61, industry_distance(61)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_40;
+        fishing_harbour_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_61;
     }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_69, industry_distance(69)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_40, industry_distance(40)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_69;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_40;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_32, industry_distance(32)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_59, industry_distance(59)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_32;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_52, industry_distance(52)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_59;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_66, industry_distance(66)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_66;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_60;
+    }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_industry_max_distance_2, industry_distance(32)) {
-        0 .. 72: fishing_harbour_min_distance_22;
+        0 .. 72: fishing_harbour_min_distance_58;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_max_distance_32, industry_count(32)) {
-        0: fishing_harbour_min_distance_22;
+        0: fishing_harbour_min_distance_58;
         fishing_harbour_check_industry_max_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_31, industry_distance(31)) {

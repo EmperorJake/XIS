@@ -123,7 +123,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_2_0_snow(0);
@@ -136,7 +136,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_central_assembly_hall {
@@ -183,7 +183,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_3_0_snow(0);
@@ -196,7 +196,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_front_assembly_hall_windows {
@@ -243,7 +243,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_4_0_snow(0);
@@ -256,7 +256,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_front_assembly_hall_doors {
@@ -303,7 +303,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_5_0_snow(0);
@@ -316,7 +316,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_goods_in_1 {
@@ -363,7 +363,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_6_0_snow(0);
@@ -376,7 +376,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_offices {
@@ -423,7 +423,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_8_0_snow(0);
@@ -436,7 +436,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_tyres {
@@ -483,7 +483,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_9_0_snow(0);
@@ -496,7 +496,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_vehicles_1 {
@@ -543,7 +543,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_10_0_snow(0);
@@ -556,7 +556,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_vehicles_2 {
@@ -603,7 +603,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_11_0_snow(0);
@@ -616,7 +616,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout assembly_plant_spritelayout_vehicles_3 {
@@ -663,7 +663,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: assembly_plant_spriteset_12_0_snow(0);
@@ -676,7 +676,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, assembly_plant_industry_layout_1_graphics_switch, relative_pos) {
@@ -713,13 +713,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, assembly_plant_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         assembly_plant_industry_construction_state_graphics_switch; // default
     }
@@ -1181,49 +1181,49 @@ switch (FEAT_INDUSTRIES, SELF, assembly_plant_check_availability, economy) {
         5: assembly_plant_check_availability_5;
         3: assembly_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_42, industry_distance(42)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_70;
-    }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_33, industry_distance(33)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_63, industry_distance(63)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_33;
-    }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_42, industry_distance(42)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_63;
-    }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_69, industry_distance(69)) {
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         assembly_plant_min_distance_42;
     }
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_33, industry_distance(33)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        assembly_plant_min_distance_70;
+    }
     switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_69;
+        assembly_plant_min_distance_33;
     }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_81, industry_distance(81)) {
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         assembly_plant_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_81;
+        assembly_plant_min_distance_18;
     }
-    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_9, industry_distance(9)) {
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_69, industry_distance(69)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         assembly_plant_min_distance_22;
     }
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_63, industry_distance(63)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        assembly_plant_min_distance_69;
+    }
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_9, industry_distance(9)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        assembly_plant_min_distance_63;
+    }
+    switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        assembly_plant_min_distance_9;
+    }
     switch (FEAT_INDUSTRIES, SELF, assembly_plant_min_distance_62, industry_distance(62)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        assembly_plant_min_distance_9;
+        assembly_plant_min_distance_81;
     }
     switch (FEAT_INDUSTRIES, SELF, assembly_plant_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

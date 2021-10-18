@@ -87,7 +87,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: textile_mill_spriteset_2_0_snow(0);
@@ -100,7 +100,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -160,7 +160,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: textile_mill_spriteset_3_0_snow(0);
@@ -173,7 +173,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout textile_mill_spritelayout_3 {
@@ -220,7 +220,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: textile_mill_spriteset_4_0_snow(0);
@@ -233,7 +233,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout textile_mill_spritelayout_4 {
@@ -280,7 +280,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: textile_mill_spriteset_5_0_snow(0);
@@ -293,7 +293,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout textile_mill_spritelayout_5 {
@@ -340,7 +340,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: textile_mill_spriteset_6_0_snow(0);
@@ -353,7 +353,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout textile_mill_spritelayout_6 {
@@ -473,13 +473,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, textile_mill_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         textile_mill_industry_construction_state_graphics_switch; // default
     }
@@ -981,69 +981,69 @@ switch (FEAT_INDUSTRIES, SELF, textile_mill_check_availability, economy) {
         5: textile_mill_check_availability_5;
         3: textile_mill_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_48, industry_distance(48)) {
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_30, industry_distance(30)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_21, industry_distance(21)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_48;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_82, industry_distance(82)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_21;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_30, industry_distance(30)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_82;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_57, industry_distance(57)) {
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         textile_mill_min_distance_30;
     }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_57;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_68, industry_distance(68)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_60;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_39, industry_distance(39)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_68;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_38, industry_distance(38)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_39;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_27, industry_distance(27)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_38;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_27;
-    }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_61, industry_distance(61)) {
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_21, industry_distance(21)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         textile_mill_min_distance_52;
     }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_68, industry_distance(68)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_21;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_82, industry_distance(82)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_68;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_48, industry_distance(48)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_82;
+    }
     switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_62, industry_distance(62)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_61;
+        textile_mill_min_distance_48;
     }
     switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         textile_mill_min_distance_62;
     }
-    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_13, industry_distance(13)) {
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         textile_mill_min_distance_51;
     }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_13, industry_distance(13)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_13;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_27, industry_distance(27)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_38, industry_distance(38)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        textile_mill_min_distance_27;
+    }
     switch (FEAT_INDUSTRIES, SELF, textile_mill_min_distance_42, industry_distance(42)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        textile_mill_min_distance_13;
+        textile_mill_min_distance_38;
     }
     switch (FEAT_INDUSTRIES, SELF, textile_mill_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

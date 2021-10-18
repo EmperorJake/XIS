@@ -105,7 +105,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_0_0_snow(1*(animation_frame % 3));
@@ -118,7 +118,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coal_mine_spritelayout_2 {
@@ -165,7 +165,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_1_0_snow(0);
@@ -178,7 +178,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coal_mine_spritelayout_3 {
@@ -225,7 +225,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_2_0_snow(0);
@@ -238,7 +238,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coal_mine_spritelayout_4 {
@@ -285,7 +285,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_3_0_snow(0);
@@ -298,7 +298,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coal_mine_spritelayout_5 {
@@ -345,7 +345,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_4_0_snow(0);
@@ -358,7 +358,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout coal_mine_spritelayout_6 {
@@ -405,7 +405,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: coal_mine_spriteset_5_0_snow(0);
@@ -418,7 +418,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, coal_mine_industry_layout_1_graphics_switch, relative_pos) {
@@ -509,13 +509,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, coal_mine_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         coal_mine_industry_construction_state_graphics_switch; // default
     }
@@ -792,21 +792,21 @@ switch (FEAT_INDUSTRIES, SELF, coal_mine_check_availability, economy) {
         5: coal_mine_check_availability_5;
         3: coal_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_85, industry_distance(85)) {
+    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_78, industry_distance(78)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coal_mine_min_distance_85;
+        coal_mine_min_distance_78;
     }
-    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_78, industry_distance(78)) {
+    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_85, industry_distance(85)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coal_mine_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coal_mine_min_distance_78;
+        coal_mine_min_distance_85;
     }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_0, industry_distance(0)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;

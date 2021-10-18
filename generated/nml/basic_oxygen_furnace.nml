@@ -126,7 +126,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_6_0_snow(0);
@@ -139,7 +139,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout basic_oxygen_furnace_spritelayout_crane {
@@ -186,7 +186,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_1_0_snow(0);
@@ -199,7 +199,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout basic_oxygen_furnace_spritelayout_manganese_1 {
@@ -246,7 +246,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_2_0_snow(0);
@@ -259,7 +259,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout basic_oxygen_furnace_spritelayout_air_plant_2 {
@@ -306,7 +306,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_3_0_snow(0);
@@ -319,7 +319,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout basic_oxygen_furnace_spritelayout_furnace_1 {
@@ -366,7 +366,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_4_0_snow(0);
@@ -379,7 +379,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -439,7 +439,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_5_0_snow(0);
@@ -452,7 +452,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout basic_oxygen_furnace_spritelayout_office {
@@ -499,7 +499,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: basic_oxygen_furnace_spriteset_7_0_snow(0);
@@ -512,7 +512,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, basic_oxygen_furnace_industry_layout_1_graphics_switch, relative_pos) {
@@ -602,13 +602,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, basic_oxygen_furnace_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         basic_oxygen_furnace_industry_construction_state_graphics_switch; // default
     }
@@ -1128,40 +1128,40 @@ switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_check_availability, economy)
         5: basic_oxygen_furnace_check_availability_5;
         3: basic_oxygen_furnace_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_55, industry_distance(55)) {
+    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        basic_oxygen_furnace_min_distance_55;
-    }
-    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_2, industry_distance(2)) {
+    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_80, industry_distance(80)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         basic_oxygen_furnace_min_distance_7;
     }
+    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_75, industry_distance(75)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        basic_oxygen_furnace_min_distance_80;
+    }
     switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        basic_oxygen_furnace_min_distance_2;
+        basic_oxygen_furnace_min_distance_75;
     }
     switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         basic_oxygen_furnace_min_distance_1;
     }
-    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_75, industry_distance(75)) {
+    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         basic_oxygen_furnace_min_distance_9;
     }
-    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_80, industry_distance(80)) {
+    switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        basic_oxygen_furnace_min_distance_75;
+        basic_oxygen_furnace_min_distance_55;
     }
     switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_check_industry_max_distance_2, industry_distance(7)) {
-        0 .. 72: basic_oxygen_furnace_min_distance_80;
+        0 .. 72: basic_oxygen_furnace_min_distance_2;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_max_distance_7, industry_count(7)) {
-        0: basic_oxygen_furnace_min_distance_80;
+        0: basic_oxygen_furnace_min_distance_2;
         basic_oxygen_furnace_check_industry_max_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, basic_oxygen_furnace_min_distance_77, industry_distance(77)) {

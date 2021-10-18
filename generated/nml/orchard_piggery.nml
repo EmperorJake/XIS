@@ -794,58 +794,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_2 {
                 ground {
@@ -926,32 +874,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_20_0(0);
@@ -964,7 +886,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_20_0_snow(0);
@@ -977,34 +899,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_4 {
                 ground {
@@ -1085,58 +981,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_5 {
                 ground {
@@ -1217,32 +1061,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_19_0(1*(animation_frame > 32) ? (animation_frame % 12) : 0);
@@ -1255,7 +1073,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_19_0_snow(1*(animation_frame > 32) ? (animation_frame % 12) : 0);
@@ -1268,7 +1086,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1282,7 +1100,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_18_0_snow(0);
@@ -1295,34 +1113,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_6 {
                 ground {
@@ -1403,58 +1195,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_7 {
                 ground {
@@ -1535,58 +1275,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_8 {
                 ground {
@@ -1667,32 +1355,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_1_0(1*(animation_frame < 36) ? (animation_frame % 12) : 0);
@@ -1705,7 +1367,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_1_0_snow(1*(animation_frame < 36) ? (animation_frame % 12) : 0);
@@ -1718,34 +1380,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_10 {
                 ground {
@@ -1826,58 +1462,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_11 {
                 ground {
@@ -1958,58 +1542,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_12 {
                 ground {
@@ -2090,58 +1622,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_19 {
                 ground {
@@ -2222,58 +1702,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_20 {
                 ground {
@@ -2354,32 +1782,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_21_0(0);
@@ -2392,7 +1794,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_21_0_snow(0);
@@ -2405,34 +1807,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_22 {
                 ground {
@@ -2513,32 +1889,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_22_0(0);
@@ -2551,7 +1901,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_22_0_snow(0);
@@ -2564,34 +1914,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_23 {
                 ground {
@@ -2672,32 +1996,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_23_0(0);
@@ -2710,7 +2008,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_23_0_snow(0);
@@ -2723,34 +2021,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_24 {
                 ground {
@@ -2831,32 +2103,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_24_0(0);
@@ -2869,7 +2115,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_24_0_snow(0);
@@ -2882,34 +2128,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_39 {
                 ground {
@@ -2990,32 +2210,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_28_0(0);
@@ -3028,7 +2222,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_28_0_snow(0);
@@ -3041,34 +2235,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_40 {
                 ground {
@@ -3149,32 +2317,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_29_0(0);
@@ -3187,7 +2329,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_29_0_snow(0);
@@ -3200,34 +2342,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         spritelayout orchard_piggery_spritelayout_41 {
                 ground {
@@ -3308,32 +2424,6 @@
                 hide_sprite: (!LOAD_TEMP(13));
                 always_draw: 1;
             }
-                // fences NE
-                building {
-                    sprite: 1302 + LOAD_TEMP(1);
-                    hide_sprite: (LOAD_TEMP(9) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(5) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences NW
-                building {
-                    sprite: 1301 + LOAD_TEMP(2);
-                    hide_sprite: (LOAD_TEMP(10) == 0);
-                    xoffset:  0;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(6) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
                     // buildings (snow aware)
                     building {
                         sprite: orchard_piggery_spriteset_30_0(0);
@@ -3346,7 +2436,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: orchard_piggery_spriteset_30_0_snow(0);
@@ -3359,34 +2449,8 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
-                // fences SE
-                building {
-                    sprite: 1301 + LOAD_TEMP(3);
-                    hide_sprite: (LOAD_TEMP(11) == 0);
-                    xoffset: 0;
-                    yoffset:  16;
-                    zoffset:  LOAD_TEMP(7) * 8;
-                    xextent: 16;
-                    yextent: 1;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
-                // fences SW
-                building {
-                    sprite: 1302 + LOAD_TEMP(4);
-                    hide_sprite: (LOAD_TEMP(12) == 0);
-                    xoffset: 16;
-                    yoffset:  0;
-                    zoffset:  LOAD_TEMP(8) * 8;
-                    xextent: 1;
-                    yextent: 16;
-                    zextent: 6;
-                    recolour_mode: RECOLOUR_REMAP;
-                    palette:       PALETTE_USE_DEFAULT;
-                }
         }
         switch(FEAT_INDUSTRYTILES, SELF, orchard_piggery_layout_1_graphics_switch, relative_pos) {
                 relative_coord(0, 1): orchard_piggery_spritelayout_24;
@@ -3442,13 +2506,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, orchard_piggery_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         orchard_piggery_industry_construction_state_graphics_switch; // default
     }

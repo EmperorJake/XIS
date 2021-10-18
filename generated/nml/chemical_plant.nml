@@ -99,7 +99,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_1_0_snow(0);
@@ -112,7 +112,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout chemical_plant_spritelayout_frac_columns {
@@ -159,7 +159,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_2_0_snow(0);
@@ -172,7 +172,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout chemical_plant_spritelayout_drop_tower_and_thin_chimney {
@@ -219,7 +219,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_3_0_snow(0);
@@ -232,7 +232,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -292,7 +292,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_4_0_snow(0);
@@ -305,7 +305,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -404,7 +404,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_5_0_snow(0);
@@ -417,7 +417,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                 // smoke sprites
                 building {
@@ -516,7 +516,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_6_0_snow(0);
@@ -529,7 +529,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout chemical_plant_spritelayout_vertical_tanks {
@@ -576,7 +576,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_7_0_snow(0);
@@ -589,7 +589,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout chemical_plant_spritelayout_barrels {
@@ -636,7 +636,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: chemical_plant_spriteset_8_0_snow(0);
@@ -649,7 +649,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, chemical_plant_industry_layout_1_graphics_switch, relative_pos) {
@@ -776,13 +776,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, chemical_plant_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         chemical_plant_industry_construction_state_graphics_switch; // default
     }
@@ -1461,73 +1461,73 @@ switch (FEAT_INDUSTRIES, SELF, chemical_plant_check_availability, economy) {
         5: chemical_plant_check_availability_5;
         3: chemical_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_48, industry_distance(48)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_72, industry_distance(72)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_18, industry_distance(18)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_48, industry_distance(48)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        chemical_plant_min_distance_72;
+    }
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_69, industry_distance(69)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_48;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_6, industry_distance(6)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_18;
-    }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_6;
+        chemical_plant_min_distance_69;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_65, industry_distance(65)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_6, industry_distance(6)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_74;
     }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_8, industry_distance(8)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_65;
+        chemical_plant_min_distance_6;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_69, industry_distance(69)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_67, industry_distance(67)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_8;
     }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_69;
+        chemical_plant_min_distance_67;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_72, industry_distance(72)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_65, industry_distance(65)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_52;
     }
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_73, industry_distance(73)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        chemical_plant_min_distance_65;
+    }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_78, industry_distance(78)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_72;
-    }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_55, industry_distance(55)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_78;
-    }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_63, industry_distance(63)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_55;
+        chemical_plant_min_distance_73;
     }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_85, industry_distance(85)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_63;
+        chemical_plant_min_distance_78;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_67, industry_distance(67)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_85;
     }
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_63, industry_distance(63)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        chemical_plant_min_distance_18;
+    }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_86, industry_distance(86)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_67;
+        chemical_plant_min_distance_63;
     }
-    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_73, industry_distance(73)) {
+    switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         chemical_plant_min_distance_86;
     }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_min_distance_49, industry_distance(49)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        chemical_plant_min_distance_73;
+        chemical_plant_min_distance_55;
     }
     switch (FEAT_INDUSTRIES, SELF, chemical_plant_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

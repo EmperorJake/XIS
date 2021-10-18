@@ -153,7 +153,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: lime_kiln_spriteset_1_0_snow(0);
@@ -166,7 +166,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -180,7 +180,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: lime_kiln_spriteset_1_1_snow(0);
@@ -193,7 +193,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -207,7 +207,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: lime_kiln_spriteset_1_2_snow(0);
@@ -220,7 +220,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                 // smoke sprites
                 building {
@@ -306,7 +306,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: lime_kiln_spriteset_2_0_snow(0);
@@ -319,7 +319,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -333,7 +333,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: lime_kiln_spriteset_2_1_snow(0);
@@ -346,7 +346,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -360,7 +360,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: lime_kiln_spriteset_2_2_snow(0);
@@ -373,7 +373,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout lime_kiln_spritelayout_3 {
@@ -420,7 +420,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: lime_kiln_spriteset_3_0_snow(0);
@@ -433,7 +433,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -447,7 +447,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: lime_kiln_spriteset_3_1_snow(0);
@@ -460,7 +460,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -474,7 +474,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: lime_kiln_spriteset_3_2_snow(0);
@@ -487,7 +487,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout lime_kiln_spritelayout_4 {
@@ -534,7 +534,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: lime_kiln_spriteset_4_0_snow(0);
@@ -547,7 +547,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -561,7 +561,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: lime_kiln_spriteset_4_1_snow(0);
@@ -574,7 +574,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -588,7 +588,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: lime_kiln_spriteset_4_2_snow(0);
@@ -601,7 +601,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout lime_kiln_spritelayout_5 {
@@ -648,7 +648,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: lime_kiln_spriteset_5_0_snow(0);
@@ -661,7 +661,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -675,7 +675,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: lime_kiln_spriteset_5_1_snow(0);
@@ -688,7 +688,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -702,7 +702,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: lime_kiln_spriteset_5_2_snow(0);
@@ -715,7 +715,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
         }
         spritelayout lime_kiln_spritelayout_6 {
@@ -793,29 +793,29 @@
     switch(FEAT_INDUSTRYTILES, SELF, lime_kiln_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1952,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1952 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1978,
-                                 254) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(254),
-                                 254)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(254), 
-                                 244) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(254), 
-                                 254)
+                                 126) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(126),
+                                 126)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(126), 
+                                 116) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(126), 
+                                 126)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1978,
-                                 253) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(253),
-                                 253)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(253), 
-                                 243) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(253), 
-                                 253)
+                                 125) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(125),
+                                 125)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(125), 
+                                 115) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(125), 
+                                 125)
             ]) {
         lime_kiln_industry_construction_state_graphics_switch; // default
     }
@@ -1281,49 +1281,49 @@ switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_availability, economy) {
         5: lime_kiln_check_availability_5;
         3: lime_kiln_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_79, industry_distance(79)) {
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_77, industry_distance(77)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_10, industry_distance(10)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_79;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_43, industry_distance(43)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_10;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_17, industry_distance(17)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_43;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_46, industry_distance(46)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_17;
-    }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_20, industry_distance(20)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_46;
-    }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_50, industry_distance(50)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_20;
+        lime_kiln_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_44, industry_distance(44)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_50;
+        lime_kiln_min_distance_20;
     }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_77, industry_distance(77)) {
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lime_kiln_min_distance_44;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_77;
+        lime_kiln_min_distance_17;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_50, industry_distance(50)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_50;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_10, industry_distance(10)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_79, industry_distance(79)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_10;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_79;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_1, industry_distance(1)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_22;
+        lime_kiln_min_distance_43;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

@@ -1,0 +1,415 @@
+##grflangid 0x39
+##plural 1
+
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set　- 究極の産業セット{}{BLACK}62種類の貨物と83種類の産業! A fork of FIRS 3.0.10. Economy designed by Emperor Jake, additional graphics by Emperor Jake, GarryG and Toni Babelony; all other code and graphics thanks to andythenorth and the rest of the FIRS team. License: GPL v2.
+STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
+
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :漁場、海上油田、浚渫工事場などの海岸からの最大距離（タイル.）。
+STR_PARAM_DESC_ECONOMIES                                                        :選択された経済の種類により様々な産業の組み合わせが楽しめます。{}{}現在は1つしかありません。
+STR_PARAM_DESC_NO_OPENINGS                                                      :初期設定では新しい工場などは自動的に開きます。{}{}もし{SILVER}開業を止める{BLACK}が{GREEN}入{BLACK}の状態であると新しい工場や農場は開きません。またプレイヤーが新規産業に出資することも出来なくなります。
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :初期設定では2次産業の工場などは閉鎖しません。{}{}If secondary closing is turned on, secondary industries may close if no cargo is transported for a long time.  Primary industries will never close in XIS and are not affected by this setting.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :海洋産業の海岸からの最大距離
+STR_PARAM_NAME_ECONOMIES                                                        :経済の種類
+STR_PARAM_NAME_NO_OPENINGS                                                      :工場の開業を止める。
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :2次工業の閉鎖を許す
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :制限なし
+
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :稼働率（産業の生産速度）を向上中にするために必要な資材の数 (デフォルト：16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :稼働率（産業の生産速度）をマッハにするために必要な資材の数 (デフォルト：80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :農場や鉱山などの産業に資材が供給されると稼働率（生産速度）が上がります。必要な数の資材が産業に運ばれると生産速度は2段階上がります。（レベル1：{SILVER}向上中{BLACK}　レベル2：{SILVER}マッハ{BLACK}）{}{}デフォルトの設定でプレイには故障しませんが、必要に応じてここで変更してください。{}{}港などの海洋産業のレベルを上げるためにはここで設定された値の8倍が必要になります。
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :{SILVER}レベル1：向上中{BLACK}の稼働率（生産速度）(%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :{SILVER}レベル2：マッハ{BLACK}の稼働率（生産速度）(%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :農場や鉱山などの産業に資材が供給された後の稼働率。{SILVER}普通{BLACK}の稼働率に対しての割合。（パーセント％）
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_FIRS                                                  :すべて
+STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :INCOMPLETE
+STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :INCOMPLETE
+
+STR_CARGO_NAME_ACID                                                             :硫酸
+STR_CARGO_NAME_ALCOHOL                                                          :酒
+STR_CARGO_NAME_BAUXITE                                                          :ボーキサイト
+STR_CARGO_NAME_BEANS                                                            :大豆
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :建設資材
+STR_CARGO_NAME_CASSAVA                                                          :キャッサバ
+STR_CARGO_NAME_CEMENT                                                           :セメント
+STR_CARGO_NAME_CHEMICALS                                                        :石油製品
+STR_CARGO_NAME_CHLORINE                                                         :塩素
+STR_CARGO_NAME_CLAY                                                             :粘土
+STR_CARGO_NAME_COFFEE                                                           :コーヒー豆
+STR_CARGO_NAME_COKE                                                             :コークス
+STR_CARGO_NAME_COPPER                                                           :銅
+STR_CARGO_NAME_EDIBLE_OIL                                                       :食用油
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :電気製品
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :工業資材
+STR_CARGO_NAME_EXPLOSIVES                                                       :爆発物
+STR_CARGO_NAME_FIBRES                                                           :繊維
+STR_CARGO_NAME_FISH                                                             :魚
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :農業資材
+STR_CARGO_NAME_FERTILISER                                                       :肥料
+STR_CARGO_NAME_FRUITS                                                           :果物
+STR_CARGO_NAME_KAOLIN                                                           :リチウム
+STR_CARGO_NAME_LIMESTONE                                                        :石灰石
+STR_CARGO_NAME_LUMBER                                                           :木材
+STR_CARGO_NAME_METAL                                                            :アルミニウム
+STR_CARGO_NAME_MILK                                                             :牛乳
+STR_CARGO_NAME_MANGANESE                                                        :マンガン
+STR_CARGO_NAME_NITRATES                                                         :硝酸塩
+STR_CARGO_NAME_NUTS                                                             :ナッツ
+STR_CARGO_NAME_PACKAGING                                                        :包装材料
+STR_CARGO_NAME_PEAT                                                             :バイオマス
+STR_CARGO_NAME_PETROL                                                           :石油燃料
+STR_CARGO_NAME_PHOSPHATE                                                        :オイルサンド
+STR_CARGO_NAME_PIG_IRON                                                         :銑鉄
+STR_CARGO_NAME_PIPE                                                             :パイプ
+STR_CARGO_NAME_POTASH                                                           :カリ岩塩
+STR_CARGO_NAME_PYRITE_ORE                                                       :閃亜鉛鉱
+STR_CARGO_NAME_QUICKLIME                                                        :生石灰
+STR_CARGO_NAME_RECYCLABLES                                                      :資源ごみ
+STR_CARGO_NAME_SALT                                                             :岩塩
+STR_CARGO_NAME_SAND                                                             :砂
+STR_CARGO_NAME_SCRAP_METAL                                                      :鉄くず
+STR_CARGO_NAME_SLAG                                                             :スラグ
+STR_CARGO_NAME_SODA_ASH                                                         :ソーダ灰
+STR_CARGO_NAME_STEEL                                                            :鋼鉄
+STR_CARGO_NAME_STONE                                                            :石材
+STR_CARGO_NAME_SUGAR_BEET                                                       :サトウキビ
+STR_CARGO_NAME_SULPHUR                                                          :硫黄
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :自動車ボデー
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :部品
+STR_CARGO_NAME_VEHICLES                                                         :自動車
+STR_CARGO_NAME_WOOL                                                             :羊毛
+STR_CARGO_NAME_ZINC                                                             :亜鉛
+
+STR_CARGO_UNIT_ACID                                                             :硫酸{VOLUME}
+STR_CARGO_UNIT_ALCOHOL                                                          :酒{VOLUME}
+STR_CARGO_UNIT_BAUXITE                                                          :ボーキサイト{WEIGHT}
+STR_CARGO_UNIT_BEANS                                                            :大豆{WEIGHT}
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :建設資材{WEIGHT}
+STR_CARGO_UNIT_CASSAVA                                                          :キャッサバ{WEIGHT}
+STR_CARGO_UNIT_CEMENT                                                           :セメント{WEIGHT}
+STR_CARGO_UNIT_CHEMICALS                                                        :石油製品{VOLUME}
+STR_CARGO_UNIT_CHLORINE                                                         :塩素{VOLUME}
+STR_CARGO_UNIT_CLAY                                                             :粘土{WEIGHT}
+STR_CARGO_UNIT_COFFEE                                                           :コーヒー{SIGNED_WORD}袋
+STR_CARGO_UNIT_COKE                                                             :コークス{WEIGHT}
+STR_CARGO_UNIT_COPPER                                                           :銅{WEIGHT}
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :食用油{VOLUME}
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :電気製品{SIGNED_WORD}箱
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :工業資材{SIGNED_WORD}箱
+STR_CARGO_UNIT_EXPLOSIVES                                                       :爆発物{SIGNED_WORD}箱
+STR_CARGO_UNIT_FERTILISER                                                       :肥料{WEIGHT}
+STR_CARGO_UNIT_FIBRES                                                           :繊維{SIGNED_WORD}ベール
+STR_CARGO_UNIT_FISH                                                             :魚{WEIGHT}
+STR_CARGO_UNIT_FMSP                                                             :農業資材{SIGNED_WORD}箱
+STR_CARGO_UNIT_FRUITS                                                           :果物{WEIGHT}
+STR_CARGO_UNIT_KAOLIN                                                           :リチウム{WEIGHT}
+STR_CARGO_UNIT_LIMESTONE                                                        :石灰石{WEIGHT}
+STR_CARGO_UNIT_LUMBER                                                           :木材{WEIGHT}
+STR_CARGO_UNIT_LYE                                                              :{VOLUME} of lye
+STR_CARGO_UNIT_MANGANESE                                                        :マンガン{WEIGHT}
+STR_CARGO_UNIT_METAL                                                            :アルミニウム{WEIGHT}
+STR_CARGO_UNIT_MILK                                                             :牛乳{VOLUME}
+STR_CARGO_UNIT_NICKEL                                                           :ニッケル{WEIGHT}
+STR_CARGO_UNIT_NITRATES                                                         :硝酸塩{WEIGHT}
+STR_CARGO_UNIT_NUTS                                                             :ナッツ{SIGNED_WORD}袋
+STR_CARGO_UNIT_PACKAGING                                                        :包装材料{WEIGHT}
+STR_CARGO_UNIT_PEAT                                                             :バイオマス{WEIGHT}
+STR_CARGO_UNIT_PETROL                                                           :石油燃料{VOLUME}
+STR_CARGO_UNIT_PHOSPHATE                                                        :オイルサンド{WEIGHT}
+STR_CARGO_UNIT_PIG_IRON                                                         :銑鉄{WEIGHT}
+STR_CARGO_UNIT_PIPE                                                             :パイプ{WEIGHT}
+STR_CARGO_UNIT_POTASH                                                           :カリ岩塩{WEIGHT}
+STR_CARGO_UNIT_PYRITE_ORE                                                       :閃亜鉛鉱{WEIGHT}
+STR_CARGO_UNIT_QUICKLIME                                                        :生石灰{WEIGHT}
+STR_CARGO_UNIT_RECYCLABLES                                                      :資源ごみ{WEIGHT}
+STR_CARGO_UNIT_SALT                                                             :岩塩{WEIGHT}
+STR_CARGO_UNIT_SAND                                                             :砂{WEIGHT}
+STR_CARGO_UNIT_SCRAP_METAL                                                      :鉄くず{WEIGHT}
+STR_CARGO_UNIT_SLAG                                                             :スラグ{WEIGHT}
+STR_CARGO_UNIT_SODA_ASH                                                         :ソーダ灰{WEIGHT}
+STR_CARGO_UNIT_STEEL                                                            :鋼鉄{WEIGHT}
+STR_CARGO_UNIT_STONE                                                            :石材{WEIGHT}
+STR_CARGO_UNIT_SUGAR_BEET                                                       :サトウキビ{WEIGHT}
+STR_CARGO_UNIT_SULPHUR                                                          :硫黄{WEIGHT}
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :自動車ボデー{WEIGHT}
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :部品{WEIGHT}
+STR_CARGO_UNIT_VEHICLES                                                         :自動車{WEIGHT}
+STR_CARGO_UNIT_WOOL                                                             :羊毛{SIGNED_WORD}ベール
+STR_CARGO_UNIT_ZINC                                                             :亜鉛{WEIGHT}
+
+STR_CID_ACID                                                                    :{TINYFONT}ｻﾝ
+STR_CID_ALCOHOL                                                                 :{TINYFONT}ｻｹ
+STR_CID_BAUXITE                                                                 :{TINYFONT}ﾎﾞｷ
+STR_CID_BEANS                                                                   :{TINYFONT}ﾏﾒ
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}ｹﾝ
+STR_CID_CASSAVA                                                                 :{TINYFONT}ｶｻ
+STR_CID_CEMENT                                                                  :{TINYFONT}ｾﾒ
+STR_CID_CHEMICALS                                                               :{TINYFONT}ｶｾ
+STR_CID_CHLORINE                                                                :{TINYFONT}ｴﾝ
+STR_CID_CLAY                                                                    :{TINYFONT}ﾈﾝ
+STR_CID_COFFEE                                                                  :{TINYFONT}ｺﾋ
+STR_CID_COKE                                                                    :{TINYFONT}ｺｸ
+STR_CID_COPPER                                                                  :{TINYFONT}ﾄﾞｳ
+STR_CID_EDIBLE_OIL                                                              :{TINYFONT}ｱﾌﾞ
+STR_CID_ELECTRICAL_MACHINES                                                     :{TINYFONT}ﾃﾞﾝ
+STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}ｺｳ
+STR_CID_EXPLOSIVES                                                              :{TINYFONT}ﾊﾞｸ
+STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}ﾉｳ
+STR_CID_FERTILISER                                                              :{TINYFONT}ﾋﾘ
+STR_CID_FIBRES                                                                  :{TINYFONT}ｾﾝ
+STR_CID_FISH                                                                    :{TINYFONT}ｻｶ
+STR_CID_KAOLIN                                                                  :{TINYFONT}ﾘﾁ
+STR_CID_LIMESTONE                                                               :{TINYFONT}ｾｺ
+STR_CID_LUMBER                                                                  :{TINYFONT}ﾓｸ
+STR_CID_LYE                                                                     :{TINYFONT}ﾗｲ
+STR_CID_MANGANESE                                                               :{TINYFONT}ﾏﾝ
+STR_CID_METAL                                                                   :{TINYFONT}ｱﾙ
+STR_CID_MILK                                                                    :{TINYFONT}ﾐﾙ
+STR_CID_NICKEL                                                                  :{TINYFONT}ﾆｹ
+STR_CID_NITRATES                                                                :{TINYFONT}ｼｻ
+STR_CID_NUTS                                                                    :{TINYFONT}ﾅﾂ
+STR_CID_PACKAGING                                                               :{TINYFONT}ｺﾎﾟ
+STR_CID_PEAT                                                                    :{TINYFONT}ﾊﾞｲ
+STR_CID_PETROL                                                                  :{TINYFONT}ｶﾞｽ
+STR_CID_PIG_IRON                                                                :{TINYFONT}ｾﾝ
+STR_CID_PIPE                                                                    :{TINYFONT}ﾂﾂ
+STR_CID_PHOSPHATE                                                               :{TINYFONT}ｵｲ
+STR_CID_POTASH                                                                  :{TINYFONT}ｶﾘ
+STR_CID_PYRITE_ORE                                                              :{TINYFONT}ｾｱ
+STR_CID_QUICKLIME                                                               :{TINYFONT}ｾｾ
+STR_CID_RECYCLABLES                                                             :{TINYFONT}ｼｹﾞ
+STR_CID_SALT                                                                    :{TINYFONT}ｼｵ
+STR_CID_SAND                                                                    :{TINYFONT}ｽﾅ
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}ｸｽﾞ
+STR_CID_SLAG                                                                    :{TINYFONT}ｽﾗ
+STR_CID_SODA_ASH                                                                :{TINYFONT}ｿﾀﾞ
+STR_CID_STEEL                                                                   :{TINYFONT}ｺｳ
+STR_CID_STONE                                                                   :{TINYFONT}ｾｷ
+STR_CID_SUGAR_BEET                                                              :{TINYFONT}ｻﾄ
+STR_CID_SULPHUR                                                                 :{TINYFONT}ｲｵ
+STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}ﾎﾞﾃﾞ
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}ﾌﾞﾋ
+STR_CID_VEHICLES                                                                :{TINYFONT}ｸﾙ
+STR_CID_WOOL                                                                    :{TINYFONT}ｳﾙ
+STR_CID_ZINC                                                                    :{TINYFONT}ｱｴ
+
+
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}おもちゃの国ではXISは使えません。
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XISはバージョン　OpenTTD 1.9.0 又は JGRPP　0.32.x 以上が必要です。
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}産業不適合エラー: {ORANGE}XISは他の産業セットと一緒に使えません。{STRING}　{YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}パラメータエラー: {ORANGE}CanSetのパラメータ2は0に設定してください。{YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}パラメータエラー: {ORANGE}NA City Setのパラメータ2は0に設定してください。 {YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}バージョンエラー: {ORANGE}Total Town Replacement Setはバージョン3.11より新しいのを使ってください。 {YELLOW}詳しくはFIRSのReadMeをご参照ください: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :雪線より下にしか建設出来ません。
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :雪線より上にしか建設出来ません。
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :陸上にしか建設できません。
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :こんな砂漠で何が育つのですか
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :急勾配すぎます。
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :町には最大1つまでしか建設出来ません。
+
+STR_IND_ALUMINIUM_PLANT                                                         :アルミ工場
+STR_IND_AMMONIA_PLANT                                                           :アンモニア工場
+STR_IND_ARABLE_FARM                                                             :畑
+STR_IND_ASSEMBLY_PLANT                                                          :組立工場
+STR_IND_BATTERY_PLANT                                                           :電池工場
+STR_IND_BASICFARM                                                               :農園
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :転炉
+STR_IND_BAUXITE_MINE		                                                    :ボーキサイト鉱山
+STR_IND_BIOREFINERY                                                             :バイオリファイナリー
+STR_IND_BLAST_FURNACE                                                           :高炉
+STR_IND_BREWERY                                                                 :酒造場
+STR_IND_CIDER_MILL                                                              :蒸留所
+STR_IND_BRICK_WORKS                                                             :レンガ工場
+STR_IND_BUILDERS_YARD                                                           :建材置き場
+STR_IND_BULK_TERMINAL                                                           :バルクターミナル
+STR_IND_CEMENT_PLANT                                                            :セメントプラント
+STR_IND_CHEMICAL_PLANT                                                          :化学プラント
+STR_IND_CRACKING_PLANT                                                          :クラッキングプラント
+STR_IND_CLAY_PIT                                                                :粘土ピット
+STR_IND_COFFEE_ESTATE                                                           :コーヒー地所
+STR_IND_COKE_OVEN                                                               :コークス炉
+STR_IND_COPPER_REFINERY                                                         :銅熔錬工場
+STR_IND_DAIRY                                                                   :牛乳工場
+STR_IND_DAIRY_FARM                                                              :酪農牧場
+STR_IND_DREDGING_SITE                                                           :浚渫工事場
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :電気炉
+STR_IND_FACTORY                                                                 :工場
+STR_IND_FISHING_GROUND                                                          :漁場
+STR_IND_FISHING_HARBOUR                                                         :漁港
+STR_IND_FISHING_VILLAGE                                                         :漁村
+STR_IND_FLOUR_MILL                                                              :製粉工場
+STR_IND_FOOD_MARKET                                                             :市場
+STR_IND_FOOD_PROCESSOR                                                          :食品加工工場
+STR_IND_FOUNDRY                                                                 :鋳造所
+STR_IND_FURNITURE_FACTORY                                                       :家具工場
+STR_IND_GENERAL_STORE                                                           :店
+STR_IND_GLASS_WORKS                                                             :ガラス工場
+STR_IND_HARDWARE_STORE                                                          :ホームセンター
+STR_IND_HOTEL                                                                   :ホテル
+STR_IND_HERDING_COOP                                                            :牧草地
+STR_IND_IRON_WORKS                                                              :鉄工所
+STR_IND_JUNKYARD                                                                :スクラップヤード
+STR_IND_LIME_KILN                                                               :石灰炉
+STR_IND_LIMESTONE_MINE                                                          :石灰石鉱山
+STR_IND_LITHIUM_MINE                                                            :リチウム鉱山
+STR_IND_LIQUIDS_TERMINAL                                                        :オイルターミナル
+STR_IND_LUMBER_YARD                                                             :木材置き場
+STR_IND_MACHINE_SHOP                                                            :機械工場
+STR_IND_MANGANESE_MINE                                                          :マンガン鉱山
+STR_IND_METAL_FABRICATION_PLANT                                                 :金属加工工場
+STR_IND_METAL_WORKSHOP                                                          :電気工房
+STR_IND_MIXEDFARM                                                               :農場
+STR_IND_NITRATE_MINE                                                            :硝酸塩鉱山
+STR_IND_ORCHARD_PIGGERY                                                         :果樹園と豚舎
+STR_IND_OIL_SANDS_MINE                                                          :オイルサンド鉱床
+STR_IND_PEATLANDS                                                               :泥炭地
+STR_IND_PETROLPUMP                                                              :ガソリンスタンド
+STR_IND_PHOSPHATE_MINE                                                          :りん鉱鉱山
+STR_IND_PLASTICS_PLANT                                                          :プラスチック工場
+STR_IND_PRINTING_PLANT                                                          :印刷所
+STR_IND_POLYMER_PLANT                                                           :ポリマー工場
+STR_IND_PORT                                                                    :港
+STR_IND_POTASH_MINE                                                             :カリ鉱山
+STR_IND_PYRITE_MINE                                                             :亜鉛鉱山
+STR_IND_PYRITE_SMELTER                                                          :亜鉛製錬所
+STR_IND_POWER_PLANT                                                             :発電所
+STR_IND_QUARRY                                                                  :採石場
+STR_IND_RANCH                                                                   :牧場
+STR_IND_RECYCLING_DEPOT                                                         :ゴミ集積場
+STR_IND_RECYCLING_PLANT                                                         :リサイクル工場
+STR_IND_REINDEER_FARM                                                           :トナカイ牧場
+STR_IND_SHEEPFARM                                                               :羊牧場
+STR_IND_SLAG_GRINDING_PLANT                                                     :スラグ加工所
+STR_IND_SMITHY_FORGE                                                            :鍛治屋
+STR_IND_SODA_ASH_MINE                                                           :ソーダ灰鉱山
+STR_IND_STEEL_FINISHING_PLANT                                                   :メッキ工場
+STR_IND_STOCKYARD                                                               :畜殺場
+STR_IND_SUGAR_REFINERY                                                          :精糖工場
+STR_IND_SULPHIDE_MINE                                                           :亜鉛工場
+STR_IND_SUPPLY_YARD                                                             :資材置き場
+STR_IND_ENSP_YARD                                                               :工業資材倉庫
+STR_IND_FMSP_YARD                                                               :産業資材倉庫
+STR_IND_TEXTILE_MILL                                                            :織物工場
+STR_IND_TRADING_POST                                                            :交易所
+STR_IND_TYRE_PLANT                                                              :タイヤ工場
+STR_IND_UPGRADER                                                                :石油抽出所
+STR_IND_VINEYARD                                                                :ぶどう農園
+STR_IND_VEHICLE_DEALER                                                          :車両販売店
+STR_IND_WHARF                                                                   :埠頭
+STR_IND_ZINC_SMELTER                                                            :亜鉛製錬所
+
+
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             :{BLACK}(供給済み)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}必要な貨物の内、{WHITE}いずれか{BLACK}が供給されれば最大稼働率で稼働します。
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}最大稼働率を保つためには、{WHITE}すべて{BLACK}の必須貨物を最低3ヶ月に一度供給してください。
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}稼働率は町の人口に比例します。
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}現在の稼働率: {YELLOW}普通 {}{}{BLACK}稼働率を{WHITE}レベル1：向上中{BLACK}にするには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}箱供給してください。
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}現在の稼働率: {YELLOW}レベル1：向上中{}{}{BLACK}この稼働率を維持するには資材を{SIGNED_WORD}箱、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}production deliver {SIGNED_WORD} crates.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}現在の稼働率: {YELLOW}レベル2：マッハ{}{}{BLACK}この稼働率を維持するには資材を{SKIP}{SIGNED_WORD}箱、3ヶ月に一度供給してください。
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}現在の稼働率: {YELLOW}普通 {}{}{BLACK}稼働率を{WHITE}レベル1：向上中{BLACK}にするには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}現在の稼働率: {YELLOW}レベル1：向上中{}{}{BLACK}この稼働率を維持するには貨物を{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。{}{WHITE}レベル2：マッハ{BLACK}には{SIGNED_WORD}ユニット供給してください。
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}現在の稼働率: {YELLOW}レベル2：マッハ{}{}{BLACK}この稼働率を維持するには貨物を{SKIP}{SIGNED_WORD}ユニット、3ヶ月に一度供給してください。
+STR_GENERIC_NEWLINE                                                             :{}
+
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_FOREST                                                                 :{}{BLACK}施設名: {YELLOW}砂漠には建設出来ません。
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}施設名: {YELLOW}雪の上には建設出来ません。
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}施設名: {YELLOW}雪の上にだけ建設出来ます。
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+STR_FUND_VINEYARD                                                               :{}{BLACK}施設名: {YELLOW}雪の上や砂漠には建設出来ません。
+
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}入手可能年: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}入手不可年: {YELLOW}{COMMA}
+
+STR_TOWN                                                                        :{STRING}
+STR_STATION                                                                     :{STRING} {STRING}
+
+STR_STATION_ANIMALS                                                             :家畜置き場
+STR_STATION_AUTOMOTIVE                                                          :自動車
+STR_STATION_BAR_GRILL_AND_ROOMS                                                 :温泉
+STR_STATION_BARNS                                                               :小屋
+STR_STATION_BARREL_AND_KEG                                                      :酒場
+STR_STATION_BASE                                                                :基地
+STR_STATION_BATTERY_PLANT                                                       :電池
+STR_STATION_BAUXITE_MINE                                                        :ボーキサイト鉱床
+STR_STATION_BONEYARD                                                            :墓場
+STR_STATION_BANK_TOP                                                            :台
+STR_STATION_CASTINGS                                                            :鋳物場
+STR_STATION_COLLIERY                                                            :炭坑
+STR_STATION_COPPER_LODE                                                         :銅鉱脈
+STR_STATION_CREOSOTING                                                          :クレオソート
+STR_STATION_CRACKING                                                            :ケミカル
+STR_STATION_DAIRY_LANE                                                          :乳製品
+STR_STATION_ESTATE                                                              :庭園
+STR_STATION_EXCHANGE                                                            :関所
+STR_STATION_FARM_1                                                              :荘園
+STR_STATION_FARM_2                                                              :草原
+STR_STATION_FARM_3                                                              :牧場
+STR_STATION_FISHMARKET                                                          :魚市場
+STR_STATION_FEED_SEED                                                           :農協
+STR_STATION_FOOD_CORPORATION                                                    :食品株式会社
+STR_STATION_FOREST                                                              :木場
+STR_STATION_FORGE                                                               :鉄工所
+STR_STATION_FURNACE                                                             :溶鉱炉
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :重機ヤード
+STR_STATION_HEAVY_INDUSTRY_2                                                    :製作所
+STR_STATION_HERDING_COOP                                                        :ロッジ
+STR_STATION_INDUSTRY_ESTATE_1                                                   :工業団地
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :港
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :海岸
+STR_STATION_INDUSTRY_HARBOUR_3                                                  :桟橋
+STR_STATION_IRONSTONE                                                           :鉄鉱
+STR_STATION_JOINERS_SHOP                                                        :建具店
+STR_STATION_KILNS                                                               :窯
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :ボーキサイト
+STR_STATION_LIMESTONE_MINES                                                     :石灰石
+STR_STATION_LITHIUM_MINES                                                       :リチウム
+STR_STATION_MANGANESE_MINES                                                     :マンガン
+STR_STATION_MARKET                                                              :市場
+STR_STATION_MERCHANTS_LANE                                                      :商店街
+STR_STATION_MILL                                                                :製粉
+STR_STATION_MINE                                                                :皮革
+STR_STATION_MOULDINGS                                                           :鋳型
+STR_STATION_OIL_RIG                                                             :油田
+STR_STATION_ORCHARDS                                                            :果樹園
+STR_STATION_PIT                                                                 :採掘場
+STR_STATION_PLANTATION                                                          :農園
+STR_STATION_PRINTERS                                                            :印刷所
+STR_STATION_POWERHUNGRY                                                         :発電所
+STR_STATION_POLYMERS                                                            :ポリマー
+STR_STATION_PUMPS                                                               :サービスステーション
+STR_STATION_PYRITES                                                             :亜鉛
+STR_STATION_REFINERY                                                            :製油所
+STR_STATION_RUBBER_COMPANY                                                      :ゴム
+STR_STATION_SALTPETER_WORKS                                                     :塩硝土
+STR_STATION_SHARP_STREET                                                        :電器
+STR_STATION_SHEEP_FOLD                                                          :カントリーファーム
+STR_STATION_SHOALS                                                              :浅瀬
+STR_STATION_SILO                                                                :サイロ
+STR_STATION_SMELTER                                                             :製錬所
+STR_STATION_STACKS                                                              :煙突
+STR_STATION_STAMP_AND_PLATE                                                     :金属
+STR_STATION_WATT_STREET                                                         :電器街
+STR_STATION_SUGAR_COMPANY                                                       :砂糖株式会社
+STR_STATION_TANK_FARM                                                           :コンビナート
+STR_STATION_TAPPERS_SHED                                                        :漆掻き小屋
+STR_STATION_TOWN_1                                                              :大通り
+STR_STATION_TOWN_2                                                              :ビジネスパーク
+STR_STATION_TOWN_3                                                              :広場
+STR_STATION_TRONA_BEDS                                                          :トロナ鉱床
+STR_STATION_WATER                                                               :砂丘
+STR_STATION_WEAVE_AND_DYE                                                       :繊維加工
+STR_STATION_WELLS                                                               :油井
+STR_STATION_WINERY                                                              :ワイン
+STR_STATION_WORKS_YARD                                                          :開発
+STR_STATION_UPGRADER                                                            :合成ガス
+STR_STATION_VEHICLE_DEALER                                                      :自動車
+

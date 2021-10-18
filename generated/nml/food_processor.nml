@@ -81,7 +81,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: food_processor_spriteset_2_0_snow(0);
@@ -94,7 +94,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout food_processor_spritelayout_2 {
@@ -141,7 +141,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: food_processor_spriteset_3_0_snow(0);
@@ -154,7 +154,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout food_processor_spritelayout_3 {
@@ -201,7 +201,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: food_processor_spriteset_4_0_snow(0);
@@ -214,7 +214,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout food_processor_spritelayout_4 {
@@ -261,7 +261,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: food_processor_spriteset_5_0_snow(0);
@@ -274,7 +274,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, food_processor_industry_layout_1_graphics_switch, relative_pos) {
@@ -337,13 +337,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, food_processor_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         food_processor_industry_construction_state_graphics_switch; // default
     }
@@ -831,65 +831,65 @@ switch (FEAT_INDUSTRIES, SELF, food_processor_check_availability, economy) {
         5: food_processor_check_availability_5;
         3: food_processor_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_30, industry_distance(30)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_58;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_23, industry_distance(23)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_30, industry_distance(30)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_23;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_74, industry_distance(74)) {
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_58, industry_distance(58)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         food_processor_min_distance_30;
     }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_74;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_59, industry_distance(59)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_14;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_59;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_39, industry_distance(39)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_60;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_39;
-    }
     switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_2;
+        food_processor_min_distance_58;
     }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_61, industry_distance(61)) {
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         food_processor_min_distance_52;
     }
-    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_22, industry_distance(22)) {
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_61;
+        food_processor_min_distance_14;
     }
     switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_29, industry_distance(29)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_23;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_2, industry_distance(2)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_29;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_2;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         food_processor_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_74, industry_distance(74)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_59, industry_distance(59)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_processor_min_distance_74;
     }
     switch (FEAT_INDUSTRIES, SELF, food_processor_min_distance_56, industry_distance(56)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        food_processor_min_distance_29;
+        food_processor_min_distance_59;
     }
     switch (FEAT_INDUSTRIES, SELF, food_processor_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

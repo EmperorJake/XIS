@@ -93,7 +93,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_2_0_snow(0);
@@ -106,7 +106,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout furniture_factory_spritelayout_2 {
@@ -153,7 +153,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_3_0_snow(0);
@@ -166,7 +166,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout furniture_factory_spritelayout_3 {
@@ -213,7 +213,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_4_0_snow(0);
@@ -226,7 +226,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout furniture_factory_spritelayout_4 {
@@ -273,7 +273,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_5_0_snow(0);
@@ -286,7 +286,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout furniture_factory_spritelayout_5 {
@@ -333,7 +333,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_6_0_snow(0);
@@ -346,7 +346,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout furniture_factory_spritelayout_6 {
@@ -393,7 +393,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: furniture_factory_spriteset_7_0_snow(0);
@@ -406,7 +406,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         switch(FEAT_INDUSTRYTILES, SELF, furniture_factory_industry_layout_1_graphics_switch, relative_pos) {
@@ -479,13 +479,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, furniture_factory_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         furniture_factory_industry_construction_state_graphics_switch; // default
     }
@@ -979,57 +979,57 @@ switch (FEAT_INDUSTRIES, SELF, furniture_factory_check_availability, economy) {
         5: furniture_factory_check_availability_5;
         3: furniture_factory_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_42, industry_distance(42)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_18, industry_distance(18)) {
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_70;
+        furniture_factory_min_distance_42;
     }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_57, industry_distance(57)) {
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_18;
+        furniture_factory_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_12, industry_distance(12)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_57;
+        furniture_factory_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_60, industry_distance(60)) {
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         furniture_factory_min_distance_12;
     }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_42, industry_distance(42)) {
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_57, industry_distance(57)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        furniture_factory_min_distance_51;
+    }
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_61, industry_distance(61)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        furniture_factory_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        furniture_factory_min_distance_61;
+    }
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        furniture_factory_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        furniture_factory_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         furniture_factory_min_distance_60;
     }
     switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_81, industry_distance(81)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_42;
-    }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_81;
-    }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_61, industry_distance(61)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_52;
-    }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_22, industry_distance(22)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_61;
-    }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_9, industry_distance(9)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_22;
-    }
-    switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_51, industry_distance(51)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         furniture_factory_min_distance_9;
     }
     switch (FEAT_INDUSTRIES, SELF, furniture_factory_min_distance_13, industry_distance(13)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        furniture_factory_min_distance_51;
+        furniture_factory_min_distance_81;
     }
     switch (FEAT_INDUSTRIES, SELF, furniture_factory_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

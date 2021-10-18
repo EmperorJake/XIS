@@ -121,7 +121,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: rubber_plantation_spriteset_1_0_snow(0);
@@ -134,7 +134,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout rubber_plantation_shed_spritelayout {
@@ -221,7 +221,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: rubber_plantation_spriteset_2_0_snow(0);
@@ -234,7 +234,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
         }
         spritelayout rubber_plantation_slope_aware_ground_with_trees_10 {
@@ -6795,13 +6795,13 @@
     switch(FEAT_INDUSTRYTILES, SELF, rubber_plantation_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP(0,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
             ]) {
         rubber_plantation_industry_construction_state_graphics_switch; // default
     }
@@ -7148,17 +7148,17 @@ switch (FEAT_INDUSTRIES, SELF, rubber_plantation_check_availability, economy) {
         5: rubber_plantation_check_availability_5;
         3: rubber_plantation_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_52, industry_distance(52)) {
+    switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        rubber_plantation_min_distance_70;
+        rubber_plantation_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, rubber_plantation_min_distance_53, industry_distance(53)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        rubber_plantation_min_distance_52;
+        rubber_plantation_min_distance_70;
     }
     switch (FEAT_INDUSTRIES, SELF, rubber_plantation_cluster_rubber_plantation,
                 industry_count(rubber_plantation) >= (4 * industry_clusters) &&

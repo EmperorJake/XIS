@@ -621,7 +621,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_0_snow(0);
@@ -634,7 +634,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -648,7 +648,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_1_snow(0);
@@ -661,7 +661,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -675,7 +675,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_2_snow(0);
@@ -688,7 +688,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -702,7 +702,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_3_snow(0);
@@ -715,7 +715,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -729,7 +729,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_4_snow(0);
@@ -742,7 +742,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -756,7 +756,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_2_5_snow(0);
@@ -769,7 +769,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_2 {
@@ -816,7 +816,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_0_snow(0);
@@ -829,7 +829,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -843,7 +843,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_1_snow(0);
@@ -856,7 +856,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -870,7 +870,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_2_snow(0);
@@ -883,7 +883,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -897,7 +897,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_3_snow(0);
@@ -910,7 +910,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -924,7 +924,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_4_snow(0);
@@ -937,7 +937,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -951,7 +951,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_3_5_snow(0);
@@ -964,7 +964,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_3 {
@@ -1011,7 +1011,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_0_snow(0);
@@ -1024,7 +1024,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1038,7 +1038,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_1_snow(0);
@@ -1051,7 +1051,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1065,7 +1065,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_2_snow(0);
@@ -1078,7 +1078,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -1092,7 +1092,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_3_snow(0);
@@ -1105,7 +1105,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -1119,7 +1119,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_4_snow(0);
@@ -1132,7 +1132,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -1146,7 +1146,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_4_5_snow(0);
@@ -1159,7 +1159,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_4 {
@@ -1206,7 +1206,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_0_snow(0);
@@ -1219,7 +1219,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1233,7 +1233,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_1_snow(0);
@@ -1246,7 +1246,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1260,7 +1260,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_2_snow(0);
@@ -1273,7 +1273,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -1287,7 +1287,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_3_snow(0);
@@ -1300,7 +1300,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -1314,7 +1314,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_4_snow(0);
@@ -1327,7 +1327,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -1341,7 +1341,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_5_5_snow(0);
@@ -1354,7 +1354,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_5 {
@@ -1401,7 +1401,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_0_snow(0);
@@ -1414,7 +1414,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1428,7 +1428,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_1_snow(0);
@@ -1441,7 +1441,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1455,7 +1455,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_2_snow(0);
@@ -1468,7 +1468,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -1482,7 +1482,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_3_snow(0);
@@ -1495,7 +1495,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -1509,7 +1509,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_4_snow(0);
@@ -1522,7 +1522,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -1536,7 +1536,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_6_5_snow(0);
@@ -1549,7 +1549,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_6 {
@@ -1596,7 +1596,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_0_snow(0);
@@ -1609,7 +1609,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1623,7 +1623,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_1_snow(0);
@@ -1636,7 +1636,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1650,7 +1650,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_2_snow(0);
@@ -1663,7 +1663,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -1677,7 +1677,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_3_snow(0);
@@ -1690,7 +1690,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -1704,7 +1704,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_4_snow(0);
@@ -1717,7 +1717,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -1731,7 +1731,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_7_5_snow(0);
@@ -1744,7 +1744,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_7 {
@@ -1791,7 +1791,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_0_snow(0);
@@ -1804,7 +1804,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -1818,7 +1818,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_1_snow(0);
@@ -1831,7 +1831,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -1845,7 +1845,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_2_snow(0);
@@ -1858,7 +1858,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -1872,7 +1872,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_3_snow(0);
@@ -1885,7 +1885,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -1899,7 +1899,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_4_snow(0);
@@ -1912,7 +1912,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -1926,7 +1926,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_8_5_snow(0);
@@ -1939,7 +1939,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_8 {
@@ -1986,7 +1986,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_0_snow(0);
@@ -1999,7 +1999,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2013,7 +2013,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_1_snow(0);
@@ -2026,7 +2026,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -2040,7 +2040,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_2_snow(0);
@@ -2053,7 +2053,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -2067,7 +2067,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_3_snow(0);
@@ -2080,7 +2080,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -2094,7 +2094,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_4_snow(0);
@@ -2107,7 +2107,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -2121,7 +2121,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_9_5_snow(0);
@@ -2134,7 +2134,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
                 // smoke sprites
                 building {
@@ -2194,7 +2194,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_0_snow(0);
@@ -2207,7 +2207,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2221,7 +2221,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_1_snow(0);
@@ -2234,7 +2234,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -2248,7 +2248,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_2_snow(0);
@@ -2261,7 +2261,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -2275,7 +2275,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_3_snow(0);
@@ -2288,7 +2288,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -2302,7 +2302,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_4_snow(0);
@@ -2315,7 +2315,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -2329,7 +2329,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_10_5_snow(0);
@@ -2342,7 +2342,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_10 {
@@ -2389,7 +2389,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_0_snow(0);
@@ -2402,7 +2402,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2416,7 +2416,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_1_snow(0);
@@ -2429,7 +2429,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -2443,7 +2443,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_2_snow(0);
@@ -2456,7 +2456,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -2470,7 +2470,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_3_snow(0);
@@ -2483,7 +2483,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -2497,7 +2497,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_4_snow(0);
@@ -2510,7 +2510,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -2524,7 +2524,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_11_5_snow(0);
@@ -2537,7 +2537,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_11 {
@@ -2584,7 +2584,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_0_snow(0);
@@ -2597,7 +2597,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2611,7 +2611,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_1_snow(0);
@@ -2624,7 +2624,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -2638,7 +2638,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_2_snow(0);
@@ -2651,7 +2651,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -2665,7 +2665,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_3_snow(0);
@@ -2678,7 +2678,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -2692,7 +2692,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_4_snow(0);
@@ -2705,7 +2705,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -2719,7 +2719,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_12_5_snow(0);
@@ -2732,7 +2732,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_12 {
@@ -2779,7 +2779,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_0_snow(0);
@@ -2792,7 +2792,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -2806,7 +2806,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_1_snow(0);
@@ -2819,7 +2819,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -2833,7 +2833,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_2_snow(0);
@@ -2846,7 +2846,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -2860,7 +2860,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_3_snow(0);
@@ -2873,7 +2873,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -2887,7 +2887,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_4_snow(0);
@@ -2900,7 +2900,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -2914,7 +2914,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_13_5_snow(0);
@@ -2927,7 +2927,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_13 {
@@ -2974,7 +2974,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(255));
+                        hide_sprite: (LOAD_TEMP(127));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_0_snow(0);
@@ -2987,7 +2987,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(245));
+                        hide_sprite: (LOAD_TEMP(117));
                     }
                     // buildings (snow aware)
                     building {
@@ -3001,7 +3001,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(254));
+                        hide_sprite: (LOAD_TEMP(126));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_1_snow(0);
@@ -3014,7 +3014,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(244));
+                        hide_sprite: (LOAD_TEMP(116));
                     }
                     // buildings (snow aware)
                     building {
@@ -3028,7 +3028,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(253));
+                        hide_sprite: (LOAD_TEMP(125));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_2_snow(0);
@@ -3041,7 +3041,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(243));
+                        hide_sprite: (LOAD_TEMP(115));
                     }
                     // buildings (snow aware)
                     building {
@@ -3055,7 +3055,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(252));
+                        hide_sprite: (LOAD_TEMP(124));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_3_snow(0);
@@ -3068,7 +3068,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(242));
+                        hide_sprite: (LOAD_TEMP(114));
                     }
                     // buildings (snow aware)
                     building {
@@ -3082,7 +3082,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(251));
+                        hide_sprite: (LOAD_TEMP(123));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_4_snow(0);
@@ -3095,7 +3095,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(241));
+                        hide_sprite: (LOAD_TEMP(113));
                     }
                     // buildings (snow aware)
                     building {
@@ -3109,7 +3109,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(250));
+                        hide_sprite: (LOAD_TEMP(122));
                     }
                     building {
                         sprite: machine_shop_spriteset_14_5_snow(0);
@@ -3122,7 +3122,7 @@
                         yextent: 16;
                         zextent: 32;
                         always_draw: 0;
-                        hide_sprite: (LOAD_TEMP(240));
+                        hide_sprite: (LOAD_TEMP(112));
                     }
         }
         spritelayout machine_shop_spritelayout_14 {
@@ -3284,53 +3284,53 @@
     switch(FEAT_INDUSTRYTILES, SELF, machine_shop_store_temp_vars,
             [STORE_TEMP(terrain_type == TILETYPE_SNOW, 13)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1920,
-                                 255) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(255),
-                                 255)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(255), 
-                                 245) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(255), 
-                                 255)
+                                 127) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(127),
+                                 127)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(127), 
+                                 117) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(127), 
+                                 127)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1920 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1945,
-                                 254) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(254),
-                                 254)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(254), 
-                                 244) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(254), 
-                                 254)
+                                 126) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(126),
+                                 126)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(126), 
+                                 116) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(126), 
+                                 126)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1945 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1970,
-                                 253) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(253),
-                                 253)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(253), 
-                                 243) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(253), 
-                                 253)
+                                 125) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(125),
+                                 125)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(125), 
+                                 115) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(125), 
+                                 125)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1970 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 1990,
-                                 252) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(252),
-                                 252)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(252), 
-                                 242) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(252), 
-                                 252)
+                                 124) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(124),
+                                 124)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(124), 
+                                 114) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(124), 
+                                 124)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 1990 || (current_year + 5 * LOAD_TEMP(14) / 0x10000) >= 2010,
-                                 251) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(251),
-                                 251)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(251), 
-                                 241) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(251), 
-                                 251)
+                                 123) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(123),
+                                 123)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(123), 
+                                 113) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(123), 
+                                 123)
                     , STORE_TEMP((current_year + 5 * LOAD_TEMP(14) / 0x10000) < 2010,
-                                 250) 
-                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(250),
-                                 250)
-                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(250), 
-                                 240) 
-                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(250), 
-                                 250)
+                                 122) 
+                    , STORE_TEMP(construction_state != 3 ? 1 : LOAD_TEMP(122),
+                                 122)
+                    , STORE_TEMP(LOAD_TEMP(13) == 0 ? 1 : LOAD_TEMP(122), 
+                                 112) 
+                    , STORE_TEMP(LOAD_TEMP(13) == 1 ? 1 : LOAD_TEMP(122), 
+                                 122)
             ]) {
         machine_shop_industry_construction_state_graphics_switch; // default
     }
@@ -3876,53 +3876,53 @@ switch (FEAT_INDUSTRIES, SELF, machine_shop_check_availability, economy) {
         5: machine_shop_check_availability_5;
         3: machine_shop_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_42, industry_distance(42)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_70;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_6, industry_distance(6)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_63, industry_distance(63)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_6;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_42, industry_distance(42)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_63;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_69, industry_distance(69)) {
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         machine_shop_min_distance_42;
     }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_69;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_22, industry_distance(22)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_2;
-    }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_81, industry_distance(81)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_22;
-    }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_33, industry_distance(33)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_81;
+        machine_shop_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_9, industry_distance(9)) {
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         machine_shop_min_distance_33;
     }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_2;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_69, industry_distance(69)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_63, industry_distance(63)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_69;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_9, industry_distance(9)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_63;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_9;
+    }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_6, industry_distance(6)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_81;
+    }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_38, industry_distance(38)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_9;
+        machine_shop_min_distance_6;
     }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||
