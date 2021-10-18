@@ -3876,13 +3876,9 @@ switch (FEAT_INDUSTRIES, SELF, machine_shop_check_availability, economy) {
         5: machine_shop_check_availability_5;
         3: machine_shop_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_42, industry_distance(42)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_42;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_33, industry_distance(33)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -3920,9 +3916,13 @@ switch (FEAT_INDUSTRIES, SELF, machine_shop_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         machine_shop_min_distance_81;
     }
+    switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_42, industry_distance(42)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        machine_shop_min_distance_6;
+    }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_min_distance_38, industry_distance(38)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        machine_shop_min_distance_6;
+        machine_shop_min_distance_42;
     }
     switch (FEAT_INDUSTRIES, SELF, machine_shop_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

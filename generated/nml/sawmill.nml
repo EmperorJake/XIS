@@ -781,21 +781,21 @@ switch (FEAT_INDUSTRIES, SELF, sawmill_check_availability, economy) {
         5: sawmill_check_availability_5;
         3: sawmill_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_41, industry_distance(41)) {
+    switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_11, industry_distance(11)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_41, industry_distance(41)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        sawmill_min_distance_11;
     }
     switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_13, industry_distance(13)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         sawmill_min_distance_41;
     }
-    switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_11, industry_distance(11)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        sawmill_min_distance_13;
-    }
     switch (FEAT_INDUSTRIES, SELF, sawmill_min_distance_12, industry_distance(12)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        sawmill_min_distance_11;
+        sawmill_min_distance_13;
     }
     switch (FEAT_INDUSTRIES, SELF, sawmill_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

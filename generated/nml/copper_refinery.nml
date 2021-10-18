@@ -1331,21 +1331,9 @@ switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_availability, economy) {
         5: copper_refinery_check_availability_5;
         3: copper_refinery_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_49, industry_distance(49)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_80, industry_distance(80)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_49;
-    }
-    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_25, industry_distance(25)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_80;
-    }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_82, industry_distance(82)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_25;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1367,9 +1355,21 @@ switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         copper_refinery_min_distance_64;
     }
+    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        copper_refinery_min_distance_6;
+    }
+    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_80, industry_distance(80)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        copper_refinery_min_distance_49;
+    }
+    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_25, industry_distance(25)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        copper_refinery_min_distance_80;
+    }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_67, industry_distance(67)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_6;
+        copper_refinery_min_distance_25;
     }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

@@ -969,49 +969,49 @@ switch (FEAT_INDUSTRIES, SELF, oil_refinery_check_availability, economy) {
         5: oil_refinery_check_availability_5;
         3: oil_refinery_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_43, industry_distance(43)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        oil_refinery_min_distance_43;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_16, industry_distance(16)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         oil_refinery_min_distance_1;
     }
-    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_85, industry_distance(85)) {
+    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         oil_refinery_min_distance_16;
     }
-    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_15, industry_distance(15)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        oil_refinery_min_distance_85;
-    }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        oil_refinery_min_distance_15;
+        oil_refinery_min_distance_40;
+    }
+    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        oil_refinery_min_distance_66;
     }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_48, industry_distance(48)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        oil_refinery_min_distance_66;
+        oil_refinery_min_distance_43;
     }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         oil_refinery_min_distance_48;
     }
-    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_41, industry_distance(41)) {
+    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_15, industry_distance(15)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         oil_refinery_min_distance_18;
     }
-    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_40, industry_distance(40)) {
+    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_41, industry_distance(41)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        oil_refinery_min_distance_15;
+    }
+    switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_85, industry_distance(85)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         oil_refinery_min_distance_41;
     }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_50, industry_distance(50)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        oil_refinery_min_distance_40;
+        oil_refinery_min_distance_85;
     }
     switch (FEAT_INDUSTRIES, SELF, oil_refinery_min_distance_60, industry_distance(60)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;

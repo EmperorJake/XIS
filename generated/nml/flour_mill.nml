@@ -2234,41 +2234,37 @@ switch (FEAT_INDUSTRIES, SELF, flour_mill_check_availability, economy) {
         5: flour_mill_check_availability_5;
         3: flour_mill_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_29, industry_distance(29)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_52, industry_distance(52)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_58;
-    }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_52;
-    }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_23, industry_distance(23)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_14;
-    }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_29, industry_distance(29)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_23;
-    }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_29;
     }
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        flour_mill_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        flour_mill_min_distance_58;
+    }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_61, industry_distance(61)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_2;
+        flour_mill_min_distance_23;
     }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_61;
     }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_22, industry_distance(22)) {
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        flour_mill_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_39, industry_distance(39)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -2278,17 +2274,21 @@ switch (FEAT_INDUSTRIES, SELF, flour_mill_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_39;
     }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_26, industry_distance(26)) {
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_59, industry_distance(59)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_60;
     }
-    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_59, industry_distance(59)) {
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_26, industry_distance(26)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        flour_mill_min_distance_59;
+    }
+    switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         flour_mill_min_distance_26;
     }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_min_distance_34, industry_distance(34)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        flour_mill_min_distance_59;
+        flour_mill_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, flour_mill_check_founder, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

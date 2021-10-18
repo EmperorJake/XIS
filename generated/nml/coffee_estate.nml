@@ -1445,25 +1445,21 @@ switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_availability, economy) {
         5: coffee_estate_check_availability_5;
         3: coffee_estate_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_43, industry_distance(43)) {
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_45, industry_distance(45)) {
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_43, industry_distance(43)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_43;
+        coffee_estate_min_distance_1;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_45;
-    }
-    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_1, industry_distance(1)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_7;
+        coffee_estate_min_distance_43;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_1;
+        coffee_estate_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1481,9 +1477,13 @@ switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coffee_estate_min_distance_60;
     }
+    switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_45, industry_distance(45)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        coffee_estate_min_distance_74;
+    }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_min_distance_50, industry_distance(50)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        coffee_estate_min_distance_74;
+        coffee_estate_min_distance_45;
     }
     switch (FEAT_INDUSTRIES, SELF, coffee_estate_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

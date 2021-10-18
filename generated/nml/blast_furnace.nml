@@ -1403,13 +1403,9 @@ switch (FEAT_INDUSTRIES, SELF, blast_furnace_check_availability, economy) {
         5: blast_furnace_check_availability_5;
         3: blast_furnace_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_77, industry_distance(77)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
     switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        blast_furnace_min_distance_77;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1451,9 +1447,13 @@ switch (FEAT_INDUSTRIES, SELF, blast_furnace_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         blast_furnace_min_distance_82;
     }
-    switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_55, industry_distance(55)) {
+    switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_77, industry_distance(77)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         blast_furnace_min_distance_78;
+    }
+    switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_55, industry_distance(55)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        blast_furnace_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, blast_furnace_min_distance_81, industry_distance(81)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;

@@ -1,6 +1,6 @@
 # Various needed programs
 HG= hg
-PYTHON3 = python3.6
+PYTHON3 = python3
 SED = sed
 ZIP = zip
 
@@ -14,7 +14,7 @@ MK_ARCHIVE = bin/mk-archive
 
 
 # Project details
-PROJECT_NAME = firs
+PROJECT_NAME = xis-nofields
 
 # graphics is not copied to generated currently in FIRS, unlike RH, IH etc - could be changed
 GRAPHICS_DIR = src/graphics
@@ -31,7 +31,7 @@ ifeq ($(strip $(EXPORTED)),no)
   REPO_VERSION = $(word 2,$(REPO_INFO))
 else
   # Exported version, lines below should get modified in 'bundle_src' target
-  REPO_REVISION = 9099
+  REPO_REVISION = 9185
   REPO_VERSION = 0.0
 endif
 
@@ -39,7 +39,7 @@ REPO_TITLE = "$(PROJECT_NAME) $(REPO_VERSION)"
 PROJECT_VERSIONED_NAME = $(PROJECT_NAME)-$(REPO_VERSION)
 ARGS = '${REPO_REVISION}' '${REPO_VERSION}' '${TEST_INDUSTRY}' '${NO_MP}'
 
-GRF_FILE = generated/$(PROJECT_NAME).grf
+GRF_FILE = generated/$(PROJECT_NAME)_$(REPO_REVISION).grf
 TAR_FILE = $(PROJECT_VERSIONED_NAME).tar
 ZIP_FILE = $(PROJECT_VERSIONED_NAME).zip
 MD5_FILE = $(PROJECT_NAME).check.md5

@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
 	url: string(STR_GRF_URL);
-	version: 9099;
+	version: 9185;
 	min_compatible_version: 9050;
 	param 0 {
 		economy_selection {

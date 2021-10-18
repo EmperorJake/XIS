@@ -1026,17 +1026,9 @@ switch (FEAT_INDUSTRIES, SELF, metal_workshop_check_availability, economy) {
         5: metal_workshop_check_availability_5;
         3: metal_workshop_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_77, industry_distance(77)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        metal_workshop_min_distance_77;
-    }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        metal_workshop_min_distance_7;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_13, industry_distance(13)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1062,33 +1054,41 @@ switch (FEAT_INDUSTRIES, SELF, metal_workshop_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         metal_workshop_min_distance_67;
     }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_52, industry_distance(52)) {
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_21, industry_distance(21)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         metal_workshop_min_distance_38;
     }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_21, industry_distance(21)) {
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        metal_workshop_min_distance_52;
+        metal_workshop_min_distance_21;
     }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_68, industry_distance(68)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        metal_workshop_min_distance_21;
+        metal_workshop_min_distance_52;
     }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_82, industry_distance(82)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         metal_workshop_min_distance_68;
     }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_62, industry_distance(62)) {
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         metal_workshop_min_distance_82;
     }
-    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_57, industry_distance(57)) {
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_62, industry_distance(62)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        metal_workshop_min_distance_57;
+    }
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         metal_workshop_min_distance_62;
     }
+    switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_77, industry_distance(77)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        metal_workshop_min_distance_7;
+    }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        metal_workshop_min_distance_57;
+        metal_workshop_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, metal_workshop_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;

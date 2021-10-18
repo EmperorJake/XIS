@@ -931,29 +931,29 @@ switch (FEAT_INDUSTRIES, SELF, builders_yard_check_availability, economy) {
         5: builders_yard_check_availability_5;
         3: builders_yard_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_49, industry_distance(49)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_40, industry_distance(40)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        builders_yard_min_distance_49;
-    }
     switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        builders_yard_min_distance_40;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_62, industry_distance(62)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         builders_yard_min_distance_55;
     }
-    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_38, industry_distance(38)) {
+    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         builders_yard_min_distance_62;
     }
+    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_38, industry_distance(38)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        builders_yard_min_distance_40;
+    }
+    switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        builders_yard_min_distance_38;
+    }
     switch (FEAT_INDUSTRIES, SELF, builders_yard_min_distance_63, industry_distance(63)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        builders_yard_min_distance_38;
+        builders_yard_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, builders_yard_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

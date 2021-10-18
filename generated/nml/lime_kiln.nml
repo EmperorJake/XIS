@@ -1281,21 +1281,21 @@ switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_availability, economy) {
         5: lime_kiln_check_availability_5;
         3: lime_kiln_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_77, industry_distance(77)) {
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_43, industry_distance(43)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_20, industry_distance(20)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_77;
-    }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_44, industry_distance(44)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_20;
+        lime_kiln_min_distance_43;
+    }
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_77, industry_distance(77)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        lime_kiln_min_distance_44;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_44;
+        lime_kiln_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_22, industry_distance(22)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1317,13 +1317,13 @@ switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lime_kiln_min_distance_10;
     }
-    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_43, industry_distance(43)) {
+    switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_20, industry_distance(20)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         lime_kiln_min_distance_79;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_min_distance_1, industry_distance(1)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        lime_kiln_min_distance_43;
+        lime_kiln_min_distance_20;
     }
     switch (FEAT_INDUSTRIES, SELF, lime_kiln_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

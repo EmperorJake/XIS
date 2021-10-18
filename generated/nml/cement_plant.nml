@@ -1618,17 +1618,9 @@ switch (FEAT_INDUSTRIES, SELF, cement_plant_check_availability, economy) {
         5: cement_plant_check_availability_5;
         3: cement_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_20, industry_distance(20)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_80, industry_distance(80)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        cement_plant_min_distance_20;
-    }
     switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        cement_plant_min_distance_80;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1662,9 +1654,17 @@ switch (FEAT_INDUSTRIES, SELF, cement_plant_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         cement_plant_min_distance_10;
     }
+    switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_20, industry_distance(20)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        cement_plant_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_80, industry_distance(80)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        cement_plant_min_distance_20;
+    }
     switch (FEAT_INDUSTRIES, SELF, cement_plant_min_distance_43, industry_distance(43)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        cement_plant_min_distance_39;
+        cement_plant_min_distance_80;
     }
     switch (FEAT_INDUSTRIES, SELF, cement_plant_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

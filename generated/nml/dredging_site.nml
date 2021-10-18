@@ -544,32 +544,32 @@ switch (FEAT_INDUSTRIES, SELF, dredging_site_check_availability, economy) {
         5: dredging_site_check_availability_5;
         3: dredging_site_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_22, industry_distance(22)) {
+    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_1, industry_distance(1)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        dredging_site_min_distance_1;
+    }
+    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_43, industry_distance(43)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        dredging_site_min_distance_81;
+    }
+    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        dredging_site_min_distance_43;
+    }
+    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_22, industry_distance(22)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        dredging_site_min_distance_14;
     }
     switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_45, industry_distance(45)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         dredging_site_min_distance_22;
     }
-    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        dredging_site_min_distance_45;
-    }
-    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_81, industry_distance(81)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        dredging_site_min_distance_14;
-    }
-    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_1, industry_distance(1)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        dredging_site_min_distance_81;
-    }
-    switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_43, industry_distance(43)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        dredging_site_min_distance_1;
-    }
     switch (FEAT_INDUSTRIES, SELF, dredging_site_coast_distance, water_distance) {
-        0 .. param_max_coastal_distance: dredging_site_min_distance_43;
+        0 .. param_max_coastal_distance: dredging_site_min_distance_45;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, dredging_site_min_distance_20, industry_distance(20)) {

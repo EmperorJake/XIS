@@ -504,21 +504,21 @@ switch (FEAT_INDUSTRIES, SELF, power_plant_check_availability, economy) {
         5: power_plant_check_availability_5;
         3: power_plant_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_31, industry_distance(31)) {
+    switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_5, industry_distance(5)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        power_plant_min_distance_31;
+        power_plant_min_distance_51;
     }
-    switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_51, industry_distance(51)) {
+    switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_31, industry_distance(31)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         power_plant_min_distance_5;
     }
     switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_17, industry_distance(17)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        power_plant_min_distance_51;
+        power_plant_min_distance_31;
     }
     switch (FEAT_INDUSTRIES, SELF, power_plant_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;

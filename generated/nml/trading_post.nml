@@ -6904,25 +6904,21 @@ switch (FEAT_INDUSTRIES, SELF, trading_post_check_availability, economy) {
         5: trading_post_check_availability_5;
         3: trading_post_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_49, industry_distance(49)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_5, industry_distance(5)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_49;
-    }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_5;
+        trading_post_min_distance_40;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_48, industry_distance(48)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_36;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_13, industry_distance(13)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_48;
+        trading_post_min_distance_34;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_61, industry_distance(61)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -6936,13 +6932,9 @@ switch (FEAT_INDUSTRIES, SELF, trading_post_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_53;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_40, industry_distance(40)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_22;
-    }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_40;
+        trading_post_min_distance_22;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -6960,17 +6952,9 @@ switch (FEAT_INDUSTRIES, SELF, trading_post_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_56;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_34, industry_distance(34)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_37;
-    }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_31, industry_distance(31)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_34;
-    }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_35, industry_distance(35)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_31;
+        trading_post_min_distance_37;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_30, industry_distance(30)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -6984,33 +6968,49 @@ switch (FEAT_INDUSTRIES, SELF, trading_post_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_42;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_68, industry_distance(68)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_21;
+    }
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_68, industry_distance(68)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        trading_post_min_distance_70;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_82, industry_distance(82)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_68;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_48, industry_distance(48)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_82;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_29, industry_distance(29)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_70;
+        trading_post_min_distance_48;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_81, industry_distance(81)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_58, industry_distance(58)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_29;
     }
-    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_5, industry_distance(5)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        trading_post_min_distance_58;
+    }
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_31, industry_distance(31)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        trading_post_min_distance_5;
+    }
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        trading_post_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         trading_post_min_distance_81;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_min_distance_52, industry_distance(52)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        trading_post_min_distance_58;
+        trading_post_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, trading_post_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||
