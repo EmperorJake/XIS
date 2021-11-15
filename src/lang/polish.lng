@@ -1,0 +1,422 @@
+##grflangid 0x01
+##plural 0
+
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 ładunki i 83 branże! Fork FIRS 3.0.10. Ekonomia zaprojektowana przez Emperora Jake'a, dodatkowe grafiki: Emperor Jake, GarryG i Toni Babelony; cały inny kod i grafika dzięki andythenorth i reszcie zespołu FIRS. Licencja: GPL v2. Tłumaczenie PL: Tomirad [13.11.2021].
+STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
+
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalna odległość łowisk, platform wiertniczych i pogłębiarek od wybrzeża w płytkach.
+STR_PARAM_DESC_ECONOMIES                                                        :Każda gospodarka zapewnia inną kombinację ładunków i branż.{}{}W tej chwili tylko jedna gospodarka jest kompletna.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Domyślnie podczas gry będą otwierane nowe branże.{}{}Jeśli {SILVER}zapobieganie otwieraniu {BLACK}jest włączone, branże nie zostaną otwarte podczas gry, a gracze nie będą mogli finansować ani szukać branż.
+
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Domyślnie branże wtórne nigdy się nie zamkną.{}{}Jeśli włączone jest zamykanie wtórne, branże wtórne mogą zostać zamknięte, jeśli ładunek nie jest transportowany przez długi czas. Branże podstawowe nigdy nie zostaną zamknięte w XIS i to ustawienie nie ma na nie wpływu.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maksymalna odległość przybrzeżna przemysłu morskiego w płytkach
+STR_PARAM_NAME_ECONOMIES                                                        :Ekonomia
+STR_PARAM_NAME_NO_OPENINGS                                                      :Zapobiegaj otwieraniu się branż podczas rozgrywki
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Zezwól na zamknięcie branż wtórnych
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :Bez limitu
+
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Skrzynie zaopatrzenia wymagane do {SILVER}ulepszonej {BLACK}produkcji podstawowej (domyślne 16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Skrzynie zaopatrzenia wymagane do {SILVER}rozkręconej {BLACK}produkcji podstawowej (domyślne 80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :Farmy, kopalnie i podobne gałęzie przemysłu zwiększą produkcję, gdy skrzynie z zaopatrzeniem zostaną dostarczone, najpierw do poziomu {SILVER}Ulepszonego{BLACK}, a następnie do {SILVER}Rozkręconego{BLACK}, jeśli dostarczona zostanie wystarczająca liczba skrzynek.  {}{}Wymagania dotyczące ładunku dla branż typu portowego będą 8-krotnie wyższe od wartości tutaj określonych.
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :Ulepszony poziom produkcji podstawowej (%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Rozkręcony poziom produkcji podstawowej (%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produkcja w gospodarstwach rolnych, kopalniach i podobnych branżach przy spełnieniu wymagań dostaw (jako procent {SILVER}Normalnego {BLACK}poziomu produkcji).
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :NIEKOMPLETNA
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :NIEKOMPLETNA
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :NIEKOMPLETNA
+STR_PARAM_VALUE_ECONOMIES_FIRS                                                  :CAŁOŚĆ
+STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :NIEKOMPLETNA
+STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :NIEKOMPLETNA
+
+STR_CARGO_NAME_ACID                                                             :Kwasy
+STR_CARGO_NAME_ALCOHOL                                                          :Alkohole
+STR_CARGO_NAME_ALUMINIUM														:Glin
+STR_CARGO_NAME_BAUXITE                                                          :Boksyt
+STR_CARGO_NAME_BEANS                                                            :Soja
+STR_CARGO_NAME_BIOMASS															:Biomasa
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :Materiały Budowlane
+STR_CARGO_NAME_CASSAVA                                                          :Maniok
+STR_CARGO_NAME_CEMENT                                                           :Cement
+STR_CARGO_NAME_CHEMICALS                                                        :Substancje Chemiczne
+STR_CARGO_NAME_CHLORINE                                                         :Chlor
+STR_CARGO_NAME_CLAY                                                             :Glina
+STR_CARGO_NAME_COFFEE                                                           :Kawa
+STR_CARGO_NAME_COKE                                                             :Koks
+STR_CARGO_NAME_COPPER                                                           :Miedź
+STR_CARGO_NAME_EDIBLE_OIL                                                       :Tłuszcze Jadalne
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :Maszyny Elektryczne
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :Materiały Inżynierskie
+STR_CARGO_NAME_EXPLOSIVES                                                       :Materiały Wybuchowe
+STR_CARGO_NAME_FIBRES                                                           :Włókna
+STR_CARGO_NAME_FISH                                                             :Ryby
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :Materiały Rolnicze
+STR_CARGO_NAME_FERTILISER                                                       :Nawozy
+STR_CARGO_NAME_FRUITS                                                           :Owoce
+STR_CARGO_NAME_KAOLIN                                                           :Glina Porcelanowa
+STR_CARGO_NAME_LIMESTONE                                                        :Wapień
+STR_CARGO_NAME_LITHIUM															:Lit
+STR_CARGO_NAME_LUMBER                                                           :Drewno
+STR_CARGO_NAME_METAL                                                            :Aluminium
+STR_CARGO_NAME_MILK                                                             :Mleko
+STR_CARGO_NAME_MANGANESE                                                        :Mangan
+STR_CARGO_NAME_NITRATES                                                         :Azotany
+STR_CARGO_NAME_NUTS                                                             :Orzechy
+STR_CARGO_NAME_OILSANDS															:Piaski Roponośne
+STR_CARGO_NAME_PACKAGING                                                        :Opakowania
+STR_CARGO_NAME_PEAT                                                             :Torf
+STR_CARGO_NAME_PETROL                                                           :Paliwa Naftowe
+STR_CARGO_NAME_PHOSPHATE                                                        :Fosforany
+STR_CARGO_NAME_PIG_IRON                                                         :Surówa Hutnicza
+STR_CARGO_NAME_PIPE                                                             :Rury
+STR_CARGO_NAME_POTASH                                                           :Potaż
+STR_CARGO_NAME_PYRITE_ORE                                                       :Rudy Pirytu
+STR_CARGO_NAME_QUICKLIME                                                        :Wapno Palone
+STR_CARGO_NAME_RECYCLABLES                                                      :Surowce Wtórne
+STR_CARGO_NAME_SALT                                                             :Sól
+STR_CARGO_NAME_SAND                                                             :Piasek Szklarski
+STR_CARGO_NAME_SCRAP_METAL                                                      :Złom Metalowy
+STR_CARGO_NAME_SLAG                                                             :Żużel
+STR_CARGO_NAME_SODA_ASH                                                         :Soda Kalcynowana
+STR_CARGO_NAME_STEEL                                                            :Stal
+STR_CARGO_NAME_STONE                                                            :Kruszywo Kamienne
+STR_CARGO_NAME_SUGAR_BEET                                                       :Buraki Cukrowe
+STR_CARGO_NAME_SULPHUR                                                          :Siarka
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :Nadwozia Pojazdów
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :Części Pojazdów
+STR_CARGO_NAME_VEHICLES                                                         :Pojazdy
+STR_CARGO_NAME_WOOL                                                             :Wełna
+STR_CARGO_NAME_ZINC                                                             :Cynk
+STR_CARGO_NAME_ZINCORE															:Rudy Cynku
+
+STR_CARGO_UNIT_ACID                                                             :{VOLUME} kwasu
+STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} alkoholu
+STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} boksytu
+STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} soi
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} materiałów budowlanych
+STR_CARGO_UNIT_CASSAVA                                                          :{WEIGHT} manioku
+STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} cementu
+STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} substancji chemicznych
+STR_CARGO_UNIT_CHLORINE                                                         :{VOLUME} chloru
+STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} glinu
+STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} wor{P 0 ek ki ków} kawy
+STR_CARGO_UNIT_COKE                                                             :{WEIGHT} koksu
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} miedzi
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} tłuszczy jadalnych
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{SIGNED_WORD} skrzy{P 0 nia nie ń} maszyn elektrycznych
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} skrzy{P 0 nia nie ń} materiałów inżynierskich
+STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} skrzy{P 0 nia nie ń} ładunków wybuchowych
+STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} nawozu
+STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} bel{P 0 a e i} włókien
+STR_CARGO_UNIT_FISH                                                             :{WEIGHT} ryb
+STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} skrzy{P 0 nia nie ń} materiałów rolniczych
+STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} owoców
+STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} gliny porcelanowej
+STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} wapienia
+STR_CARGO_UNIT_LUMBER                                                           :{WEIGHT} drewna
+STR_CARGO_UNIT_LYE                                                              :{VOLUME} ługu
+STR_CARGO_UNIT_MANGANESE                                                        :{WEIGHT} manganu
+STR_CARGO_UNIT_METAL                                                            :{WEIGHT} aluminium
+STR_CARGO_UNIT_MILK                                                             :{VOLUME} mleka
+STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} niklu
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} azotanów
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} wor{P 0 ek ki ków} orzechów
+STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} opakowań
+STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} torfu
+STR_CARGO_UNIT_PETROL                                                           :{VOLUME} paliw naftowych
+STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} fosforanów
+STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} surowki hutniczej
+STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} rur
+STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} potażu
+STR_CARGO_UNIT_PYRITE_ORE                                                       :{WEIGHT} rudy cynku
+STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} wapna palonego
+STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} surowców wtórnych
+STR_CARGO_UNIT_SALT                                                             :{WEIGHT} soli
+STR_CARGO_UNIT_SAND                                                             :{WEIGHT} piasku szklarskiego
+STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} złomu metalowego
+STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} żużlu
+STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} sody kalcynowanej
+STR_CARGO_UNIT_STEEL                                                            :{WEIGHT} stali
+STR_CARGO_UNIT_STONE                                                            :{WEIGHT} kruszywa kamiennego
+STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} buraków cukrowych
+STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} siarki
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} nadwozia pojazdów
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} części pojazdów
+STR_CARGO_UNIT_VEHICLES                                                         :{WEIGHT} pojazdów
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} bel{P 0 a e i} wełny
+STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} cynku
+
+STR_CID_ACID                                                                    :{TINYFONT}KW
+STR_CID_ALCOHOL                                                                 :{TINYFONT}AL
+STR_CID_BAUXITE                                                                 :{TINYFONT}BX
+STR_CID_BEANS                                                                   :{TINYFONT}SO
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}BM
+STR_CID_CASSAVA                                                                 :{TINYFONT}MA
+STR_CID_CEMENT                                                                  :{TINYFONT}CE
+STR_CID_CHEMICALS                                                               :{TINYFONT}PE
+STR_CID_CHLORINE                                                                :{TINYFONT}CL
+STR_CID_CLAY                                                                    :{TINYFONT}GL
+STR_CID_COFFEE                                                                  :{TINYFONT}CF
+STR_CID_COKE                                                                    :{TINYFONT}CX
+STR_CID_COPPER                                                                  :{TINYFONT}CU
+STR_CID_EDIBLE_OIL                                                              :{TINYFONT}TJ
+STR_CID_ELECTRICAL_MACHINES                                                     :{TINYFONT}ME
+STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}MI
+STR_CID_EXPLOSIVES                                                              :{TINYFONT}MW
+STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}MR
+STR_CID_FERTILISER                                                              :{TINYFONT}NA
+STR_CID_FIBRES                                                                  :{TINYFONT}WL
+STR_CID_FISH                                                                    :{TINYFONT}RY
+STR_CID_KAOLIN                                                                  :{TINYFONT}KA
+STR_CID_LIMESTONE                                                               :{TINYFONT}WA
+STR_CID_LUMBER                                                                  :{TINYFONT}DR
+STR_CID_LYE                                                                     :{TINYFONT}LU
+STR_CID_MANGANESE                                                               :{TINYFONT}MN
+STR_CID_METAL                                                                   :{TINYFONT}MT
+STR_CID_MILK                                                                    :{TINYFONT}ML
+STR_CID_NICKEL                                                                  :{TINYFONT}NK
+STR_CID_NITRATES                                                                :{TINYFONT}NI
+STR_CID_NUTS                                                                    :{TINYFONT}OR
+STR_CID_PACKAGING                                                               :{TINYFONT}OP
+STR_CID_PEAT                                                                    :{TINYFONT}CT
+STR_CID_PETROL                                                                  :{TINYFONT}ON
+STR_CID_PIG_IRON                                                                :{TINYFONT}SH
+STR_CID_PIPE                                                                    :{TINYFONT}RU
+STR_CID_PHOSPHATE                                                               :{TINYFONT}FO
+STR_CID_POTASH                                                                  :{TINYFONT}PO
+STR_CID_PYRITE_ORE                                                              :{TINYFONT}RC
+STR_CID_QUICKLIME                                                               :{TINYFONT}WP
+STR_CID_RECYCLABLES                                                             :{TINYFONT}SW
+STR_CID_SALT                                                                    :{TINYFONT}SL
+STR_CID_SAND                                                                    :{TINYFONT}PS
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}ZM
+STR_CID_SLAG                                                                    :{TINYFONT}ZU
+STR_CID_SODA_ASH                                                                :{TINYFONT}SK
+STR_CID_STEEL                                                                   :{TINYFONT}ST
+STR_CID_STONE                                                                   :{TINYFONT}KS
+STR_CID_SUGAR_BEET                                                              :{TINYFONT}BC
+STR_CID_SULPHUR                                                                 :{TINYFONT}SU
+STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}PN
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}PC
+STR_CID_VEHICLES                                                                :{TINYFONT}PJ
+STR_CID_WOOL                                                                    :{TINYFONT}WE
+STR_CID_ZINC                                                                    :{TINYFONT}ZN
+
+
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}XIS nie jest przeznaczony do użytku z światem Toyland
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS wymaga OpenTTD 1.9.0 or JGRPP 0.32.x lub wyższej.
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Niepoprawny zestaw: {ORANGE}{STRING} {YELLOW}Przejrzyj FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Niepoprawny parametr: {ORANGE}Parametr 2 CanSet musi wynosić 0, aby pracować z FIRS. {YELLOW}Przejrzyj FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Niepoprawny parametr: {ORANGE}NA City Set parameter 2 must be 0 to work with FIRS. {YELLOW}Przejrzyj FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Niepoprawna wersja: {ORANGE}Total Town Replacement Set musi być w wersji 3.11 lub nowszej. {YELLOW}Przejrzyj FIRS ReadMe: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :musi być umieszczony poniżej linii śniegu.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :musi znajdować się powyżej linii śniegu.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :musi być umieszczony na suchym lądzie.
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :To nie może tu rosnąć!
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :Zbyt strome!
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :dozwolony tylko jeden tego typu przemysł na miasto.
+
+STR_IND_ALUMINIUM_PLANT                                                         :Fabryka Aluminium
+STR_IND_AMMONIA_PLANT                                                           :Fabryka Amoniaku
+STR_IND_ARABLE_FARM                                                             :Gospodarstwo Rolne
+STR_IND_ASSEMBLY_PLANT                                                          :Zakład Montażowy
+STR_IND_BATTERY_PLANT                                                           :Fabryka Akumulatorów
+STR_IND_BASICFARM                                                               :Farma
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :Piec Tlenowy
+STR_IND_BAUXITE_MINE		                                                   :Kopalnia Boksytu
+STR_IND_BIOREFINERY                                                             :Biorafineria
+STR_IND_BLAST_FURNACE                                                           :Wielki Piec
+STR_IND_BREWERY                                                                 :Browar
+STR_IND_CIDER_MILL                                                              :Rozlewnia Cydru
+STR_IND_BRICK_WORKS                                                             :Cegielnia
+STR_IND_BUILDERS_YARD                                                           :Kompania Budowlana
+STR_IND_BULK_TERMINAL                                                           :Port Handlowy
+STR_IND_CEMENT_PLANT                                                            :Cementownia
+STR_IND_CHEMICAL_PLANT                                                          :Zakłady Chemiczne
+STR_IND_CRACKING_PLANT                                                          :Zakłady Petrochemiczne
+STR_IND_CLAY_PIT                                                                :Kopalnia Glinu
+STR_IND_COFFEE_ESTATE                                                           :Plantacja Kawy
+STR_IND_COKE_OVEN                                                               :Koksownia
+STR_IND_COPPER_REFINERY                                                         :Huta Miedzi
+STR_IND_DAIRY                                                                   :Mleczarnia
+STR_IND_DAIRY_FARM                                                              :Gospodarstwo Mleczne
+STR_IND_DREDGING_SITE                                                           :Pogłębiarka
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :Elektryczny Piec Łukowy
+STR_IND_FACTORY                                                                 :Zakład produkcyjny
+STR_IND_FISHING_GROUND                                                          :Łowisko
+STR_IND_FISHING_HARBOUR                                                         :Port Rybacki
+STR_IND_FISHING_VILLAGE                                                         :Wioska Rybacka
+STR_IND_FLOUR_MILL                                                              :Młyn
+STR_IND_FOOD_MARKET                                                             :Sklep Spożywczy
+STR_IND_FOOD_PROCESSOR                                                          :Zakład Przetwórstwa Spożywczego
+STR_IND_FOUNDRY                                                                 :Odlewnia
+STR_IND_FURNITURE_FACTORY                                                       :Zakład Meblarski
+STR_IND_GENERAL_STORE                                                           :Sklep Wielobranżowy
+STR_IND_GLASS_WORKS                                                             :Huta Szkła
+STR_IND_HARDWARE_STORE                                                          :Pawilon Handlowy
+STR_IND_HOTEL                                                                   :Hotel
+STR_IND_HERDING_COOP                                                            :Spółdzielnia Pasterska
+STR_IND_IRON_WORKS                                                              :Huta Żelaza
+STR_IND_JUNKYARD                                                                :Złomowisko
+STR_IND_LIME_KILN                                                               :Wapiennik
+STR_IND_LIMESTONE_MINE                                                          :Kopalnia Wapienia
+STR_IND_LITHIUM_MINE                                                            :Kopalnia Litu
+STR_IND_LIQUIDS_TERMINAL                                                        :Terminal Paliwowy
+STR_IND_LUMBER_YARD                                                             :Składnica Drewna
+STR_IND_MACHINE_SHOP                                                            :Warsztat Mechaniczny 
+STR_IND_MANGANESE_MINE                                                          :Kopalnia Manganu
+STR_IND_METAL_FABRICATION_PLANT                                                 :Zakład Produkcji Metali
+STR_IND_METAL_WORKSHOP                                                          :Warsztat Elektryczny
+STR_IND_MIXEDFARM                                                               :Gospdoarstwo Wielobranżowe
+STR_IND_NITRATE_MINE                                                            :Kopalnia Azotanów
+STR_IND_ORCHARD_PIGGERY                                                         :Gospodarstwo Chlewnio-Sadownicze
+STR_IND_OIL_SANDS_MINE                                                          :Kopalnia Piasków Roponośnych
+STR_IND_PEATLANDS                                                               :Torfowiska
+STR_IND_PETROLPUMP                                                              :Stacja Paliw
+STR_IND_PHOSPHATE_MINE                                                          :Kopalnia Fosforu
+STR_IND_PLASTICS_PLANT                                                          :Zakład Tworzyw Sztucznych
+STR_IND_PRINTING_PLANT                                                          :Drukarnia
+STR_IND_POLYMER_PLANT                                                           :Zakład Polimerów
+STR_IND_PORT                                                                    :Port
+STR_IND_POTASH_MINE                                                             :Koplania Potasu
+STR_IND_PYRITE_MINE                                                             :Kopalnia Pirytu
+STR_IND_PYRITE_SMELTER                                                          :Huta Cynku
+STR_IND_POWER_PLANT                                                             :Elektrownia
+STR_IND_QUARRY                                                                  :Kamieniołom
+STR_IND_RANCH                                                                   :Gospodarstwo Hodowli Bydła
+STR_IND_RECYCLING_DEPOT                                                         :Skład Surowców Wtórnych 
+STR_IND_RECYCLING_PLANT                                                         :Sortownia Surowców Wtórnych
+STR_IND_REINDEER_FARM                                                           :Gospodarstwo Hodowli Reniferów
+STR_IND_SHEEPFARM                                                               :Gospodarstwo Hodowli Owiec
+STR_IND_SLAG_GRINDING_PLANT                                                     :Zakład Przemiału Żużla
+STR_IND_SMITHY_FORGE                                                            :Kuźnia
+STR_IND_SODA_ASH_MINE                                                           :Kopalnia Sody Kalcynowanej
+STR_IND_STEEL_FINISHING_PLANT                                                   :Cynkownia
+STR_IND_STOCKYARD                                                               :Rzeźnia
+STR_IND_SUGAR_REFINERY                                                          :Cukrownia
+STR_IND_SULPHIDE_MINE                                                           :Kopalnia Rudy Cynku
+STR_IND_SUPPLY_YARD                                                             :Plac Zaopatrzeniowy
+STR_IND_ENSP_YARD                                                               :Magazyn Materiałów Inżynierskich
+STR_IND_FMSP_YARD                                                               :Magazyn Materiałów Rolniczych
+STR_IND_TEXTILE_MILL                                                            :Zakład Odzieżowy
+STR_IND_TRADING_POST                                                            :Faktoria Handlowa
+STR_IND_TYRE_PLANT                                                              :Fabryka Opon
+STR_IND_UPGRADER                                                                :Zakład Ekstrakcji Olejów
+STR_IND_VINEYARD                                                                :Winnica
+STR_IND_VEHICLE_DEALER                                                          :Autokomis
+STR_IND_WHARF                                                                   :Estakada
+STR_IND_ZINC_SMELTER                                                            :Huta Cynku
+
+
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produkuje z maksymalną szybkością, jeśli dostarczono {WHITE}jakikolwiek {BLACK}wymagany ładunek.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Aby uzyskać maksymalną wydajność produkcji, dostarczaj {WHITE}wszystkie {BLACK}wymagane ładunki co najmniej raz na trzy miesiące.
+
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}Produkcja jest proporcjonalna do liczby mieszkańców miasta.
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Aktualna produkcja: {YELLOW}Normalna {}{}{BLACK}Dla {WHITE}Ulepszonej {BLACK}produkcji dostarczy {SIGNED_WORD} skrzynek z zaopatrzeniem w ciągu trzech miesięcy.{}Do produkcji {WHITE}Rozkręconej, {BLACK}dostarcz {SIGNED_WORD} skrzynek.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Aktualna produkcja: {YELLOW}Ulepszona {}{}{BLACK}Aby utrzymać ten poziom, dostarcz {SIGNED_WORD} skrzynki z materiałami w ciągu trzech miesięcy.{}W przypadku produkcji {WHITE}Rozkręconej {BLACK}dostarcz {SIGNED_WORD} skrzynek.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Aktualna produkcja: {YELLOW}Rozkręcona {}{}{BLACK}Aby utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} skrzynki z materiałami w ciągu trzech miesięcy.
+
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Aktualna produkcja: {YELLOW}Normalna {}{}{BLACK}Dla {WHITE}Ulepszonej {BLACK}produkcji dostarczy {SIGNED_WORD} jednostek towarów w ciągu trzech miesięcy.{}Do produkcji {WHITE}Rozkręconej, {BLACK}dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Aktualna produkcja: {YELLOW}Ulepszona {}{}{BLACK}Aby utrzymać ten poziom, dostarcz {SIGNED_WORD} jednostek towarów w ciągu trzech miesięcy.{}W przypadku produkcji {WHITE}Rozkręconej {BLACK}dostarcz {SIGNED_WORD} jednostek.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Aktualna produkcja: {YELLOW}Rozkręcona {}{}{BLACK}Aby utrzymać ten poziom, dostarcz {SKIP}{SIGNED_WORD} jednostek towarów w ciągu trzech miesięcy.
+STR_GENERIC_NEWLINE                                                             :{}
+
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_FOREST                                                                 :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Położenie: {YELLOW}Można postawić inwestycję tylko na terenach śnieżnych.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+STR_FUND_VINEYARD                                                               :{}{BLACK}Położenie: {YELLOW}Nie można postawić inwestycji na terenach śnieżnych i na pustynnych.
+
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Dostępne od: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Niedostępne po: {YELLOW}{COMMA}
+
+STR_TOWN                                                                        :{STRING}
+STR_STATION                                                                     :{STRING} {STRING}
+
+STR_STATION_ANIMALS                                                             :Oborniki
+STR_STATION_AUTOMOTIVE                                                          :Montownia
+STR_STATION_BAR_GRILL_AND_ROOMS                                                 :Spa
+STR_STATION_BARNS                                                               :Stodoły
+STR_STATION_BARREL_AND_KEG                                                      :Gorzelnia
+STR_STATION_BASE                                                                :Baza Technologiczna
+STR_STATION_BATTERY_PLANT                                                       :Warsztaty Akumulatorów
+STR_STATION_BAUXITE_MINE                                                        :Skład Boksytu
+STR_STATION_BONEYARD                                                            :Cmentarz
+STR_STATION_BANK_TOP                                                            :Hałdy
+STR_STATION_CASTINGS                                                            :Odlewnia
+STR_STATION_COLLIERY                                                            :Skład Węglowy
+STR_STATION_COPPER_LODE                                                         :Odkrywka Miedzi
+STR_STATION_CREOSOTING                                                          :Kreozowanie
+STR_STATION_CRACKING                                                            :Petrochemia
+STR_STATION_DAIRY_LANE                                                          :Linia Mleczarska
+STR_STATION_ESTATE                                                              :Kolonia
+STR_STATION_EXCHANGE                                                            :Giełda
+STR_STATION_FARM_1                                                              :Folwark
+STR_STATION_FARM_2                                                              :Łąki
+STR_STATION_FARM_3                                                              :Zagrody
+STR_STATION_FISHMARKET                                                          :Targ Rybny
+STR_STATION_FEED_SEED                                                           :Ogrodnik
+STR_STATION_FOOD_CORPORATION                                                    :Przedsiębiorstwo Spożywcze
+STR_STATION_FOREST                                                              :Przesieka
+STR_STATION_FORGE                                                               :Kuźnia
+STR_STATION_FURNACE                                                             :Piece
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :Baza Zaopatrzeniowa
+STR_STATION_HEAVY_INDUSTRY_2                                                    :Warsztaty
+STR_STATION_HERDING_COOP                                                        :Stróżówka
+STR_STATION_INDUSTRY_ESTATE_1                                                   :Park Technologiczny
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :Reja
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :Brzeg
+STR_STATION_INDUSTRY_HARBOUR_3                                                  :Przystań
+STR_STATION_IRONSTONE                                                           :Rudawa
+STR_STATION_JOINERS_SHOP                                                        :Stolarnia
+STR_STATION_KILNS                                                               :Cegielnia
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :Depozyt Boksytu
+STR_STATION_LIMESTONE_MINES                                                     :Kamieniołomy Wapienne
+STR_STATION_LITHIUM_MINES                                                       :Kopalnia Litu
+STR_STATION_MANGANESE_MINES                                                     :Kopalnia Manganu
+STR_STATION_MARKET                                                              :Targowisko
+STR_STATION_MERCHANTS_LANE                                                      :Centrum Handlowe
+STR_STATION_MILL                                                                :Młyn
+STR_STATION_MINE                                                                :Garbarnia
+STR_STATION_MOULDINGS                                                           :Odlewnia
+STR_STATION_OIL_RIG                                                             :Pola Naftowe
+STR_STATION_ORCHARDS                                                            :Ogrody
+STR_STATION_PIT                                                                 :Wyrobisko
+STR_STATION_PLANTATION                                                          :Plantacja
+STR_STATION_PRINTERS                                                            :Drukarnia
+STR_STATION_POWERHUNGRY                                                         :Elektrownia
+STR_STATION_POLYMERS                                                            :Polimery
+STR_STATION_PUMPS                                                               :Pompy
+STR_STATION_PYRITES                                                             :Złoża Sfalerytu
+STR_STATION_REFINERY                                                            :Rafineria
+STR_STATION_RUBBER_COMPANY                                                      :Gumownia
+STR_STATION_SALTPETER_WORKS                                                     :Azoty
+STR_STATION_SHARP_STREET                                                        :Szklarz
+STR_STATION_SHEEP_FOLD                                                          :Owczarnia
+STR_STATION_SHOALS                                                              :Łowisko
+STR_STATION_SILO                                                                :Silos
+STR_STATION_SMELTER                                                             :Huta
+STR_STATION_STACKS                                                              :Stosy
+STR_STATION_STAMP_AND_PLATE                                                     :Płytkownia
+STR_STATION_WATT_STREET                                                         :Energetyczna
+STR_STATION_SUGAR_COMPANY                                                       :Cukrownia
+STR_STATION_TANK_FARM                                                           :Zbiorniki
+STR_STATION_TAPPERS_SHED                                                        :Stare Miasto
+STR_STATION_TOWN_1                                                              :Skrzyżowanie
+STR_STATION_TOWN_2                                                              :Centrum Handlowe
+STR_STATION_TOWN_3                                                              :Targowisko
+STR_STATION_TRONA_BEDS                                                          :Stolnica
+STR_STATION_WATER                                                               :Zatoka
+STR_STATION_WEAVE_AND_DYE                                                       :Tkalnia
+STR_STATION_WELLS                                                               :Studnie
+STR_STATION_WINERY                                                              :Winiarnia
+STR_STATION_WORKS_YARD                                                          :Dziedziniec
+STR_STATION_UPGRADER                                                            :Obiekty
+STR_STATION_VEHICLE_DEALER                                                      :Parking
