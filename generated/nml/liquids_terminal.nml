@@ -9083,45 +9083,21 @@ switch (FEAT_INDUSTRIES, SELF, liquids_terminal_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_48, industry_distance(48)) {
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_50, industry_distance(50)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         liquids_terminal_min_distance_40;
     }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_48;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_17, industry_distance(17)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_41, industry_distance(41)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_17;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_46, industry_distance(46)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_41;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_50, industry_distance(50)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_46;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_9, industry_distance(9)) {
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         liquids_terminal_min_distance_50;
     }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_55, industry_distance(55)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_9;
-    }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_56, industry_distance(56)) {
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         liquids_terminal_min_distance_55;
     }
     switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_6, industry_distance(6)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        liquids_terminal_min_distance_56;
+        liquids_terminal_min_distance_9;
     }
     switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_8, industry_distance(8)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -9135,9 +9111,33 @@ switch (FEAT_INDUSTRIES, SELF, liquids_terminal_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         liquids_terminal_min_distance_67;
     }
-    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_74, industry_distance(74)) {
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_56, industry_distance(56)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         liquids_terminal_min_distance_49;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_46, industry_distance(46)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_56;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_48, industry_distance(48)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_48;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_17, industry_distance(17)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_18;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_41, industry_distance(41)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_17;
+    }
+    switch (FEAT_INDUSTRIES, SELF, liquids_terminal_min_distance_74, industry_distance(74)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        liquids_terminal_min_distance_41;
     }
     switch (FEAT_INDUSTRIES, SELF, liquids_terminal_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

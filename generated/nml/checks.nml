@@ -14,9 +14,6 @@ if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 
     if (grf_future_status("\F1\25\00\08")) {
         error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "FIRS v4"));
     }
-    if (grf_future_status("mb\07\00")) {
-        error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "Alpine Climate"));
-    }
     if (grf_future_status("Meo\97")) {
         error(FATAL, string(STR_ERR_INCOMPATIBLE_SET, "ECS Agricultural Vector"));
     }

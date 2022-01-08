@@ -1478,40 +1478,40 @@ switch (FEAT_INDUSTRIES, SELF, coke_oven_check_availability, economy) {
         5: coke_oven_check_availability_5;
         3: coke_oven_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_70, industry_distance(70)) {
+    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_14, industry_distance(14)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_51, industry_distance(51)) {
+    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_70, industry_distance(70)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        coke_oven_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_45, industry_distance(45)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coke_oven_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_7, industry_distance(7)) {
+    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coke_oven_min_distance_51;
-    }
-    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coke_oven_min_distance_7;
+        coke_oven_min_distance_45;
     }
     switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_0, industry_distance(0)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coke_oven_min_distance_14;
+        coke_oven_min_distance_51;
     }
     switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_49, industry_distance(49)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coke_oven_min_distance_0;
     }
-    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_45, industry_distance(45)) {
+    switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coke_oven_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, coke_oven_check_industry_max_distance_2, industry_distance(7)) {
-        0 .. 72: coke_oven_min_distance_45;
+        0 .. 72: coke_oven_min_distance_7;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, coke_oven_max_distance_7, industry_count(7)) {
-        0: coke_oven_min_distance_45;
+        0: coke_oven_min_distance_7;
         coke_oven_check_industry_max_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, coke_oven_min_distance_78, industry_distance(78)) {

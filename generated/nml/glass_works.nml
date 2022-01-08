@@ -890,13 +890,25 @@ switch (FEAT_INDUSTRIES, SELF, glass_works_check_availability, economy) {
         5: glass_works_check_availability_5;
         3: glass_works_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_34, industry_distance(34)) {
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_86, industry_distance(86)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_36, industry_distance(36)) {
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        glass_works_min_distance_86;
+    }
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_34, industry_distance(34)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        glass_works_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_20, industry_distance(20)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         glass_works_min_distance_34;
+    }
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_36, industry_distance(36)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        glass_works_min_distance_20;
     }
     switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_51, industry_distance(51)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -954,33 +966,21 @@ switch (FEAT_INDUSTRIES, SELF, glass_works_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         glass_works_min_distance_68;
     }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_57, industry_distance(57)) {
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_31, industry_distance(31)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         glass_works_min_distance_1;
     }
     switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_62, industry_distance(62)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        glass_works_min_distance_57;
+        glass_works_min_distance_31;
     }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_31, industry_distance(31)) {
+    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         glass_works_min_distance_62;
     }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_86, industry_distance(86)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        glass_works_min_distance_31;
-    }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        glass_works_min_distance_86;
-    }
-    switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_20, industry_distance(20)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        glass_works_min_distance_60;
-    }
     switch (FEAT_INDUSTRIES, SELF, glass_works_min_distance_22, industry_distance(22)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        glass_works_min_distance_20;
+        glass_works_min_distance_57;
     }
     switch (FEAT_INDUSTRIES, SELF, glass_works_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

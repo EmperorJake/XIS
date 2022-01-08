@@ -1052,17 +1052,41 @@ switch (FEAT_INDUSTRIES, SELF, diamond_mine_check_availability, economy) {
         5: diamond_mine_check_availability_5;
         3: diamond_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_82, industry_distance(82)) {
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_63, industry_distance(63)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_72, industry_distance(72)) {
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_39, industry_distance(39)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_63;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_82, industry_distance(82)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_39;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         diamond_mine_min_distance_82;
     }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_51, industry_distance(51)) {
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_72, industry_distance(72)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_74;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         diamond_mine_min_distance_72;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_79;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_77, industry_distance(77)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_49;
+    }
+    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_51, industry_distance(51)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        diamond_mine_min_distance_77;
     }
     switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_57, industry_distance(57)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1072,33 +1096,9 @@ switch (FEAT_INDUSTRIES, SELF, diamond_mine_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         diamond_mine_min_distance_57;
     }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_77, industry_distance(77)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_7;
-    }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_63, industry_distance(63)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_77;
-    }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_39, industry_distance(39)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_63;
-    }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_74, industry_distance(74)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_39;
-    }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_79, industry_distance(79)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_74;
-    }
-    switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_49, industry_distance(49)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_79;
-    }
     switch (FEAT_INDUSTRIES, SELF, diamond_mine_min_distance_55, industry_distance(55)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        diamond_mine_min_distance_49;
+        diamond_mine_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, diamond_mine_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

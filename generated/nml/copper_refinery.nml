@@ -1335,13 +1335,9 @@ switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_23, industry_distance(23)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_82;
-    }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_23;
+        copper_refinery_min_distance_82;
     }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1367,9 +1363,13 @@ switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         copper_refinery_min_distance_80;
     }
+    switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        copper_refinery_min_distance_25;
+    }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_min_distance_67, industry_distance(67)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        copper_refinery_min_distance_25;
+        copper_refinery_min_distance_23;
     }
     switch (FEAT_INDUSTRIES, SELF, copper_refinery_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

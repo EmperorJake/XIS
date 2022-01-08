@@ -41,7 +41,7 @@ IncompatibleGRF(DwordGrfID("F1250006"), "FIRS v2")
 IncompatibleGRF(DwordGrfID("F1250007"), "FIRS v3")
 IncompatibleGRF(DwordGrfID("F1250008"), "FIRS v4")
 
-IncompatibleGRF(LiteralGrfID(r"mb\07\00"), "Alpine Climate")
+# IncompatibleGRF(LiteralGrfID(r"mb\07\00"), "Alpine Climate")
 IncompatibleGRF(LiteralGrfID(r"Meo\97"), "ECS Agricultural Vector")
 IncompatibleGRF(LiteralGrfID(r"Meo\98"), "ECS Basic for Arctic")
 IncompatibleGRF(LiteralGrfID(r"Meo\99"), "ECS Basic for Tropic")

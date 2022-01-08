@@ -6894,33 +6894,25 @@ switch (FEAT_INDUSTRIES, SELF, wharf_check_availability, economy) {
         5: wharf_check_availability_5;
         3: wharf_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_72, industry_distance(72)) {
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_7, industry_distance(7)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        wharf_min_distance_72;
-    }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_18, industry_distance(18)) {
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_6, industry_distance(6)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         wharf_min_distance_7;
     }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_55, industry_distance(55)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        wharf_min_distance_18;
-    }
     switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_9, industry_distance(9)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        wharf_min_distance_55;
+        wharf_min_distance_6;
     }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_6, industry_distance(6)) {
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_72, industry_distance(72)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         wharf_min_distance_9;
     }
     switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_79, industry_distance(79)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        wharf_min_distance_6;
+        wharf_min_distance_72;
     }
     switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_8, industry_distance(8)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -6942,9 +6934,17 @@ switch (FEAT_INDUSTRIES, SELF, wharf_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         wharf_min_distance_42;
     }
-    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_82, industry_distance(82)) {
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_55, industry_distance(55)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         wharf_min_distance_52;
+    }
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_18, industry_distance(18)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        wharf_min_distance_55;
+    }
+    switch (FEAT_INDUSTRIES, SELF, wharf_min_distance_82, industry_distance(82)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        wharf_min_distance_18;
     }
     switch (FEAT_INDUSTRIES, SELF, wharf_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

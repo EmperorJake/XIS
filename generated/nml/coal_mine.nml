@@ -792,25 +792,25 @@ switch (FEAT_INDUSTRIES, SELF, coal_mine_check_availability, economy) {
         5: coal_mine_check_availability_5;
         3: coal_mine_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_78, industry_distance(78)) {
+    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_7, industry_distance(7)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        coal_mine_min_distance_66;
+    }
+    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_78, industry_distance(78)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        coal_mine_min_distance_7;
     }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_85, industry_distance(85)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         coal_mine_min_distance_78;
     }
-    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_7, industry_distance(7)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coal_mine_min_distance_85;
-    }
-    switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_66, industry_distance(66)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        coal_mine_min_distance_7;
-    }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_min_distance_0, industry_distance(0)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        coal_mine_min_distance_66;
+        coal_mine_min_distance_85;
     }
     switch (FEAT_INDUSTRIES, SELF, coal_mine_cluster_coal_mine,
                 industry_count(coal_mine) >= (3 * industry_clusters) &&

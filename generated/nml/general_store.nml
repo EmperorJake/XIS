@@ -261,9 +261,17 @@ switch (FEAT_INDUSTRIES, SELF, general_store_check_availability, economy) {
         5: general_store_check_availability_5;
         3: general_store_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_34, industry_distance(34)) {
+    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_31, industry_distance(31)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
+    }
+    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_81, industry_distance(81)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        general_store_min_distance_31;
+    }
+    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_34, industry_distance(34)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        general_store_min_distance_81;
     }
     switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_36, industry_distance(36)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -285,17 +293,17 @@ switch (FEAT_INDUSTRIES, SELF, general_store_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         general_store_min_distance_19;
     }
-    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_6, industry_distance(6)) {
+    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_56, industry_distance(56)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         general_store_min_distance_9;
     }
-    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_56, industry_distance(56)) {
+    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_6, industry_distance(6)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        general_store_min_distance_6;
+        general_store_min_distance_56;
     }
     switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_37, industry_distance(37)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        general_store_min_distance_56;
+        general_store_min_distance_6;
     }
     switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_35, industry_distance(35)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -325,17 +333,9 @@ switch (FEAT_INDUSTRIES, SELF, general_store_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         general_store_min_distance_70;
     }
-    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_31, industry_distance(31)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        general_store_min_distance_29;
-    }
-    switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_81, industry_distance(81)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        general_store_min_distance_31;
-    }
     switch (FEAT_INDUSTRIES, SELF, general_store_min_distance_61, industry_distance(61)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        general_store_min_distance_81;
+        general_store_min_distance_29;
     }
     switch (FEAT_INDUSTRIES, SELF, general_store_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

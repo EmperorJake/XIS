@@ -295,21 +295,9 @@ switch (FEAT_INDUSTRIES, SELF, food_market_check_availability, economy) {
         5: food_market_check_availability_5;
         3: food_market_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_34, industry_distance(34)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_36, industry_distance(36)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_market_min_distance_34;
-    }
-    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_29, industry_distance(29)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_market_min_distance_36;
-    }
     switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_31, industry_distance(31)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        food_market_min_distance_29;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -327,9 +315,21 @@ switch (FEAT_INDUSTRIES, SELF, food_market_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         food_market_min_distance_37;
     }
-    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_59, industry_distance(59)) {
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         food_market_min_distance_30;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_36, industry_distance(36)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_34;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_29, industry_distance(29)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_36;
+    }
+    switch (FEAT_INDUSTRIES, SELF, food_market_min_distance_59, industry_distance(59)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        food_market_min_distance_29;
     }
     switch (FEAT_INDUSTRIES, SELF, food_market_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

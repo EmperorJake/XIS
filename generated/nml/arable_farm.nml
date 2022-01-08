@@ -888,25 +888,25 @@ switch (FEAT_INDUSTRIES, SELF, arable_farm_check_availability, economy) {
         5: arable_farm_check_availability_5;
         3: arable_farm_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_19, industry_distance(19)) {
+    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_35, industry_distance(35)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        arable_farm_min_distance_19;
+        arable_farm_min_distance_46;
     }
-    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_34, industry_distance(34)) {
+    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_19, industry_distance(19)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         arable_farm_min_distance_35;
     }
-    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_46, industry_distance(46)) {
+    switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_34, industry_distance(34)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        arable_farm_min_distance_34;
+        arable_farm_min_distance_19;
     }
     switch (FEAT_INDUSTRIES, SELF, arable_farm_min_distance_26, industry_distance(26)) {
         0 .. 20: return CB_RESULT_LOCATION_DISALLOW;
-        arable_farm_min_distance_46;
+        arable_farm_min_distance_34;
     }
     switch (FEAT_INDUSTRIES, SELF, arable_farm_cluster_arable_farm,
                 industry_count(arable_farm) >= (4 * industry_clusters) &&

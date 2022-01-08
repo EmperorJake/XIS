@@ -2325,17 +2325,9 @@ switch (FEAT_INDUSTRIES, SELF, aluminium_plant_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
-    switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_23, industry_distance(23)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        aluminium_plant_min_distance_82;
-    }
-    switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_2, industry_distance(2)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        aluminium_plant_min_distance_23;
-    }
     switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_74, industry_distance(74)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        aluminium_plant_min_distance_2;
+        aluminium_plant_min_distance_82;
     }
     switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_81, industry_distance(81)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -2357,9 +2349,17 @@ switch (FEAT_INDUSTRIES, SELF, aluminium_plant_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         aluminium_plant_min_distance_47;
     }
+    switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_23, industry_distance(23)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        aluminium_plant_min_distance_68;
+    }
+    switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_2, industry_distance(2)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        aluminium_plant_min_distance_23;
+    }
     switch (FEAT_INDUSTRIES, SELF, aluminium_plant_min_distance_8, industry_distance(8)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        aluminium_plant_min_distance_68;
+        aluminium_plant_min_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, aluminium_plant_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||

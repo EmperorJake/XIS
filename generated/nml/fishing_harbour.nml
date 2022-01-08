@@ -8283,17 +8283,29 @@ switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_availability, economy) {
         5: fishing_harbour_check_availability_5;
         3: fishing_harbour_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_40, industry_distance(40)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_46, industry_distance(46)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         return CB_RESULT_LOCATION_ALLOW;
     }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_46;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_60, industry_distance(60)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_14;
+    }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_23, industry_distance(23)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_40;
+        fishing_harbour_min_distance_60;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_58, industry_distance(58)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_23;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_2, industry_distance(2)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_23;
+        fishing_harbour_min_distance_58;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_61, industry_distance(61)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -8303,9 +8315,13 @@ switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_61;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_69, industry_distance(69)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_40, industry_distance(40)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_22;
+    }
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_69, industry_distance(69)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        fishing_harbour_min_distance_40;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_39, industry_distance(39)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -8323,36 +8339,20 @@ switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_59;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_58, industry_distance(58)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_66, industry_distance(66)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_52;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_66, industry_distance(66)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_58;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_14, industry_distance(14)) {
+    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_18, industry_distance(18)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         fishing_harbour_min_distance_66;
     }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_18, industry_distance(18)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_14;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_46, industry_distance(46)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_18;
-    }
-    switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_60, industry_distance(60)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        fishing_harbour_min_distance_46;
-    }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_check_industry_max_distance_2, industry_distance(32)) {
-        0 .. 72: fishing_harbour_min_distance_60;
+        0 .. 72: fishing_harbour_min_distance_18;
         return CB_RESULT_LOCATION_DISALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_max_distance_32, industry_count(32)) {
-        0: fishing_harbour_min_distance_60;
+        0: fishing_harbour_min_distance_18;
         fishing_harbour_check_industry_max_distance_2;
     }
     switch (FEAT_INDUSTRIES, SELF, fishing_harbour_min_distance_31, industry_distance(31)) {
