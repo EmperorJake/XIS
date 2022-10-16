@@ -1,0 +1,418 @@
+##grflangid 0x27
+##plural 0
+##gender m f
+##case fp fs mp ms
+
+STR_GRF_DESC                                                                    :{ORANGE}XIS Extreme Industry Set{}{BLACK}62 produzioni ed 83 industrie! Un fork di FIRS 3.0.10. Economia progettata da Emperor Jake, grafiche supplementari di Emperor Jake, GarryG and Toni Babelony; per tutto il codice e grafiche grazie a andythenorth ed il resto del team di FIRS. License: GPL v2.
+STR_GRF_URL                                                                     :http://www.tt-forums.net/viewtopic.php?f=26&t=87443
+
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Distanza massima, in caselle, di zone di pesca, piattaforme petrolifere e siti di dragaggio dalla costa.
+STR_PARAM_DESC_ECONOMIES                                                        :Ogni economia dà una combinazione diversa di merci e industrie.{}{}Solo un'economia è disponibile al momento.
+STR_PARAM_DESC_NO_OPENINGS                                                      :Da predefinito, durante il gioco si apriranno nuove industrie.{}{}Se {SILVER}vieta apertura {BLACK} è attivata, le industrie non si apriranno durante il gioco e i giocatori non potranno nemmeno finanziare o esplorare l'apertura di nuove industrie.
+STR_PARAM_DESC_SECONDARY_NEVER_CLOSE                                            :Da predefinito, le industrie secondarie non chiudono mai.{}{}Se permetti la loro chiusura, potrebbero chiudere se non ci sono trasporti di merci per un lungo periodo di tempo. Le industrie primarie non chiuderanno mai in ogni caso.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Distanza massima dalla costa, in caselle, delle industrie marine
+STR_PARAM_NAME_ECONOMIES                                                        :Economia
+STR_PARAM_NAME_NO_OPENINGS                                                      :Impedisci la costruzione di industrie durante il gioco
+STR_PARAM_NAME_SECONDARY_NEVER_CLOSE                                            :Permetti la chiusura delle industrie secondarie
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :Illimitata
+
+STR_PARAM_NAME_PRIMARY_LEVEL1_REQUIREMENT                                       :Casse di forniture necessarie per il livello di produzione Elevato (valore predefinito: 16)
+STR_PARAM_NAME_PRIMARY_LEVEL2_REQUIREMENT                                       :Casse di forniture necessarie per il livello di produzione Abnorme (valore predefinito: 80)
+STR_PARAM_DESC_PRIMARY_LEVEL_REQUIREMENT                                        :La produzione delle fattorie, miniere e industrie simili raggiungerà il livello {SILVER}Elevato{BLACK}, e poi il livello {SILVER}Abnorme{BLACK}, se viene consegnato un numero sufficiente di casse.{}{}I valori di default sono già ottimizzati, ma se è necessario possono essere modificati qui.{}{}Le richieste dei porti e delle industrie simili saranno 8x i valori impostati qui.
+STR_PARAM_NAME_PRIMARY_LEVEL1_BONUS                                             :Livello di produzione Elevato per industrie primarie (%)
+STR_PARAM_NAME_PRIMARY_LEVEL2_BONUS                                             :Livello di produzione Abnorme per industrie primarie (%)
+STR_PARAM_DESC_PRIMARY_LEVEL_BONUS                                              :Produzione delle fattorie, miniere e industrie simili, quando le merci richieste vengono consegnate (espresso in percentuale del valore {SILVER}Normale{BLACK} di produzione).
+
+STR_PARAM_VALUE_ECONOMIES_BASIC_TEMPERATE                                       :INCOMPLETO
+STR_PARAM_VALUE_ECONOMIES_BASIC_ARCTIC                                          :INCOMPLETO
+STR_PARAM_VALUE_ECONOMIES_BASIC_TROPIC                                          :INCOMPLETO
+STR_PARAM_VALUE_ECONOMIES_FIRS                                                  :Totale
+STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          :INCOMPLETO
+STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :INCOMPLETO
+
+STR_CARGO_NAME_ACID                                                             :{G=m}Acido
+STR_CARGO_NAME_ALCOHOL                                                          :{G=m}Alcoolici
+STR_CARGO_NAME_BAUXITE                                                          :{G=f}Bauxite
+STR_CARGO_NAME_BEANS                                                            :{G=m}Soia
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :{G=m}Materiali edili
+STR_CARGO_NAME_CASSAVA                                                          :{G=f}Manioca
+STR_CARGO_NAME_CEMENT                                                           :{G=m}Cemento
+STR_CARGO_NAME_CHEMICALS                                                        :{G=m}Petrolchimici
+STR_CARGO_NAME_CHLORINE                                                         :{G=m}Cloro
+STR_CARGO_NAME_CLAY                                                             :{G=f}Argilla
+STR_CARGO_NAME_COFFEE                                                           :{G=m}Caffé
+STR_CARGO_NAME_COKE                                                             :{G=m}Coke
+STR_CARGO_NAME_COPPER                                                           :{G=m}Rame
+STR_CARGO_NAME_EDIBLE_OIL                                                       :{G=m}Olio alimentare
+STR_CARGO_NAME_ELECTRICAL_MACHINES                                              :{G=m}Macchinari elettrici
+STR_CARGO_NAME_ENGINEERING_SUPPLIES                                             :{G=f}Forniture meccaniche
+STR_CARGO_NAME_EXPLOSIVES                                                       :{G=m}Esplosivi
+STR_CARGO_NAME_FIBRES                                                           :{G=f}Fibre tessili
+STR_CARGO_NAME_FISH                                                             :{G=m}Pesce
+STR_CARGO_NAME_FARM_SUPPLIES                                                    :{G=f}Forniture agricole
+STR_CARGO_NAME_FERTILISER                                                       :{G=m}Fertilizzante
+STR_CARGO_NAME_FRUITS                                                           :{G=f}Frutta
+STR_CARGO_NAME_KAOLIN                                                           :{G=m}Litio
+STR_CARGO_NAME_LIMESTONE                                                        :{G=m}Calcare
+STR_CARGO_NAME_LITHIUM															:{G=m}Litio
+STR_CARGO_NAME_LUMBER                                                           :{G=m}Legname
+STR_CARGO_NAME_METAL                                                            :{G=m}Alluminio
+STR_CARGO_NAME_MILK                                                             :{G=m}Latte
+STR_CARGO_NAME_MANGANESE                                                        :{G=m}Manganese
+STR_CARGO_NAME_NITRATES                                                         :{G=m}Nitrati
+STR_CARGO_NAME_NUTS                                                             :{G=f}Noci
+STR_CARGO_NAME_OILSANDS															:{G=f}Sabbie bituminose
+STR_CARGO_NAME_PACKAGING														:{G=m}Imballaggi
+STR_CARGO_NAME_PEAT                                                             :{G=f}Biomassa
+STR_CARGO_NAME_PETROL                                                           :{G=m}Oli combustibili
+STR_CARGO_NAME_PHOSPHATE                                                        :{G=m}Fosfato
+STR_CARGO_NAME_PIG_IRON                                                         :{G=f}Ghisa
+STR_CARGO_NAME_PIPE                                                             :{G=m}Tubi
+STR_CARGO_NAME_POTASH                                                           :{G=f}Potassa
+STR_CARGO_NAME_PYRITE_ORE                                                       :{G=m}Minerali di zinco
+STR_CARGO_NAME_QUICKLIME                                                        :{G=f}Calce viva
+STR_CARGO_NAME_RECYCLABLES		                                                :{G=m}Materiali riciclabili
+STR_CARGO_NAME_SALT                                                             :{G=m}Sale
+STR_CARGO_NAME_SAND                                                             :{G=f}Sabbia
+STR_CARGO_NAME_SCRAP_METAL                                                      :{G=m}Rottami metallici
+STR_CARGO_NAME_SLAG                                                             :{G=f}Scorie
+STR_CARGO_NAME_SODA_ASH                                                         :{G=m}Carbonato di sodio
+STR_CARGO_NAME_STEEL                                                            :{G=m}Acciaio
+STR_CARGO_NAME_STONE                                                            :{G=f}Pietre
+STR_CARGO_NAME_SUGAR_BEET                                                       :{G=f}Barbabietole da zucchero
+STR_CARGO_NAME_SULPHUR                                                          :{G=m}Zolfo
+STR_CARGO_NAME_VEHICLE_BODIES                                                   :{G=f}Scocche di veicoli
+STR_CARGO_NAME_VEHICLE_PARTS                                                    :{G=f}Parti meccaniche
+STR_CARGO_NAME_VEHICLES                                                         :{G=m}Veicoli
+STR_CARGO_NAME_WOOL                                                             :{G=f}Lana
+STR_CARGO_NAME_ZINC                                                             :{G=m}Zinco
+STR_CARGO_NAME_ZINCORE															:{G=m}Minerali di zinco
+
+STR_CARGO_UNIT_ACID                                                             :{VOLUME} di acido
+STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} di alcoolici
+STR_CARGO_UNIT_BAUXITE                                                          :{WEIGHT} di bauxite
+STR_CARGO_UNIT_BEANS                                                            :{WEIGHT} di soia
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{WEIGHT} di materiali edili
+STR_CARGO_UNIT_CASSAVA                                                          :{WEIGHT} di manioca
+STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} di cemento
+STR_CARGO_UNIT_CHEMICALS                                                        :{VOLUME} di petrolchimici
+STR_CARGO_UNIT_CHLORINE                                                         :{VOLUME} di cloro
+STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} di argilla
+STR_CARGO_UNIT_COFFEE                                                           :{SIGNED_WORD} sacc{P 0 o hi} di caffé
+STR_CARGO_UNIT_COKE                                                             :{WEIGHT} di coke
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} di rame
+STR_CARGO_UNIT_EDIBLE_OIL                                                       :{VOLUME} di olio alimentare
+STR_CARGO_UNIT_ELECTRICAL_MACHINES                                              :{WEIGHT} di macchine elettriche
+STR_CARGO_UNIT_ENGINEERING_SUPPLIES                                             :{SIGNED_WORD} cass{P 0 a e} di forniture meccaniche
+STR_CARGO_UNIT_EXPLOSIVES                                                       :{SIGNED_WORD} cass{P 0 a e} di esplosivi
+STR_CARGO_UNIT_FERTILISER                                                       :{WEIGHT} di fertilizzanti
+STR_CARGO_UNIT_FIBRES                                                           :{SIGNED_WORD} ball{P 0 a e} di fibre tessili
+STR_CARGO_UNIT_FISH                                                             :{WEIGHT} di pesce
+STR_CARGO_UNIT_FMSP                                                             :{SIGNED_WORD} cass{P 0 a e} di forniture agricole
+STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} di frutta e verdura
+STR_CARGO_UNIT_KAOLIN                                                           :{WEIGHT} di litio
+STR_CARGO_UNIT_LIMESTONE                                                        :{WEIGHT} di calcare
+STR_CARGO_UNIT_LUMBER                                                           :{WEIGHT} di legname
+STR_CARGO_UNIT_LYE                                                              :{VOLUME} di liscivia
+STR_CARGO_UNIT_MANGANESE                                                        :{WEIGHT} di manganese
+STR_CARGO_UNIT_METAL                                                            :{WEIGHT} di alluminio
+STR_CARGO_UNIT_MILK                                                             :{VOLUME} di latte
+STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} di nichel
+STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} di nitrati
+STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} sacc{P 0 o hi} di noci
+STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} di imballaggi
+STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} di biomassa
+STR_CARGO_UNIT_PETROL                                                           :{VOLUME} di oli combustibili
+STR_CARGO_UNIT_PHOSPHATE                                                        :{WEIGHT} di sabbie bituminose
+STR_CARGO_UNIT_PIG_IRON                                                         :{WEIGHT} di ghisa
+STR_CARGO_UNIT_PIPE                                                             :{WEIGHT} di tubi
+STR_CARGO_UNIT_POTASH                                                           :{WEIGHT} di potassa
+STR_CARGO_UNIT_PYRITE_ORE                                                       :{WEIGHT} di minerale di zinco
+STR_CARGO_UNIT_QUICKLIME                                                        :{WEIGHT} di calce viva
+STR_CARGO_UNIT_RECYCLABLES                                                      :{WEIGHT} di materiali riciclabili
+STR_CARGO_UNIT_SALT                                                             :{WEIGHT} di sale
+STR_CARGO_UNIT_SAND                                                             :{WEIGHT} di sabbia
+STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} di rottami metallici
+STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} di scorie
+STR_CARGO_UNIT_SODA_ASH                                                         :{WEIGHT} di carbonato di sodio
+STR_CARGO_UNIT_STEEL                                                            :{WEIGHT} d'acciaio
+STR_CARGO_UNIT_STONE                                                            :{WEIGHT} di pietre
+STR_CARGO_UNIT_SUGAR_BEET                                                       :{WEIGHT} di barbabietola da zucchero
+STR_CARGO_UNIT_SULPHUR                                                          :{WEIGHT} di zolfo
+STR_CARGO_UNIT_VEHICLE_BODIES                                                   :{WEIGHT} di scocche di veicoli
+STR_CARGO_UNIT_VEHICLE_PARTS                                                    :{WEIGHT} di parti meccaniche
+STR_CARGO_UNIT_VEHICLES                                                         :{WEIGHT} di veicoli
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} ball{P 0 a e} di lana
+STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} di zinco
+
+STR_CID_ACID                                                                    :{TINYFONT}AD
+STR_CID_ALCOHOL                                                                 :{TINYFONT}AL
+STR_CID_BAUXITE                                                                 :{TINYFONT}BA
+STR_CID_BEANS                                                                   :{TINYFONT}SO
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}ED
+STR_CID_CASSAVA                                                                 :{TINYFONT}MA
+STR_CID_CEMENT                                                                  :{TINYFONT}CE
+STR_CID_CHEMICALS                                                               :{TINYFONT}PC
+STR_CID_CHLORINE                                                                :{TINYFONT}CL
+STR_CID_CLAY                                                                    :{TINYFONT}AR
+STR_CID_COFFEE                                                                  :{TINYFONT}CF
+STR_CID_COKE                                                                    :{TINYFONT}CK
+STR_CID_COPPER                                                                  :{TINYFONT}RA
+STR_CID_EDIBLE_OIL                                                              :{TINYFONT}OA
+STR_CID_ELECTRICAL_MACHINES                                                     :{TINYFONT}ME
+STR_CID_ENGINEERING_SUPPLIES                                                    :{TINYFONT}FM
+STR_CID_EXPLOSIVES                                                              :{TINYFONT}ES
+STR_CID_FARM_SUPPLIES                                                           :{TINYFONT}FA
+STR_CID_FERTILISER                                                              :{TINYFONT}FE
+STR_CID_FIBRES                                                                  :{TINYFONT}FT
+STR_CID_FISH                                                                    :{TINYFONT}PE
+STR_CID_KAOLIN                                                                  :{TINYFONT}LI
+STR_CID_LIMESTONE                                                               :{TINYFONT}CC
+STR_CID_LUMBER                                                                  :{TINYFONT}LE
+STR_CID_LYE                                                                     :{TINYFONT}LI
+STR_CID_MANGANESE                                                               :{TINYFONT}MN
+STR_CID_METAL                                                                   :{TINYFONT}AM
+STR_CID_MILK                                                                    :{TINYFONT}LA
+STR_CID_NICKEL                                                                  :{TINYFONT}NK
+STR_CID_NITRATES                                                                :{TINYFONT}NI
+STR_CID_NUTS                                                                    :{TINYFONT}NC
+STR_CID_PACKAGING                                                               :{TINYFONT}IM
+STR_CID_PEAT                                                                    :{TINYFONT}BM
+STR_CID_PETROL                                                                  :{TINYFONT}OC
+STR_CID_PIG_IRON                                                                :{TINYFONT}GH
+STR_CID_PIPE                                                                    :{TINYFONT}TU
+STR_CID_PHOSPHATE                                                               :{TINYFONT}FO
+STR_CID_POTASH                                                                  :{TINYFONT}PO
+STR_CID_PYRITE_ORE                                                              :{TINYFONT}MZ
+STR_CID_QUICKLIME                                                               :{TINYFONT}CV
+STR_CID_RECYCLABLES                                                             :{TINYFONT}MR
+STR_CID_SALT                                                                    :{TINYFONT}SL
+STR_CID_SAND                                                                    :{TINYFONT}SA
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}RM
+STR_CID_SLAG                                                                    :{TINYFONT}SC
+STR_CID_SODA_ASH                                                                :{TINYFONT}CS
+STR_CID_STEEL                                                                   :{TINYFONT}AC
+STR_CID_STONE                                                                   :{TINYFONT}PI
+STR_CID_SUGAR_BEET                                                              :{TINYFONT}BZ
+STR_CID_SULPHUR                                                                 :{TINYFONT}ZO
+STR_CID_VEHICLE_BODIES                                                          :{TINYFONT}SV
+STR_CID_VEHICLE_PARTS                                                           :{TINYFONT}PM
+STR_CID_VEHICLES                                                                :{TINYFONT}VE
+STR_CID_WOOL                                                                    :{TINYFONT}LN
+STR_CID_ZINC                                                                    :{TINYFONT}ZI
+
+
+STR_ERR_CLIMATE_TOYLAND                                                         :{ORANGE}XIS non funziona con Toyland
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: XIS necessita di OpenTTD 1.9.0 o superiore oppure JGRPP 0.32.x o superiore
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Set incompatibile: {ORANGE}{STRING} {YELLOW}Consulta il file Leggimi di FIRS: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CANSET                                               :{ORANGE}E02: {YELLOW}Parametro incompatibile: {ORANGE}Il parametro n. 2 del CanSet dev'essere impostato a 0 per funzionare con FIRS. {YELLOW}Consulta il file Leggimi di FIRS: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_PARAM_CITYSET                                              :{ORANGE}E02: {YELLOW}Parametro incompatibile: {ORANGE}Il parametro n. 2 del NA City Set dev'essere impostato a 0 per funzionare con FIRS. {YELLOW}Consulta il file Leggimi di FIRS: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+STR_ERR_INCOMPATIBLE_SET_TTRS_VERSION                                           :{ORANGE}E04: {YELLOW}Versione incompatibile: {ORANGE}Ci vuole la versione 3.11 o più recente del Total Town Replacement Set. {YELLOW}Consulta il file Leggimi di FIRS: {ORANGE}{}http://bundles.openttdcoop.org/firs/releases/readme.txt
+
+STR_ERR_LOCATION_NOT_ABOVE_SNOWLINE                                             :deve stare più in basso delle nevi perenni.
+STR_ERR_LOCATION_NOT_BELOW_SNOWLINE                                             :deve stare più in alto delle nevi perenni.
+STR_ERR_LOCATION_NOT_ON_WATER                                                   :deve stare sulla terraferma, non sull'acqua.
+STR_ERR_LOCATION_NOT_IN_DESERT                                                  :non può stare nel deserto.
+STR_ERR_LOCATION_NOT_ON_STEEP_SLOPE                                             :non può stare su terreno in pendenza.
+STR_ERR_LOCATION_LIMIT_1_PER_TOWN                                               :si può costruire solo un'industria di questo tipo per ogni città
+
+STR_IND_ALUMINIUM_PLANT                                                         :{G=f}Fabbrica di alluminio
+STR_IND_AMMONIA_PLANT                                                           :{G=f}Fabbrica di ammoniaca
+STR_IND_ARABLE_FARM                                                             :{G=f}Azienda agricola
+STR_IND_ASSEMBLY_PLANT                                                          :{G=f}Fabbrica di veicoli
+STR_IND_BATTERY_PLANT                                                           :{G=f}Fabbrica di batterie										  
+STR_IND_BASICFARM                                                               :{G=f}Fattoria
+STR_IND_BASIC_OXYGEN_FURNACE                                                    :{G=f}Fornace basica all'ossigeno
+STR_IND_BAUXITE_MINE		                                                    :{G=f}Miniera di bauxite											   
+STR_IND_BIOREFINERY                                                             :{G=f}Bioraffineria
+STR_IND_BLAST_FURNACE                                                           :{G=m}Altoforno
+STR_IND_BREWERY                                                                 :{G=m}Birrificio
+STR_IND_CIDER_MILL                                                              :{G=f}Distilleria di sidro
+STR_IND_BRICK_WORKS                                                             :{G=f}Fabbrica di mattoni
+STR_IND_BUILDERS_YARD                                                           :{G=m}Cantiere edile
+STR_IND_BULK_TERMINAL                                                           :{G=m}Porto mercantile
+STR_IND_CEMENT_PLANT                                                            :{G=m}Cementificio
+STR_IND_CHEMICAL_PLANT                                                          :{G=m}Stabilimento chimico
+STR_IND_CRACKING_PLANT                                                          :{G=m}Impianto di frantumazione
+STR_IND_CLAY_PIT                                                                :{G=f}Cava di argilla
+STR_IND_COFFEE_ESTATE                                                           :{G=f}Piantagione di caffé
+STR_IND_COKE_OVEN                                                               :{G=m}Forno per coke
+STR_IND_COPPER_REFINERY                                                         :{G=f}Raffineria di rame
+STR_IND_DAIRY                                                                   :{G=f}Azienda casearia
+STR_IND_DAIRY_FARM                                                              :{G=m}Allevamento di bestiame
+STR_IND_DREDGING_SITE                                                           :{G=m}Sito di dragaggio
+STR_IND_ELECTRIC_ARC_FURNACE                                                    :{G=m}Forno elettrico ad arco
+STR_IND_FACTORY                                                                 :{G=f}Fabbrica
+STR_IND_FISHING_GROUND                                                          :{G=f}Zona di pesca
+STR_IND_FISHING_HARBOUR                                                         :{G=m}Porto di pesca
+STR_IND_FISHING_VILLAGE                                                         :{G=m}Villaggio di pescatori
+STR_IND_FLOUR_MILL                                                              :{G=m}Mulino
+STR_IND_FOOD_MARKET                                                             :{G=m}Negozio di alimentari
+STR_IND_FOOD_PROCESSOR                                                          :{G=f}Industria alimentare
+STR_IND_FOUNDRY                                                                 :{G=f}Fonderia
+STR_IND_FURNITURE_FACTORY                                                       :{G=m}Mobilifico
+STR_IND_GENERAL_STORE                                                           :{G=m}Emporio
+STR_IND_GLASS_WORKS                                                             :{G=f}Vetreria
+STR_IND_HARDWARE_STORE                                                          :{G=m}Negozio di ferramenta
+STR_IND_HOTEL                                                                   :{G=m}Hotel
+STR_IND_HERDING_COOP                                                            :{G=f}Cooperativa di pastori
+STR_IND_IRON_WORKS                                                              :{G=f}Fucina
+STR_IND_JUNKYARD                                                                :{G=m}Deposito di rottami
+STR_IND_LIME_KILN                                                               :{G=m}Forno per ceramiche
+STR_IND_LIMESTONE_MINE                                                          :{G=f}Miniera di calcare
+STR_IND_LITHIUM_MINE                                                            :{G=f}Miniera di litio								 
+STR_IND_LIQUIDS_TERMINAL                                                        :{G=m}Centro di stoccaggio liquidi
+STR_IND_LUMBER_YARD                                                             :{G=f}Falegnameria
+STR_IND_MACHINE_SHOP                                                            :{G=f}Fabbrica di macchinari
+STR_IND_MANGANESE_MINE                                                          :{G=f}Miniera di manganese
+STR_IND_METAL_FABRICATION_PLANT                                                 :{G=f}Fabbrica di prodotti metallici
+STR_IND_METAL_WORKSHOP                                                          :{G=f}Officina elettrica
+STR_IND_MIXEDFARM                                                               :{G=f}Azienda agricola
+STR_IND_NITRATE_MINE                                                            :{G=f}Miniera di nitrato
+STR_IND_ORCHARD_PIGGERY                                                         :{G=m}Frutteto e porcile
+STR_IND_OIL_SANDS_MINE                                                          :{G=f}Miniera di sabbie bituminose		   
+STR_IND_PEATLANDS                                                               :{G=f}Torbiera
+STR_IND_PETROLPUMP                                                              :{G=f}Distributore di benzina
+STR_IND_PHOSPHATE_MINE                                                          :{G=f}Miniera di fosfato
+STR_IND_PLASTICS_PLANT                                                          :{G=f}Fabbrica di materiali plastici
+STR_IND_PRINTING_PLANT                                                          :{G=m}Stabilimento tipografico
+STR_IND_POLYMER_PLANT                                                           :{G=f}Industria polimeri	   
+STR_IND_PORT                                                                    :{G=m}Porto
+STR_IND_POTASH_MINE                                                             :{G=f}Miniera di potassa
+STR_IND_PYRITE_MINE                                                             :{G=f}Miniera di zinco
+STR_IND_PYRITE_SMELTER                                                          :{G=f}Fonderia di zinco
+STR_IND_POWER_PLANT                                                             :{G=f}Centrale elettrica
+STR_IND_QUARRY                                                                  :{G=f}Cava di pietra
+STR_IND_RANCH                                                                   :{G=m}Ranch
+STR_IND_RECYCLING_DEPOT                                                         :{G=m}Deposito di prodotti riciclabili
+STR_IND_RECYCLING_PLANT                                                         :{G=f}Centrale di riciclaggio
+STR_IND_REINDEER_FARM                                                           :{G=m}Allevamento di renne
+STR_IND_SHEEPFARM                                                               :{G=m}Allevamento di ovini
+STR_IND_SLAG_GRINDING_PLANT                                                     :{G=m}Impianto di frantumazione scorie
+STR_IND_SMITHY_FORGE                                                            :{G=f}Piccola fucina
+STR_IND_SODA_ASH_MINE                                                           :{G=f}Miniera di carbonato di sodio
+STR_IND_STEEL_FINISHING_PLANT                                                   :{G=m}Impianto di galvanizzazione
+STR_IND_STOCKYARD                                                               :{G=m}Macello
+STR_IND_SUGAR_REFINERY                                                          :{G=f}Raffineria di zucchero
+STR_IND_SUPPLY_YARD                                                             :{G=m}Deposito di forniture
+STR_IND_ENSP_YARD                                                               :{G=m}Deposito di forniture meccaniche
+STR_IND_FMSP_YARD                                                               :{G=m}Deposito di forniture agricole   
+STR_IND_TEXTILE_MILL                                                            :{G=f}Industria tessile
+STR_IND_TRADING_POST                                                            :{G=m}Emporio commerciale
+STR_IND_TYRE_PLANT                                                              :{G=f}Fabbrica di pneumatici
+STR_IND_UPGRADER                                                                :{G=m}Estrattore di olio  
+STR_IND_VINEYARD                                                                :{G=f}Vigna
+STR_IND_VEHICLE_DEALER                                                          :{G=f}Concessionaria di autoveicoli
+STR_IND_WHARF                                                                   :{G=m}Moli
+STR_IND_ZINC_SMELTER                                                            :{G=f}Fonderia di zinco	 
+
+
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(consegnato)
+STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Raggiunge il massimo livello di produzione se {WHITE}una qualsiasi {BLACK}delle merci richieste viene consegnata.
+STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}Il massimo livello di produzione si raggiunge consegnando {WHITE}tutti {BLACK}i tipi di merce richiesti almeno una volta ogni tre mesi.
+STR_EXTRA_RECYCLING_DEPOT                                                       :{BLACK}La produzione è proporzionale alla popolazione cittadina.
+STR_PRIMARY_PRODUCTION_1X                                                       :{BLACK}Produzione attuale: {YELLOW}Normale{}{}{BLACK}Il livello di produzione {WHITE}Elevato {BLACK} si raggiunge consegnando {SIGNED_WORD} casse di forniture entro 3 mesi{}Per salire al livello {WHITE}Abnorme {BLACK} si devono consegnare {SIGNED_WORD} casse.
+STR_PRIMARY_PRODUCTION_2X                                                       :{BLACK}Produzione attuale: {YELLOW}Elevata{}{}{BLACK}Per mantenere questo livello di produzione, si devono consegnare {SIGNED_WORD} casse di forniture entro 3 mesi{}Per salire al livello {WHITE}Abnorme{BLACK} si devono consegnare {SIGNED_WORD} casse.
+STR_PRIMARY_PRODUCTION_4X                                                       :{BLACK}Produzione attuale: {YELLOW}Abnorme{}{}{BLACK}Per mantenere questo livello di produzione, consegnare {SKIP}{SIGNED_WORD} casse di forniture entro 3 mesi.
+STR_PORT_PRODUCTION_1X                                                          :{BLACK}Produzione attuale: {YELLOW}Normale{}{}{BLACK}Il livello di produzione {WHITE}Elevato {BLACK} si raggiunge consegnando {SIGNED_WORD} unità di forniture entro 3 mesi{}Per salire al livello {WHITE}Abnorme {BLACK} si devono consegnare {SIGNED_WORD} unità.
+STR_PORT_PRODUCTION_2X                                                          :{BLACK}Produzione attuale: {YELLOW}Elevata{}{}{BLACK}Per mantenere questo livello di produzione, si devono consegnare {SIGNED_WORD} unità di merci entro 3 mesi{}Per salire al livello {WHITE}Abnorme {BLACK}, si devono consegnare {SIGNED_WORD} unità.
+STR_PORT_PRODUCTION_4X                                                          :{BLACK}Produzione attuale: {YELLOW}Abnorme{}{}{BLACK}Per mantenere questo livello di produzione, si devono consegnare {SKIP}{SIGNED_WORD} unità di merci entro 3 mesi.
+STR_GENERIC_NEWLINE                                                             :{}
+
+STR_FUND_ARABLE_FARM                                                            :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_COFFEE_ESTATE                                                          :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_DAIRY_FARM                                                             :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_FOREST                                                                 :{}{BLACK}Luogo: {YELLOW}Non si può fondare nel deserto.
+STR_FUND_FRUIT_PLANTATION                                                       :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve.
+STR_FUND_HERDING_COOP                                                           :{}{BLACK}Luogo: {YELLOW}Si può solo fondare sulla neve.
+STR_FUND_MIXED_FARM                                                             :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_ORCHARD_PIGGERY                                                        :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_RUBBER_PLANTATION                                                      :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+STR_FUND_VINEYARD                                                               :{}{BLACK}Luogo: {YELLOW}Non si può fondare sulla neve o nel deserto.
+
+STR_FUND_AVAILABLE_FROM                                                         :{}{BLACK}Disponibile da: {YELLOW}{COMMA}
+STR_FUND_AVAILABLE_UNTIL                                                        :{}{BLACK}Non più disponibile da: {YELLOW}{COMMA}
+
+STR_TOWN                                                                        :{STRING}
+STR_STATION                                                                     :{STRING} {STRING}
+
+STR_STATION_ANIMALS                                                             :{G=m}Macello
+STR_STATION_AUTOMOTIVE                                                          :{G=m}Parco macchine
+STR_STATION_BAR_GRILL_AND_ROOMS                                                 :{G=f}Spa
+STR_STATION_BARNS                                                               :{G=f}Cascine
+STR_STATION_BARREL_AND_KEG                                                      :{G=m}Birrifici
+STR_STATION_BASE                                                                :{G=m}Campo base
+STR_STATION_BATTERY_PLANT                                                       :{G=f}Fabbrica di batterie
+STR_STATION_BAUXITE_MINE                                                        :{G=m}Depositi di bauxite
+STR_STATION_BONEYARD                                                            :{G=m}Deposito rottami di aerei											 
+STR_STATION_BANK_TOP                                                            :Bank Top
+STR_STATION_CASTINGS                                                            :{G=f}Colate
+STR_STATION_COLLIERY                                                            :{G=f}Miniera di carbone
+STR_STATION_COPPER_LODE                                                         :{G=f}Vena di rame
+STR_STATION_CREOSOTING                                                          :{G=m}Trattamenti impregnanti
+STR_STATION_CRACKING                                                            :Petrochem
+STR_STATION_DAIRY_LANE                                                          :{G=f}Filiera casearia   
+STR_STATION_ESTATE                                                              :{G=m}Piantagioni
+STR_STATION_EXCHANGE                                                            :{G=m}Parco merci
+STR_STATION_FARM_1                                                              :{G=f}Fattorie
+STR_STATION_FARM_2                                                              :{G=m}Prati
+STR_STATION_FARM_3                                                              :Ranch
+STR_STATION_FISHMARKET                                                          :{G=m}Mercato del pesce
+STR_STATION_FEED_SEED                                                           :{G=m}Mangimi e semi			
+STR_STATION_FOOD_CORPORATION                                                    :{G=f}Industrie alimentari
+STR_STATION_FOREST                                                              :{G=f}Area stoccaggio tronchi
+STR_STATION_FORGE                                                               :{G=f}Fucina
+STR_STATION_FURNACE                                                             :{G=f}Fornaci
+STR_STATION_HEAVY_EQUIPMENT_YARD                                                :{G=m}Piazzale macchinari pesanti
+STR_STATION_HEAVY_INDUSTRY_2                                                    :{G=f}Fabbriche
+STR_STATION_HERDING_COOP                                                        :{G=f}Capanne
+STR_STATION_INDUSTRY_ESTATE_1                                                   :{G=f}Zona industriale
+STR_STATION_INDUSTRY_HARBOUR_1                                                  :{G=m}Porto industriale
+STR_STATION_INDUSTRY_HARBOUR_2                                                  :{G=m}Lungomare
+STR_STATION_INDUSTRY_HARBOUR_3                                                  :{G=m}Imbarcadero
+STR_STATION_IRONSTONE                                                           :{G=m}Minerali di ferro
+STR_STATION_JOINERS_SHOP                                                        :{G=m}Mobilifici
+STR_STATION_KILNS                                                               :{G=m}Forni
+STR_STATION_KIMBERLITE_DEPOSITS                                                 :{G=m}Depositi di bauxite
+STR_STATION_LIMESTONE_MINES                                                     :{G=f}Miniere di calcare
+STR_STATION_LITHIUM_MINES                                                       :{G=f}Miniere di litio	  
+STR_STATION_MANGANESE_MINES                                                     :{G=f}Miniere di manganese
+STR_STATION_MARKET                                                              :{G=m}Mercato
+STR_STATION_MERCHANTS_LANE                                                      :{G=m}Viale dei negozi
+STR_STATION_MILL                                                                :{G=m}Mulino
+STR_STATION_MINE                                                                :{G=f}Via Biff Tanner
+STR_STATION_MOULDINGS                                                           :{G=f}Modanature
+STR_STATION_OIL_RIG                                                             :{G=m}Giacimenti
+STR_STATION_ORCHARDS                                                            :{G=m}Frutteti
+STR_STATION_PIT                                                                 :{G=m}Scavo
+STR_STATION_PLANTATION                                                          :{G=f}Piantagioni
+STR_STATION_PRINTERS                                                            :{G=f}Tipografie			 
+STR_STATION_POWERHUNGRY                                                         :{G=f}Centrale elettrica
+STR_STATION_POLYMERS                                                            :{G=m}Polimeri
+STR_STATION_PUMPS                                                               :{G=f}Pompe				  
+STR_STATION_PYRITES                                                             :{G=m}Depositi di sfalerite
+STR_STATION_REFINERY                                                            :{G=f}Raffinerie
+STR_STATION_RUBBER_COMPANY                                                      :{G=f}Industrie della gomma
+STR_STATION_SALTPETER_WORKS                                                     :{G=f}Fabbrica di salnitro
+STR_STATION_SHARP_STREET                                                        :Sharp Street
+STR_STATION_SHEEP_FOLD                                                          :{G=f}Greggi
+STR_STATION_SHOALS                                                              :{G=f}Area di pesca
+STR_STATION_SILO                                                                :{G=m}Silos
+STR_STATION_SMELTER                                                             :{G=f}Fonderie
+STR_STATION_STACKS                                                              :{G=m}Depositi
+STR_STATION_STAMP_AND_PLATE                                                     :{G=f}Presse
+STR_STATION_WATT_STREET                                                         :{G=m}James Watt Street  
+STR_STATION_SUGAR_COMPANY                                                       :{G=m}Zuccherificio
+STR_STATION_TANK_FARM                                                           :{G=m}Serbatoi
+STR_STATION_TAPPERS_SHED                                                        :{G=f}Piantagione
+STR_STATION_TOWN_1                                                              :{G=f}Piazza del municipio
+STR_STATION_TOWN_2                                                              :{G=f}Zona industriale
+STR_STATION_TOWN_3                                                              :{G=f}Piazza del mercato
+STR_STATION_TRONA_BEDS                                                          :Trona Beds
+STR_STATION_WATER                                                               :{G=m}Banco di sabbia
+STR_STATION_WEAVE_AND_DYE                                                       :{G=m}Tessuti non tessuti
+STR_STATION_WELLS                                                               :{G=m}Pozzi
+STR_STATION_WINERY                                                              :{G=f}Cantine
+STR_STATION_WORKS_YARD                                                          :{G=m}Giardinaggio
+STR_STATION_UPGRADER                                                            :{G=m}Impianto Syncrude	  
+STR_STATION_VEHICLE_DEALER                                                      :{G=m}Parcheggi
