@@ -31,7 +31,7 @@ STR_PARAM_VALUE_ECONOMIES_MISTAH_KURTZ                                          
 STR_PARAM_VALUE_ECONOMIES_STEELTOWN                                             :INCOMPLETO
 
 STR_CARGO_NAME_ACID                                                             :{G=m}Acido
-STR_CARGO_NAME_ALCOHOL                                                          :{G=m}Alcoolici
+STR_CARGO_NAME_ALCOHOL                                                          :{G=m}Alcolici
 STR_CARGO_NAME_BAUXITE                                                          :{G=f}Bauxite
 STR_CARGO_NAME_BEANS                                                            :{G=m}Soia
 STR_CARGO_NAME_BUILDING_MATERIALS                                               :{G=m}Materiali edili
@@ -54,15 +54,15 @@ STR_CARGO_NAME_FERTILISER                                                       
 STR_CARGO_NAME_FRUITS                                                           :{G=f}Frutta
 STR_CARGO_NAME_KAOLIN                                                           :{G=m}Litio
 STR_CARGO_NAME_LIMESTONE                                                        :{G=m}Calcare
-STR_CARGO_NAME_LITHIUM															:{G=m}Litio
+STR_CARGO_NAME_LITHIUM															                            :{G=m}Litio
 STR_CARGO_NAME_LUMBER                                                           :{G=m}Legname
 STR_CARGO_NAME_METAL                                                            :{G=m}Alluminio
 STR_CARGO_NAME_MILK                                                             :{G=m}Latte
 STR_CARGO_NAME_MANGANESE                                                        :{G=m}Manganese
 STR_CARGO_NAME_NITRATES                                                         :{G=m}Nitrati
 STR_CARGO_NAME_NUTS                                                             :{G=f}Noci
-STR_CARGO_NAME_OILSANDS															:{G=f}Sabbie bituminose
-STR_CARGO_NAME_PACKAGING														:{G=m}Imballaggi
+STR_CARGO_NAME_OILSANDS													                            		:{G=f}Sabbie bituminose
+STR_CARGO_NAME_PACKAGING											                            			:{G=m}Imballaggi
 STR_CARGO_NAME_PEAT                                                             :{G=f}Biomassa
 STR_CARGO_NAME_PETROL                                                           :{G=m}Oli combustibili
 STR_CARGO_NAME_PHOSPHATE                                                        :{G=m}Fosfato
@@ -71,7 +71,7 @@ STR_CARGO_NAME_PIPE                                                             
 STR_CARGO_NAME_POTASH                                                           :{G=f}Potassa
 STR_CARGO_NAME_PYRITE_ORE                                                       :{G=m}Minerali di zinco
 STR_CARGO_NAME_QUICKLIME                                                        :{G=f}Calce viva
-STR_CARGO_NAME_RECYCLABLES		                                                :{G=m}Materiali riciclabili
+STR_CARGO_NAME_RECYCLABLES                                                      :{G=m}Materiali riciclabili
 STR_CARGO_NAME_SALT                                                             :{G=m}Sale
 STR_CARGO_NAME_SAND                                                             :{G=f}Sabbia
 STR_CARGO_NAME_SCRAP_METAL                                                      :{G=m}Rottami metallici
@@ -86,7 +86,7 @@ STR_CARGO_NAME_VEHICLE_PARTS                                                    
 STR_CARGO_NAME_VEHICLES                                                         :{G=m}Veicoli
 STR_CARGO_NAME_WOOL                                                             :{G=f}Lana
 STR_CARGO_NAME_ZINC                                                             :{G=m}Zinco
-STR_CARGO_NAME_ZINCORE															:{G=m}Minerali di zinco
+STR_CARGO_NAME_ZINCORE                                                          :{G=m}Minerali di zinco
 
 STR_CARGO_UNIT_ACID                                                             :{VOLUME} di acido
 STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} di alcoolici
@@ -223,7 +223,7 @@ STR_IND_ASSEMBLY_PLANT                                                          
 STR_IND_BATTERY_PLANT                                                           :{G=f}Fabbrica di batterie										  
 STR_IND_BASICFARM                                                               :{G=f}Fattoria
 STR_IND_BASIC_OXYGEN_FURNACE                                                    :{G=f}Fornace basica all'ossigeno
-STR_IND_BAUXITE_MINE		                                                    :{G=f}Miniera di bauxite											   
+STR_IND_BAUXITE_MINE		                                                        :{G=f}Miniera di bauxite											   
 STR_IND_BIOREFINERY                                                             :{G=f}Bioraffineria
 STR_IND_BLAST_FURNACE                                                           :{G=m}Altoforno
 STR_IND_BREWERY                                                                 :{G=m}Birrificio
